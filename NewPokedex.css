@@ -1,0 +1,239 @@
+/* =========================
+   Topのデザイン
+========================= */
+.top {
+  background: #222;
+  color: #000;
+  font-size: 30px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 8px solid #000;
+}
+
+/* 左・右 */
+.top-left,
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-left {
+  padding-left: 10px;
+  color: #000;
+}
+
+.top-right {
+  padding-right: 10px;
+}
+
+/* ============================
+   中央エリア（高さ固定）
+============================ */
+.top-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 120px);
+  height: 100%;              /* ← これが重要 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* 背景帯（高さは親に合わせる） */
+.title-bg {
+  width: 100%;
+  height: 100%;              /* ← これが重要 */
+  background-image: linear-gradient(
+    to right,
+    #ffa500, #ffd700, #ffff00, #adff2f, #00ff00,
+    #7cfc00, #00fa9a, #7fffd4, #87cefa, #00bfff,
+    #1e90ff, #ba55d3, #ee82ee, #ff1493, #dc143c
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* タイトル */
+.page-title {
+  pointer-events: auto;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  padding: 5px 20px;
+  border-radius: 6px;
+}
+
+/* ============================
+   メニューボタン(☰)
+============================ */
+.menu-btn {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ============================
+   サイドバー
+============================ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease, background 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+/* Close Button */
+.sidebar-close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menu List */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+
+.sidebar li:nth-child(1) { color: #FF3333; border-bottom-color: #FF3333; }
+.sidebar li:nth-child(2) { color: #FF9900; border-bottom-color: #FF9900; }
+.sidebar li:nth-child(3) { color: #FFFF33; border-bottom-color: #FFFF33; }
+.sidebar li:nth-child(4) { color: #66FF66; border-bottom-color: #66FF66; }
+.sidebar li:nth-child(5) { color: #3399FF; border-bottom-color: #3399FF; }
+.sidebar li:nth-child(6) { color: #CC33FF; border-bottom-color: #CC33FF; }
+
+.sidebar li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.sidebar {
+  background: #000;
+}
+
+.sidebar .sidebar-close-btn {
+  color: white;
+}
+
+/* ============================
+   Main Content
+============================ */
+.main-content {
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.main-content.shift {
+  transform: translateX(250px);
+}
+
+#dynamic-content {
+  margin-top: 20px;
+  padding: 15px;
+  background: #eee;
+  border-radius: 6px;
+}
+
+/**中段の位置**/
+.middle{
+  text-align: center;
+}
+
+/**中段(画像)のデザイン**/
+.selected-poke-image{
+  transform: scale(0.7);
+  border: 1px solid #000;
+  padding: auto;
+  margin: auto;
+}
+
+/**ボタンの位置**/
+.control-buttons{
+  text-align: center;
+}
+
+/**中段の要素・ボタンのデザイン**/
+table {
+  font-size: 90%;
+  text-align: center;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+}
+td {
+  height: 50px;
+  width: 180px;
+}
+
+/**画像出力のフィールドのデザイン**/
+.display-poke-list {
+  display: flex;
+  flex-wrap: nowrap; /* 折り返しOK */
+  gap: 8px; /* 画像の間にちょっと余白 */
+  justify-content: flex-start; /* 左寄せ */
+  overflow-x: auto; /* 横スクロールを有効にする */
+  white-space: nowrap; /* 折り返し防止（念のため） */
+  padding: 10px;
+  scroll-behavior: smooth; /* スムーズスクロール（お好みで） */
+}
+
+/**個々の画像のデザイン**/
+.display-poke-list img {
+  width: 100px; /* 固定サイズでもOK */
+  max-width: 100px; /* 画面が狭いときの上限 */
+  flex-shrink: 0; /* 縮まないようにする */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/**画像マウスオーバー時のデザイン**/
+.display-poke-list img:hover {
+  transform: scale(1.3); /* ホバーでちょっと拡大 */
+}
+
+/**検索ボタンの位置**/
+.search-button{
+  text-align: center;
+}
+
+#BtnPrevPoke,
+#BtnNextPoke,
+#BtnSwitchImage{
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ポケモン図鑑画面</title>
+  <link rel="stylesheet" href="NewPokedex.css">
+  <link rel="icon" href="icon/NewPokedex.png">
+</head>
+<body>
+  <!-- 上部タイトル -->
+  <div class="top" area-top>
+    <div class="top-left">
+      <button class="menu-btn" id="menu-btn">☰</button>
+    </div>
+
+    <div class="top-center">
+      <div class="title-bg">
+        <div class="page-title" field-page-title></div>
+      </div>
+    </div>
+
+    <div class="top-right"></div>
+  </div>
+  <div area-sidebar></div>
+
+  <div class="main-content" id="main-content">
+    <div class="middle">
+    <div class="selected-poke-image" field-selected-poke-image></div>
+    <div class="selected-poke-title" field-selected-poke-title></div>
+    <div class="selected-poke-type" field-selected-poke-type></div>
+    <div class="selected-poke-info" field-selected-poke-info></div>
+  </div>
+  <div class="buttons">
+    <div class="control-buttons" field-control-buttons></div>
+  </div>
+  <div class="bottom">
+    <div class="display-poke-list" field-display-poke-list></div>
+  </div>
+
+  </div>
+  
+  <script src="NewPokedex.js"></script>
+</body>
+</html>
+<!-- http://localhost:3001/api/poke?pokeid=5 -->
+<!-- http://localhost:3001/MyPokedex.html -->
+<!--file:///Users/takeshitaseiya/Desktop/MyWorkspace/workspace/pokedex2026/NewPokedex.html-->
