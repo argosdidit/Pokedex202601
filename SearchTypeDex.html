@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SearchTypeDex</title>
+  <link rel="stylesheet" href="SearchTypeDex.css">
+  <link rel="icon" href="icon/SearchTypeDex.png">
+</head>
+
+<body>
+  <!-- 上部タイトル -->
+  <div class="top" area-top>
+    <div class="top-left">
+      <button class="menu-btn" id="menu-btn">☰</button>
+    </div>
+
+    <div class="top-center">
+      <div class="title-bg">
+        <div class="page-title" field-page-title></div>
+      </div>
+    </div>
+
+    <div class="top-right"></div>
+  </div>
+  <div area-sidebar></div>
+
+  <div class="main-content" id="main-content">
+    <!-- 検索フィールド -->
+  <div class="search-wrapper">
+    <h3 class="search-label">検索フィールド</h3>
+
+    <div class="search-area">
+
+      <!-- 名前検索 -->
+      <div class="left-and-right">
+        <div class="left">名前:</div>
+        <div class="right">
+          <input type="text" id="TxtSearchName">
+        </div>
+      </div>
+
+      <!-- タイプ一覧（JSで画像を並べる） -->
+      <div id="TblSearchType" class="table-type"></div>
+
+      <!-- 地方 -->
+      <select id="DdlSearchRegion">
+        <option value="">地方を選択してください</option>
+      </select>
+
+      <!-- 世代 -->
+      <select id="DdlSearchGen">
+        <option value="">世代を選択してください</option>
+      </select>
+
+      <!-- 検索ボタン -->
+      <button id="BtnSearch" type="button">検索</button>
+
+    </div>
+  </div>
+
+  <!-- 検索結果 -->
+  <div class="middle">
+    <table class="poke-table">
+      <thead>
+        <tr>
+          <th width="5%" rowspan="2">画像</th>
+          <th width="5%" rowspan="2">番号</th>
+          <th width="15%">名前</th>
+          <th width="30%" colspan="3">フォルム</th>
+          <th width="15%">タマゴグループ</th>
+          <th width="10%">地方</th>
+          <th width="5%">HP</th>
+          <th width="5%">攻撃</th>
+          <th width="5%">防御</th>
+          <th width="5%">リンク</th>
+        </tr>
+        <tr>
+          <th width="15%">タイプ</th>
+          <th width="10%">特性1</th>
+          <th width="10%">特性2</th>
+          <th width="10%">隠れ特性</th>
+          <th>性別</th>
+          <th>世代</th>
+          <th width="5%">特攻</th>
+          <th width="5%">特防</th>
+          <th width="5%">素早さ</th>
+          <th width="5%">種族値</th>
+        </tr>
+      </thead>
+
+      <tbody id="SearchResultBody">
+        <!-- JS でここに結果を追加 -->
+      </tbody>
+    </table>
+
+    <p id="LblNoResult" class="no-result" style="display:none;">
+      見つかりませんでした。他の条件で検索してください。
+    </p>
+  </div>
+  </div>
+  
+
+  <div class="bottom"></div>
+  <script src="SearchTypeDex.js"></script>
+
+</body>
+</html>
+<!--file:///Users/takeshitaseiya/Desktop/MyWorkspace/workspace/pokedex2026/SearchTypeDex.html-->
