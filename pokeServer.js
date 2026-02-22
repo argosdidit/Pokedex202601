@@ -1,21 +1,22 @@
+
 const express = require('express');
-const bodyParser = require('body-parser');
-const mysql = require('mysql2');
 const cors = require('cors');
+
 const app = express();
-app.use(bodyParser.json());
+app.use(cors());
+app.use(express.json());
 
 const port = process.env.PORT || 3001;
-app.listen(port, () => console.log(`Server running on ${port}`));
 
-app.use(cors());
-
-const connection = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'root',
-  database: 'POKEDB202601'
+app.get("/", (req, res) => {
+  res.send("Pokedex server running");
 });
+
+app.listen(port, () => {
+  console.log(`Server running on ${port}`);
+});
+
+
 
 //connection.connect((err) => {
 //  if (err) throw err;
