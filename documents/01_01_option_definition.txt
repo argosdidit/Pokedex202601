@@ -1,0 +1,1111 @@
+
+
+
+CREATE DATABASE POKEDB;
+USE POKEDB;
+
+
+
+
+
+CREATE TABLE GENERATION(
+GENERATIONID INTEGER PRIMARY KEY,
+SEDAI VARCHAR(5),
+GENERATION VARCHAR(15)
+);
+
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('01', '第01世代', 'Generation01');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('02', '第02世代', 'Generation02');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('03', '第03世代', 'Generation03');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('04', '第04世代', 'Generation04');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('05', '第05世代', 'Generation05');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('06', '第06世代', 'Generation06');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('07', '第07世代', 'Generation07');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('08', '第08世代', 'Generation08');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('09', '第09世代', 'Generation09');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('10', '第10世代', 'Generation10');
+
+INSERT INTO GENERATION(GENERATIONID, SEDAI, GENERATION)
+VALUES('99', '第99世代', 'Generation99');
+
+
+CREATE TABLE TYPE(
+TYPEID INTEGER PRIMARY KEY,
+TAIPU VARCHAR(10),
+TYPE VARCHAR(10),PATHTYPE VARCHAR(11)
+);
+
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('01', 'ノーマル', 'NORMAL', 'type/01.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('02', 'ほのお', 'FIRE', 'type/02.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('03', 'みず', 'WATER', 'type/03.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('04', 'くさ', 'GRASS', 'type/04.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('05', 'でんき', 'ELECTRIC', 'type/05.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('06', 'こおり', 'ICE', 'type/06.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('07', 'かくとう', 'FIGHT', 'type/07.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('08', 'どく', 'POISON', 'type/08.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('09', 'じめん', 'GROUND', 'type/09.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('10', 'ひこう', 'FLYING', 'type/10.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('11', 'エスパー', 'PSYCHIC', 'type/11.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('12', 'むし', 'BUG', 'type/12.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('13', 'いわ', 'ROCK', 'type/13.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('14', 'ゴースト', 'GHOST', 'type/14.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('15', 'ドラゴン', 'DRAGON', 'type/15.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('16', 'あく', 'DARK', 'type/16.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('17', 'はがね', 'STEEL', 'type/17.png');
+
+INSERT INTO TYPE(TYPEID, TAIPU, TYPE, PATHTYPE)
+VALUES('18', 'フェアリー', 'FAIRY', 'type/18.png');
+
+
+CREATE TABLE GENDER(
+GENDERID INTEGER PRIMARY KEY,
+GENDER VARCHAR(20)
+);
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('01', '♂:50% ♀:50%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('02', '♂:75% ♀:25%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('03', '♂:25% ♀:75%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('04', '♂:87.5% ♀:12.5%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('05', '♂:12.5% ♀:87.5%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('06', '♂:100% ♀:0%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('07', '♂:0% ♀:100%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('08', '♂:? ♀:?');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('9', '♂:50% ♀:0%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('10', '♂:0% ♀:50%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('11', '♂:75% ♀:0%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('12', '♂:0% ♀:25%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('13', '♂:25% ♀:0%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('14', '♂:0% ♀:75%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('15', '♂:87.5% ♀:0%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('16', '♂:0% ♀:12.5%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('17', '♂:12.5% ♀:0%');
+
+INSERT INTO GENDER(GENDERID, GENDER)
+VALUES('18', '♂:0% ♀:87.5%');
+
+
+
+
+
+
+
+CREATE TABLE EGG_GROUP(
+EGG_GROUPID INTEGER PRIMARY KEY,
+TAMAGO_GROUP VARCHAR(10),
+EGG_GROUP VARCHAR(15)
+);
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('01', '植物', 'Grass');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('02', '虫', 'Bug');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('03', '飛行', 'Flying');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('04', '人型', 'Human-Like');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('05', '怪獣', 'Monster');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('06', '妖精', 'Fairy');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('07', 'ドラゴン', 'Dragon');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('08', '鉱物', 'Mineral');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('09', '陸上', 'Field');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('10', '不定形', 'Amorphous');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('11', '水中1', 'Water1');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('12', '水中2', 'Water2');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('13', '水中3', 'Water3');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('14', 'メタモン', 'Ditto');
+
+INSERT INTO EGG_GROUP(EGG_GROUPID, TAMAGO_GROUP, EGG_GROUP)
+VALUES('15', '未発見', 'Undiscovered');
+
+
+
+CREATE TABLE REGION(
+REGIONID INTEGER PRIMARY KEY,
+CHIHO VARCHAR(15),
+REGION VARCHAR(10)
+);
+
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('01', 'カントー地方', 'Kanto');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('02', 'ジョウト地方', 'Johto');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('03', 'ホウエン地方', 'Hoenn');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('04', 'シンオウ地方', 'Sinnoh');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('05', 'イッシュ地方', 'Unova');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('06', 'カロス地方', 'Kalos');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('07', 'アローラ地方', 'Alola');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('08', 'ガラル地方', 'Galar');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('09', 'ヒスイ地方', 'Hisui');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('10', 'パルデア地方', 'Paldea');
+
+INSERT INTO REGION(REGIONID, CHIHO, REGION)
+VALUES('99', '地方', 'Unknown');
+
+
+
+CREATE TABLE ABILITY(
+ABILITYID INTEGER PRIMARY KEY,
+TOKUSEI VARCHAR(10),
+ABILITY VARCHAR(20),
+SETSUMEI TEXT(100),
+EXPLANATION TEXT(100),
+GENERATION INTEGER,
+FOREIGN KEY (GENERATION) REFERENCES GENERATION(GENERATIONID)
+);
+
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('001', 'しんりょく', 'Overgrow', 'HPが1/3以下の時、『くさ』タイプの技の威力が1.5倍になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('002', 'もうか', 'Blaze', 'HPが1/3以下の時、『ほのお』タイプの技の威力が1.5倍になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('003', 'げきりゅう', 'Torrent', 'HPが1/3以下の時、『みず』タイプの技の威力が1.5倍になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('004', 'りんぷん', 'Shield Dust', '技の追加効果を受けない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('005', 'だっぴ', 'Shed Skin', 'ターンごとに1/3の確率で状態異常が治る。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('006', 'ふくがん', 'Compound Eyes', '命中率が1.3倍になる。／野生のポケモンが道具を持っている確率が上がる(5%のものが20%になる)', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('007', 'むしのしらせ', 'Swarm', 'HPが1/3以下の時、『むし』タイプの技の威力が1.5倍になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('008', 'するどいめ', 'Keen Eye', '命中率ランクが下がらない。また、相手の回避率ランクの変化の影響を受けない。／レベルの低い野生のポケモンと出会いにくくなる(第7世代まで※未検証)。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('009', 'にげあし', 'Run Away', '野生のポケモンとの戦闘の場合、必ず逃げられる。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('010', 'こんじょう', 'Guts', '状態異常の時、『こうげき』が1.5倍になる。またその時、『やけど』状態による『こうげき』半減の効果を受けない。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('011', 'いかく', 'Intimidate', '戦闘に出たときに相手の『こうげき』ランクを1段階下げる。第8世代からは、特性『きもったま』『せいしんりょく』『どんかん』『マイペース』の相手には無効。／レベルの低い野生のポケモンと出会いにくくなる(第7世代まで※未検証)。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('012', 'せいでんき', 'Static', '直接攻撃を受けると、30%の確率で相手を『まひ』状態にする。／『でんき』タイプの野生のポケモンと出会いやすくなる。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('013', 'すながくれ', 'Sand Veil', '天気が『すなあらし』の時、『すばやさ』が2倍になる。また、『すなあらし』によるダメージを受けない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('014', 'どくのトゲ', 'Poison Point', '直接攻撃を受けると、30%の確率で相手を『どく』状態にする。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('015', 'メロメロボディ', 'Cute Charm', '直接攻撃を受けると、30%の確率で相手を『メロメロ』状態にする。性別が同じ場合や、性別不明の場合は効果がない。／異なる性別の野生のポケモンと出会いやすくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('016', 'もらいび', 'Flash Fire', '『ほのお』タイプの技を受けるとダメージや効果はなくなり、以後自分の『ほのお』タイプの技の威力が1.5倍になる。／『ほのお』タイプの野生のポケモンと出会いやすくなる(第8世代から)。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('017', 'せいしんりょく', 'Inner Focus', '相手の技で『ひるみ』状態にならない。なお、技『きあいパンチ』には影響しない。第8世代からは、相手の特性『いかく』の効果も受けない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('018', 'ようりょくそ', 'Chlorophyll', '天気が『にほんばれ』の時、『すばやさ』が2倍になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('019', 'ほうし', 'Effect Spore', '直接攻撃を受けると、30%の確率で相手を『どく』『まひ』『ねむり』状態のいずれかにする。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('020', 'ありじごく', 'Arena Trap', '相手は逃げたり、ポケモンを交代することができなくなる。ただし、相手が『ひこう』タイプや『ゴースト』タイプ、特性『ふゆう』の場合は効果がない。／野生のポケモンと出会いやすくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('021', 'ものひろい', 'Pickup', '毎ターン終了時に、そのターンに相手や味方(相手が優先)が消費した道具を拾って自分のものにする。自分が道具を持っていない時のみ発動する。『だっしゅつボタン』『ふうせん』には効果がない。／道具を持っていない時、戦闘後に10%の確率で道具を拾ってくる。戦闘に参加しなくてもよい。レベルに応じて拾ってくる道具が変化する。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('022', 'じゅうなん', 'Limber', '『まひ』状態にならない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('023', 'しめりけ', 'Damp', '全てのポケモンは技『じばく』『だいばくはつ』『ビックリヘッド』『ミストバースト』が失敗し、また特性『ゆうばく』が無効になる。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('024', 'ノーてんき', 'Cloud Nine', '全てのポケモンに対しての天気の影響がなくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('025', 'やるき', 'Vital Spirit', '『ねむり』状態にならない。技『ねむる』を使えない。／レベルの高い野生のポケモンと出会いやすくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('026', 'ちょすい', 'Water Absorb', '『みず』タイプの技を受けるとダメージや効果はなくなり、最大HPの1/4回復する。', '03');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('027', 'シンクロ', 'Synchronize', '相手の技や特性によって『どく』『まひ』『やけど』状態になった時、相手を同じ状態異常にする。／同じ『せいかく』の野生のポケモンと出会いやすくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('028', 'クリアボディ', 'Clear Body', '相手の能力ランクを下げる技や特性の効果を受けない。', '03');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('029', 'ヘドロえき', 'Liquid Ooze', 'HPを吸い取る技『きゅうけつ』『ギガドレイン』『すいとる』『ちからをすいとる』『デスウイング』『ドレインキッス』『ドレインパンチ』『パラボラチャージ』『メガドレイン』『やどりぎのタネ』『ゆめくい』を受けた時、逆に相手に本来回復する分のダメージを与える。『ちからをすいとる』は、『こうげき』ランクを下げる効果はある。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('030', 'いしあたま', 'Rock Head', '技『アフロブレイク』『ウッドハンマー』『じごくぐるま』『すてみタックル』『とっしん』『フレアドライブ』『ブレイブバード』『ボルテッカー』『もろはのずつき』『ワイルドボルト』の反動を受けない。技『わるあがき』の反動は受ける。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('031', 'がんじょう', 'Sturdy', 'HPが最大の時、『ひんし』状態になるダメージを受けても必ず1残る。また、一撃で『ひんし』になる技『じわれ』『ぜったいれいど』『つのドリル』『ハサミギロチン』を受けない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('032', 'どんかん', 'Oblivious', '『メロメロ』『ちょうはつ』『ゆうわく』状態にならない。第8世代からは、相手の特性『いかく』の効果も受けない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('033', 'マイペース', 'Own Tempo', '『こんらん』状態にならない。第8世代からは、相手の特性『いかく』の効果も受けない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('034', 'じりょく', 'Magnet Pull', '相手の『はがね』タイプのポケモンは逃げたり、ポケモンを交代することができなくなる。／『はがね』タイプの野生のポケモンと出会いやすくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('035', 'はやおき', 'Early Bird', '『ねむり』状態の時、ねむり状態のターン経過が2倍になり、通常より早く回復する。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('036', 'あついしぼう', 'Thick Fat', '『ほのお』『こおり』タイプの技を受けた時、ダメージが半減する。
+', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('037', 'あくしゅう', 'Stench', '相手に技のダメージを与えると、10%の確率でひるませる。／野生のポケモンと出会いにくくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('038', 'ねんちゃく', 'Sticky Hold', '持っている道具を相手に奪われない。／『てもち』の先頭にいると釣りが成功しやすくなる(第7世代まで※未検証)。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('039', 'シェルアーマー', 'Shell Armor', '自分への攻撃は急所に当たらない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('040', 'ふゆう', 'Levitate', '『じめん』タイプの技を受けない。また、技『どくびし』『まきびし』『ねばねばネット』や特性『ありじごく』の効果を受けない。『エレキフィールド』『サイコフィールド』『グラスフィールド』『ミストフィールド』の効果も受けない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('041', 'ふみん', 'Insomnia', '『ねむり』状態にならない。技『ねむる』を使えない。この特性を獲得する前に『ねむり』状態になっていた場合は、『ねむり』状態を回復する。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('042', 'かいりきバサミ', 'Hyper Cutter', '相手の技や特性で『こうげき』ランクが下がらない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('043', 'ぼうおん', 'Soundproof', '音系の技『いびき』『いやしのすず』『いやなおと』『うたう』『うたかたのアリア』『エコーボイス』『おしゃべり』『おたけび』『きんぞくおん』『くさぶえ』『さわぐ』『スケイルノイズ』『すてゼリフ』『チャームボイス』『ちょうおんぱ』『とおぼえ』『ないしょばなし』『なきごえ』『バークアウト』『ハイパーボイス』『ばくおんぱ』『ほえる』『ほろびのうた』『むしのさざめき』『りんしょう』『ブレイジングソウルビート』『オーバードライブ』『ぶきみなじゅもん』を受けない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('044', 'ひらいしん', 'Lightning Rod', '『でんき』タイプの技を受けるとダメージが無効化され、自分の『とくこう』ランクが1段階上がる。またダブルバトルの時、自分以外の全てのポケモンの『でんき』タイプの単体攻撃技の攻撃対象が自分になる。(攻撃対象が複数の技の場合はそのまま)／『でんき』タイプの野生のポケモンと出会いやすくなる(第8世代から)。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('045', 'しぜんかいふく', 'Natural Cure', '他のポケモンに交代すると異常状態が回復する。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('046', 'てんのめぐみ', 'Serene Grace', '技の追加効果の発生率が2倍になる。', '03');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('047', 'すいすい', 'Swift Swim', '天気が『あめ』の時、『すばやさ』が2倍になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('048', 'みずのベール', 'Water Veil', '『やけど』状態にならない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('049', 'はっこう', 'Illuminate', '野生のポケモンと出会いやすくなる。', '03');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('050', 'ほのおのからだ', 'Flame Body', '直接攻撃を受けると、30%の確率で相手を『やけど』状態にする。／『てもち』にいると、ポケモンのタマゴが2倍かえりやすくなる。(必要な歩数が半分になる)', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('051', 'ちくでん', 'Volt Absorb', '『でんき』タイプの技を受けるとダメージや効果はなくなり、最大HPの1/4回復する。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('052', 'トレース', 'Trace', '場に出た時、相手と同じ特性になる。相手が2体いる場合はランダムにどちらかの特性が選ばれる。相手の特性が『ARシステム』『イリュージョン』『かがくのちから』『かわりもの』『きずなへんげ』『ぎょぐん』『じんばいったい』『スワームチェンジ』『ぜったいねむり』『ダルマモード』『てんきや』『トレース』『ばけのかわ』『バトルスイッチ』『フラワーギフト』『マルチタイプ』『リミットシールド』『レシーバー』の場合は効果がなく、相手が別の特性のポケモンとなった時に発動する。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('053', 'カブトアーマー', 'Battle Armor', '自分への攻撃は急所に当たらない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('054', 'プレッシャー', 'Pressure', '技を受けた時、技のPPを2減らす。／レベルの高い野生のポケモンと出会いやすくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('055', 'めんえき', 'Immunity', '『どく』状態にならない。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('056', 'はりきり', 'Hustle', '『こうげき』が1.5倍になるが、物理攻撃の命中率が0.8倍になる。／レベルの高い野生のポケモンと出会いやすくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('057', 'ちからもち', 'Huge Power', '攻撃時の自分の『こうげき』が2倍になる。なお、技『イカサマ』の場合も、相手の『こうげき』を自分の能力にコピーした後に2倍にして攻撃する。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('058', 'かそく', 'Speed Boost', '毎ターン、『すばやさ』ランクが1段階ずつ上がる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('059', 'かげふみ', 'Shadow Tag', '相手は逃げたり、ポケモンを交代することができなくなる。相手が『ゴースト』タイプや特性『かげふみ』の場合は無効。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('060', 'マグマのよろい', 'Magma Armor', '『こおり』状態にならない。／『てもち』にいると、ポケモンのタマゴが2倍かえりやすくなる。(必要な歩数が半分になる)', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('061', 'きゅうばん', 'Suction Cups', '相手を交代させる技『ふきとばし』『ほえる』『ドラゴンテール』『ともえなげ』の効果を受けない。／『てもち』の先頭にいると釣りが成功しやすくなる(第7世代まで※未検証)。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('062', 'すなおこし', 'Sand Stream', '戦闘に出ると5ターンの間、天気が『すなあらし』になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('063', 'あめうけざら', 'Rain Dish', '天気が『あめ』の時毎ターン、HPが最大HPの1/16回復する。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('064', 'あめふらし', 'Drizzle', '戦闘に出ると5ターンの間、天気が『あめ』になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('065', 'なまけ', 'Truant', '攻撃後、次のターンは技が使えなくなる。交代などは可能。技『スキルスワップ』で入れ替えることや『いえき』で特性を無効化することはできるが、『シンプルビーム』『なかまづくり』『なやみのタネ』は効果がない。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('066', 'ふしぎなまもり', 'Wonder Guard', 'タイプ相性が『こうかは ばつぐん』でない技のダメージを受けない。ただし、タイプ相性に関係のない技は影響しない。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('067', 'ヨガパワー', 'Pure Power', '攻撃時の自分の『こうげき』が2倍になる。なお、技『イカサマ』の場合も、相手の『こうげき』を自分の能力にコピーした後に2倍にして攻撃する。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('068', 'プラス', 'Plus', '特性『プラス』か『マイナス』のポケモンが戦闘にいると『とくこう』が1.5倍になる。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('069', 'マイナス', 'Minus', '特性『プラス』か『マイナス』のポケモンが戦闘にいると『とくこう』が1.5倍になる。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('070', 'さめはだ', 'Rough Skin', '直接攻撃を受けると、相手のHPを相手の最大HPの1/8減らす。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('071', 'しろいけむり', 'White Smoke', '相手の能力ランクを下げる技や特性の効果を受けない。／野生のポケモンと出会いにくくなる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('072', 'ひでり', 'Drought', '戦闘に出ると5ターンの間、天気が『にほんばれ』になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('073', 'ふしぎなうろこ', 'Marvel Scale', '状態異常の時、『ぼうぎょ』が1.5倍になる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('074', 'てんきや', 'Forecast', '天気が『にほんばれ』の時は『ほのお』タイプに、『あめ』の時は『みず』タイプに、『あられ』の時は『こおり』タイプになり、姿がそれぞれ変化する。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('075', 'へんしょく', 'Color Change', '技を受けると、その技のタイプになる。', '03');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('076', 'エアロック', 'Air Lock', '全てのポケモンに対しての天気の影響がなくなる。', '03');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('077', 'ちどりあし', 'Tangled Feet', '『こんらん』状態の時、回避率が上がる。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('078', 'とうそうしん', 'Rivalry', '性別が同じ相手に対しては『こうげき』『とくこう』が1.25倍になるが、異なる場合は0.75倍になる。性別のないポケモンの場合は効果がない。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('079', 'マジックガード', 'Magic Guard', '直接のダメージ以外を受けない。具体的には、『どく』『やけど』状態や特性『さめはだ』『てつのトゲ』『とびだすなかみ』『ヘドロえき』『ゆうばく』、天気『あられ』『すなあらし』、技『あくむ』『うずしお』『からではさむ』『サンダープリズン』『しめつける』『ステルスロック』『すなじごく』『トラバサミ』『のろい』『はじけるほのお』『ふんじん』『ほのおのうず』『ほのおのちかい』『まきつく』『まきびし』『マグマストーム』『まとわりつく』『やどりぎのタネ』によるダメージ、反動のある技による反動ダメージや失敗時に受けるダメージ、『ニードルガード』『ふんじん』によるダメージ、道具『いのちのたま』『くっつきバリ』『くろいヘドロ』『ゴツゴツメット』の効果によるダメージを受けない。ただし『こんらん』『じばく』『だいばくはつ』『わるあがき』などには影響しない。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('080', 'かんそうはだ', 'Dry Skin', '『ほのお』タイプの技の受けるダメージが1.25倍になる。『みず』タイプの技を受けると、ダメージを受けずHPが最大HPの1/4回復する。また、天気が『にほんばれ』の時は毎ターン最大HPの1/8のダメージを受け、『あめ』の時は毎ターンHPが最大HPの1/8回復する。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('081', 'いろめがね', 'Tinted Lens', '自分の技のタイプ相性が『こうかは いまひとつのようだ』の場合、1/2倍の時は通常に、1/4倍の時は1/2倍になる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('082', 'テクニシャン', 'Technician', '威力が60以下の技の威力が1.5倍になる。威力の変動する技や、威力が修正された場合は修正後の威力で判定する。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('083', 'いかりのつぼ', 'Anger Point', '自分への攻撃が急所に当たると、『こうげき』ランクが最大まで上がる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('084', 'ノーガード', 'No Guard', 'お互いに技が命中率・回避率に関係なく必ず命中する。技『そらをとぶ』『とびはねる』『フリーフォール』『あなをほる』『ダイビング』『ゴーストダイブ』『シャドーダイブ』を使っている時でも命中する。／野生のポケモンと出会いやすくなる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('085', 'うるおいボディ', 'Hydration', '天気が『あめ』の時、ターン終了時に状態異常が回復する。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('086', 'スキルリンク', 'Skill Link', '1ターンに複数回連続で攻撃する技『おうふくビンタ』『スイープビンタ』『スケイルショット』『タネマシンガン』『たまなげ』『つっぱり』『つららばり』『とげキャノン』『ボーンラッシュ』『ミサイルばり』『みずしゅりけん』『みだれづき』『みだれひっかき』『れんぞくパンチ』『ロックブラスト』『トリプルキック』『トリプルアクセル』が1度目が成功すれば、必ず最大回数当たる。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('087', 'よちむ', 'Forewarn', '戦闘に出ると相手の覚えている技のうち、最も威力の高い技の名前が分かる。同じ威力の技がある場合はランダム。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('088', 'すてみ', 'Reckless', '技『アフロブレイク』『ウッドハンマー』『じごくぐるま』『すてみタックル』『とっしん』『とびげり』『とびひざげり』『もろはのずつき』『フレアドライブ』『ブレイブバード』『ボルテッカー』『ワイルドボルト』の威力が1.2倍になる。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('089', 'てつのこぶし', 'Iron Fist', 'パンチ系の技『アイスハンマー』『アームハンマー』『かみなりパンチ』『きあいパンチ』『グロウパンチ』『コメットパンチ』『シャドーパンチ』『スカイアッパー』『ドレインパンチ』『ばくれつパンチ』『バレットパンチ』『ピヨピヨパンチ』『プラズマフィスト』『ほのおのパンチ』『マッハパンチ』『メガトンパンチ』『れいとうパンチ』『れんぞくパンチ』『ダブルパンツァー』『あんこくきょうだ』『すいりゅうれんだ』の威力が1.2倍になる。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('090', 'リーフガード', 'Leaf Guard', '天気が『にほんばれ』の時、状態異常にならない。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('091', 'きもったま', 'Scrappy', '相手が『ゴースト』タイプでも、『ノーマル』『かくとう』タイプの技が等倍で当たる。第8世代からは、相手の特性『いかく』の効果も受けない。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('092', 'スナイパー', 'Sniper', '自分の攻撃が急所に当たると、ダメージが1.5倍ではなく2.25倍になる。', '04');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('093', 'フィルター', 'Filter', 'タイプ相性が『こうかは ばつぐん』の技の受けるダメージが3/4になる。例えば、2倍弱点の場合は1.5倍のダメージになる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('094', 'かたやぶり', 'Mold Breaker', '相手の特性の影響を受けずに攻撃できる。ただし、攻撃後に受ける効果は消えない。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('095', 'てきおうりょく', 'Adaptability', '自分の『タイプ』と同じ『タイプ』の技のダメージが1.5倍ではなく2倍になる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('096', 'ダウンロード', 'Download', '相手の『ぼうぎょ』が『とくぼう』より低い場合は『こうげき』ランクを、『とくぼう』の方が低い場合は『とくこう』ランクを1段階上げる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('097', 'サンパワー', 'Solar Power', '天気が『にほんばれ』の時、『とくこう』が1.5倍になるが、毎ターン終了時に最大HPの1/8のダメージを受ける。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('098', 'きょううん', 'Super Luck', '急所ランクが1段階上がった状態となり、自分の攻撃が急所に当たりやすくなる。／野生のポケモンが道具を持っている確率が上がる(5%のものが20%になる)(第8世代から)。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('099', 'くいしんぼう', 'Gluttony', '通常より早く、HPが最大HPの半分以下になると『きのみ』を使う。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('100', 'はやあし', 'Quick Feet', '状態異常の時、『すばやさ』が1.5倍になる。／野生のポケモンと出会いにくくなる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('101', 'ゆきがくれ', 'Snow Cloak', '天気が『あられ』の時、相手の技の命中率が0.8倍になる。また、『あられ』によるダメージを受けない。／フィールドの天気が『あられ』の時、野生のポケモンと出会いにくくなる(第7世代まで※未検証)。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('102', 'おみとおし', 'Frisk', '戦闘に出てきた時、すべての相手の持っている道具の名前が分かる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('103', 'ふくつのこころ', 'Steadfast', '相手の技でひるむと、『すばやさ』ランクが1段階上がる。', '04');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('104', 'ポイズンヒール', 'Poison Heal', '『どく』状態の時毎ターン、HPが減らずに最大HPの1/8だけ回復する。『もうどく』状態でも回復量は変わらない。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('105', 'ノーマルスキン', 'Normalize', '自分の全ての技が『ノーマル』タイプになる。さらに威力が1.2倍になる。(第6世代は威力上昇なし)', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('106', 'あとだし', 'Stall', '技を出す順番が必ず一番最後になる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('107', 'たんじゅん', 'Simple', '能力ランクの変化が2倍になる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('108', 'ハードロック', 'Solid Rock', 'タイプ相性が『こうかは ばつぐん』の技の受けるダメージが3/4になる。例えば、本来2倍弱点の場合は1.5倍のダメージに軽減される。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('109', 'きけんよち', 'Anticipation', '戦闘に出てきた時、相手が『こうかは ばつぐん』や一撃必殺となる技を持っているかが分かる。技の名前などは分からない。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('110', 'アイスボディ', 'Ice Body', '天気が『あられ』の時、ダメージを受けず、毎ターン終了時にHPが最大HPの1/16回復する。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('111', 'てんねん', 'Unaware', '相手の能力ランクの変化の影響を受けない。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('112', 'みつあつめ', 'Honey Gather', '道具を持っていない時、戦闘後にどうぐ『あまいミツ』を拾ってくることがある。戦闘に参加しなくてもよい。レベルが高い程、拾ってくる確率が上がる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('113', 'フラワーギフト', 'Flower Gift', '天気が『にほんばれ』の時、ポジフォルムにフォルムチェンジする。種族値などは変わらないが、自分とすべての味方の『こうげき』『とくぼう』が1.5倍になる。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('114', 'よびみず', 'Storm Drain', '『みず』タイプの技を受けるとダメージが無効化され、自分の『とくこう』ランクが1段階上がる。またダブルバトルの時、自分以外の全てのポケモンの『みず』タイプの単体攻撃技の攻撃対象が自分になる。(攻撃対象が複数の技の場合はそのまま)／『みず』タイプの野生のポケモンと出会いやすくなる(第8世代から)。', '04');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('115', 'ゆうばく', 'Aftermath', '相手の直接攻撃で『ひんし』になった時、相手に相手の最大HPの1/4のダメージを与える。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('116', 'かるわざ', 'Unburden', '持っている道具がなくなると『すばやさ』が2倍になる。再び道具を持つと元に戻る。最初から道具を持っていない場合は効果がない。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('117', 'ぶきよう', 'Klutz', '持っている道具の効果が発揮されない。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('118', 'たいねつ', 'Heatproof', '『ほのお』タイプの技を受けた時と、『やけど』状態によるダメージが半減する。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('119', 'ゆきふらし', 'Snow Warning', '戦闘に出ると5ターンの間、天気が『あられ』になる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('120', 'でんきエンジン', 'Motor Drive', '『でんき』タイプの技を受けるとダメージや効果はなくなり、『すばやさ』ランクが1段階上がる。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('121', 'スロースタート', 'Slow Start', '戦闘に出てから5ターンの間、『こうげき』『すばやさ』が半分になる。(技『なかまづくり』『シンプルビーム』『スキルスワップ』『なやみのタネ』『いえき』などで特性を変更したり、特性『かがくへんかガス』などで無効化することは可能)', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('122', 'ナイトメア', 'Bad Dreams', '相手が『ねむり』状態の時、相手のHPを相手の最大HPの1/8減らす。', '04');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('123', 'マルチタイプ', 'Multitype', '持っている『プレート』に対応して『タイプ』が変化する。', '04');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('124', 'はとむね', 'Big Pecks', '相手の『ぼうぎょ』ランクを下げる技や特性の効果を受けない。', '05');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('125', 'きんちょうかん', 'Unnerve', 'すべての相手は『きのみ』を使用できなくなる。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('126', 'すなかき', 'Sand Rush', '天気が『すなあらし』の時、『すばやさ』が2倍になる。また、『すなあらし』によるダメージを受けない。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('127', 'ちからずく', 'Sheer Force', '追加効果のある技を使うと、追加効果が発動しない代わりに威力が1.3倍になる。また、追加効果がある技を使うと、道具『いのちのたま』の反動効果や『かいがらのすず』の回復効果を受けない。攻撃対象の相手の道具『だっしゅつボタン』『レッドカード』『アッキのみ』『タラプのみ』および特性『にげごし』『ききかいひ』『へんしょく』『わるいてぐせ』『ぎゃくじょう』の効果も発動させない。なお、自分の能力ランクを下げる技や反動技、ダイマックス技は追加効果の対象ではない。', '05');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('128', 'フレンドガード', 'Friend Guard', '自分以外の味方が受けるダメージが3/4に軽減される。(ダブルバトル用)', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('129', 'すりぬけ', 'Infiltrator', '相手の『オーロラベール』『リフレクター』『ひかりのかべ』『しろいきり』『しんぴのまもり』『みがわり』の効果を受けない。／野生のポケモンと出会いにくくなる(第8世代から※未検証)。', '05');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('130', 'ミラクルスキン', 'Wonder Skin', '相手の変化技の命中する確率が50%より大きい場合、命中率が50%になる。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('131', 'すなのちから', 'Sand Force', '天気が『すなあらし』の時、自分の『じめん』『いわ』『はがね』タイプの技の威力が1.3倍になる。また、『すなあらし』によるダメージを受けない。', '05');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('132', 'まけんき', 'Defiant', '相手の技や特性で能力ランクが下がった時、自分の『こうげき』ランクが2段階上がる。自分や味方の技や特性で下がった場合は効果がない。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('133', 'せいぎのこころ', 'Justified', '『あく』タイプの技を受けると、『こうげき』ランクが1段階上がる。', '05');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('134', 'さいせいりょく', 'Regenerator', '他のポケモンに交代するとHPが最大HPの1/3回復する。', '05');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('135', 'アナライズ', 'Analytic', '自分の攻撃がターンで一番最後の時、技の威力が1.3倍になる。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('136', 'どくしゅ', 'Poison Touch', '相手に直接攻撃をすると、30%の確率で相手を『どく』状態にする。', '05');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('137', 'ぼうじん', 'Overcoat', '天気『あられ』『すなあらし』によるダメージを受けない。粉系の技『いかりのこな』『キノコのほうし』『しびれごな』『どくのこな』『ねむりごな』『ふんじん』『まほうのこな』『わたほうし』、特性『ほうし』の効果を受けない。', '05');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('138', 'のろわれボディ', 'Cursed Body', '相手から技を受けた時、30%の確率で3ターンの間、その相手の技を『かなしばり』状態にする。技が無効化された場合や、自分が『みがわり』状態の場合は発動しない。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('139', 'くだけるよろい', 'Weak Armor', '物理技を受けると、『ぼうぎょ』ランクが1段階下がり、『すばやさ』ランクが2段階上がる。(第6世代は1段階)', '05');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('140', 'しゅうかく', 'Harvest', 'ターン終了時、自分が最後に使用した『きのみ』が50%の確率で元に戻る。天気が『にほんばれ』の時は100%の確率で元に戻る。／『くさ』タイプの野生のポケモンと出会いやすくなる(第8世代から)。', '05');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('141', 'いやしのこころ', 'Healer', '毎ターン終了時、1/3の確率で自分以外の味方の状態異常が治る。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('142', 'じしんかじょう', 'Moxie', '自分の技で相手を倒すと、『こうげき』ランクが1段階上がる。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('143', 'びびり', 'Rattled', '『ゴースト』『むし』『あく』タイプの技を受けた時、『すばやさ』ランクが1段階上がる。第8世代からは、相手の特性『いかく』で『こうげき』が下がった時にも発動する。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('144', 'かわりもの', 'Imposter', '戦闘に出ると、相手のポケモンに変身し、『へんしん』状態になる。ダブルバトルでは正面の相手に変身するため、正面のポケモンがいない場合は失敗する。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('145', 'マルチスケイル', 'Multiscale', '自分の残りHPが最大値の時、受けるダメージが半減される。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('146', 'マジックミラー', 'Magic Bounce', '技『マジックコート』で跳ね返すことのできる技を跳ね返せる。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('147', 'そうしょく', 'Sap Sipper', '『くさ』タイプの技を受けると技が無効化され、『こうげき』ランクが1段階上がる。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('148', 'いたずらごころ', 'Prankster', '自分の使う変化技の優先度が1だけ加算される。優先度0の変化技も優先度+1として『すばやさ』に関係なく先制攻撃できる。ただし『あく』タイプの相手(味方は含まない)には変化技がすべて失敗する(第6世代は条件なし)。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('149', 'テレパシー', 'Telepathy', '味方の技のダメージを受けない。', '05');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('150', 'あまのじゃく', 'Contrary', '能力ランクを変化させる技の効果が逆になる(1段階上がるものは1段階下がる)。ダイマックス技の追加効果は影響を受けるが、第7世代の変化技のZワザによる追加効果については影響を受けない。', '05');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('151', 'わるいてぐせ', 'Pickpocket', '直接攻撃を受けた時、相手の持っている道具を奪う。', '05');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('152', 'ムラっけ', 'Moody', '毎ターン終了時、『こうげき』『ぼうぎょ』『とくこう』『とくぼう』『すばやさ』いずれかのランクが2段階上がり、別のランクが1段階下がる。(第7世代までは『回避率』『命中率』も含まれていた)', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('153', 'ライトメタル', 'Light Metal', '自分の『おもさ』が半分になる。(技『けたぐり』『くさむすび』対策などで有効)', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('154', 'ヘヴィメタル', 'Heavy Metal', '自分の『おもさ』が2倍になる。(技『ヘビーボンバー』などで有効)', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('155', 'どくぼうそう', 'Toxic Boost', '『どく』『もうどく』状態の時、自分の物理技の威力が1.5倍になる。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('156', 'ねつぼうそう', 'Flare Boost', '『やけど』状態の時、自分の特殊技の威力が1.5倍になる。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('157', 'ダルマモード', 'Zen Mode', '自分の残りHPが半分以下になるとフォルムチェンジする。回復して半分より多くなると元に戻る。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('158', 'ミイラ', 'Mummy', '直接攻撃を受けると、相手の特性を『ミイラ』にする(相手の本来の特性を無効化する)。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('159', 'よわき', 'Defeatist', '自分のHPが半分以下になると、『こうげき』『とくこう』が半減する。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('160', 'イリュージョン', 'Illusion', '手持ちの最後のポケモンの姿と名前で戦闘に出る。『タイプ』や能力に変化はない。ダメージを受けると元に戻る。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('161', 'てつのトゲ', 'Iron Barbs', '直接攻撃を受けると、相手のHPを相手の最大HPの1/8減らす。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('162', 'ターボブレイズ', 'Turboblaze', '相手の特性の影響を受けずに攻撃できる。ただし、攻撃後に受ける効果は消えない。', '05');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('163', 'テラボルテージ', 'Teravolt', '相手の特性の影響を受けずに攻撃できる。ただし、攻撃後に受ける効果は消えない。', '05');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('164', 'しょうりのほし', 'Victory Star', '自分と味方の技の命中率が上がる。', '05');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('165', 'かちき', 'Competitive', '相手の技や特性で能力ランクが下がると、『とくこう』ランクが2段階上がる。自分や味方の技や特性で下がった場合は効果がない。', '06');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('166', 'かたいツメ', 'Tough Claws', '直接攻撃する技の威力が1.3倍になる。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('167', 'メガランチャー', 'Mega Launcher', '波動系の技『あくのはどう』『はどうだん』『みずのはどう』『りゅうのはどう』『だいちのはどう』『こんげんのはどう』の技の威力が1.5倍になり、『いやしのはどう』は最大HPの3/4回復する。', '06');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('168', 'おやこあい', 'Parental Bond', '同じ技を1ターンに2回攻撃できる。2回目の攻撃は、威力が0.25倍になる。能力ランクを下げるなどの効果は2回分与えられる。1ターンに連続して攻撃する技や、複数の相手に攻撃する技の場合は2回攻撃できない。(第6世代は2回目威力0.5倍)', '06');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('169', 'スカイスキン', 'Aerilate', '自分の『ノーマル』タイプの技が『ひこう』タイプになり、さらに威力が1.2倍になる(第6世代は1.3倍)。ダイマックスすると、『ダイジェット』になるが、威力の補正はない。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('170', 'フェアリースキン', 'Pixilate', '自分の『ノーマル』タイプの技が『フェアリー』タイプになり、さらに威力が1.2倍になる(第6世代は1.3倍)。ダイマックスすると、『ダイフェアリー』になるが、威力の補正はない。', '06');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('171', 'フリーズスキン', 'Refrigerate', '自分の『ノーマル』タイプの技が『こおり』タイプになり、さらに威力が1.2倍になる。(第6世代は1.3倍)', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('172', 'がんじょうあご', 'Strong Jaw', 'あごやキバを使って攻撃する技『かみつく』『かみくだく』『ひっさつまえば』『ほのおのキバ』『かみなりのキバ』『こおりのキバ』『どくどくのキバ』『サイコファング』『エラがみ』『くらいつく』の威力が1.5倍になる。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('173', 'ぼうだん', 'Bulletproof', 'たま・爆弾系の技『アイスボール』『アシッドボム』『ウェザーボール』『エナジーボール』『エレキボール』『オクタンほう』『かえんだん』『かえんボール』『かふんだんご』『がんせきほう』『きあいだま』『くちばしキャノン』『ジャイロボール』『シャドーボール』『タネばくだん』『タネマシンガン』『タマゴばくだん』『たまなげ』『でんじほう』『どろばくだん』『はどうだん』『ヘドロばくだん』『マグネットボム』『ミストボール』『ロックブラスト』を無効化する。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('174', 'マジシャン', 'Magician', '自分の攻撃時、技を当てた相手が持っている道具を奪う。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('175', 'へんげんじざい', 'Protean', '自分の技を出す時、直前のタイミングで自分のタイプが技と同じタイプになる(タイプは変化したままになる)。変化技にも有効。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('176', 'ほおぶくろ', 'Cheek Pouch', '自分の持っている『きのみ』を食べる時、本来の効果に加えて、さらにHPも最大HPの1/3回復する。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('177', 'はやてのつばさ', 'Gale Wings', '自分の残りHPが最大値の時、優先度0の『ひこう』タイプの技を『すばやさ』に関係なく先制攻撃できる(優先度:+1)。(第6世代はHPの条件なし)', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('178', 'フラワーベール', 'Flower Veil', '味方すべての『くさ』タイプのポケモンは、味方自身以外の技や特性によって能力ランクを下げられず、状態異常にもならない。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('179', 'きょうせい', 'Symbiosis', '味方が道具を使ったり失った時、自分の持っている道具を味方に移動する。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('180', 'くさのけがわ', 'Grass Pelt', '場の状態が『グラスフィールド』の時、『ぼうぎょ』が1.5倍になる。', '06');INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('181', 'ファーコート', 'Fur Coat', '物理攻撃の受けるダメージが半減する。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('182', 'バトルスイッチ', 'Stance Change', '攻撃技を使用する場合ブレードフォルムになり(攻撃・特攻が高い)、技『キングシールド』を使用するとシールドフォルムになる(防御・特防が高い)。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('183', 'アロマベール', 'Aroma Veil', '自分と味方へのメンタル攻撃技『アンコール』『いちゃもん』『かいふくふうじ』『かなしばり』『ちょうはつ』『メロメロ』を無効化する。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('184', 'スイートベール', 'Sweet Veil', '自分や味方のポケモンは『ねむり』状態にならない。', '06');
+
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('185', 'ぬめぬめ', 'Gooey', '直接攻撃を受けると、相手の『すばやさ』ランクを1段階下げる。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('186', 'フェアリーオーラ', 'Fairy Aura', 'お互いのすべてのポケモンの『フェアリー』タイプの技の威力が4/3倍(1.33倍)になる。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('187', 'ダークオーラ', 'Dark Aura', 'お互いのすべてのポケモンの『あく』タイプの技の威力が4/3倍(1.33倍)になる。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('188', 'オーラブレイク', 'Aura Break', 'お互いのポケモンの特性『フェアリーオーラ』『ダークオーラ』の効果において、威力が4/3倍ではなく3/4倍(0.75倍)になる。', '06');
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('189', 'はじまりのうみ', 'Primordial Sea', '戦闘に出ている間、天気が『つよいあめ』になる。通常の天気『あめ』状態に加えて、『ほのお』タイプの攻撃技が無効になる。また、技『あまごい』『にほんばれ』『すなあらし』『あられ』が失敗し、特性『あめふらし』『ひでり』『すなおこし』『ゆきふらし』が発動しなくなる。この状態を変更できるのは特性『おわりのだいち』『デルタストリーム』のみ。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('190', 'おわりのだいち', 'Desolate Land', '戦闘に出ている間、天気が『ひざしがとてもつよい』になる。通常の天気『にほんばれ』状態に加えて、『みず』タイプの攻撃技が無効になる。また、技『あまごい』『にほんばれ』『すなあらし』『あられ』が失敗し、特性『あめふらし』『ひでり』『すなおこし』『ゆきふらし』が発動しなくなる。この状態を変更できるのは特性『はじまりのうみ』『デルタストリーム』のみ。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('191', 'デルタストリーム', 'Delta Stream', '戦闘に出ている間、天気が『らんきりゅう』になる。『ひこう』タイプのポケモンの弱点となるタイプの技のダメージが通常のダメージになる。また、技『あまごい』『にほんばれ』『すなあらし』『あられ』が失敗し、特性『あめふらし』『ひでり』『すなおこし』『ゆきふらし』が発動しなくなる。この状態を変更できるのは特性『はじまりのうみ』『おわりのだいち』のみ。', '06');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('192', 'サーフテール', 'Surge Surfer', '場の状態が『エレキフィールド』の時、『すばやさ』が2倍になる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('193', 'ゆきかき', 'Slush Rush', '天気が『あられ』の時、『すばやさ』が2倍になる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('194', 'カーリーヘア', 'Tangling Hair', '直接攻撃を受けると、相手の『すばやさ』ランクを1段階下げる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('195', 'エレキスキン', 'Galvanize', '自分の『ノーマル』タイプの技が『でんき』タイプになり、さらに威力が1.2倍になる。ダイマックスすると、『ダイサンダー』になるが、威力の補正はない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('196', 'かがくのちから', 'Power of Alchemy', '場にいる味方のポケモンが『ひんし』状態になった時、自分の特性がそのポケモンと同じ特性になる。場から離れると元に戻る(ダブルバトル用)。味方の特性が『ARシステム』『イリュージョン』『かがくのちから』『かわりもの』『きずなへんげ』『ぎょぐん』『スワームチェンジ』『ぜったいねむり』『ダルマモード』『てんきや』『トレース』『ばけのかわ』『バトルスイッチ』『ふしぎなまもり』『フラワーギフト』『マルチタイプ』『リミットシールド』『レシーバー』の場合は効果がない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('197', 'えんかく', 'Long Reach', '自分の使う技はすべて直接攻撃ではなくなる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('198', 'うるおいボイス', 'Liquid Voice', '自分の音系の技『いびき』『いやしのすず』『いやなおと』『うたう』『うたかたのアリア』『エコーボイス』『おしゃべり』『おたけび』『きんぞくおん』『くさぶえ』『さわぐ』『スケイルノイズ』『すてゼリフ』『チャームボイス』『ちょうおんぱ』『とおぼえ』『ないしょばなし』『なきごえ』『バークアウト』『ハイパーボイス』『ばくおんぱ』『ほえる』『ほろびのうた』『むしのさざめき』『りんしょう』『ソウルビート』『オーバードライブ』『ぶきみなじゅもん』の『タイプ』がすべて『みず』タイプになる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('199', 'はりこみ', 'Stakeout', '相手がポケモンを交代する時に攻撃すると、交代して出てきたポケモンに2倍のダメージを与える。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('200', 'バッテリー', 'Battery', '味方のポケモンの特殊技の威力が1.3倍になる。(ダブルバトル用)', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('201', 'おどりこ', 'Dancer', '場にいるポケモンが踊り系の技『ちょうのまい』『つるぎのまい』『はなびらのまい』『フェザーダンス』『フラフラダンス』『ほのおのまい』『みかづきのまい』『めざめるダンス』『りゅうのまい』『ソウルビート』を使うと、その直後に同じ技を使える。(自分の選択した技はこの特性とは別にもう一度行動できる)', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('202', 'ぎょぐん', 'Schooling', 'レベル20以上になると、残りHPが最大HPの1/4以上であれば、場に出た時かターン終了時に『むれたすがた』にフォルムチェンジする。残りHPが最大HPの1/4以下になると、ターン終了時に『たんどくのすがた』に戻る。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('203', 'ひとでなし', 'Merciless', '相手が『どく』『もうどく』状態の時、自分の攻撃が必ず急所に当たる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('204', 'じきゅうりょく', 'Stamina', '技のダメージを受けると、『ぼうぎょ』ランクが1段階上がる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('205', 'すいほう', 'Water Bubble', '『みず』タイプの技の威力が2倍になる。また、『ほのお』タイプの技を受けた時、ダメージが半減する。さらに『やけど』状態にならない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('206', 'ふしょく', 'Corrosion', '『どく』『はがね』タイプのポケモンも『どく』『もうどく』状態にできる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('207', 'もふもふ', 'Fluffy', '直接攻撃の技を受けた時、ダメージが半減する。また、『ほのお』タイプの技を受けた時、ダメージが2倍になる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('208', 'じょおうのいげん', 'Queenly Majesty', '自分と味方は、相手の先制技を受けない。なお、自分が使う先制技や味方から受ける先制技には影響しない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('209', 'ヒーリングシフト', 'Triage', '自分の使う回復技の優先度が3だけ加算される。優先度0の回復技も優先度+3として『すばやさ』に関係なく先制攻撃できる。対象となる回復技は『こうごうせい』や『ギガドレイン』『ドレインキッス』『フラワーヒール』『ねむる』など技の直接効果で回復する技のみで、『やどりぎのタネ』や『グラスフィールド』など状態変化技や『かふんだんご』には影響しない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('210', 'レシーバー', 'Receiver', '場にいる味方のポケモンが『ひんし』状態になった時、自分の特性がそのポケモンと同じ特性になる。場から離れると元に戻る(ダブルバトル用)。味方の特性が『ARシステム』『イリュージョン』『かがくのちから』『かわりもの』『きずなへんげ』『ぎょぐん』『スワームチェンジ』『ぜったいねむり』『ダルマモード』『てんきや』『トレース』『ばけのかわ』『バトルスイッチ』『ふしぎなまもり』『フラワーギフト』『マルチタイプ』『リミットシールド』『レシーバー』の場合は効果がない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('211', 'にげごし', 'Wimp Out', '相手の技のダメージで自分の残りHPが半分以下になると、他の手持ちのポケモンと交代する。相手の技のダメージ以外の場合や、すでに残りHPが半分以下の場合は発動しない。なお、野生のポケモンが相手の場合は交代せずに逃げ出す。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('212', 'ききかいひ', 'Emergency Exit', '相手の技のダメージで自分の残りHPが半分以下になると、他の手持ちのポケモンと交代する。相手の技のダメージ以外の場合や、すでに残りHPが半分以下の場合は発動しない。なお、野生のポケモンが相手の場合は交代せずに逃げ出す。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('213', 'みずがため', 'Water Compaction', '『みず』タイプの技を受けると、『ぼうぎょ』ランクが2段階上がる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('214', 'とびだすなかみ', 'Innards Out', '相手の技のダメージによって『ひんし』になった時、その最後の技を受けた時に残っていたHP分のダメージを技を使った相手に与える。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('215', ' ARシステム', 'RKS System', '持っている専用の道具『メモリ』の種類に対応して自分の『タイプ』が変化する。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('216', 'リミットシールド', 'Shields Down', '自分の残りHPが半分より多い時は防御に特化したフォルムで状態異常にならず、半分以下になると攻撃に特化したフォルムになる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('217', 'ぜったいねむり', 'Comatose', '常に『ねむり』状態で、他の状態異常にならない。『ねむり』状態で技を出せる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('218', 'ばけのかわ', 'Disguise', '1回だけ相手の技のダメージや『こんらん』状態による自傷ダメージを無効化し、フォルムチェンジする(能力などは変化しない)。その時、第8世代からは最大HPの1/8のダメージを受ける。ダメージ以外の効果や、状態異常、天気や道具、特性によるダメージなどには影響しない。一度フォルムチェンジすると、場から離れてもバトル中は元に戻らない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('219', 'ビビッドボディ', 'Dazzling', '自分と味方は、相手の先制技を受けない。なお、自分が使う先制技や味方から受ける先制技には影響しない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('220', 'ぎゃくじょう', 'Berserk', '相手の技のダメージで自分の残りHPが半分以下になると、『とくこう』ランクが1段階上がる。相手の技のダメージ以外の場合や、すでに残りHPが半分以下の場合は発動しない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('221', 'はがねつかい', 'Steelworker', '『はがね』タイプの技の威力が1.5倍になる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('222', 'エレキメイカー', 'Electric Surge', '戦闘に出ると5ターンの間、場の状態を『エレキフィールド』にする。(『ひこう』タイプや特性『ふゆう』などではない地面にいるすべてのポケモンは、『ねむり』状態にならず、また『でんき』タイプの技の威力が1.3倍になる)', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('223', 'サイコメイカー', 'Psychic Surge', '戦闘に出ると5ターンの間、場の状態を『サイコフィールド』にする。(『ひこう』タイプや特性『ふゆう』などではない地面にいるすべてのポケモンは、相手(味方は含まない)の先制技を受けなくなり、また『エスパー』タイプの技の威力が1.3倍になる)', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('224', 'グラスメイカー', 'Grass Surge', '戦闘に出ると5ターンの間、場の状態を『グラスフィールド』にする。(『ひこう』タイプや特性『ふゆう』などではない地面にいるすべてのポケモンは、毎ターン最大HPの1/16ずつ回復し、また『くさ』タイプの技の威力が1.3倍になり、技『じしん』『じならし』『マグニチュード』の受けるダメージが半減する)', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('225', 'ミストメイカー', 'Misty Surge', '戦闘に出ると5ターンの間、場の状態を『ミストフィールド』にする。(『ひこう』タイプや特性『ふゆう』などではない地面にいるすべてのポケモンは、状態異常にならず、また『ドラゴン』タイプの技の受けるダメージが半減する)', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('226', 'メタルプロテクト', 'Full Metal Body', '相手の能力ランクを下げる技や特性の効果を受けない。また、相手の特性『かたやぶり』の影響を受けない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('227', 'ファントムガード', 'Shadow Shield', '自分の残りHPが最大値の時、受けるダメージが半減される。また、相手の特性『かたやぶり』や技『メテオドライブ』『シャドーレイ』の影響を受けない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('228', 'ビーストブースト', 'Beast Boost', '自分の技で相手を倒すと、自分の最も高い能力の能力ランクが1段階上がる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('229', 'プリズムアーマー', 'Prism Armor', 'タイプ相性が『こうかは ばつぐん』の技の受けるダメージが3/4になる。例えば、本来2倍弱点の場合は1.5倍のダメージに軽減される。また、相手の特性『かたやぶり』や技『メテオドライブ』『シャドーレイ』の影響を受けない。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('230', 'ブレインフォース', 'Neuroforce', '自分の技のタイプ相性が効果抜群の場合、さらに威力が1.25倍になる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('231', 'ソウルハート', 'Soul-Heart', '場にいるポケモンが『ひんし』状態になる度に、自分の『とくこう』ランクが1段階上がる。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('232', 'きずなへんげ', 'Battle Bond', '自分の技で相手を倒すと、通常の『ゲッコウガ』から『サトシゲッコウガ』にフォルムチェンジする。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('233', 'スワームチェンジ', 'Power Construct', '自分の残りHPが半分以下になると『パーフェクトフォルム』にフォルムチェンジする。', '07');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('234', 'パステルベール', 'Pastel Veil', '自分と味方は、『どく』『もうどく』状態にならない。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('235', 'クイックドロウ', 'Quick Draw', '素早さに関係なく、30%の確率で同じ優先度の攻撃技を先制攻撃できる。変化技には効果がない。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('236', 'かがくへんかガス', 'Neutralizing Gas', '場にいる味方のポケモンが『ひんし』状態になった時、自分の特性がそのポケモンと同じ特性になる。場から離れると元に戻る(ダブルバトル用)。味方の特性が『ARシステム』『イリュージョン』『かがくのちから』『かわりもの』『きずなへんげ』『ぎょぐん』『スワームチェンジ』『ぜったいねむり』『ダルマモード』『てんきや』『トレース』『ばけのかわ』『バトルスイッチ』『ふしぎなまもり』『フラワーギフト』『マルチタイプ』『リミットシールド』『レシーバー』の場合は効果がない。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('237', 'バリアフリー', 'Screen Cleaner', 'お互いの場の『ひかりのかべ』『リフレクター』『オーロラベール』の効果が無効になる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('238', 'きみょうなくすり', 'Curious Medicine', '戦闘に出たとき、味方のポケモンの能力ランクの変化をもとに戻す。上がったランクも戻る。(ダブルバトル用)', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('239', 'ごりむちゅう', 'Gorilla Tactics', '同じ技しか出せなくなるが、物理技が1.5倍になる(『こうげき』を上げるのかは不明)。ダイマックス中は、すべての効果がない。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('240', 'さまようたましい', 'Wandering Spirit', '直接攻撃を受けると、自分と相手の特性を入れ替える。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('241', 'ぎたい', 'Mimicry', '場フィールドの状態にあわせて、自分の『タイプ』が変化する。『エレキフィールド』では『でんき』タイプ、『グラスフィールド』では『くさ』タイプ、『サイコフィールド』では『エスパー』タイプ、『ミストフィールド』では『フェアリー』になる。フィールドが戻ると、タイプも元に戻る。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('242', 'リベロ', 'Libero', '自分の技を出す時、直前のタイミングで自分のタイプが技と同じタイプになる(タイプは変化したままになる)。変化技にも有効。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('243', 'ミラーアーマー', 'Mirror Armor', '道具を持っていない時、戦闘後にどうぐ『あまいミツ』を拾ってくることがある。戦闘に参加しなくてもよい。レベルが高い程、拾ってくる確率が上がる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('244', 'わたげ', 'Cotton Down', '攻撃を受けると、自分以外のポケモンの『すばやさ』ランクを1段階下げる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('245', 'たまひろい', 'Ball Fetch', '道具を持っていない場合、1回目に投げて失敗したボールを手に入れる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('246', 'じょうききかん', 'Steam Engine', '『みず』タイプか『ほのお』タイプの技を受けると、自分の『すばやさ』ランクが6段階上がる。／『てもち』にいると、ポケモンのタマゴが2倍かえりやすくなる。(必要な歩数が半分になる)', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('247', 'じゅくせい', 'Ripen', '持っている『きのみ』を使う時、効果が2倍になる。例えば、『オボンのみ』は最大HPの1/2回復し、『ジャポのみ』『レンブのみ』は最大HPの1/4のダメージを与える。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('248', 'すなはき', 'Sand Spit', '技のダメージを受けると、5ターンの間、天気が『すなあらし』になる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('249', 'うのミサイル', 'Gulp Missile', '自分が技『なみのり』か『ダイビング』を使った時、HPが最大HPの半分以上の時は『うのみのすがた』に、半分以下の時は『まるのみのすがた』にフォルムチェンジする。その後相手から技のダメージを受けた時に、相手にも最大HPの1/4のダメージを与え、さらに『うのみのすがた』では『ぼうぎょ』ランクを1段階下げ、『まるのみのすがた』では『まひ』状態にする。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('250', 'スクリューおびれ', 'Propeller Tail', '特性『ひらいしん』『よびみず』や技『いかりのこな』『このゆびとまれ』『サイドチェンジ』『スポットライト』の攻撃対象を変更する効果の影響を受けずに攻撃できる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('251', 'パンクロック', 'Punk Rock', '自分の音系の技『いびき』『うたかたのアリア』『エコーボイス』『さわぐ』『スケイルノイズ』『チャームボイス』『バークアウト』『ハイパーボイス』『ばくおんぱ』『むしのさざめき』『りんしょう』『オーバードライブ』『ぶきみなじゅもん』の威力が1.3倍になる。また、自分が受ける音系の技のダメージが半減する。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('252', 'はがねのせいしん', 'Steely Spirit', '自分と味方の『はがね』タイプの技の威力が1.5倍になる。この特性のポケモンが複数いる場合は、効果が重複する。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('253', 'ほろびのボディ', 'Perish Body', '直接攻撃を受けると、3ターン終了後に、お互いのポケモンは『ひんし』状態になる(対象は2匹のみ)。それまでに交代したポケモンは効果が消える。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('254', 'こおりのりんぷん', 'Ice Scales', '特殊攻撃の受けるダメージが半減する。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('255', 'パワースポット', 'Power Spot', '複数のバトルで隣にいる味方が使う技の威力が1.3倍になる。(味方全員か隣だけかは未検証)', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('256', 'アイスフェイス', 'Ice Face', '『アイスフェイス』のフォルムの時、物理技を受けると、ダメージを受けずに『ナイスフェイス』にフォルムチェンジする。天気が『あられ』になると、再び『アイスフェイス』にフォルムチェンジする。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('257', 'はらぺこスイッチ', 'Hunger Switch', 'ターン終了時、『まんぷくもよう』と『はらぺこもよう』を交互にフォルムチェンジする。技『オーラぐるま』のタイプが、『まんぷく』の時は『でんき』、『はらぺこ』の時は『あく』タイプに変わる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('258', 'すじがねいり', 'Stalwart', '特性『ひらいしん』『よびみず』や技『いかりのこな』『このゆびとまれ』『サイドチェンジ』『スポットライト』の攻撃対象を変更する効果の影響を受けずに攻撃できる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('259', 'ふとうのけん', 'Intrepid Sword', '戦闘に出たときに自分の『こうげき』ランクが1段階上がる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('260', 'ふくつのたて', 'Dauntless Shield', '戦闘に出たときに自分の『ぼうぎょ』ランクが1段階上がる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('261', 'ふかしのこぶし', 'Unseen Fist', '直接攻撃の技を使うと、相手の『まもる』『みきり』『たたみがえし』『トーチカ』『キングシールド』『ニードルガード』『ブロッキング』の効果を受けない(『ダイウォール』を除く)。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('262', 'トランジスタ', 'Transistor', '『でんき』タイプの技の威力が1.5倍になる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('263', 'りゅうのあぎと', 'Dragon’s Maw', '『ドラゴン』タイプの技の威力が1.5倍になる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('264', 'しろのいななき', 'Chilling Neigh', '自分の技で相手を倒すと、『こうげき』ランクが1段階上がる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('265', 'くろのいななき', 'Grim Neigh', '自分の技で相手を倒すと、『とくこう』ランクが1段階上がる。', '08');
+
+INSERT INTO ABILITY (ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('266', 'じんばいったい', 'As One', '特性『きんちょうかん』に加えて、『はくばじょうのすがた』の場合は特性『しろのいななき』、『こくばじょうのすがた』の場合は特性『くろのいななき』の2つの特性の効果をあわせ持つ。', '08');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('267', 'はんすう', 'Cud Chew', '『きのみ』を食べた次のターンの終了時にも、もう1度同じ『きのみ』を食べることができる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('268', 'きれあじ', 'Sharpness', '切る技『アクアカッター』『いあいぎり』『エアカッター』『エアスラッシュ』『がんせきアックス』『きょじゅうざん』『きりさく』『クロスポイズン』『サイコカッター』『シェルブレード』『シザークロス』『しんぴのつるぎ』『せいなるつるぎ』『ソーラーブレード』『つじぎり』『つばめがえし』『ドゲザン』『ネズミざん』『はっぱカッター』『ひけん・ちえなみ』『むねんのつるぎ』『リーフブレード』『れんぞくぎり』の威力が1.5倍になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('269', 'しんがん', 'Mind’s Eye', 'あああ', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('270', 'とれないにおい', 'Lingering Aroma', '直接攻撃を受けると、相手の特性を『とれないにおい』にする。(相手の本来の特性を無効化する)', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('271', 'こんがりボディ', 'Well-Baked Body', 'ほのおタイプの技を受けると、ダメージを受けずに『ぼうぎょ』ランクが2段階上がる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('272', 'こぼれダネ', 'Seed Sower', '攻撃を受けると5ターンの間、場の状態を『グラスフィールド』にする。(ひこうタイプや特性『ふゆう』などではない地面にいるすべてのポケモンは、毎ターン最大HPの1/16ずつ回復し、またくさタイプの技の威力が1.3倍になり、技『じしん』『じならし』『マグニチュード』の受けるダメージが半減する)', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('273', 'きよめのしお', 'Purifying Salt', '状態異常にならない。また、ゴーストタイプの技の受けるダメージが半減する。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('274', 'でんきにかえる', 'Electromorphosis', '攻撃を受けた時に『じゅうでん』状態になり、一度だけ自分のでんきタイプの技の威力が2倍になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('275', 'ふうりょくでんき', 'Wind Power', '自分か味方が『おいかぜ』を使用した時や、風技『エアカッター』『かぜおこし』『かみなりあらし』『こがらしあらし』『こごえるかぜ』『たつまき』『ねっさのあらし』『ねっぷう』『はなふぶき』『はるのあらし』『ふきとばし』『ふぶき』『ぼうふう』『ようせいのかぜ』を受けると『じゅうでん』状態となり、一度だけ自分のでんきタイプの技の威力が2倍になる。(技は無効化できない)', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('276', 'ばんけん', 'Guard Dog', '相手の特性『いかく』の効果を受けず、『こうげき』ランクが1段階上がる。また、相手を交代させる技『ふきとばし』『ほえる』『ドラゴンテール』『ともえなげ』や、道具『レッドカード』の効果を受けない。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('277', 'かぜのり', 'Wind Rider', '自分の場が『おいかぜ』状態の時や、風技『エアカッター』『かぜおこし』『かみなりあらし』『こがらしあらし』『こごえるかぜ』『たつまき』『ねっさのあらし』『ねっぷう』『はなふぶき』『はるのあらし』『ふきとばし』『ふぶき』『ぼうふう』『ようせいのかぜ』を受けると技を無効化し、『こうげき』ランクが1段階上がる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('278', 'きんしのちから', 'Mycelium Might', '変化技を出す時、相手の特性の影響を受けない代わりに、必ず後攻になる。ただし、技の優先度は無視されない。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('279', 'いかりのこうら', 'Anger Shell', '自分の残りHPが半分より大きい時に、相手の攻撃によって残りHPが半分以下になると、自分の『ぼうぎょ』『とくぼう』ランクが1段階ずつ下がる一方、『こうげき』『とくこう』『すばやさ』ランクが1段階ずつ上がる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('280', 'びんじょう', 'Opportunist', '相手の能力ランクが上がった時、自分も同じように能力ランクが上がる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('281', 'いわはこび', 'Rocky Payload', 'いわタイプの技の威力が1.5倍になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('282', 'マイティチェンジ', 'Zero to Hero', '手持ちに戻ると、『マイティフォルム』にフォルムチェンジする。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('283', 'どしょく', 'Earth Eater', 'aaa)', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('284', 'どくげしょう', 'Toxic Debris', '物理技のダメージを受けると、相手の場を『どくびし』状態にし、相手はポケモンを交代する度に、出したポケモンが『どく』状態になる。(2度物理技を受けたあとは『もうどく』状態)', '09');
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('285', 'きょうえん', 'Costar', 'ダブルバトルで場に出た時、味方の能力ランクの変化を自分にコピーする。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('286', 'しれいとう', 'Commander', 'ダブルバトルで味方に『ヘイラッシャ』がいると口の中に入り、『ヘイラッシャ』の『こうげき』『ぼうぎょ』『とくこう』『とくぼう』『すばやさ』ランクが2段階ずつ上がる。口の中にいる間は、技を受けず、行動もできない。また自分もヘイラッシャも交代できない。ヘイラッシャが『ひんし』状態になると、もとに戻る。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('287', 'テイルアーマー', 'Armor Tail', '自分と味方は、相手の先制技を受けない。なお、自分が使う先制技や味方から受ける先制技には影響しない。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('288', 'そうだいしょう', 'Supreme Overlord', '場に出た時に、これまでに『ひんし』状態になった味方のポケモン数×10%だけ技の威力が上がる。(最大1.5倍)', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('289', 'こだいかっせい', 'Protosynthesis', '『ブーストエナジー』を持たせるか、天気が『にほんばれ』状態のとき、自分の一番高い能力が上がる。『すばやさ』の時は1.5倍になり、それ以外の時は1.3倍になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('290', 'クォークチャージ', 'Quark Drive', '『ブーストエナジー』を持たせるか、場が『エレキフィールド』状態のとき、自分の一番高い能力が上がる。『すばやさ』の時は1.5倍になり、それ以外の時は1.3倍になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('291', 'ねつこうかん', 'Thermal Exchange', 'ほのおタイプの技を受けると、『こうげき』ランクが1段階上がる。また、『やけど』状態にならない。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('292', 'おうごんのからだ', 'Good as Gold', '相手や味方の変化技を受けない。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('293', 'わざわいのおふだ', 'Tablets of Ruin', '自分以外のポケモンの『こうげき』が3/4倍(0.75倍)になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('294', 'わざわいのつるぎ', 'Sword of Ruin', '自分以外のポケモンの『ぼうぎょ』が3/4倍(0.75倍)になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('295', 'わざわいのうつわ', 'Vessel of Ruin', '自分以外のポケモンの『とくこう』が3/4倍(0.75倍)になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('296', 'わざわいのたま', 'Beads of Ruin', '自分以外のポケモンの『とくぼう』が3/4倍(0.75倍)になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('297', 'ひひいろのこどう', 'Orichalcum Pulse', '戦闘に出ると5ターンの間、天気が『にほんばれ』になる。また、天気が『にほんばれ』の時、『こうげき』が1.3倍になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('298', 'ハドロンエンジン', 'Hadron Engine', '戦闘に出ると5ターンの間、場の状態を『エレキフィールド』にする(ひこうタイプや特性『ふゆう』などではない地面にいるすべてのポケモンは、『ねむり』状態にならず、またでんきタイプの技の威力が1.3倍になる)。また、場が『エレキフィールド』の時、『とくこう』が1.3倍になる。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('299', 'かんろなミツ', 'Supersweet Syrup', 'わからない。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('300', 'おもてなし', 'Hospitality', 'わからない。', '09');INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('301', 'どくのくさり', 'Toxic Chain', 'わからない。', '09');INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('302', 'テラスチェンジ', 'Tera Shift', 'わからない。', '09');
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('303', 'テラスシェル', 'Tera Shell', 'わからない。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('304', 'ゼロフォーミング', 'Teraform Zero', 'わからない。', '09');
+
+INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('305', 'どくくぐつ', 'Poison Puppeteer', 'わからない。', '09');INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('306', 'おもかげやどし', 'Embody Aspect', 'わからない。', '09');INSERT INTO ABILITY(ABILITYID, TOKUSEI, ABILITY, EXPLANATION, GENERATION)
+VALUES('999', '未確認', 'Unknown', 'わからない。', '99');
