@@ -17,10 +17,15 @@ const connection = mysql.createConnection({
   database: 'POKEDB202601'
 });
 
-connection.connect((err) => {
-  if (err) throw err;
-  console.log('Connected to the database!');
+//connection.connect((err) => {
+//  if (err) throw err;
+//  console.log('Connected to the database!');
+//});
+
+app.get("/", (req, res) => {
+  res.send("Pokedex server running");
 });
+
 
 // =======================
 // API 定義
