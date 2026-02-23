@@ -28,18 +28,20 @@ client.connect()
   .then(() => console.log("DB接続成功"))
   .catch(err => console.error("DB接続エラー:", err));
 
-// =======================
-// API 定義（listen より前）
-// =======================
+// API
 app.get("/", (req, res) => {
   res.send("Pokedex API is running!");
 });
 
-// Render のポート対応（最後）
+// Render のポート対応
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+// =======================
+// API 定義
+// =======================
 
 /*NoのMin値を取得*/
 /*http://127.0.0.1:3001/api/poke/minNO*/
