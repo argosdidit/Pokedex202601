@@ -43,7 +43,8 @@ app.get('/api/poke/minNo', async (req, res) => {
     FROM
     public.pokedex0
     `;
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
 
     if (result.rows.length === 0) {
       return res.status(404).json({ message: 'POKÉMON is not found' });
@@ -67,7 +68,8 @@ app.get('/api/poke/maxNo', async (req, res) => {
     FROM
     public.pokedex0
     `;
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
 
     if (result.rows.length === 0) {
       return res.status(404).json({ message: 'POKÉMON is not found' });
@@ -98,7 +100,8 @@ app.get('/api/poke/type', async (req, res) => {
       ORDER BY typeid
     `;
 
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
     res.json(result.rows);
 
   } catch (err) {
@@ -121,7 +124,8 @@ app.get('/api/poke/ability', async (req, res) => {
       ORDER BY abilityid
     `;
 
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
     res.json(result.rows);
 
   } catch (err) {
@@ -144,7 +148,8 @@ app.get('/api/poke/gender', async (req, res) => {
       ORDER BY genderid
     `;
 
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
     res.json(result.rows);
 
   } catch (err) {
@@ -168,7 +173,8 @@ app.get('/api/poke/egg_group', async (req, res) => {
       ORDER BY egg_groupid
     `;
 
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
     res.json(result.rows);
 
   } catch (err) {
@@ -193,7 +199,8 @@ app.get('/api/poke/region', async (req, res) => {
       ORDER BY regionid
     `;
 
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
     res.json(result.rows);
 
   } catch (err) {
@@ -217,7 +224,8 @@ app.get('/api/poke/generation', async (req, res) => {
       ORDER BY generationid
     `;
 
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
     res.json(result.rows);
 
   } catch (err) {
@@ -251,7 +259,8 @@ app.get('/api/poke/min_max_value', async (req, res) => {
       FROM public.pokedex0
     `;
 
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
     res.json(result.rows);
 
   } catch (err) {
@@ -275,7 +284,8 @@ app.get('/api/poke', async (req, res) => {
       WHERE autonum = $1
     `;
 
-    const result = await pool.query(query, [autonum]);
+    //const result = await pool.query(query, [autonum]);
+    const result = await client.query(query, [autonum]);
 
     if (result.rows.length === 0) {
       return res.status(404).json({ message: 'Pokemon is not found' });
@@ -305,7 +315,8 @@ app.get('/api/pokelist', async (req, res) => {
       ORDER BY autonum
     `;
 
-    const result = await pool.query(query);
+    //const result = await pool.query(query);
+    const result = await client.query(query);
     res.json(result.rows);
 
   } catch (err) {
@@ -446,7 +457,8 @@ app.post('/api/search/type', async (req, res) => {
 
     sql += ` ORDER BY autonum`;
 
-    const result = await pool.query(sql, params);
+    //const result = await pool.query(sql, params);
+    const result = await client.query(sql, params);
     res.json(result.rows);
 
   } catch (err) {
@@ -549,7 +561,8 @@ app.post('/api/search/ability', async (req, res) => {
 
     sql += ` ORDER BY autonum`;
 
-    const result = await pool.query(sql, params);
+    //const result = await pool.query(sql, params);
+    const result = await client.query(sql, params);
     res.json(result.rows);
 
   } catch (err) {
@@ -627,7 +640,8 @@ app.post('/api/search/gender', async (req, res) => {
 
     sql += ` ORDER BY autonum`;
 
-    const result = await pool.query(sql, params);
+    //const result = await pool.query(sql, params);
+    const result = await client.query(sql, params);
     res.json(result.rows);
 
   } catch (err) {
@@ -710,7 +724,8 @@ app.post('/api/search/egg_group', async (req, res) => {
 
     sql += ` ORDER BY autonum`;
 
-    const result = await pool.query(sql, params);
+    //const result = await pool.query(sql, params);
+    const result = await client.query(sql, params);
     res.json(result.rows);
 
   } catch (err) {
@@ -791,7 +806,8 @@ app.post('/api/search/value', async (req, res) => {
 
     sql += ` ORDER BY autonum`;
 
-    const result = await pool.query(sql, params);
+    //const result = await pool.query(sql, params);
+    const result = await client.query(sql, params);
     res.json(result.rows);
 
   } catch (err) {
@@ -919,7 +935,8 @@ app.post('/api/search/form', async (req, res) => {
 
     sql += ` ORDER BY autonum`;
 
-    const result = await pool.query(sql, params);
+    //const result = await pool.query(sql, params);
+    const result = await client.query(sql, params);
     res.json(result.rows);
 
   } catch (err) {
