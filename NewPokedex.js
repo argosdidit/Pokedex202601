@@ -221,7 +221,8 @@ const PokeProject = (() => {
     getMinAUTONUM: async function(){
       if(flag){
         try{
-          const res = await fetch("http://127.0.0.1:3001/api/poke/minNo");
+          //const res = await fetch("http://127.0.0.1:3001/api/poke/minNo");
+          const res = await fetch("/api/poke/minNo");
           const data = await res.json();
           pokeMinAUTONUM = Number(data.min);
         }
@@ -235,7 +236,8 @@ const PokeProject = (() => {
     getMaxAUTONUM: async function(){
       if(flag){
         try{
-          const res = await fetch("http://127.0.0.1:3001/api/poke/maxNo");
+          //const res = await fetch("http://127.0.0.1:3001/api/poke/maxNo");
+          const res = await fetch("/api/poke/maxNo");
           const data = await res.json();
           pokeMaxAUTONUM = Number(data.max);
         }
@@ -253,7 +255,8 @@ const PokeProject = (() => {
         
         try
         {
-          const res = await fetch(`http://127.0.0.1:3001/api/poke?autonum=${pokeTargetAUTONUM}`);
+          //const res = await fetch(`http://127.0.0.1:3001/api/poke?autonum=${pokeTargetAUTONUM}`);
+          const res = await fetch(`/api/poke?autonum=${pokeTargetAUTONUM}`);
           const data = await res.json();
           pokeAUTONUM = data.autonum;
           pokeNO = data.no;
@@ -599,7 +602,8 @@ const PokeProject = (() => {
     makeFieldDisplayPokeList: async function(){
       if(flag){
         try{
-          const response = await fetch('http://127.0.0.1:3001/api/pokelist');
+          //const response = await fetch('http://127.0.0.1:3001/api/pokelist');
+          const response = await fetch('/api/pokelist');
           const data = await response.json();
 
           areaDisplayPokeList = document.querySelector(`[${conf.fieldDisplayPokeList}]`);
@@ -661,5 +665,4 @@ const PokeProject = (() => {
 
 window.addEventListener('load', function(){
   PokeProject();
-
 });
