@@ -945,5 +945,10 @@ app.post('/api/search/form', async (req, res) => {
   }
 });
 
+// Render のポート対応（最後）
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 /***********************************************************************/
