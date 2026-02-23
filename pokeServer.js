@@ -18,7 +18,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 app.use(express.static(__dirname));
 
-// DB 接続設定
+// DB 接続設定（Client を使用）
 const client = new Client({
   connectionString: process.env.DATABASE_URL,
   ssl: { rejectUnauthorized: false }
@@ -27,17 +27,6 @@ const client = new Client({
 client.connect()
   .then(() => console.log("DB接続成功"))
   .catch(err => console.error("DB接続エラー:", err));
-
-// API
-app.get("/", (req, res) => {
-  res.send("Pokedex API is running!");
-});
-
-// Render のポート対応
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
 
 // =======================
 // API 定義
