@@ -97,7 +97,8 @@ const PokeSearch = (() => {
     },
     initGenderTable: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/gender')
+        //fetch('http://127.0.0.1:3001/api/poke/gender')
+        fetch('/api/poke/gender')
           .then(res => res.json())
           .then(genders => func.renderGenderTable(genders));
       }
@@ -136,7 +137,8 @@ const PokeSearch = (() => {
     },
     initRegionList: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/region')
+        //fetch('http://127.0.0.1:3001/api/poke/region')
+        fetch('/api/poke/region')
           .then(res => res.json())
           .then(regions => func.renderRegionList(regions));
       }
@@ -157,7 +159,8 @@ const PokeSearch = (() => {
     },
     initGenList: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/generation')
+        //fetch('http://127.0.0.1:3001/api/poke/generation')
+        fetch('/api/poke/generation')
           .then(res => res.json())
           .then(gens => func.renderGenList(gens));
       }
@@ -183,7 +186,8 @@ const PokeSearch = (() => {
         const region = document.getElementById("DdlSearchRegion").value;
         const generation = document.getElementById("DdlSearchGen").value;
 
-        fetch('http://127.0.0.1:3001/api/search/gender', {
+        //fetch('http://127.0.0.1:3001/api/search/gender', {
+        fetch('/api/search/gender', {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({name, genders, region, generation})

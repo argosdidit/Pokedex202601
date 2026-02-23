@@ -98,7 +98,8 @@ const PokeSearch = (() => {
     },
     initAbilityTable: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/ability')
+        //fetch('http://127.0.0.1:3001/api/poke/ability')
+        fetch('/api/poke/ability')
           .then(res => res.json())
           .then(list => {
             abilityMaster = list;
@@ -181,7 +182,8 @@ const PokeSearch = (() => {
     },
     initRegionList: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/region')
+        //fetch('http://127.0.0.1:3001/api/poke/region')
+        fetch('/api/poke/region')
           .then(res => res.json())
           .then(regions => func.renderRegionList(regions));
       }
@@ -202,7 +204,8 @@ const PokeSearch = (() => {
     },
     initGenList: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/generation')
+        //fetch('http://127.0.0.1:3001/api/poke/generation')
+        fetch('/api/poke/generation')
           .then(res => res.json())
           .then(gens => func.renderGenList(gens));
       }
@@ -228,7 +231,8 @@ const PokeSearch = (() => {
         const region = document.getElementById("DdlSearchRegion").value;
         const generation = document.getElementById("DdlSearchGen").value;
 
-        fetch('http://127.0.0.1:3001/api/search/ability', {
+        //fetch('http://127.0.0.1:3001/api/search/ability', {
+        fetch('/api/search/ability', {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({name, abilities, region, generation})

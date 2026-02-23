@@ -97,7 +97,8 @@ const PokeSearch = (() => {
     },
     initEggGroupTable: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/egg_group')
+        //fetch('http://127.0.0.1:3001/api/poke/egg_group')
+        fetch('/api/poke/egg_group')
           .then(res => res.json())
           .then(egg_groups => func.renderEggGroupTable(egg_groups));
       }
@@ -136,7 +137,8 @@ const PokeSearch = (() => {
     },
     initRegionList: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/region')
+        //fetch('http://127.0.0.1:3001/api/poke/region')
+        fetch('/api/poke/region')
           .then(res => res.json())
           .then(regions => func.renderRegionList(regions));
       }
@@ -157,7 +159,8 @@ const PokeSearch = (() => {
     },
     initGenList: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/generation')
+        //fetch('http://127.0.0.1:3001/api/poke/generation')
+        fetch('/api/poke/generation')
           .then(res => res.json())
           .then(gens => func.renderGenList(gens));
       }
@@ -183,7 +186,8 @@ const PokeSearch = (() => {
         const region = document.getElementById("DdlSearchRegion").value;
         const generation = document.getElementById("DdlSearchGen").value;
 
-        fetch('http://127.0.0.1:3001/api/search/egg_group', {
+        //fetch('http://127.0.0.1:3001/api/search/egg_group', {
+        fetch('/api/search/egg_group', {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({name, egg_groups, region, generation})
