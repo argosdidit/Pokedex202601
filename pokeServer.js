@@ -2,6 +2,9 @@ import express from "express";
 import cors from "cors";
 import pkg from "pg";
 import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
+
 dotenv.config();
 
 const { Client } = pkg;
@@ -9,6 +12,11 @@ const { Client } = pkg;
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// ★ 静的ファイル配信（listen より前）
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.use(express.static(__dirname));
 
 // DB 接続設定
 const client = new Client({
@@ -20,32 +28,18 @@ client.connect()
   .then(() => console.log("DB接続成功"))
   .catch(err => console.error("DB接続エラー:", err));
 
-// ここに API ルートを書く
+// =======================
+// API 定義（listen より前）
+// =======================
 app.get("/", (req, res) => {
   res.send("Pokedex API is running!");
 });
 
-// Render のポート対応
+// Render のポート対応（最後）
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// 静的ファイル配信
-app.use(express.static(__dirname));
-
-
-
-
-// =======================
-// API 定義
-// =======================
 
 /*NoのMin値を取得*/
 /*http://127.0.0.1:3001/api/poke/minNO*/
