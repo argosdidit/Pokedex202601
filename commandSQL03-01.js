@@ -1,0 +1,85 @@
+// commandSQL01.js
+import pkg from 'pg';
+import dotenv from "dotenv";
+dotenv.config();
+
+const { Client } = pkg;
+
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false }
+});
+
+async function createView() {
+  try {
+    await client.connect();
+    console.log("DB接続成功");
+
+    
+
+    // --- tblPokedex ---
+    await client.query(
+    `
+    CREATE VIEW pokedex0 AS
+SELECT
+pokedex1.POKEID, pokedex1.NO,
+pokedex1.NAMAE, pokedex1.NAME, pokedex1.SUGATA, pokedex1.FORM,
+pokedex1.BUNRUI, pokedex1.CLASSIFICATION,
+TYPE1.TAIPU AS TAIPU1, TYPE1.TYPE AS TYPE1,
+TYPE2.TAIPU AS TAIPU2, TYPE2.TYPE AS TYPE2,
+ABILITY1.TOKUSEI AS TOKUSEI1, ABILITY1.ABILITY AS ABILITY1,
+ABILITY2.TOKUSEI AS TOKUSEI2, ABILITY2.ABILITY AS ABILITY2,
+HIDDEN_ABILITY.TOKUSEI AS YUME_TOKUSEI, HIDDEN_ABILITY.ABILITY AS HIDDEN_ABILITY,
+GENDER.GENDER AS GENDER,
+EGG_GROUP1.TAMAGO_GROUP AS TAMAGO_GROUP1, EGG_GROUP1.EGG_GROUP AS EGG_GROUP1,
+EGG_GROUP2.TAMAGO_GROUP AS TAMAGO_GROUP2, EGG_GROUP2.EGG_GROUP AS EGG_GROUP2,
+REGION.CHIHO AS CHIHO, REGION.REGION AS REGION,
+GENERATION.SEDAI AS SEDAI, GENERATION.GENERATION AS GENERATION,
+pokedex2.HP, pokedex2.ATTACK, pokedex2.DEFENSE,
+pokedex2.SP_ATK, pokedex2.SP_DEF, pokedex2.SPEED,
+pokedex2.SUM,
+pokedex3.PATH_NORMAL_FRONT, pokedex3.PATH_NORMAL_BACK,
+pokedex3.PATH_SHINY_FRONT, pokedex3.PATH_SHINY_BACK,
+pokedex4.PATH_TYPECHART_BRIGHT, pokedex4.PATH_TYPECHART_DARK,
+pokedex1.AUTONUM
+
+FROM pokedex1
+INNER JOIN pokedex2
+ON pokedex1.POKEID = pokedex2.POKEID
+INNER JOIN pokedex3
+ON pokedex1.POKEID = pokedex3.POKEID
+INNER JOIN pokedex4
+ON pokedex1.POKEID = pokedex4.POKEID
+
+LEFT JOIN TYPE TYPE1
+ON pokedex1.TYPE1 = TYPE1.TYPEID
+LEFT JOIN TYPE TYPE2
+ON pokedex1.TYPE2 = TYPE2.TYPEID
+LEFT JOIN ABILITY ABILITY1
+ON pokedex1.ABILITY1 = ABILITY1.ABILITYID
+LEFT JOIN ABILITY ABILITY2
+ON pokedex1.ABILITY2 = ABILITY2.ABILITYID
+LEFT JOIN ABILITY HIDDEN_ABILITY
+ON pokedex1.HIDDEN_ABILITY = HIDDEN_ABILITY.ABILITYID
+LEFT JOIN GENDER
+ON pokedex1.GENDER = GENDER.GENDERID
+LEFT JOIN EGG_GROUP EGG_GROUP1
+ON pokedex1.EGG_GROUP1 = EGG_GROUP1.EGG_GROUPID
+LEFT JOIN EGG_GROUP EGG_GROUP2
+ON pokedex1.EGG_GROUP2 = EGG_GROUP2.EGG_GROUPID
+LEFT JOIN REGION
+ON pokedex1.REGION = REGION.REGIONID
+LEFT JOIN GENERATION
+ON pokedex1.GENERATION = GENERATION.GENERATIONID;
+    `);
+
+    console.log("すべてのテーブル作成 & 初期データ挿入が完了しました！");
+  } catch (err) {
+    console.error("SQL実行エラー:", err);
+  } finally {
+    await client.end();
+    console.log("DB接続終了");
+  }
+}
+
+createView();
