@@ -1,26 +1,36 @@
-const express = require('express');
-const { Pool } = require('pg');
-const cors = require('cors');
+import express from "express";
+import cors from "cors";
+import pkg from "pg";
+import dotenv from "dotenv";
+dotenv.config();
+
+const { Client } = pkg;
 
 const app = express();
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
-const port = 3001;
-
-// PostgreSQL 接続設定
-const pool = new Pool({
-  host: 'localhost',        // ローカル開発時
-  user: 'takeshitaseiya',         // あなたの PostgreSQL ユーザー名
-  password: '',// あなたの PostgreSQL パスワード
-  database: 'pokedb202601', // あなたの DB 名
-  port: 5432,               // PostgreSQL のデフォルトポート
+// DB 接続設定
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false }
 });
 
-// 接続テスト
-pool.connect()
-  .then(() => console.log('Connected to PostgreSQL!'))
-  .catch(err => console.error('Connection error', err.stack));
+client.connect()
+  .then(() => console.log("DB接続成功"))
+  .catch(err => console.error("DB接続エラー:", err));
+
+// ここに API ルートを書く
+app.get("/", (req, res) => {
+  res.send("Pokedex API is running!");
+});
+
+// Render のポート対応
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
 
 
 // =======================
