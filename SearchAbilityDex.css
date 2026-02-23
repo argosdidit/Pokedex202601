@@ -204,6 +204,13 @@
   text-align: center;
 }
 
+.ability_option {
+  border: 1px #000 solid;
+  width: fit-content;
+  text-align: center;
+  display: inline-flex;
+}
+
 /* =========================
    名前検索
 ========================= */

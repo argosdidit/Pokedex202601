@@ -110,7 +110,7 @@ const PokeSearch = (() => {
       if(flag){
         fetch('http://127.0.0.1:3001/api/poke/type')
           .then(res => res.json())
-          .then(types => func.renderTypeTable(types));
+          .then(types => func.renderTypeTable(types).renderSelectOption());
       }
       return this;
     },
@@ -127,12 +127,30 @@ const PokeSearch = (() => {
             areaTypes.appendChild(row);
           }
           const img = document.createElement("img");
-          img.src= t.PATHTYPE;
-          img.dataset.typeid = t.TYPEID;
+          img.src= t.pathtype;
+          img.dataset.typeid = t.typeid;
           img.classList.add("type-icon");
           img.addEventListener("click", () => func.toggleTypeSelection(img));
           row.appendChild(img);
         });
+      }
+      return this;
+    },
+    renderSelectOption: function(){
+      if(flag){
+        const areaTypes = document.getElementById('TblSearchType');
+        let htmlSelectOption =
+        `
+        <br>
+        <div class="type_option">
+        <input type="radio" id="combination" name="type_selection" value="combination"><label for="combination">組み合わせ</label>
+        <input type="radio" id="single" name="type_selection" value="single"><label for="single">単タイプ</label>
+        <input type="radio" id="type1" name="type_selection" value="type1"><label for="type1">第1タイプ</label>
+        <input type="radio" id="type2" name="type_selection" value="type2"><label for="type2">第2タイプ</label>
+        </div>
+        `;
+        areaTypes.insertAdjacentHTML("beforeend", htmlSelectOption);
+        document.getElementById('combination').checked = true;
       }
       return this;
     },
@@ -150,8 +168,8 @@ const PokeSearch = (() => {
 
         regions.forEach(r => {
           const opt = document.createElement("option");
-          opt.value = r.REGIONID;
-          opt.textContent = `${r.REGIONID}: ${r.CHIHO}`;
+          opt.value = r.regionid;
+          opt.textContent = `${r.regionid}: ${r.chiho}`;
           ddlRegion.appendChild(opt);
         });
       }
@@ -171,24 +189,26 @@ const PokeSearch = (() => {
 
         gens.forEach(g => {
           const opt = document.createElement("option");
-          opt.value = g.GENERATIONID;
-          opt.textContent = `${g.GENERATIONID}: ${g.SEDAI}`;
+          opt.value = g.generationid;
+          opt.textContent = `${g.generationid}: ${g.sedai}`;
           ddlGen.appendChild(opt);
         });
       }
       return this;
     },
+    //組み合わせ, 単体タイプ, 第1タイプ, 第2タイプ
     searchTypePoke: function(){
       if(flag){
         const name = document.getElementById("TxtSearchName").value;
         const types = selectedTypes;
         const region = document.getElementById("DdlSearchRegion").value;
         const generation = document.getElementById("DdlSearchGen").value;
+        const selectedOption = document.querySelector('input[name="type_selection"]:checked')?.value;
 
         fetch('http://127.0.0.1:3001/api/search/type', {
           method: "POST",
           headers: {"Content-Type": "application/json"},
-          body: JSON.stringify({name, types, region, generation})
+          body: JSON.stringify({name, types, selectedOption, region, generation})
         })
         .then(res => res.json())
         .then(data => func.renderSearchResult(data));
@@ -237,30 +257,30 @@ const PokeSearch = (() => {
           const tr1 = document.createElement("tr");
           tr1.innerHTML =
           `
-          <td width="5%" rowspan="2"><img src="${p.PATH_NORMAL_FRONT}" class="middle-each-image"></td>
-          <td width="5%" rowspan="2">${p.NO}</td>
-          <td width="15%">${p.NAMAE}</td>
-          <td width="30%" colspan="3">${p.SUGATA ? p.SUGATA : ""}</td>
-          <td width="15%">${p.TAMAGO_GROUP1}${p.TAMAGO_GROUP2 ? "・" + p.TAMAGO_GROUP2 : ""}</td>
-          <td width="10%">${p.CHIHO}</td>
-          <td width="5%">${p.HP}</td>
-          <td width="5%">${p.ATTACK}</td>
-          <td width="5%">${p.DEFENSE}</td>
-          <td width="5%"><a href="NewPokedex.html?AUTONUM=${p.AUTONUM}">リンク</a></td>
+          <td width="5%" rowspan="2"><img src="${p.path_normal_front}" class="middle-each-image"></td>
+          <td width="5%" rowspan="2">${p.no}</td>
+          <td width="15%">${p.namae}</td>
+          <td width="30%" colspan="3">${p.sugata ? p.sugata : ""}</td>
+          <td width="15%">${p.tamago_group1}${p.tamago_group2 ? "・" + p.tamago_group2 : ""}</td>
+          <td width="10%">${p.chiho}</td>
+          <td width="5%">${p.hp}</td>
+          <td width="5%">${p.attack}</td>
+          <td width="5%">${p.defense}</td>
+          <td width="5%"><a href="NewPokedex.html?AUTONUM=${p.autonum}">リンク</a></td>
           `;
           const tr2 = document.createElement("tr");
           tr2.innerHTML =
           `
-          <td width="15%">${p.TAIPU1}${p.TAIPU2 ? "・" + p.TAIPU2 : ""}</td>
-          <td width="10%">${p.TOKUSEI1}</td>
-          <td width="10%">${p.TOKUSEI2 ? p.TOKUSEI2 : ""}</td>
-          <td width="10%">${p.YUME_TOKUSEI ? p.YUME_TOKUSEI : ""}</td>
-          <td>${p.GENDER}</td>
-          <td>${p.SEDAI}</td>
-          <td width="5%">${p.SP_ATK}</td>
-          <td width="5%">${p.SP_DEF}</td>
-          <td width="5%">${p.SPEED}</td>
-          <td width="5%">${p.SUM}</td>
+          <td width="15%">${p.taipu1}${p.taipu2 ? "・" + p.taipu2 : ""}</td>
+          <td width="10%">${p.tokusei1}</td>
+          <td width="10%">${p.tokusei2 ? p.tokusei2 : ""}</td>
+          <td width="10%">${p.yume_tokusei ? p.yume_tokusei : ""}</td>
+          <td>${p.gender}</td>
+          <td>${p.sedai}</td>
+          <td width="5%">${p.sp_atk}</td>
+          <td width="5%">${p.sp_def}</td>
+          <td width="5%">${p.speed}</td>
+          <td width="5%">${p.sum}</td>
           `;
           body.appendChild(tr1);
           body.appendChild(tr2);

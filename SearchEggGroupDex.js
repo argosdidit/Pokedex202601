@@ -112,8 +112,8 @@ const PokeSearch = (() => {
           const btn = document.createElement("button");
           btn.type = "button";
           btn.classList.add("egg_group-btn");
-          btn.textContent = g.TAMAGO_GROUP;
-          btn.dataset.egg_groupid = g.EGG_GROUPID;
+          btn.textContent = g.tamago_group;
+          btn.dataset.egg_groupid = g.egg_groupid;
           
           btn.addEventListener("click", () => {
             const id = Number(btn.dataset.egg_groupid);
@@ -148,8 +148,8 @@ const PokeSearch = (() => {
 
         regions.forEach(r => {
           const opt = document.createElement("option");
-          opt.value = r.REGIONID;
-          opt.textContent = `${r.REGIONID}: ${r.CHIHO}`;
+          opt.value = r.regionid;
+          opt.textContent = `${r.regionid}: ${r.chiho}`;
           ddlRegion.appendChild(opt);
         });
       }
@@ -169,8 +169,8 @@ const PokeSearch = (() => {
 
         gens.forEach(g => {
           const opt = document.createElement("option");
-          opt.value = g.GENERATIONID;
-          opt.textContent = `${g.GENERATIONID}: ${g.SEDAI}`;
+          opt.value = g.generationid;
+          opt.textContent = `${g.generationid}: ${g.sedai}`;
           ddlGen.appendChild(opt);
         });
       }
@@ -218,30 +218,30 @@ const PokeSearch = (() => {
           const tr1 = document.createElement("tr");
           tr1.innerHTML =
           `
-          <td width="5%" rowspan="2"><img src="${p.PATH_NORMAL_FRONT}" class="middle-each-image"></td>
-          <td width="5%" rowspan="2">${p.NO}</td>
-          <td width="15%">${p.NAMAE}</td>
-          <td width="30%" colspan="3">${p.SUGATA ? p.SUGATA : ""}</td>
-          <td width="15%">${p.TAMAGO_GROUP1}${p.TAMAGO_GROUP2 ? "・" + p.TAMAGO_GROUP2 : ""}</td>
-          <td width="10%">${p.CHIHO}</td>
-          <td width="5%">${p.HP}</td>
-          <td width="5%">${p.ATTACK}</td>
-          <td width="5%">${p.DEFENSE}</td>
-          <td width="5%"><a href="NewPokedex.html?AUTONUM=${p.AUTONUM}">リンク</a></td>
+          <td width="5%" rowspan="2"><img src="${p.path_normal_front}" class="middle-each-image"></td>
+          <td width="5%" rowspan="2">${p.no}</td>
+          <td width="15%">${p.namae}</td>
+          <td width="30%" colspan="3">${p.sugata ? p.sugata : ""}</td>
+          <td width="15%">${p.tamago_group1}${p.tamago_group2 ? "・" + p.tamago_group2 : ""}</td>
+          <td width="10%">${p.chiho}</td>
+          <td width="5%">${p.hp}</td>
+          <td width="5%">${p.attack}</td>
+          <td width="5%">${p.defense}</td>
+          <td width="5%"><a href="NewPokedex.html?AUTONUM=${p.autonum}">リンク</a></td>
           `;
           const tr2 = document.createElement("tr");
           tr2.innerHTML =
           `
-          <td width="15%">${p.TAIPU1}${p.TAIPU2 ? "・" + p.TAIPU2 : ""}</td>
-          <td width="10%">${p.TOKUSEI1}</td>
-          <td width="10%">${p.TOKUSEI2 ? p.TOKUSEI2 : ""}</td>
-          <td width="10%">${p.YUME_TOKUSEI ? p.YUME_TOKUSEI : ""}</td>
-          <td>${p.GENDER}</td>
-          <td>${p.SEDAI}</td>
-          <td width="5%">${p.SP_ATK}</td>
-          <td width="5%">${p.SP_DEF}</td>
-          <td width="5%">${p.SPEED}</td>
-          <td width="5%">${p.SUM}</td>
+          <td width="15%">${p.taipu1}${p.taipu2 ? "・" + p.taipu2 : ""}</td>
+          <td width="10%">${p.tokusei1}</td>
+          <td width="10%">${p.tokusei2 ? p.tokusei2 : ""}</td>
+          <td width="10%">${p.yume_tokusei ? p.yume_tokusei : ""}</td>
+          <td>${p.gender}</td>
+          <td>${p.sedai}</td>
+          <td width="5%">${p.sp_atk}</td>
+          <td width="5%">${p.sp_def}</td>
+          <td width="5%">${p.speed}</td>
+          <td width="5%">${p.sum}</td>
           `;
           body.appendChild(tr1);
           body.appendChild(tr2);

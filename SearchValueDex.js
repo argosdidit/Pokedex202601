@@ -138,77 +138,40 @@ const PokeSearch = (() => {
 
       return this;
     },
-    initAbilityTable: function(){
-      if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/ability')
-          .then(res => res.json())
-          .then(list => {
-            abilityMaster = list;
-            func.renderAbilityList();
-          });
-      }
-      return this;
-    },
-    renderAbilityList: function () {
-      if (flag){
-        const list = document.getElementById('AbilityList');
-        
-        list.innerHTML = '';
-        
-        abilityMaster.forEach(a => {
-          const btn = document.createElement('button');
-          btn.className = 'ability-button';
-          btn.textContent = a.TOKUSEI;
-          btn.dataset.key = a.ABILITYID;
-          
-          if (selectedAbilities.has(a.ABILITY))
-          {
-            btn.classList.add('selected');
-          }
-          
-          btn.addEventListener('click', () => {
-            func.toggleAbility(a);
-          });
-          
-          list.appendChild(btn);
-        });
-      }
-      return this;
-    },
     renderValueTable: function(values){
       if(flag){
-        minHP = values[0].MinHP;
-        maxHP = values[0].MaxHP;
+        minHP = values[0].minhp;
+        maxHP = values[0].maxhp;
         func.makeAreaHP();
         func.activateSliderHP();
 
-        minATTACK = values[0].MinATTACK;
-        maxATTACK = values[0].MaxATTACK;
+        minATTACK = values[0].minattack;
+        maxATTACK = values[0].maxattack;
         func.makeAreaATTACK();
         func.activateSliderATTACK();
 
-        minDEFENSE = values[0].MinDEFENSE;
-        maxDEFENSE = values[0].MaxDEFENSE;
+        minDEFENSE = values[0].mindefense;
+        maxDEFENSE = values[0].maxdefense;
         func.makeAreaDEFENSE();
         func.activateSliderDEFENSE();
 
-        minSP_ATK = values[0].MinSP_ATK;
-        maxSP_ATK = values[0].MaxSP_ATK;
+        minSP_ATK = values[0].minsp_atk;
+        maxSP_ATK = values[0].maxsp_atk;
         func.makeAreaSP_ATK();
         func.activateSliderSP_ATK();
 
-        minSP_DEF = values[0].MinSP_DEF;
-        maxSP_DEF = values[0].MaxSP_DEF;
+        minSP_DEF = values[0].minsp_def;
+        maxSP_DEF = values[0].maxsp_def;
         func.makeAreaSP_DEF();
         func.activateSliderSP_DEF();
 
-        minSPEED = values[0].MinSPEED;
-        maxSPEED = values[0].MaxSPEED;
+        minSPEED = values[0].minspeed;
+        maxSPEED = values[0].maxspeed;
         func.makeAreaSPEED();
         func.activateSliderSPEED();
 
-        minSUM = values[0].MinSUM;
-        maxSUM = values[0].MaxSUM;
+        minSUM = values[0].minsum;
+        maxSUM = values[0].maxsum;
         func.makeAreaSUM();
         func.activateSliderSUM();
       }
@@ -693,30 +656,30 @@ const PokeSearch = (() => {
           const tr1 = document.createElement("tr");
           tr1.innerHTML =
           `
-          <td width="5%" rowspan="2"><img src="${p.PATH_NORMAL_FRONT}" class="middle-each-image"></td>
-          <td width="5%" rowspan="2">${p.NO}</td>
-          <td width="15%">${p.NAMAE}</td>
-          <td width="30%" colspan="3">${p.SUGATA ? p.SUGATA : ""}</td>
-          <td width="15%">${p.TAMAGO_GROUP1}${p.TAMAGO_GROUP2 ? "・" + p.TAMAGO_GROUP2 : ""}</td>
-          <td width="10%">${p.CHIHO}</td>
-          <td width="5%">${p.HP}</td>
-          <td width="5%">${p.ATTACK}</td>
-          <td width="5%">${p.DEFENSE}</td>
-          <td width="5%"><a href="NewPokedex.html?AUTONUM=${p.AUTONUM}">リンク</a></td>
+          <td width="5%" rowspan="2"><img src="${p.path_normal_front}" class="middle-each-image"></td>
+          <td width="5%" rowspan="2">${p.no}</td>
+          <td width="15%">${p.namae}</td>
+          <td width="30%" colspan="3">${p.sugata ? p.sugata : ""}</td>
+          <td width="15%">${p.tamago_group1}${p.tamago_group2 ? "・" + p.tamago_group2 : ""}</td>
+          <td width="10%">${p.chiho}</td>
+          <td width="5%">${p.hp}</td>
+          <td width="5%">${p.attack}</td>
+          <td width="5%">${p.defense}</td>
+          <td width="5%"><a href="NewPokedex.html?AUTONUM=${p.autonum}">リンク</a></td>
           `;
           const tr2 = document.createElement("tr");
           tr2.innerHTML =
           `
-          <td width="15%">${p.TAIPU1}${p.TAIPU2 ? "・" + p.TAIPU2 : ""}</td>
-          <td width="10%">${p.TOKUSEI1}</td>
-          <td width="10%">${p.TOKUSEI2 ? p.TOKUSEI2 : ""}</td>
-          <td width="10%">${p.YUME_TOKUSEI ? p.YUME_TOKUSEI : ""}</td>
-          <td>${p.GENDER}</td>
-          <td>${p.SEDAI}</td>
-          <td width="5%">${p.SP_ATK}</td>
-          <td width="5%">${p.SP_DEF}</td>
-          <td width="5%">${p.SPEED}</td>
-          <td width="5%">${p.SUM}</td>
+          <td width="15%">${p.taipu1}${p.taipu2 ? "・" + p.taipu2 : ""}</td>
+          <td width="10%">${p.tokusei1}</td>
+          <td width="10%">${p.tokusei2 ? p.tokusei2 : ""}</td>
+          <td width="10%">${p.yume_tokusei ? p.yume_tokusei : ""}</td>
+          <td>${p.gender}</td>
+          <td>${p.sedai}</td>
+          <td width="5%">${p.sp_atk}</td>
+          <td width="5%">${p.sp_def}</td>
+          <td width="5%">${p.speed}</td>
+          <td width="5%">${p.sum}</td>
           `;
           body.appendChild(tr1);
           body.appendChild(tr2);

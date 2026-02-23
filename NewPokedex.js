@@ -51,8 +51,8 @@ const PokeProject = (() => {
   pokeSP_DEF,
   pokeSPEED,
   pokeSUM,
-  //pokePathNormal,
-  //pokePathShiny,
+  pokeBrightTypePath,
+  pokeDarkTypePath,
   pokeDisplayImage,
 
   //HTML関連(位置判定)
@@ -253,59 +253,62 @@ const PokeProject = (() => {
         
         try
         {
-          const res = await fetch(`http://127.0.0.1:3001/api/poke?AUTONUM=${pokeTargetAUTONUM}`);
+          const res = await fetch(`http://127.0.0.1:3001/api/poke?autonum=${pokeTargetAUTONUM}`);
           const data = await res.json();
-          pokeAUTONUM = data.AUTONUM;
-          pokeNO = data.NO;
-          pokeGENDER = data.GENDER;
+          pokeAUTONUM = data.autonum;
+          pokeNO = data.no;
+          pokeGENDER = data.gender;
 
           //JAP
-          pokeNAMAE = data.NAMAE;
-          pokeSUGATA = data.SUGATA;
-          pokeBUNRUI = data.BUNRUI;
-          pokeTAIPU1 = data.TAIPU1;
-          pokeTAIPU2 = data.TAIPU2;
-          pokeTOKUSEI1 = data.TOKUSEI1;
-          pokeTOKUSEI2 = data.TOKUSEI2;
-          pokeYUMETOKUSEI = data.YUME_TOKUSEI;
-          pokeTAMAGO_GROUP1 = data.TAMAGO_GROUP1;
-          pokeTAMAGO_GROUP2 = data.TAMAGO_GROUP2;
+          pokeNAMAE = data.namae;
+          pokeSUGATA = data.sugata;
+          pokeBUNRUI = data.bunrui;
+          pokeTAIPU1 = data.taipu1;
+          pokeTAIPU2 = data.taipu2;
+          pokeTOKUSEI1 = data.tokusei1;
+          pokeTOKUSEI2 = data.tokusei2;
+          pokeYUMETOKUSEI = data.yume_tokusei;
+          pokeTAMAGO_GROUP1 = data.tamago_group1;
+          pokeTAMAGO_GROUP2 = data.tamago_group2;
+          pokeCHIHO = data.chiho;
+          pokeSEDAI = data.sedai;
 
           //ENG
-          pokeNAME = data.NAME;
-          pokeFORM = data.FORM;
-          pokeCLASSIFICATION = data.CLASSIFICATION;
-          pokeTYPE1 = data.TYPE1;
-          pokeTYPE2 = data.TYPE2;
-          pokeABILITY1 = data.ABILIY1;
-          pokeABILITY2 = data.ABILITY2;
-          pokeHIDDENABILITY = data.HIDDEN_ABILITY;
-          pokeEGG_GROUP1 = data.EGG_GROUP1;
-          pokeEGG_GROUP2 = data.EGG_GROUP2;
-          pokeREGION = data.REGION;
-          pokeGENERATION = data.GENERATION;
+          pokeNAME = data.name;
+          pokeFORM = data.form;
+          pokeCLASSIFICATION = data.classification;
+          pokeTYPE1 = data.type1;
+          pokeTYPE2 = data.type2;
+          pokeABILITY1 = data.ability1;
+          pokeABILITY2 = data.ability2;
+          pokeHIDDENABILITY = data.hidden_ability;
+          pokeEGG_GROUP1 = data.egg_group1;
+          pokeEGG_GROUP2 = data.egg_group2;
+          pokeREGION = data.region;
+          pokeGENERATION = data.generation;
 
-          pokeHP = data.HP;
-          pokeATTACK = data.ATTACK;
-          pokeDEFENSE = data.DEFENSE;
-          pokeSP_ATK = data.SP_ATK;
-          pokeSP_DEF = data.SP_DEF;
-          pokeSPEED = data.SPEED;
-          pokeSUM = data.SUM;
-          pokeCHIHO = data.CHIHO;
-          pokeSEDAI = data.SEDAI;
+          pokeHP = data.hp;
+          pokeATTACK = data.attack;
+          pokeDEFENSE = data.defense;
+          pokeSP_ATK = data.sp_atk;
+          pokeSP_DEF = data.sp_def;
+          pokeSPEED = data.speed;
+          pokeSUM = data.sum;
+          
+          pokeBrightTypePath = data.path_typechart_bright;
+          pokeDarkTypePath = data.path_typechart_dark;
           
           if(whichImage === imageNormal)
           {
-            pokeDisplayImage = data.PATH_NORMAL_FRONT;
+            pokeDisplayImage = data.path_normal_front;
           }
           else if(whichImage === imageShiny)
           {
-            pokeDisplayImage = data.PATH_SHINY_FRONT;
+            pokeDisplayImage = data.path_shiny_front;
           }
           else
           {
-            pokeDisplayImage = data.PATH_NORMAL_FRONT;
+            pokeDisplayImage = data.path_normal_front;
           }
           
           //タイプの調整
@@ -397,6 +400,7 @@ const PokeProject = (() => {
         areaPokeInfo = document.querySelector(`[${conf.fieldPokeInfo}]`);
         htmlPokeInfo =
         `
+        <h3>< ステータス ></h3>
         <table border="1">
         <colgroup>
         <col span="1" style="width: 10%">
@@ -445,6 +449,7 @@ const PokeProject = (() => {
         <td colspan="4">合計<br>${pokeSUM}</td>
         </tr>
         </table>
+        <iframe src="${pokeBrightTypePath}"></iframe>
         `;
 
         areaPokeInfo.insertAdjacentHTML('beforeend', htmlPokeInfo);
@@ -604,22 +609,22 @@ const PokeProject = (() => {
             const img = document.createElement('img');
             if(whichImage === imageNormal)
             {
-              img.src = pokemon.PATH_NORMAL_FRONT;
+              img.src = pokemon.path_normal_front;
             }
             else if(whichImage === imageShiny)
             {
-              img.src = pokemon.PATH_SHINY_FRONT;
+              img.src = pokemon.path_shiny_front;
             }
             else
             {
-              img.src = pokemon.PATH_NORMAL_FRONT;
+              img.src = pokemon.path_normal_front;
             }
-            img.alt = `Pokemon ${pokemon.AUTONUM}`;
-            img.dataset.AUTONUM = pokemon.AUTONUM;
+            img.alt = `Pokemon ${pokemon.autonum}`;
+            img.dataset.autonum = pokemon.autonum;
             img.classList.add('poke-image');
 
             img.addEventListener('click', () => {
-              func.getPokeData(pokemon.AUTONUM);
+              func.getPokeData(pokemon.autonum);
             });
 
             areaDisplayPokeList.appendChild(img);
