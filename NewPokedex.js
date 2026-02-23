@@ -109,7 +109,7 @@ const PokeProject = (() => {
 
       //URLに番号があれば(検索画面から呼び出された場合)
       const params = new URLSearchParams(window.location.search);
-      const getAUTONUM = params.get("AUTONUM");
+      const getAUTONUM = params.get("autonum");
 
       if(getAUTONUM !== null)
         pokeTargetAUTONUM = Number(getAUTONUM);
@@ -661,4 +661,5 @@ const PokeProject = (() => {
 
 window.addEventListener('load', function(){
   PokeProject();
+
 });
