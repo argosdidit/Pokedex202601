@@ -32,30 +32,6 @@ client.connect()
 // API 定義
 // =======================
 
-app.get('/api/poke/getimage', async (req, res) => {
-  try {
-    const query =
-    `
-    SELECT
-    *
-    FROM
-    public.pokedex3
-    `;
-    //const result = await pool.query(query);
-    const result = await client.query(query);
-
-    if (result.rows.length === 0) {
-      return res.status(404).json({ message: 'POKÉMON is not found' });
-    }
-
-    res.json(result.rows[0]);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'Server error' });
-  }
-});
-
-
 /*NoのMin値を取得*/
 /*http://127.0.0.1:3001/api/poke/minNO*/
 app.get('/api/poke/minNo', async (req, res) => {
@@ -719,6 +695,34 @@ app.post('/api/search/egg_group', async (req, res) => {
       params.push(...egg_groups, ...egg_groups);
       paramIndex += egg_groups.length * 2;
     }
+    // egg_group1 用のプレースホルダ
+    const egg_groupSql1 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
+    paramIndex += egg_groups.length;
+    
+    // egg_group2 用のプレースホルダ
+    const egg_groupSql2 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
+    paramIndex += egg_groups.length;
+    
+    sql += `
+    AND
+    (
+      (
+      egg_group1 IN
+        (
+        SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql1})
+        )
+      )
+      OR
+      (
+        egg_group2 IN
+          (
+          SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql2})
+          )
+        )
+      )
+      `;
+      params.push(...egg_groups); // egg_group1 用
+      params.push(...egg_groups); // egg_group2 用
 
     // 地方
     if (region) {
