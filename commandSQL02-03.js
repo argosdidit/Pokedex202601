@@ -3234,1899 +3234,1900 @@ VALUES('06660701', '0666', 'ビビヨン', 'はなぞののもよう', 'image/no
 INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
 VALUES('06660801', '0666', 'ビビヨン', 'モダンなもよう', 'image/normal/01_front/06660801.png', 'image/shiny/01_front/06660801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06660901', '0666', 'ビビヨン', 'マリンのもよう', 'image/normal/01_front/06660901.png', 'image/shiny/01_front/06660901.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661001', '0666', 'ビビヨン', 'ぐんとうのもよう', 'image/normal/01_front/06661001.png', 'image/shiny/01_front/06661001.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06660901', '0666', 'ビビヨン', 'マリンのもよう', 'image/normal/02_front/06660901.png', 'image/shiny/02_front/06660901.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661001', '0666', 'ビビヨン', 'ぐんとうのもよう', 'image/normal/02_front/06661001.png', 'image/shiny/02_front/06661001.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661101', '0666', 'ビビヨン', 'こうやのもよう', 'image/normal/01_front/06661101.png', 'image/shiny/01_front/06661101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661201', '0666', 'ビビヨン', 'さじんのもよう', 'image/normal/01_front/06661201.png', 'image/shiny/01_front/06661201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661101', '0666', 'ビビヨン', 'こうやのもよう', 'image/normal/02_front/06661101.png', 'image/shiny/02_front/06661101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661301', '0666', 'ビビヨン', 'たいがのもよう', 'image/normal/01_front/06661301.png', 'image/shiny/01_front/06661301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661201', '0666', 'ビビヨン', 'さじんのもよう', 'image/normal/02_front/06661201.png', 'image/shiny/02_front/06661201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661401', '0666', 'ビビヨン', 'スコールのもよう', 'image/normal/01_front/06661401.png', 'image/shiny/01_front/06661401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661301', '0666', 'ビビヨン', 'たいがのもよう', 'image/normal/02_front/06661301.png', 'image/shiny/02_front/06661301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661501', '0666', 'ビビヨン', 'サバンナのもよう', 'image/normal/01_front/06661501.png', 'image/shiny/01_front/06661501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661401', '0666', 'ビビヨン', 'スコールのもよう', 'image/normal/02_front/06661401.png', 'image/shiny/02_front/06661401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661601', '0666', 'ビビヨン', 'たいようのもよう', 'image/normal/01_front/06661601.png', 'image/shiny/01_front/06661601.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661501', '0666', 'ビビヨン', 'サバンナのもよう', 'image/normal/02_front/06661501.png', 'image/shiny/02_front/06661501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661701', '0666', 'ビビヨン', 'オーシャンのもよう', 'image/normal/01_front/06661701.png', 'image/shiny/01_front/06661701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661601', '0666', 'ビビヨン', 'たいようのもよう', 'image/normal/02_front/06661601.png', 'image/shiny/02_front/06661601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661801', '0666', 'ビビヨン', 'ジャングルのもよう', 'image/normal/01_front/06661801.png', 'image/shiny/01_front/06661801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661701', '0666', 'ビビヨン', 'オーシャンのもよう', 'image/normal/02_front/06661701.png', 'image/shiny/02_front/06661701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06661901', '0666', 'ビビヨン', 'ファンシーのもよう', 'image/normal/01_front/06661901.png', 'image/shiny/01_front/06661901.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661801', '0666', 'ビビヨン', 'ジャングルのもよう', 'image/normal/02_front/06661801.png', 'image/shiny/02_front/06661801.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06661901', '0666', 'ビビヨン', 'ファンシーのもよう', 'image/normal/02_front/06661901.png', 'image/shiny/02_front/06661901.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06662001', '0666', 'ビビヨン', 'ボールのもよう', 'image/normal/01_front/06662001.png', 'image/shiny/01_front/06662001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06670101', '0667', 'シシコ', 'image/normal/01_front/06670101.png', 'image/shiny/01_front/06670101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06662001', '0666', 'ビビヨン', 'ボールのもよう', 'image/normal/02_front/06662001.png', 'image/shiny/02_front/06662001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06680101', '0668', 'カエンジシ', 'オスのすがた', 'image/normal/01_front/06680101.png', 'image/shiny/01_front/06680101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06670101', '0667', 'シシコ', 'image/normal/02_front/06670101.png', 'image/shiny/02_front/06670101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06680102', '0668', 'カエンジシ', 'メスのすがた', 'image/normal/01_front/06680102.png', 'image/shiny/01_front/06680102.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06680101', '0668', 'カエンジシ', 'オスのすがた', 'image/normal/02_front/06680101.png', 'image/shiny/02_front/06680101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06680201', '0668', 'カエンジシ', 'メガカエンジシ', 'image/normal/01_front/06680201.png', 'image/shiny/01_front/06680201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06680102', '0668', 'カエンジシ', 'メスのすがた', 'image/normal/02_front/06680102.png', 'image/shiny/02_front/06680102.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06690101', '0669', 'フラベベ', 'あかいはな', 'image/normal/01_front/06690101.png', 'image/shiny/01_front/06690101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06680201', '0668', 'カエンジシ', 'メガカエンジシ', 'image/normal/02_front/06680201.png', 'image/shiny/02_front/06680201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06690201', '0669', 'フラベベ', 'きいろのはな', 'image/normal/01_front/06690201.png', 'image/shiny/01_front/06690201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06690101', '0669', 'フラベベ', 'あかいはな', 'image/normal/02_front/06690101.png', 'image/shiny/02_front/06690101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06690301', '0669', 'フラベベ', 'オレンジいろのはな', 'image/normal/01_front/06690301.png', 'image/shiny/01_front/06690301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06690201', '0669', 'フラベベ', 'きいろのはな', 'image/normal/02_front/06690201.png', 'image/shiny/02_front/06690201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06690401', '0669', 'フラベベ', 'あおいはな', 'image/normal/01_front/06690401.png', 'image/shiny/01_front/06690401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06690301', '0669', 'フラベベ', 'オレンジいろのはな', 'image/normal/02_front/06690301.png', 'image/shiny/02_front/06690301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06690501', '0669', 'フラベベ', 'しろいはな', 'image/normal/01_front/06690501.png', 'image/shiny/01_front/06690501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06690401', '0669', 'フラベベ', 'あおいはな', 'image/normal/02_front/06690401.png', 'image/shiny/02_front/06690401.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06690501', '0669', 'フラベベ', 'しろいはな', 'image/normal/02_front/06690501.png', 'image/shiny/02_front/06690501.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06700101', '0670', 'フラエッテ', 'あかいはな', 'image/normal/01_front/06700101.png', 'image/shiny/01_front/06700101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06700201', '0670', 'フラエッテ', 'きいろのはな', 'image/normal/01_front/06700201.png', 'image/shiny/01_front/06700201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06700101', '0670', 'フラエッテ', 'あかいはな', 'image/normal/02_front/06700101.png', 'image/shiny/02_front/06700101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06700301', '0670', 'フラエッテ', 'オレンジいろのはな', 'image/normal/01_front/06700301.png', 'image/shiny/01_front/06700301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06700201', '0670', 'フラエッテ', 'きいろのはな', 'image/normal/02_front/06700201.png', 'image/shiny/02_front/06700201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06700401', '0670', 'フラエッテ', 'あおいはな', 'image/normal/01_front/06700401.png', 'image/shiny/01_front/06700401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06700301', '0670', 'フラエッテ', 'オレンジいろのはな', 'image/normal/02_front/06700301.png', 'image/shiny/02_front/06700301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06700501', '0670', 'フラエッテ', 'しろいはな', 'image/normal/01_front/06700501.png', 'image/shiny/01_front/06700501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06700401', '0670', 'フラエッテ', 'あおいはな', 'image/normal/02_front/06700401.png', 'image/shiny/02_front/06700401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06700601', '0670', 'フラエッテ', 'えいえんのはな', 'image/normal/01_front/06700601.png', 'image/shiny/01_front/06700601.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06700501', '0670', 'フラエッテ', 'しろいはな', 'image/normal/02_front/06700501.png', 'image/shiny/02_front/06700501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06700701', '0670', 'フラエッテ', 'メガフラエッテ', 'image/normal/01_front/06700701.png', 'image/shiny/01_front/06700701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06700601', '0670', 'フラエッテ', 'えいえんのはな', 'image/normal/02_front/06700601.png', 'image/shiny/02_front/06700601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06710101', '0671', 'フラージェス', 'あかいはな', 'image/normal/01_front/06710101.png', 'image/shiny/01_front/06710101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06700701', '0670', 'フラエッテ', 'メガフラエッテ', 'image/normal/02_front/06700701.png', 'image/shiny/02_front/06700701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06710201', '0671', 'フラージェス', 'きいろのはな', 'image/normal/01_front/06710201.png', 'image/shiny/01_front/06710201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06710101', '0671', 'フラージェス', 'あかいはな', 'image/normal/02_front/06710101.png', 'image/shiny/02_front/06710101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06710301', '0671', 'フラージェス', 'オレンジいろのはな', 'image/normal/01_front/06710301.png', 'image/shiny/01_front/06710301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06710201', '0671', 'フラージェス', 'きいろのはな', 'image/normal/02_front/06710201.png', 'image/shiny/02_front/06710201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06710401', '0671', 'フラージェス', 'あおいはな', 'image/normal/01_front/06710401.png', 'image/shiny/01_front/06710401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06710301', '0671', 'フラージェス', 'オレンジいろのはな', 'image/normal/02_front/06710301.png', 'image/shiny/02_front/06710301.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06710401', '0671', 'フラージェス', 'あおいはな', 'image/normal/02_front/06710401.png', 'image/shiny/02_front/06710401.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06710501', '0671', 'フラージェス', 'しろいはな', 'image/normal/01_front/06710501.png', 'image/shiny/01_front/06710501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06720101', '0672', 'メェークル', 'image/normal/01_front/06720101.png', 'image/shiny/01_front/06720101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06710501', '0671', 'フラージェス', 'しろいはな', 'image/normal/02_front/06710501.png', 'image/shiny/02_front/06710501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06730101', '0673', 'ゴーゴート', 'image/normal/01_front/06730101.png', 'image/shiny/01_front/06730101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06720101', '0672', 'メェークル', 'image/normal/02_front/06720101.png', 'image/shiny/02_front/06720101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06740101', '0674', 'ヤンチャム', 'image/normal/01_front/06740101.png', 'image/shiny/01_front/06740101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06730101', '0673', 'ゴーゴート', 'image/normal/02_front/06730101.png', 'image/shiny/02_front/06730101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06750101', '0675', 'ゴロンダ', 'image/normal/01_front/06750101.png', 'image/shiny/01_front/06750101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06740101', '0674', 'ヤンチャム', 'image/normal/02_front/06740101.png', 'image/shiny/02_front/06740101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06760101', '0676', 'トリミアン', 'image/normal/01_front/06760101.png', 'image/shiny/01_front/06760101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06750101', '0675', 'ゴロンダ', 'image/normal/02_front/06750101.png', 'image/shiny/02_front/06750101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06760201', '0676', 'トリミアン', 'ハートカット', 'image/normal/01_front/06760201.png', 'image/shiny/01_front/06760201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06760101', '0676', 'トリミアン', 'image/normal/02_front/06760101.png', 'image/shiny/02_front/06760101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06760301', '0676', 'トリミアン', 'スターカット', 'image/normal/01_front/06760301.png', 'image/shiny/01_front/06760301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06760201', '0676', 'トリミアン', 'ハートカット', 'image/normal/02_front/06760201.png', 'image/shiny/02_front/06760201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06760401', '0676', 'トリミアン', 'ダイヤカット', 'image/normal/01_front/06760401.png', 'image/shiny/01_front/06760401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06760301', '0676', 'トリミアン', 'スターカット', 'image/normal/02_front/06760301.png', 'image/shiny/02_front/06760301.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06760401', '0676', 'トリミアン', 'ダイヤカット', 'image/normal/02_front/06760401.png', 'image/shiny/02_front/06760401.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06760501', '0676', 'トリミアン', 'クイーンカット', 'image/normal/01_front/06760501.png', 'image/shiny/01_front/06760501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06760601', '0676', 'トリミアン', 'カブキカット', 'image/normal/01_front/06760601.png', 'image/shiny/01_front/06760601.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06760501', '0676', 'トリミアン', 'クイーンカット', 'image/normal/02_front/06760501.png', 'image/shiny/02_front/06760501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06760701', '0676', 'トリミアン', 'キングダムカット', 'image/normal/01_front/06760701.png', 'image/shiny/01_front/06760701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06760601', '0676', 'トリミアン', 'カブキカット', 'image/normal/02_front/06760601.png', 'image/shiny/02_front/06760601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06760801', '0676', 'トリミアン', 'レディカット', 'image/normal/01_front/06760801.png', 'image/shiny/01_front/06760801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06760701', '0676', 'トリミアン', 'キングダムカット', 'image/normal/02_front/06760701.png', 'image/shiny/02_front/06760701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06760901', '0676', 'トリミアン', 'マダムカット', 'image/normal/01_front/06760901.png', 'image/shiny/01_front/06760901.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06760801', '0676', 'トリミアン', 'レディカット', 'image/normal/02_front/06760801.png', 'image/shiny/02_front/06760801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06761001', '0676', 'トリミアン', 'ジェントルカット', 'image/normal/01_front/06761001.png', 'image/shiny/01_front/06761001.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06760901', '0676', 'トリミアン', 'マダムカット', 'image/normal/02_front/06760901.png', 'image/shiny/02_front/06760901.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06770101', '0677', 'ニャスパー', 'image/normal/01_front/06770101.png', 'image/shiny/01_front/06770101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06761001', '0676', 'トリミアン', 'ジェントルカット', 'image/normal/02_front/06761001.png', 'image/shiny/02_front/06761001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06780101', '0678', 'ニャオニクス', 'オスのすがた', 'image/normal/01_front/06780101.png', 'image/shiny/01_front/06780101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06770101', '0677', 'ニャスパー', 'image/normal/02_front/06770101.png', 'image/shiny/02_front/06770101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06780102', '0678', 'ニャオニクス', 'メスのすがた', 'image/normal/01_front/06780102.png', 'image/shiny/01_front/06780102.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06780101', '0678', 'ニャオニクス', 'オスのすがた', 'image/normal/02_front/06780101.png', 'image/shiny/02_front/06780101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06780201', '0678', 'ニャオニクス', 'メガニャオニクス', 'image/normal/01_front/06780201.png', 'image/shiny/01_front/06780201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06780102', '0678', 'ニャオニクス', 'メスのすがた', 'image/normal/02_front/06780102.png', 'image/shiny/02_front/06780102.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06870201', '0687', 'カラマネロ', 'メガカラマネロ', 'image/normal/01_front/06870201.png', 'image/shiny/01_front/06870201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06780201', '0678', 'ニャオニクス', 'メガニャオニクス', 'image/normal/02_front/06780201.png', 'image/shiny/02_front/06780201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06870201', '0687', 'カラマネロ', 'メガカラマネロ', 'image/normal/02_front/06870201.png', 'image/shiny/02_front/06870201.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06790101', '0679', 'ヒトツキ', 'image/normal/01_front/06790101.png', 'image/shiny/01_front/06790101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06800101', '0680', 'ニダンギル', 'image/normal/01_front/06800101.png', 'image/shiny/01_front/06800101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06790101', '0679', 'ヒトツキ', 'image/normal/02_front/06790101.png', 'image/shiny/02_front/06790101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06810101', '0681', 'ギルガルド', 'シールドフォルム', 'image/normal/01_front/06810101.png', 'image/shiny/01_front/06810101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06800101', '0680', 'ニダンギル', 'image/normal/02_front/06800101.png', 'image/shiny/02_front/06800101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06810201', '0681', 'ギルガルド', 'ブレードフォルム', 'image/normal/01_front/06810201.png', 'image/shiny/01_front/06810201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06810101', '0681', 'ギルガルド', 'シールドフォルム', 'image/normal/02_front/06810101.png', 'image/shiny/02_front/06810101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06820101', '0682', 'シュシュプ', 'image/normal/01_front/06820101.png', 'image/shiny/01_front/06820101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06810201', '0681', 'ギルガルド', 'ブレードフォルム', 'image/normal/02_front/06810201.png', 'image/shiny/02_front/06810201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06830101', '0683', 'フレフワン', 'image/normal/01_front/06830101.png', 'image/shiny/01_front/06830101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06820101', '0682', 'シュシュプ', 'image/normal/02_front/06820101.png', 'image/shiny/02_front/06820101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06840101', '0684', 'ペロッパフ', 'image/normal/01_front/06840101.png', 'image/shiny/01_front/06840101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06830101', '0683', 'フレフワン', 'image/normal/02_front/06830101.png', 'image/shiny/02_front/06830101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06850101', '0685', 'ペロリーム', 'image/normal/01_front/06850101.png', 'image/shiny/01_front/06850101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06840101', '0684', 'ペロッパフ', 'image/normal/02_front/06840101.png', 'image/shiny/02_front/06840101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06860101', '0686', 'マーイーカ', 'image/normal/01_front/06860101.png', 'image/shiny/01_front/06860101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06850101', '0685', 'ペロリーム', 'image/normal/02_front/06850101.png', 'image/shiny/02_front/06850101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06860101', '0686', 'マーイーカ', 'image/normal/02_front/06860101.png', 'image/shiny/02_front/06860101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06870101', '0687', 'カラマネロ', 'image/normal/01_front/06870101.png', 'image/shiny/01_front/06870101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06880101', '0688', 'カメテテ', 'image/normal/01_front/06880101.png', 'image/shiny/01_front/06880101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06870101', '0687', 'カラマネロ', 'image/normal/02_front/06870101.png', 'image/shiny/02_front/06870101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06890101', '0689', 'ガメノデス', 'image/normal/01_front/06890101.png', 'image/shiny/01_front/06890101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06880101', '0688', 'カメテテ', 'image/normal/02_front/06880101.png', 'image/shiny/02_front/06880101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06890201', '0689', 'ガメノデス', 'メガガメノデス', 'image/normal/01_front/06890201.png', 'image/shiny/01_front/06890201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06890101', '0689', 'ガメノデス', 'image/normal/02_front/06890101.png', 'image/shiny/02_front/06890101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06900101', '0690', 'クズモー', 'image/normal/01_front/06900101.png', 'image/shiny/01_front/06900101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06890201', '0689', 'ガメノデス', 'メガガメノデス', 'image/normal/02_front/06890201.png', 'image/shiny/02_front/06890201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06910101', '0691', 'ドラミドロ', 'image/normal/01_front/06910101.png', 'image/shiny/01_front/06910101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06900101', '0690', 'クズモー', 'image/normal/02_front/06900101.png', 'image/shiny/02_front/06900101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06910201', '0691', 'ドラミドロ', 'メガドラミドロ', 'image/normal/01_front/06910201.png', 'image/shiny/01_front/06910201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06910101', '0691', 'ドラミドロ', 'image/normal/02_front/06910101.png', 'image/shiny/02_front/06910101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06920101', '0692', 'ウデッポウ', 'image/normal/01_front/06920101.png', 'image/shiny/01_front/06920101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06910201', '0691', 'ドラミドロ', 'メガドラミドロ', 'image/normal/02_front/06910201.png', 'image/shiny/02_front/06910201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06930101', '0693', 'ブロスター', 'image/normal/01_front/06930101.png', 'image/shiny/01_front/06930101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06920101', '0692', 'ウデッポウ', 'image/normal/02_front/06920101.png', 'image/shiny/02_front/06920101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06940101', '0694', 'エリキテル', 'image/normal/01_front/06940101.png', 'image/shiny/01_front/06940101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06930101', '0693', 'ブロスター', 'image/normal/02_front/06930101.png', 'image/shiny/02_front/06930101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06950101', '0695', 'エレザード', 'image/normal/01_front/06950101.png', 'image/shiny/01_front/06950101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06940101', '0694', 'エリキテル', 'image/normal/02_front/06940101.png', 'image/shiny/02_front/06940101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06950101', '0695', 'エレザード', 'image/normal/02_front/06950101.png', 'image/shiny/02_front/06950101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06960101', '0696', 'チゴラス', 'image/normal/01_front/06960101.png', 'image/shiny/01_front/06960101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06970101', '0697', 'ガチゴラス', 'image/normal/01_front/06970101.png', 'image/shiny/01_front/06970101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06960101', '0696', 'チゴラス', 'image/normal/02_front/06960101.png', 'image/shiny/02_front/06960101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06980101', '0698', 'アマルス', 'image/normal/01_front/06980101.png', 'image/shiny/01_front/06980101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06970101', '0697', 'ガチゴラス', 'image/normal/02_front/06970101.png', 'image/shiny/02_front/06970101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('06990101', '0699', 'アマルルガ', 'image/normal/01_front/06990101.png', 'image/shiny/01_front/06990101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06980101', '0698', 'アマルス', 'image/normal/02_front/06980101.png', 'image/shiny/02_front/06980101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07000101', '0700', 'ニンフィア', 'image/normal/01_front/07000101.png', 'image/shiny/01_front/07000101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('06990101', '0699', 'アマルルガ', 'image/normal/02_front/06990101.png', 'image/shiny/02_front/06990101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07010101', '0701', 'ルチャブル', 'image/normal/01_front/07010101.png', 'image/shiny/01_front/07010101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07000101', '0700', 'ニンフィア', 'image/normal/02_front/07000101.png', 'image/shiny/02_front/07000101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07010201', '0701', 'ルチャブル', 'メガルチャブル', 'image/normal/01_front/07010201.png', 'image/shiny/01_front/07010201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07010101', '0701', 'ルチャブル', 'image/normal/02_front/07010101.png', 'image/shiny/02_front/07010101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07020101', '0702', 'デデンネ', 'image/normal/01_front/07020101.png', 'image/shiny/01_front/07020101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07010201', '0701', 'ルチャブル', 'メガルチャブル', 'image/normal/02_front/07010201.png', 'image/shiny/02_front/07010201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07030101', '0703', 'メレシー', 'image/normal/01_front/07030101.png', 'image/shiny/01_front/07030101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07020101', '0702', 'デデンネ', 'image/normal/02_front/07020101.png', 'image/shiny/02_front/07020101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07040101', '0704', 'ヌメラ', 'image/normal/01_front/07040101.png', 'image/shiny/01_front/07040101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07030101', '0703', 'メレシー', 'image/normal/02_front/07030101.png', 'image/shiny/02_front/07030101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07040101', '0704', 'ヌメラ', 'image/normal/02_front/07040101.png', 'image/shiny/02_front/07040101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07050101', '0705', 'ヌメイル', 'image/normal/01_front/07050101.png', 'image/shiny/01_front/07050101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07050201', '0705', 'ヌメイル', 'ヒスイのすがた', 'image/normal/01_front/07050201.png', 'image/shiny/01_front/07050201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07050101', '0705', 'ヌメイル', 'image/normal/02_front/07050101.png', 'image/shiny/02_front/07050101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07060101', '0706', 'ヌメルゴン', 'image/normal/01_front/07060101.png', 'image/shiny/01_front/07060101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07050201', '0705', 'ヌメイル', 'ヒスイのすがた', 'image/normal/02_front/07050201.png', 'image/shiny/02_front/07050201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07060201', '0706', 'ヌメルゴン', 'ヒスイのすがた', 'image/normal/01_front/07060201.png', 'image/shiny/01_front/07060201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07060101', '0706', 'ヌメルゴン', 'image/normal/02_front/07060101.png', 'image/shiny/02_front/07060101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07070101', '0707', 'クレッフィ', 'image/normal/01_front/07070101.png', 'image/shiny/01_front/07070101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07060201', '0706', 'ヌメルゴン', 'ヒスイのすがた', 'image/normal/02_front/07060201.png', 'image/shiny/02_front/07060201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07080101', '0708', 'ボクレー', 'image/normal/01_front/07080101.png', 'image/shiny/01_front/07080101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07070101', '0707', 'クレッフィ', 'image/normal/02_front/07070101.png', 'image/shiny/02_front/07070101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07090101', '0709', 'オーロット', 'image/normal/01_front/07090101.png', 'image/shiny/01_front/07090101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07080101', '0708', 'ボクレー', 'image/normal/02_front/07080101.png', 'image/shiny/02_front/07080101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07100101', '0710', 'バケッチャ', 'ちゅうだましゅ(ふつうのサイズ)', 'image/normal/01_front/07100101.png', 'image/shiny/01_front/07100101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07090101', '0709', 'オーロット', 'image/normal/02_front/07090101.png', 'image/shiny/02_front/07090101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07100201', '0710', 'バケッチャ', 'こだましゅ(ちいさいサイズ)', 'image/normal/01_front/07100201.png', 'image/shiny/01_front/07100201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07100101', '0710', 'バケッチャ', 'ちゅうだましゅ(ふつうのサイズ)', 'image/normal/02_front/07100101.png', 'image/shiny/02_front/07100101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07100201', '0710', 'バケッチャ', 'こだましゅ(ちいさいサイズ)', 'image/normal/02_front/07100201.png', 'image/shiny/02_front/07100201.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07100301', '0710', 'バケッチャ', 'おおだましゅ(おおきいサイズ)', 'image/normal/01_front/07100301.png', 'image/shiny/01_front/07100301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07100401', '0710', 'バケッチャ', 'ギガだましゅ(とくだいサイズ)', 'image/normal/01_front/07100401.png', 'image/shiny/01_front/07100401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07100301', '0710', 'バケッチャ', 'おおだましゅ(おおきいサイズ)', 'image/normal/02_front/07100301.png', 'image/shiny/02_front/07100301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07110101', '0711', 'パンプジン', 'ちゅうだましゅ(ふつうのサイズ)', 'image/normal/01_front/07110101.png', 'image/shiny/01_front/07110101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07100401', '0710', 'バケッチャ', 'ギガだましゅ(とくだいサイズ)', 'image/normal/02_front/07100401.png', 'image/shiny/02_front/07100401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07110201', '0711', 'パンプジン', 'こだましゅ(ちいさいサイズ)', 'image/normal/01_front/07110201.png', 'image/shiny/01_front/07110201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07110101', '0711', 'パンプジン', 'ちゅうだましゅ(ふつうのサイズ)', 'image/normal/02_front/07110101.png', 'image/shiny/02_front/07110101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07110301', '0711', 'パンプジン', 'おおだましゅ(おおきいサイズ)', 'image/normal/01_front/07110301.png', 'image/shiny/01_front/07110301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07110201', '0711', 'パンプジン', 'こだましゅ(ちいさいサイズ)', 'image/normal/02_front/07110201.png', 'image/shiny/02_front/07110201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07110401', '0711', 'パンプジン', 'ギガだましゅ(とくだいサイズ)', 'image/normal/01_front/07110401.png', 'image/shiny/01_front/07110401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07110301', '0711', 'パンプジン', 'おおだましゅ(おおきいサイズ)', 'image/normal/02_front/07110301.png', 'image/shiny/02_front/07110301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07120101', '0712', 'カチコール', 'image/normal/01_front/07120101.png', 'image/shiny/01_front/07120101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07110401', '0711', 'パンプジン', 'ギガだましゅ(とくだいサイズ)', 'image/normal/02_front/07110401.png', 'image/shiny/02_front/07110401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07130101', '0713', 'クレベース', 'image/normal/01_front/07130101.png', 'image/shiny/01_front/07130101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07120101', '0712', 'カチコール', 'image/normal/02_front/07120101.png', 'image/shiny/02_front/07120101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07130201', '0713', 'クレベース', 'ヒスイのすがた', 'image/normal/01_front/07130201.png', 'image/shiny/01_front/07130201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07130101', '0713', 'クレベース', 'image/normal/02_front/07130101.png', 'image/shiny/02_front/07130101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07130201', '0713', 'クレベース', 'ヒスイのすがた', 'image/normal/02_front/07130201.png', 'image/shiny/02_front/07130201.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07140101', '0714', 'オンバット', 'image/normal/01_front/07140101.png', 'image/shiny/01_front/07140101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07150101', '0715', 'オンバーン', 'image/normal/01_front/07150101.png', 'image/shiny/01_front/07150101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07140101', '0714', 'オンバット', 'image/normal/02_front/07140101.png', 'image/shiny/02_front/07140101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07160101', '0716', 'ゼルネアス', 'リラックスモード', 'image/normal/01_front/07160101.png', 'image/shiny/01_front/07160101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07150101', '0715', 'オンバーン', 'image/normal/02_front/07150101.png', 'image/shiny/02_front/07150101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07160201', '0716', 'ゼルネアス', 'アクティブモード', 'image/normal/01_front/07160201.png', 'image/shiny/01_front/07160201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07160101', '0716', 'ゼルネアス', 'リラックスモード', 'image/normal/02_front/07160101.png', 'image/shiny/02_front/07160101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07170101', '0717', 'イベルタル', 'image/normal/01_front/07170101.png', 'image/shiny/01_front/07170101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07160201', '0716', 'ゼルネアス', 'アクティブモード', 'image/normal/02_front/07160201.png', 'image/shiny/02_front/07160201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07180101', '0718', 'ジガルデ', '50%フォルム', 'image/normal/01_front/07180101.png', 'image/shiny/01_front/07180101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07170101', '0717', 'イベルタル', 'image/normal/02_front/07170101.png', 'image/shiny/02_front/07170101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07180201', '0718', 'ジガルデ', '10%フォルム', 'image/normal/01_front/07180201.png', 'image/shiny/01_front/07180201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07180101', '0718', 'ジガルデ', '50%フォルム', 'image/normal/02_front/07180101.png', 'image/shiny/02_front/07180101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07180301', '0718', 'ジガルデ', '100%フォルム', 'image/normal/01_front/07180301.png', 'image/shiny/01_front/07180301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07180201', '0718', 'ジガルデ', '10%フォルム', 'image/normal/02_front/07180201.png', 'image/shiny/02_front/07180201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07180401', '0718', 'ジガルデ', 'メガジガルデ', 'image/normal/01_front/07180401.png', 'image/shiny/01_front/07180401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07180301', '0718', 'ジガルデ', '100%フォルム', 'image/normal/02_front/07180301.png', 'image/shiny/02_front/07180301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07190101', '0719', 'ディアンシー', 'image/normal/01_front/07190101.png', 'image/shiny/01_front/07190101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07180401', '0718', 'ジガルデ', 'メガジガルデ', 'image/normal/02_front/07180401.png', 'image/shiny/02_front/07180401.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07190101', '0719', 'ディアンシー', 'image/normal/02_front/07190101.png', 'image/shiny/02_front/07190101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07190201', '0719', 'ディアンシー', 'メガディアンシー', 'image/normal/01_front/07190201.png', 'image/shiny/01_front/07190201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07200101', '0720', 'フーパ', 'いましめられしフーパ', 'image/normal/01_front/07200101.png', 'image/shiny/01_front/07200101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07190201', '0719', 'ディアンシー', 'メガディアンシー', 'image/normal/02_front/07190201.png', 'image/shiny/02_front/07190201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07200201', '0720', 'フーパ', 'ときはなたれしフーパ', 'image/normal/01_front/07200201.png', 'image/shiny/01_front/07200201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07200101', '0720', 'フーパ', 'いましめられしフーパ', 'image/normal/02_front/07200101.png', 'image/shiny/02_front/07200101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07210101', '0721', 'ボルケニオン', 'image/normal/01_front/07210101.png', 'image/shiny/01_front/07210101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07200201', '0720', 'フーパ', 'ときはなたれしフーパ', 'image/normal/02_front/07200201.png', 'image/shiny/02_front/07200201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07210101', '0721', 'ボルケニオン', 'image/normal/02_front/07210101.png', 'image/shiny/02_front/07210101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07220101', '0722', 'モクロー', 'image/normal/01_front/07220101.png', 'image/shiny/01_front/07220101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07230101', '0723', 'フクスロー', 'image/normal/01_front/07230101.png', 'image/shiny/01_front/07230101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07220101', '0722', 'モクロー', 'image/normal/02_front/07220101.png', 'image/shiny/02_front/07220101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07240101', '0724', 'ジュナイパー', 'image/normal/01_front/07240101.png', 'image/shiny/01_front/07240101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07230101', '0723', 'フクスロー', 'image/normal/02_front/07230101.png', 'image/shiny/02_front/07230101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07240201', '0724', 'ジュナイパー', 'ヒスイのすがた', 'image/normal/01_front/07240201.png', 'image/shiny/01_front/07240201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07240101', '0724', 'ジュナイパー', 'image/normal/02_front/07240101.png', 'image/shiny/02_front/07240101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07250101', '0725', 'ニャビー', 'image/normal/01_front/07250101.png', 'image/shiny/01_front/07250101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07240201', '0724', 'ジュナイパー', 'ヒスイのすがた', 'image/normal/02_front/07240201.png', 'image/shiny/02_front/07240201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07260101', '0726', 'ニャヒート', 'image/normal/01_front/07260101.png', 'image/shiny/01_front/07260101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07250101', '0725', 'ニャビー', 'image/normal/02_front/07250101.png', 'image/shiny/02_front/07250101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07270101', '0727', 'ガオガエン', 'image/normal/01_front/07270101.png', 'image/shiny/01_front/07270101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07260101', '0726', 'ニャヒート', 'image/normal/02_front/07260101.png', 'image/shiny/02_front/07260101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07280101', '0728', 'アシマリ', 'image/normal/01_front/07280101.png', 'image/shiny/01_front/07280101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07270101', '0727', 'ガオガエン', 'image/normal/02_front/07270101.png', 'image/shiny/02_front/07270101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07290101', '0729', 'オシャマリ', 'image/normal/01_front/07290101.png', 'image/shiny/01_front/07290101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07280101', '0728', 'アシマリ', 'image/normal/02_front/07280101.png', 'image/shiny/02_front/07280101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07290101', '0729', 'オシャマリ', 'image/normal/02_front/07290101.png', 'image/shiny/02_front/07290101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07300101', '0730', 'アシレーヌ', 'image/normal/01_front/07300101.png', 'image/shiny/01_front/07300101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07310101', '0731', 'ツツケラ', 'image/normal/01_front/07310101.png', 'image/shiny/01_front/07310101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07300101', '0730', 'アシレーヌ', 'image/normal/02_front/07300101.png', 'image/shiny/02_front/07300101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07320101', '0732', 'ケララッパ', 'image/normal/01_front/07320101.png', 'image/shiny/01_front/07320101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07310101', '0731', 'ツツケラ', 'image/normal/02_front/07310101.png', 'image/shiny/02_front/07310101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07330101', '0733', 'ドデカバシ', 'image/normal/01_front/07330101.png', 'image/shiny/01_front/07330101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07320101', '0732', 'ケララッパ', 'image/normal/02_front/07320101.png', 'image/shiny/02_front/07320101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07340101', '0734', 'ヤングース', 'image/normal/01_front/07340101.png', 'image/shiny/01_front/07340101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07330101', '0733', 'ドデカバシ', 'image/normal/02_front/07330101.png', 'image/shiny/02_front/07330101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07350101', '0735', 'デカグース', 'image/normal/01_front/07350101.png', 'image/shiny/01_front/07350101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07340101', '0734', 'ヤングース', 'image/normal/02_front/07340101.png', 'image/shiny/02_front/07340101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07360101', '0736', 'アゴジムシ', 'image/normal/01_front/07360101.png', 'image/shiny/01_front/07360101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07350101', '0735', 'デカグース', 'image/normal/02_front/07350101.png', 'image/shiny/02_front/07350101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07370101', '0737', 'デンヂムシ', 'image/normal/01_front/07370101.png', 'image/shiny/01_front/07370101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07360101', '0736', 'アゴジムシ', 'image/normal/02_front/07360101.png', 'image/shiny/02_front/07360101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07380101', '0738', 'クワガノン', 'image/normal/01_front/07380101.png', 'image/shiny/01_front/07380101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07370101', '0737', 'デンヂムシ', 'image/normal/02_front/07370101.png', 'image/shiny/02_front/07370101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07380101', '0738', 'クワガノン', 'image/normal/02_front/07380101.png', 'image/shiny/02_front/07380101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07390101', '0739', 'マケンカニ', 'image/normal/01_front/07390101.png', 'image/shiny/01_front/07390101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07400101', '0740', 'ケケンカニ', 'image/normal/01_front/07400101.png', 'image/shiny/01_front/07400101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07390101', '0739', 'マケンカニ', 'image/normal/02_front/07390101.png', 'image/shiny/02_front/07390101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07400201', '0740', 'ケケンカニ', 'メガケケンカニ', 'image/normal/01_front/07400201.png', 'image/shiny/01_front/07400201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07400101', '0740', 'ケケンカニ', 'image/normal/02_front/07400101.png', 'image/shiny/02_front/07400101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07410101', '0741', 'オドリドリ', 'めらめらスタイル', 'image/normal/01_front/07410101.png', 'image/shiny/01_front/07410101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07400201', '0740', 'ケケンカニ', 'メガケケンカニ', 'image/normal/02_front/07400201.png', 'image/shiny/02_front/07400201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07410201', '0741', 'オドリドリ', 'ぱちぱちスタイル', 'image/normal/01_front/07410201.png', 'image/shiny/01_front/07410201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07410101', '0741', 'オドリドリ', 'めらめらスタイル', 'image/normal/02_front/07410101.png', 'image/shiny/02_front/07410101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07410301', '0741', 'オドリドリ', 'ふらふらスタイル', 'image/normal/01_front/07410301.png', 'image/shiny/01_front/07410301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07410201', '0741', 'オドリドリ', 'ぱちぱちスタイル', 'image/normal/02_front/07410201.png', 'image/shiny/02_front/07410201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07410401', '0741', 'オドリドリ', 'まいまいスタイル', 'image/normal/01_front/07410401.png', 'image/shiny/01_front/07410401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07410301', '0741', 'オドリドリ', 'ふらふらスタイル', 'image/normal/02_front/07410301.png', 'image/shiny/02_front/07410301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07420101', '0742', 'アブリー', 'image/normal/01_front/07420101.png', 'image/shiny/01_front/07420101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07410401', '0741', 'オドリドリ', 'まいまいスタイル', 'image/normal/02_front/07410401.png', 'image/shiny/02_front/07410401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07430101', '0743', 'アブリボン', 'image/normal/01_front/07430101.png', 'image/shiny/01_front/07430101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07420101', '0742', 'アブリー', 'image/normal/02_front/07420101.png', 'image/shiny/02_front/07420101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07440101', '0744', 'イワンコ', 'image/normal/01_front/07440101.png', 'image/shiny/01_front/07440101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07430101', '0743', 'アブリボン', 'image/normal/02_front/07430101.png', 'image/shiny/02_front/07430101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07440101', '0744', 'イワンコ', 'image/normal/02_front/07440101.png', 'image/shiny/02_front/07440101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07450101', '0745', 'ルガルガン', 'まひるのすがた', 'image/normal/01_front/07450101.png', 'image/shiny/01_front/07450101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07450201', '0745', 'ルガルガン', 'まよなかのすがた', 'image/normal/01_front/07450201.png', 'image/shiny/01_front/07450201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07450101', '0745', 'ルガルガン', 'まひるのすがた', 'image/normal/02_front/07450101.png', 'image/shiny/02_front/07450101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07450301', '0745', 'ルガルガン', 'たそがれのすがた', 'image/normal/01_front/07450301.png', 'image/shiny/01_front/07450301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07450201', '0745', 'ルガルガン', 'まよなかのすがた', 'image/normal/02_front/07450201.png', 'image/shiny/02_front/07450201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07460101', '0746', 'ヨワシ', 'たんどくのすがた', 'image/normal/01_front/07460101.png', 'image/shiny/01_front/07460101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07450301', '0745', 'ルガルガン', 'たそがれのすがた', 'image/normal/02_front/07450301.png', 'image/shiny/02_front/07450301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07460201', '0746', 'ヨワシ', 'むれたすがた', 'image/normal/01_front/07460201.png', 'image/shiny/01_front/07460201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07460101', '0746', 'ヨワシ', 'たんどくのすがた', 'image/normal/02_front/07460101.png', 'image/shiny/02_front/07460101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07470101', '0747', 'ヒドイデ', 'image/normal/01_front/07470101.png', 'image/shiny/01_front/07470101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07460201', '0746', 'ヨワシ', 'むれたすがた', 'image/normal/02_front/07460201.png', 'image/shiny/02_front/07460201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07480101', '0748', 'ドヒドイデ', 'image/normal/01_front/07480101.png', 'image/shiny/01_front/07480101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07470101', '0747', 'ヒドイデ', 'image/normal/02_front/07470101.png', 'image/shiny/02_front/07470101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07490101', '0749', 'ドロバンコ', 'image/normal/01_front/07490101.png', 'image/shiny/01_front/07490101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07480101', '0748', 'ドヒドイデ', 'image/normal/02_front/07480101.png', 'image/shiny/02_front/07480101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07500101', '0750', 'バンバドロ', 'image/normal/01_front/07500101.png', 'image/shiny/01_front/07500101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07490101', '0749', 'ドロバンコ', 'image/normal/02_front/07490101.png', 'image/shiny/02_front/07490101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07500101', '0750', 'バンバドロ', 'image/normal/02_front/07500101.png', 'image/shiny/02_front/07500101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07510101', '0751', 'シズクモ', 'image/normal/01_front/07510101.png', 'image/shiny/01_front/07510101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07520101', '0752', 'オニシズクモ', 'image/normal/01_front/07520101.png', 'image/shiny/01_front/07520101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07510101', '0751', 'シズクモ', 'image/normal/02_front/07510101.png', 'image/shiny/02_front/07510101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07530101', '0753', 'カリキリ', 'image/normal/01_front/07530101.png', 'image/shiny/01_front/07530101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07520101', '0752', 'オニシズクモ', 'image/normal/02_front/07520101.png', 'image/shiny/02_front/07520101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07540101', '0754', 'ラランテス', 'image/normal/01_front/07540101.png', 'image/shiny/01_front/07540101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07530101', '0753', 'カリキリ', 'image/normal/02_front/07530101.png', 'image/shiny/02_front/07530101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07550101', '0755', 'ネマシュ', 'image/normal/01_front/07550101.png', 'image/shiny/01_front/07550101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07540101', '0754', 'ラランテス', 'image/normal/02_front/07540101.png', 'image/shiny/02_front/07540101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07560101', '0756', 'マシェード', 'image/normal/01_front/07560101.png', 'image/shiny/01_front/07560101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07550101', '0755', 'ネマシュ', 'image/normal/02_front/07550101.png', 'image/shiny/02_front/07550101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07570101', '0757', 'ヤトウモリ', 'image/normal/01_front/07570101.png', 'image/shiny/01_front/07570101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07560101', '0756', 'マシェード', 'image/normal/02_front/07560101.png', 'image/shiny/02_front/07560101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07580101', '0758', 'エンニュート', 'image/normal/01_front/07580101.png', 'image/shiny/01_front/07580101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07570101', '0757', 'ヤトウモリ', 'image/normal/02_front/07570101.png', 'image/shiny/02_front/07570101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07590101', '0759', 'ヌイコグマ', 'image/normal/01_front/07590101.png', 'image/shiny/01_front/07590101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07580101', '0758', 'エンニュート', 'image/normal/02_front/07580101.png', 'image/shiny/02_front/07580101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07590101', '0759', 'ヌイコグマ', 'image/normal/02_front/07590101.png', 'image/shiny/02_front/07590101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07600101', '0760', 'キテルグマ', 'image/normal/01_front/07600101.png', 'image/shiny/01_front/07600101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07610101', '0761', 'アマカジ', 'image/normal/01_front/07610101.png', 'image/shiny/01_front/07610101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07600101', '0760', 'キテルグマ', 'image/normal/02_front/07600101.png', 'image/shiny/02_front/07600101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07620101', '0762', 'アママイコ', 'image/normal/01_front/07620101.png', 'image/shiny/01_front/07620101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07610101', '0761', 'アマカジ', 'image/normal/02_front/07610101.png', 'image/shiny/02_front/07610101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07630101', '0763', 'アマージョ', 'image/normal/01_front/07630101.png', 'image/shiny/01_front/07630101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07620101', '0762', 'アママイコ', 'image/normal/02_front/07620101.png', 'image/shiny/02_front/07620101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07640101', '0764', 'キュワワー', 'image/normal/01_front/07640101.png', 'image/shiny/01_front/07640101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07630101', '0763', 'アマージョ', 'image/normal/02_front/07630101.png', 'image/shiny/02_front/07630101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07650101', '0765', 'ヤレユータン', 'image/normal/01_front/07650101.png', 'image/shiny/01_front/07650101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07640101', '0764', 'キュワワー', 'image/normal/02_front/07640101.png', 'image/shiny/02_front/07640101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07660101', '0766', 'ナゲツケサル', 'image/normal/01_front/07660101.png', 'image/shiny/01_front/07660101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07650101', '0765', 'ヤレユータン', 'image/normal/02_front/07650101.png', 'image/shiny/02_front/07650101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07670101', '0767', 'コソクムシ', 'image/normal/01_front/07670101.png', 'image/shiny/01_front/07670101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07660101', '0766', 'ナゲツケサル', 'image/normal/02_front/07660101.png', 'image/shiny/02_front/07660101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07680101', '0768', 'グソクムシャ', 'image/normal/01_front/07680101.png', 'image/shiny/01_front/07680101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07670101', '0767', 'コソクムシ', 'image/normal/02_front/07670101.png', 'image/shiny/02_front/07670101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07680201', '0768', 'グソクムシャ', 'メガグソクムシャ', 'image/normal/01_front/07680201.png', 'image/shiny/01_front/07680201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07680101', '0768', 'グソクムシャ', 'image/normal/02_front/07680101.png', 'image/shiny/02_front/07680101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07680201', '0768', 'グソクムシャ', 'メガグソクムシャ', 'image/normal/02_front/07680201.png', 'image/shiny/02_front/07680201.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07690101', '0769', 'スナバァ', 'image/normal/01_front/07690101.png', 'image/shiny/01_front/07690101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07700101', '0770', 'シロデスナ', 'image/normal/01_front/07700101.png', 'image/shiny/01_front/07700101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07690101', '0769', 'スナバァ', 'image/normal/02_front/07690101.png', 'image/shiny/02_front/07690101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07710101', '0771', 'ナマコブシ', 'image/normal/01_front/07710101.png', 'image/shiny/01_front/07710101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07700101', '0770', 'シロデスナ', 'image/normal/02_front/07700101.png', 'image/shiny/02_front/07700101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07720101', '0772', 'タイプ：ヌル', 'image/normal/01_front/07720101.png', 'image/shiny/01_front/07720101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07710101', '0771', 'ナマコブシ', 'image/normal/02_front/07710101.png', 'image/shiny/02_front/07710101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07730101', '0773', 'シルヴァディ', 'タイプ：ノーマル', 'image/normal/01_front/07730101.png', 'image/shiny/01_front/07730101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07720101', '0772', 'タイプ：ヌル', 'image/normal/02_front/07720101.png', 'image/shiny/02_front/07720101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07730201', '0773', 'シルヴァディ', 'タイプ：ファイヤー', 'image/normal/01_front/07730201.png', 'image/shiny/01_front/07730201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07730101', '0773', 'シルヴァディ', 'タイプ：ノーマル', 'image/normal/02_front/07730101.png', 'image/shiny/02_front/07730101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07730301', '0773', 'シルヴァディ', 'タイプ：ウォーター', 'image/normal/01_front/07730301.png', 'image/shiny/01_front/07730301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07730201', '0773', 'シルヴァディ', 'タイプ：ファイヤー', 'image/normal/02_front/07730201.png', 'image/shiny/02_front/07730201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07730401', '0773', 'シルヴァディ', 'タイプ：グラス', 'image/normal/01_front/07730401.png', 'image/shiny/01_front/07730401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07730301', '0773', 'シルヴァディ', 'タイプ：ウォーター', 'image/normal/02_front/07730301.png', 'image/shiny/02_front/07730301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07730501', '0773', 'シルヴァディ', 'タイプ：エレクトロ', 'image/normal/01_front/07730501.png', 'image/shiny/01_front/07730501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07730401', '0773', 'シルヴァディ', 'タイプ：グラス', 'image/normal/02_front/07730401.png', 'image/shiny/02_front/07730401.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07730501', '0773', 'シルヴァディ', 'タイプ：エレクトロ', 'image/normal/02_front/07730501.png', 'image/shiny/02_front/07730501.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07730601', '0773', 'シルヴァディ', 'タイプ：アイス', 'image/normal/01_front/07730601.png', 'image/shiny/01_front/07730601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07730701', '0773', 'シルヴァディ', 'タイプ：ファイト', 'image/normal/01_front/07730701.png', 'image/shiny/01_front/07730701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07730601', '0773', 'シルヴァディ', 'タイプ：アイス', 'image/normal/02_front/07730601.png', 'image/shiny/02_front/07730601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07730801', '0773', 'シルヴァディ', 'タイプ：ポイズン', 'image/normal/01_front/07730801.png', 'image/shiny/01_front/07730801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07730701', '0773', 'シルヴァディ', 'タイプ：ファイト', 'image/normal/02_front/07730701.png', 'image/shiny/02_front/07730701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07730901', '0773', 'シルヴァディ', 'タイプ：グラウンド', 'image/normal/01_front/07730901.png', 'image/shiny/01_front/07730901.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07730801', '0773', 'シルヴァディ', 'タイプ：ポイズン', 'image/normal/02_front/07730801.png', 'image/shiny/02_front/07730801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07731001', '0773', 'シルヴァディ', 'タイプ：フライング', 'image/normal/01_front/07731001.png', 'image/shiny/01_front/07731001.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07730901', '0773', 'シルヴァディ', 'タイプ：グラウンド', 'image/normal/02_front/07730901.png', 'image/shiny/02_front/07730901.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07731101', '0773', 'シルヴァディ', 'タイプ：サイキック', 'image/normal/01_front/07731101.png', 'image/shiny/01_front/07731101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07731001', '0773', 'シルヴァディ', 'タイプ：フライング', 'image/normal/02_front/07731001.png', 'image/shiny/02_front/07731001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07731201', '0773', 'シルヴァディ', 'タイプ：バグ', 'image/normal/01_front/07731201.png', 'image/shiny/01_front/07731201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07731101', '0773', 'シルヴァディ', 'タイプ：サイキック', 'image/normal/02_front/07731101.png', 'image/shiny/02_front/07731101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07731301', '0773', 'シルヴァディ', 'タイプ：ロック', 'image/normal/01_front/07731301.png', 'image/shiny/01_front/07731301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07731201', '0773', 'シルヴァディ', 'タイプ：バグ', 'image/normal/02_front/07731201.png', 'image/shiny/02_front/07731201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07731401', '0773', 'シルヴァディ', 'タイプ：ゴースト', 'image/normal/01_front/07731401.png', 'image/shiny/01_front/07731401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07731301', '0773', 'シルヴァディ', 'タイプ：ロック', 'image/normal/02_front/07731301.png', 'image/shiny/02_front/07731301.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07731401', '0773', 'シルヴァディ', 'タイプ：ゴースト', 'image/normal/02_front/07731401.png', 'image/shiny/02_front/07731401.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07731501', '0773', 'シルヴァディ', 'タイプ：ドラゴン', 'image/normal/01_front/07731501.png', 'image/shiny/01_front/07731501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07731601', '0773', 'シルヴァディ', 'タイプ：ダーク', 'image/normal/01_front/07731601.png', 'image/shiny/01_front/07731601.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07731501', '0773', 'シルヴァディ', 'タイプ：ドラゴン', 'image/normal/02_front/07731501.png', 'image/shiny/02_front/07731501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07731701', '0773', 'シルヴァディ', 'タイプ：スチール', 'image/normal/01_front/07731701.png', 'image/shiny/01_front/07731701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07731601', '0773', 'シルヴァディ', 'タイプ：ダーク', 'image/normal/02_front/07731601.png', 'image/shiny/02_front/07731601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07731801', '0773', 'シルヴァディ', 'タイプ：フェアリー', 'image/normal/01_front/07731801.png', 'image/shiny/01_front/07731801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07731701', '0773', 'シルヴァディ', 'タイプ：スチール', 'image/normal/02_front/07731701.png', 'image/shiny/02_front/07731701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07740101', '0774', 'メテノ', 'りゅうせいのすがた', 'image/normal/01_front/07740101.png', 'image/shiny/01_front/07740101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07731801', '0773', 'シルヴァディ', 'タイプ：フェアリー', 'image/normal/02_front/07731801.png', 'image/shiny/02_front/07731801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07740201', '0774', 'メテノ', 'あかいろのコア', 'image/normal/01_front/07740201.png', 'image/shiny/01_front/07740201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07740101', '0774', 'メテノ', 'りゅうせいのすがた', 'image/normal/02_front/07740101.png', 'image/shiny/02_front/07740101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07740301', '0774', 'メテノ', 'だいだいいろのコア', 'image/normal/01_front/07740301.png', 'image/shiny/01_front/07740301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07740201', '0774', 'メテノ', 'あかいろのコア', 'image/normal/02_front/07740201.png', 'image/shiny/02_front/07740201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07740401', '0774', 'メテノ', 'きいろのコア', 'image/normal/01_front/07740401.png', 'image/shiny/01_front/07740401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07740301', '0774', 'メテノ', 'だいだいいろのコア', 'image/normal/02_front/07740301.png', 'image/shiny/02_front/07740301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07740501', '0774', 'メテノ', 'みどりいろのコア', 'image/normal/01_front/07740501.png', 'image/shiny/01_front/07740501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07740401', '0774', 'メテノ', 'きいろのコア', 'image/normal/02_front/07740401.png', 'image/shiny/02_front/07740401.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07740501', '0774', 'メテノ', 'みどりいろのコア', 'image/normal/02_front/07740501.png', 'image/shiny/02_front/07740501.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07740601', '0774', 'メテノ', 'みずいろのコア', 'image/normal/01_front/07740601.png', 'image/shiny/01_front/07740601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07740701', '0774', 'メテノ', 'あおいろのコア', 'image/normal/01_front/07740701.png', 'image/shiny/01_front/07740701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07740601', '0774', 'メテノ', 'みずいろのコア', 'image/normal/02_front/07740601.png', 'image/shiny/02_front/07740601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07740801', '0774', 'メテノ', 'むらさきいろのコア', 'image/normal/01_front/07740801.png', 'image/shiny/01_front/07740801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07740701', '0774', 'メテノ', 'あおいろのコア', 'image/normal/02_front/07740701.png', 'image/shiny/02_front/07740701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07750101', '0775', 'ネッコアラ', 'image/normal/01_front/07750101.png', 'image/shiny/01_front/07750101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07740801', '0774', 'メテノ', 'むらさきいろのコア', 'image/normal/02_front/07740801.png', 'image/shiny/02_front/07740801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07760101', '0776', 'バクガメス', 'image/normal/01_front/07760101.png', 'image/shiny/01_front/07760101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07750101', '0775', 'ネッコアラ', 'image/normal/02_front/07750101.png', 'image/shiny/02_front/07750101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07770101', '0777', 'トゲデマル', 'image/normal/01_front/07770101.png', 'image/shiny/01_front/07770101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07760101', '0776', 'バクガメス', 'image/normal/02_front/07760101.png', 'image/shiny/02_front/07760101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07780101', '0778', 'ミミッキュ', 'ばけたすがた', 'image/normal/01_front/07780101.png', 'image/shiny/01_front/07780101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07770101', '0777', 'トゲデマル', 'image/normal/02_front/07770101.png', 'image/shiny/02_front/07770101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07780201', '0778', 'ミミッキュ', 'ばれたすがた', 'image/normal/01_front/07780201.png', 'image/shiny/01_front/07780201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07780101', '0778', 'ミミッキュ', 'ばけたすがた', 'image/normal/02_front/07780101.png', 'image/shiny/02_front/07780101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07790101', '0779', 'ハギギシリ', 'image/normal/01_front/07790101.png', 'image/shiny/01_front/07790101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07780201', '0778', 'ミミッキュ', 'ばれたすがた', 'image/normal/02_front/07780201.png', 'image/shiny/02_front/07780201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07790101', '0779', 'ハギギシリ', 'image/normal/02_front/07790101.png', 'image/shiny/02_front/07790101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07800101', '0780', 'ジジーロン', 'image/normal/01_front/07800101.png', 'image/shiny/01_front/07800101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07800201', '0780', 'ジジーロン', 'メガジジーロン', 'image/normal/01_front/07800201.png', 'image/shiny/01_front/07800201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07800101', '0780', 'ジジーロン', 'image/normal/02_front/07800101.png', 'image/shiny/02_front/07800101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07810101', '0781', 'ダダリン', 'image/normal/01_front/07810101.png', 'image/shiny/01_front/07810101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07800201', '0780', 'ジジーロン', 'メガジジーロン', 'image/normal/02_front/07800201.png', 'image/shiny/02_front/07800201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07820101', '0782', 'ジャラコ', 'image/normal/01_front/07820101.png', 'image/shiny/01_front/07820101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07810101', '0781', 'ダダリン', 'image/normal/02_front/07810101.png', 'image/shiny/02_front/07810101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07830101', '0783', 'ジャランゴ', 'image/normal/01_front/07830101.png', 'image/shiny/01_front/07830101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07820101', '0782', 'ジャラコ', 'image/normal/02_front/07820101.png', 'image/shiny/02_front/07820101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07840101', '0784', 'ジャラランガ', 'image/normal/01_front/07840101.png', 'image/shiny/01_front/07840101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07830101', '0783', 'ジャランゴ', 'image/normal/02_front/07830101.png', 'image/shiny/02_front/07830101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07850101', '0785', 'カプ・コケコ', 'image/normal/01_front/07850101.png', 'image/shiny/01_front/07850101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07840101', '0784', 'ジャラランガ', 'image/normal/02_front/07840101.png', 'image/shiny/02_front/07840101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07860101', '0786', 'カプ・テテフ', 'image/normal/01_front/07860101.png', 'image/shiny/01_front/07860101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07850101', '0785', 'カプ・コケコ', 'image/normal/02_front/07850101.png', 'image/shiny/02_front/07850101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07870101', '0787', 'カプ・ブルル', 'image/normal/01_front/07870101.png', 'image/shiny/01_front/07870101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07860101', '0786', 'カプ・テテフ', 'image/normal/02_front/07860101.png', 'image/shiny/02_front/07860101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07880101', '0788', 'カプ・レヒレ', 'image/normal/01_front/07880101.png', 'image/shiny/01_front/07880101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07870101', '0787', 'カプ・ブルル', 'image/normal/02_front/07870101.png', 'image/shiny/02_front/07870101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07880101', '0788', 'カプ・レヒレ', 'image/normal/02_front/07880101.png', 'image/shiny/02_front/07880101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07890101', '0789', 'コスモッグ', 'image/normal/01_front/07890101.png', 'image/shiny/01_front/07890101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07900101', '0790', 'コスモウム', 'image/normal/01_front/07900101.png', 'image/shiny/01_front/07900101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07890101', '0789', 'コスモッグ', 'image/normal/02_front/07890101.png', 'image/shiny/02_front/07890101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07910101', '0791', 'ソルガレオ', 'image/normal/01_front/07910101.png', 'image/shiny/01_front/07910101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07900101', '0790', 'コスモウム', 'image/normal/02_front/07900101.png', 'image/shiny/02_front/07900101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07920101', '0792', 'ルナアーラ', 'image/normal/01_front/07920101.png', 'image/shiny/01_front/07920101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07910101', '0791', 'ソルガレオ', 'image/normal/02_front/07910101.png', 'image/shiny/02_front/07910101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07930101', '0793', 'ウツロイド', 'image/normal/01_front/07930101.png', 'image/shiny/01_front/07930101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07920101', '0792', 'ルナアーラ', 'image/normal/02_front/07920101.png', 'image/shiny/02_front/07920101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07940101', '0794', 'マッシブーン', 'image/normal/01_front/07940101.png', 'image/shiny/01_front/07940101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07930101', '0793', 'ウツロイド', 'image/normal/02_front/07930101.png', 'image/shiny/02_front/07930101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07950101', '0795', 'フェローチェ', 'image/normal/01_front/07950101.png', 'image/shiny/01_front/07950101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07940101', '0794', 'マッシブーン', 'image/normal/02_front/07940101.png', 'image/shiny/02_front/07940101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07960101', '0796', 'デンジュモク', 'image/normal/01_front/07960101.png', 'image/shiny/01_front/07960101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07950101', '0795', 'フェローチェ', 'image/normal/02_front/07950101.png', 'image/shiny/02_front/07950101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07970101', '0797', 'テッカグヤ', 'image/normal/01_front/07970101.png', 'image/shiny/01_front/07970101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07960101', '0796', 'デンジュモク', 'image/normal/02_front/07960101.png', 'image/shiny/02_front/07960101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07970101', '0797', 'テッカグヤ', 'image/normal/02_front/07970101.png', 'image/shiny/02_front/07970101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07980101', '0798', 'カミツルギ', 'image/normal/01_front/07980101.png', 'image/shiny/01_front/07980101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('07990101', '0799', 'アクジキング', 'image/normal/01_front/07990101.png', 'image/shiny/01_front/07990101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07980101', '0798', 'カミツルギ', 'image/normal/02_front/07980101.png', 'image/shiny/02_front/07980101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08000101', '0800', 'ネクロズマ', 'image/normal/01_front/08000101.png', 'image/shiny/01_front/08000101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('07990101', '0799', 'アクジキング', 'image/normal/02_front/07990101.png', 'image/shiny/02_front/07990101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08000201', '0800', 'ネクロズマ', 'たそがれのたてがみ', 'image/normal/01_front/08000201.png', 'image/shiny/01_front/08000201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08000101', '0800', 'ネクロズマ', 'image/normal/02_front/08000101.png', 'image/shiny/02_front/08000101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08000301', '0800', 'ネクロズマ', 'あかつきのつばさ', 'image/normal/01_front/08000301.png', 'image/shiny/01_front/08000301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08000201', '0800', 'ネクロズマ', 'たそがれのたてがみ', 'image/normal/02_front/08000201.png', 'image/shiny/02_front/08000201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08000401', '0800', 'ネクロズマ', 'ウルトラネクロズマ', 'image/normal/01_front/08000401.png', 'image/shiny/01_front/08000401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08000301', '0800', 'ネクロズマ', 'あかつきのつばさ', 'image/normal/02_front/08000301.png', 'image/shiny/02_front/08000301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08010101', '0801', 'マギアナ', 'image/normal/01_front/08010101.png', 'image/shiny/01_front/08010101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08000401', '0800', 'ネクロズマ', 'ウルトラネクロズマ', 'image/normal/02_front/08000401.png', 'image/shiny/02_front/08000401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08010201', '0801', 'マギアナ', '500ねんまえのいろ', 'image/normal/01_front/08010201.png', 'image/shiny/01_front/08010201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08010101', '0801', 'マギアナ', 'image/normal/02_front/08010101.png', 'image/shiny/02_front/08010101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08010301', '0801', 'マギアナ', 'メガマギアナ', 'image/normal/01_front/08010301.png', 'image/shiny/01_front/08010301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08010201', '0801', 'マギアナ', '500ねんまえのいろ', 'image/normal/02_front/08010201.png', 'image/shiny/02_front/08010201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08010401', '0801', 'マギアナ', 'メガマギアナ・500ねんまえのいろ', 'image/normal/01_front/08010401.png', 'image/shiny/01_front/08010401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08010301', '0801', 'マギアナ', 'メガマギアナ', 'image/normal/02_front/08010301.png', 'image/shiny/02_front/08010301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08020101', '0802', 'マーシャドー', 'image/normal/01_front/08020101.png', 'image/shiny/01_front/08020101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08010401', '0801', 'マギアナ', 'メガマギアナ・500ねんまえのいろ', 'image/normal/02_front/08010401.png', 'image/shiny/02_front/08010401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08030101', '0803', 'ベベノム', 'image/normal/01_front/08030101.png', 'image/shiny/01_front/08030101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08020101', '0802', 'マーシャドー', 'image/normal/02_front/08020101.png', 'image/shiny/02_front/08020101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08030101', '0803', 'ベベノム', 'image/normal/02_front/08030101.png', 'image/shiny/02_front/08030101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08040101', '0804', 'アーゴヨン', 'image/normal/01_front/08040101.png', 'image/shiny/01_front/08040101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08050101', '0805', 'ツンデツンデ', 'image/normal/01_front/08050101.png', 'image/shiny/01_front/08050101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08040101', '0804', 'アーゴヨン', 'image/normal/02_front/08040101.png', 'image/shiny/02_front/08040101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08060101', '0806', 'ズガドーン', 'image/normal/01_front/08060101.png', 'image/shiny/01_front/08060101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08050101', '0805', 'ツンデツンデ', 'image/normal/02_front/08050101.png', 'image/shiny/02_front/08050101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08070101', '0807', 'ゼラオラ', 'image/normal/01_front/08070101.png', 'image/shiny/01_front/08070101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08060101', '0806', 'ズガドーン', 'image/normal/02_front/08060101.png', 'image/shiny/02_front/08060101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08070201', '0807', 'ゼラオラ', 'メガゼラオラ', 'image/normal/01_front/08070201.png', 'image/shiny/01_front/08070201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08070101', '0807', 'ゼラオラ', 'image/normal/02_front/08070101.png', 'image/shiny/02_front/08070101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08080101', '0808', 'メルタン', 'image/normal/01_front/08080101.png', 'image/shiny/01_front/08080101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08070201', '0807', 'ゼラオラ', 'メガゼラオラ', 'image/normal/02_front/08070201.png', 'image/shiny/02_front/08070201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08090101', '0809', 'メルメタル', 'image/normal/01_front/08090101.png', 'image/shiny/01_front/08090101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08080101', '0808', 'メルタン', 'image/normal/02_front/08080101.png', 'image/shiny/02_front/08080101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08090201', '0809', 'メルメタル', 'キョダイマックスのすがた', 'image/normal/01_front/08090201.png', 'image/shiny/01_front/08090201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08090101', '0809', 'メルメタル', 'image/normal/02_front/08090101.png', 'image/shiny/02_front/08090101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08090201', '0809', 'メルメタル', 'キョダイマックスのすがた', 'image/normal/02_front/08090201.png', 'image/shiny/02_front/08090201.png');
 
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08100101', '0810', 'サルノリ', 'image/normal/01_front/08100101.png', 'image/shiny/01_front/08100101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08110101', '0811', 'バチンキー', 'image/normal/01_front/08110101.png', 'image/shiny/01_front/08110101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08100101', '0810', 'サルノリ', 'image/normal/02_front/08100101.png', 'image/shiny/02_front/08100101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08120101', '0812', 'ゴリランダー', 'image/normal/01_front/08120101.png', 'image/shiny/01_front/08120101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08110101', '0811', 'バチンキー', 'image/normal/02_front/08110101.png', 'image/shiny/02_front/08110101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08120201', '0812', 'ゴリランダー', 'キョダイマックスのすがた', 'image/normal/01_front/08120201.png', 'image/shiny/01_front/08120201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08120101', '0812', 'ゴリランダー', 'image/normal/02_front/08120101.png', 'image/shiny/02_front/08120101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08130101', '0813', 'ヒバニー', 'image/normal/01_front/08130101.png', 'image/shiny/01_front/08130101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08120201', '0812', 'ゴリランダー', 'キョダイマックスのすがた', 'image/normal/02_front/08120201.png', 'image/shiny/02_front/08120201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08140101', '0814', 'ラビフット', 'image/normal/01_front/08140101.png', 'image/shiny/01_front/08140101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08130101', '0813', 'ヒバニー', 'image/normal/02_front/08130101.png', 'image/shiny/02_front/08130101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08150101', '0815', 'エースバーン', 'image/normal/01_front/08150101.png', 'image/shiny/01_front/08150101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08140101', '0814', 'ラビフット', 'image/normal/02_front/08140101.png', 'image/shiny/02_front/08140101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08150201', '0815', 'エースバーン', 'キョダイマックスのすがた', 'image/normal/01_front/08150201.png', 'image/shiny/01_front/08150201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08150101', '0815', 'エースバーン', 'image/normal/02_front/08150101.png', 'image/shiny/02_front/08150101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08160101', '0816', 'メッソン', 'image/normal/01_front/08160101.png', 'image/shiny/01_front/08160101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08150201', '0815', 'エースバーン', 'キョダイマックスのすがた', 'image/normal/02_front/08150201.png', 'image/shiny/02_front/08150201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08160101', '0816', 'メッソン', 'image/normal/02_front/08160101.png', 'image/shiny/02_front/08160101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08170101', '0817', 'ジメレオン', 'image/normal/01_front/08170101.png', 'image/shiny/01_front/08170101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08180101', '0818', 'インテレオン', 'image/normal/01_front/08180101.png', 'image/shiny/01_front/08180101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08170101', '0817', 'ジメレオン', 'image/normal/02_front/08170101.png', 'image/shiny/02_front/08170101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08180201', '0818', 'インテレオン', 'キョダイマックスのすがた', 'image/normal/01_front/08180201.png', 'image/shiny/01_front/08180201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08180101', '0818', 'インテレオン', 'image/normal/02_front/08180101.png', 'image/shiny/02_front/08180101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08190101', '0819', 'ホシガリス', 'image/normal/01_front/08190101.png', 'image/shiny/01_front/08190101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08180201', '0818', 'インテレオン', 'キョダイマックスのすがた', 'image/normal/02_front/08180201.png', 'image/shiny/02_front/08180201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08200101', '0820', 'ヨクバリス', 'image/normal/01_front/08200101.png', 'image/shiny/01_front/08200101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08190101', '0819', 'ホシガリス', 'image/normal/02_front/08190101.png', 'image/shiny/02_front/08190101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08210101', '0821', 'ココガラ', 'image/normal/01_front/08210101.png', 'image/shiny/01_front/08210101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08200101', '0820', 'ヨクバリス', 'image/normal/02_front/08200101.png', 'image/shiny/02_front/08200101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08220101', '0822', 'アオガラス', 'image/normal/01_front/08220101.png', 'image/shiny/01_front/08220101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08210101', '0821', 'ココガラ', 'image/normal/02_front/08210101.png', 'image/shiny/02_front/08210101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08230101', '0823', 'アーマーガア', 'image/normal/01_front/08230101.png', 'image/shiny/01_front/08230101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08220101', '0822', 'アオガラス', 'image/normal/02_front/08220101.png', 'image/shiny/02_front/08220101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08230201', '0823', 'アーマーガア', 'キョダイマックスのすがた', 'image/normal/01_front/08230201.png', 'image/shiny/01_front/08230201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08230101', '0823', 'アーマーガア', 'image/normal/02_front/08230101.png', 'image/shiny/02_front/08230101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08230201', '0823', 'アーマーガア', 'キョダイマックスのすがた', 'image/normal/02_front/08230201.png', 'image/shiny/02_front/08230201.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08240101', '0824', 'サッチムシ', 'image/normal/01_front/08240101.png', 'image/shiny/01_front/08240101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08250101', '0825', 'レドームシ', 'image/normal/01_front/08250101.png', 'image/shiny/01_front/08250101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08240101', '0824', 'サッチムシ', 'image/normal/02_front/08240101.png', 'image/shiny/02_front/08240101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08260101', '0826', 'イオルブ', 'image/normal/01_front/08260101.png', 'image/shiny/01_front/08260101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08250101', '0825', 'レドームシ', 'image/normal/02_front/08250101.png', 'image/shiny/02_front/08250101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08260201', '0826', 'イオルブ', 'キョダイマックスのすがた', 'image/normal/01_front/08260201.png', 'image/shiny/01_front/08260201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08260101', '0826', 'イオルブ', 'image/normal/02_front/08260101.png', 'image/shiny/02_front/08260101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08270101', '0827', 'クスネ', 'image/normal/01_front/08270101.png', 'image/shiny/01_front/08270101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08260201', '0826', 'イオルブ', 'キョダイマックスのすがた', 'image/normal/02_front/08260201.png', 'image/shiny/02_front/08260201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08280101', '0828', 'フォクスライ', 'image/normal/01_front/08280101.png', 'image/shiny/01_front/08280101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08270101', '0827', 'クスネ', 'image/normal/02_front/08270101.png', 'image/shiny/02_front/08270101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08290101', '0829', 'ヒメンカ', 'image/normal/01_front/08290101.png', 'image/shiny/01_front/08290101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08280101', '0828', 'フォクスライ', 'image/normal/02_front/08280101.png', 'image/shiny/02_front/08280101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08300101', '0830', 'ワタシラガ', 'image/normal/01_front/08300101.png', 'image/shiny/01_front/08300101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08290101', '0829', 'ヒメンカ', 'image/normal/02_front/08290101.png', 'image/shiny/02_front/08290101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08310101', '0831', 'ウールー', 'image/normal/01_front/08310101.png', 'image/shiny/01_front/08310101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08300101', '0830', 'ワタシラガ', 'image/normal/02_front/08300101.png', 'image/shiny/02_front/08300101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08310101', '0831', 'ウールー', 'image/normal/02_front/08310101.png', 'image/shiny/02_front/08310101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08320101', '0832', 'バイウールー', 'image/normal/01_front/08320101.png', 'image/shiny/01_front/08320101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08330101', '0833', 'カムカメ', 'image/normal/01_front/08330101.png', 'image/shiny/01_front/08330101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08320101', '0832', 'バイウールー', 'image/normal/02_front/08320101.png', 'image/shiny/02_front/08320101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08340101', '0834', 'カジリガメ', 'image/normal/01_front/08340101.png', 'image/shiny/01_front/08340101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08330101', '0833', 'カムカメ', 'image/normal/02_front/08330101.png', 'image/shiny/02_front/08330101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08340201', '0834', 'カジリガメ', 'キョダイマックスのすがた', 'image/normal/01_front/08340201.png', 'image/shiny/01_front/08340201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08340101', '0834', 'カジリガメ', 'image/normal/02_front/08340101.png', 'image/shiny/02_front/08340101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08350101', '0835', 'ワンパチ', 'image/normal/01_front/08350101.png', 'image/shiny/01_front/08350101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08340201', '0834', 'カジリガメ', 'キョダイマックスのすがた', 'image/normal/02_front/08340201.png', 'image/shiny/02_front/08340201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08360101', '0836', 'パルスワン', 'image/normal/01_front/08360101.png', 'image/shiny/01_front/08360101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08350101', '0835', 'ワンパチ', 'image/normal/02_front/08350101.png', 'image/shiny/02_front/08350101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08370101', '0837', 'タンドン', 'image/normal/01_front/08370101.png', 'image/shiny/01_front/08370101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08360101', '0836', 'パルスワン', 'image/normal/02_front/08360101.png', 'image/shiny/02_front/08360101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08380101', '0838', 'トロッゴン', 'image/normal/01_front/08380101.png', 'image/shiny/01_front/08380101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08370101', '0837', 'タンドン', 'image/normal/02_front/08370101.png', 'image/shiny/02_front/08370101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08390101', '0839', 'セキタンザン', 'image/normal/01_front/08390101.png', 'image/shiny/01_front/08390101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08380101', '0838', 'トロッゴン', 'image/normal/02_front/08380101.png', 'image/shiny/02_front/08380101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08390101', '0839', 'セキタンザン', 'image/normal/02_front/08390101.png', 'image/shiny/02_front/08390101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08390201', '0839', 'セキタンザン', 'キョダイマックスのすがた', 'image/normal/01_front/08390201.png', 'image/shiny/01_front/08390201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08400101', '0840', 'カジッチュ', 'image/normal/01_front/08400101.png', 'image/shiny/01_front/08400101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08390201', '0839', 'セキタンザン', 'キョダイマックスのすがた', 'image/normal/02_front/08390201.png', 'image/shiny/02_front/08390201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08410101', '0841', 'アップリュー', 'image/normal/01_front/08410101.png', 'image/shiny/01_front/08410101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08400101', '0840', 'カジッチュ', 'image/normal/02_front/08400101.png', 'image/shiny/02_front/08400101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08410201', '0841', 'アップリュー', 'キョダイマックスのすがた', 'image/normal/01_front/08410201.png', 'image/shiny/01_front/08410201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08410101', '0841', 'アップリュー', 'image/normal/02_front/08410101.png', 'image/shiny/02_front/08410101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08420101', '0842', 'タルップル', 'image/normal/01_front/08420101.png', 'image/shiny/01_front/08420101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08410201', '0841', 'アップリュー', 'キョダイマックスのすがた', 'image/normal/02_front/08410201.png', 'image/shiny/02_front/08410201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08420201', '0842', 'タルップル', 'キョダイマックスのすがた', 'image/normal/01_front/08420201.png', 'image/shiny/01_front/08420201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08420101', '0842', 'タルップル', 'image/normal/02_front/08420101.png', 'image/shiny/02_front/08420101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08430101', '0843', 'スナヘビ', 'image/normal/01_front/08430101.png', 'image/shiny/01_front/08430101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08420201', '0842', 'タルップル', 'キョダイマックスのすがた', 'image/normal/02_front/08420201.png', 'image/shiny/02_front/08420201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08440101', '0844', 'サダイジャ', 'image/normal/01_front/08440101.png', 'image/shiny/01_front/08440101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08430101', '0843', 'スナヘビ', 'image/normal/02_front/08430101.png', 'image/shiny/02_front/08430101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08440201', '0844', 'サダイジャ', 'キョダイマックスのすがた', 'image/normal/01_front/08440201.png', 'image/shiny/01_front/08440201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08440101', '0844', 'サダイジャ', 'image/normal/02_front/08440101.png', 'image/shiny/02_front/08440101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08440201', '0844', 'サダイジャ', 'キョダイマックスのすがた', 'image/normal/02_front/08440201.png', 'image/shiny/02_front/08440201.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08450101', '0845', 'ウッウ', 'image/normal/01_front/08450101.png', 'image/shiny/01_front/08450101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08450201', '0845', 'ウッウ', 'うのみのすがた', 'image/normal/01_front/08450201.png', 'image/shiny/01_front/08450201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08450101', '0845', 'ウッウ', 'image/normal/02_front/08450101.png', 'image/shiny/02_front/08450101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08450301', '0845', 'ウッウ', 'まるのみのすがた', 'image/normal/01_front/08450301.png', 'image/shiny/01_front/08450301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08450201', '0845', 'ウッウ', 'うのみのすがた', 'image/normal/02_front/08450201.png', 'image/shiny/02_front/08450201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08460101', '0846', 'サシカマス', 'image/normal/01_front/08460101.png', 'image/shiny/01_front/08460101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08450301', '0845', 'ウッウ', 'まるのみのすがた', 'image/normal/02_front/08450301.png', 'image/shiny/02_front/08450301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08470101', '0847', 'カマスジョー', 'image/normal/01_front/08470101.png', 'image/shiny/01_front/08470101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08460101', '0846', 'サシカマス', 'image/normal/02_front/08460101.png', 'image/shiny/02_front/08460101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08480101', '0848', 'エレズン', 'image/normal/01_front/08480101.png', 'image/shiny/01_front/08480101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08470101', '0847', 'カマスジョー', 'image/normal/02_front/08470101.png', 'image/shiny/02_front/08470101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08490101', '0849', 'ストリンダー', 'ハイなすがた', 'image/normal/01_front/08490101.png', 'image/shiny/01_front/08490101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08480101', '0848', 'エレズン', 'image/normal/02_front/08480101.png', 'image/shiny/02_front/08480101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08490201', '0849', 'ストリンダー', 'ローなすがた', 'image/normal/01_front/08490201.png', 'image/shiny/01_front/08490201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08490101', '0849', 'ストリンダー', 'ハイなすがた', 'image/normal/02_front/08490101.png', 'image/shiny/02_front/08490101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08490301', '0849', 'ストリンダー', 'ハイなすがた・キョダイマックスのすがた', 'image/normal/01_front/08490301.png', 'image/shiny/01_front/08490301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08490201', '0849', 'ストリンダー', 'ローなすがた', 'image/normal/02_front/08490201.png', 'image/shiny/02_front/08490201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08490401', '0849', 'ストリンダー', 'ローなすがた・キョダイマックスのすがた', 'image/normal/01_front/08490401.png', 'image/shiny/01_front/08490401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08490301', '0849', 'ストリンダー', 'ハイなすがた・キョダイマックスのすがた', 'image/normal/02_front/08490301.png', 'image/shiny/02_front/08490301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08500101', '0850', 'ヤクデ', 'image/normal/01_front/08500101.png', 'image/shiny/01_front/08500101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08490401', '0849', 'ストリンダー', 'ローなすがた・キョダイマックスのすがた', 'image/normal/02_front/08490401.png', 'image/shiny/02_front/08490401.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08500101', '0850', 'ヤクデ', 'image/normal/02_front/08500101.png', 'image/shiny/02_front/08500101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08510101', '0851', 'マルヤクデ', 'image/normal/01_front/08510101.png', 'image/shiny/01_front/08510101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08510201', '0851', 'マルヤクデ', 'キョダイマックスのすがた', 'image/normal/01_front/08510201.png', 'image/shiny/01_front/08510201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08510101', '0851', 'マルヤクデ', 'image/normal/02_front/08510101.png', 'image/shiny/02_front/08510101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08520101', '0852', 'タタッコ', 'image/normal/01_front/08520101.png', 'image/shiny/01_front/08520101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08510201', '0851', 'マルヤクデ', 'キョダイマックスのすがた', 'image/normal/02_front/08510201.png', 'image/shiny/02_front/08510201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08530101', '0853', 'オトスパス', 'image/normal/01_front/08530101.png', 'image/shiny/01_front/08530101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08520101', '0852', 'タタッコ', 'image/normal/02_front/08520101.png', 'image/shiny/02_front/08520101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08540101', '0854', 'ヤバチャ', 'がんさくフォルム', 'image/normal/01_front/08540101.png', 'image/shiny/01_front/08540101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08530101', '0853', 'オトスパス', 'image/normal/02_front/08530101.png', 'image/shiny/02_front/08530101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08540201', '0854', 'ヤバチャ', 'しんさくフォルム', 'image/normal/01_front/08540201.png', 'image/shiny/01_front/08540201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08540101', '0854', 'ヤバチャ', 'がんさくフォルム', 'image/normal/02_front/08540101.png', 'image/shiny/02_front/08540101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08550101', '0855', 'ポットデス', 'がんさくフォルム', 'image/normal/01_front/08550101.png', 'image/shiny/01_front/08550101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08540201', '0854', 'ヤバチャ', 'しんさくフォルム', 'image/normal/02_front/08540201.png', 'image/shiny/02_front/08540201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08550201', '0855', 'ポットデス', 'しんさくフォルム', 'image/normal/01_front/08550201.png', 'image/shiny/01_front/08550201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08550101', '0855', 'ポットデス', 'がんさくフォルム', 'image/normal/02_front/08550101.png', 'image/shiny/02_front/08550101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08560101', '0856', 'ミブリム', 'image/normal/01_front/08560101.png', 'image/shiny/01_front/08560101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08550201', '0855', 'ポットデス', 'しんさくフォルム', 'image/normal/02_front/08550201.png', 'image/shiny/02_front/08550201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08560101', '0856', 'ミブリム', 'image/normal/02_front/08560101.png', 'image/shiny/02_front/08560101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08570101', '0857', 'テブリム', 'image/normal/01_front/08570101.png', 'image/shiny/01_front/08570101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08580101', '0858', 'ブリムオン', 'image/normal/01_front/08580101.png', 'image/shiny/01_front/08580101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08570101', '0857', 'テブリム', 'image/normal/02_front/08570101.png', 'image/shiny/02_front/08570101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08580201', '0858', 'ブリムオン', 'キョダイマックスのすがた', 'image/normal/01_front/08580201.png', 'image/shiny/01_front/08580201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08580101', '0858', 'ブリムオン', 'image/normal/02_front/08580101.png', 'image/shiny/02_front/08580101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08590101', '0859', 'ベロバー', 'image/normal/01_front/08590101.png', 'image/shiny/01_front/08590101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08580201', '0858', 'ブリムオン', 'キョダイマックスのすがた', 'image/normal/02_front/08580201.png', 'image/shiny/02_front/08580201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08600101', '0860', 'ギモー', 'image/normal/01_front/08600101.png', 'image/shiny/01_front/08600101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08590101', '0859', 'ベロバー', 'image/normal/02_front/08590101.png', 'image/shiny/02_front/08590101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08610101', '0861', 'オーロンゲ', 'image/normal/01_front/08610101.png', 'image/shiny/01_front/08610101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08600101', '0860', 'ギモー', 'image/normal/02_front/08600101.png', 'image/shiny/02_front/08600101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08610201', '0861', 'オーロンゲ', 'キョダイマックスのすがた', 'image/normal/01_front/08610201.png', 'image/shiny/01_front/08610201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08610101', '0861', 'オーロンゲ', 'image/normal/02_front/08610101.png', 'image/shiny/02_front/08610101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08620101', '0862', 'タチフサグマ', 'image/normal/01_front/08620101.png', 'image/shiny/01_front/08620101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08610201', '0861', 'オーロンゲ', 'キョダイマックスのすがた', 'image/normal/02_front/08610201.png', 'image/shiny/02_front/08610201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08630101', '0863', 'ニャイキング', 'image/normal/01_front/08630101.png', 'image/shiny/01_front/08630101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08620101', '0862', 'タチフサグマ', 'image/normal/02_front/08620101.png', 'image/shiny/02_front/08620101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08630101', '0863', 'ニャイキング', 'image/normal/02_front/08630101.png', 'image/shiny/02_front/08630101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08640101', '0864', 'サニゴーン', 'image/normal/01_front/08640101.png', 'image/shiny/01_front/08640101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08650101', '0865', 'ネギガナイト', 'image/normal/01_front/08650101.png', 'image/shiny/01_front/08650101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08640101', '0864', 'サニゴーン', 'image/normal/02_front/08640101.png', 'image/shiny/02_front/08640101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08660101', '0866', 'バリコオル', 'image/normal/01_front/08660101.png', 'image/shiny/01_front/08660101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08650101', '0865', 'ネギガナイト', 'image/normal/02_front/08650101.png', 'image/shiny/02_front/08650101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08670101', '0867', 'デスバーン', 'image/normal/01_front/08670101.png', 'image/shiny/01_front/08670101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08660101', '0866', 'バリコオル', 'image/normal/02_front/08660101.png', 'image/shiny/02_front/08660101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08680101', '0868', 'マホミル', 'image/normal/01_front/08680101.png', 'image/shiny/01_front/08680101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08670101', '0867', 'デスバーン', 'image/normal/02_front/08670101.png', 'image/shiny/02_front/08670101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08680101', '0868', 'マホミル', 'image/normal/02_front/08680101.png', 'image/shiny/02_front/08680101.png');
 
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08690101', '0869', 'マホイップ', 'ミルキティバニラ・いちご', 'image/normal/01_front/08690101.png', 'image/shiny/01_front/08690101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08690201', '0869', 'マホイップ', 'ミルキティバニラ・ベリー', 'image/normal/01_front/08690201.png', 'image/shiny/01_front/08690201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08690101', '0869', 'マホイップ', 'ミルキティバニラ・いちご', 'image/normal/02_front/08690101.png', 'image/shiny/02_front/08690101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08690301', '0869', 'マホイップ', 'ミルキティバニラ・ハート', 'image/normal/01_front/08690301.png', 'image/shiny/01_front/08690301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08690201', '0869', 'マホイップ', 'ミルキティバニラ・ベリー', 'image/normal/02_front/08690201.png', 'image/shiny/02_front/08690201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08690401', '0869', 'マホイップ', 'ミルキティバニラ・スター', 'image/normal/01_front/08690401.png', 'image/shiny/01_front/08690401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08690301', '0869', 'マホイップ', 'ミルキティバニラ・ハート', 'image/normal/02_front/08690301.png', 'image/shiny/02_front/08690301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08690501', '0869', 'マホイップ', 'ミルキティバニラ・よつば', 'image/normal/01_front/08690501.png', 'image/shiny/01_front/08690501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08690401', '0869', 'マホイップ', 'ミルキティバニラ・スター', 'image/normal/02_front/08690401.png', 'image/shiny/02_front/08690401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08690601', '0869', 'マホイップ', 'ミルキティバニラ・おはな', 'image/normal/01_front/08690601.png', 'image/shiny/01_front/08690601.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08690501', '0869', 'マホイップ', 'ミルキティバニラ・よつば', 'image/normal/02_front/08690501.png', 'image/shiny/02_front/08690501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08690701', '0869', 'マホイップ', 'ミルキティバニラ・リボン', 'image/normal/01_front/08690701.png', 'image/shiny/01_front/08690701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08690601', '0869', 'マホイップ', 'ミルキティバニラ・おはな', 'image/normal/02_front/08690601.png', 'image/shiny/02_front/08690601.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08690701', '0869', 'マホイップ', 'ミルキティバニラ・リボン', 'image/normal/02_front/08690701.png', 'image/shiny/02_front/08690701.png');
 
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08690801', '0869', 'マホイップ', 'ミルキティルビー・いちご', 'image/normal/01_front/08690901.png', 'image/shiny/01_front/08690801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08690901', '0869', 'マホイップ', 'ミルキティルビー・ベリー', 'image/normal/01_front/08690901.png', 'image/shiny/01_front/08690901.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08690801', '0869', 'マホイップ', 'ミルキティルビー・いちご', 'image/normal/02_front/08690901.png', 'image/shiny/02_front/08690801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691001', '0869', 'マホイップ', 'ミルキティルビー・ハート', 'image/normal/01_front/08691001.png', 'image/shiny/01_front/08691001.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08690901', '0869', 'マホイップ', 'ミルキティルビー・ベリー', 'image/normal/02_front/08690901.png', 'image/shiny/02_front/08690901.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691101', '0869', 'マホイップ', 'ミルキティルビー・スター', 'image/normal/01_front/08691101.png', 'image/shiny/01_front/08691101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691001', '0869', 'マホイップ', 'ミルキティルビー・ハート', 'image/normal/02_front/08691001.png', 'image/shiny/02_front/08691001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691201', '0869', 'マホイップ', 'ミルキティルビー・よつば', 'image/normal/01_front/08691201.png', 'image/shiny/01_front/08691201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691101', '0869', 'マホイップ', 'ミルキティルビー・スター', 'image/normal/02_front/08691101.png', 'image/shiny/02_front/08691101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691301', '0869', 'マホイップ', 'ミルキティルビー・おはな', 'image/normal/01_front/08691301.png', 'image/shiny/01_front/08691301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691201', '0869', 'マホイップ', 'ミルキティルビー・よつば', 'image/normal/02_front/08691201.png', 'image/shiny/02_front/08691201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691401', '0869', 'マホイップ', 'ミルキティルビー・リボン', 'image/normal/01_front/08691401.png', 'image/shiny/01_front/08691401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691301', '0869', 'マホイップ', 'ミルキティルビー・おはな', 'image/normal/02_front/08691301.png', 'image/shiny/02_front/08691301.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691401', '0869', 'マホイップ', 'ミルキティルビー・リボン', 'image/normal/02_front/08691401.png', 'image/shiny/02_front/08691401.png');
 
 
 
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691501', '0869', 'マホイップ', 'ミルキティまっちゃ・いちご', 'image/normal/01_front/08691501.png', 'image/shiny/01_front/08691501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691601', '0869', 'マホイップ', 'ミルキティまっちゃ・ベリー', 'image/normal/01_front/08691601.png', 'image/shiny/01_front/08691601.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691501', '0869', 'マホイップ', 'ミルキティまっちゃ・いちご', 'image/normal/02_front/08691501.png', 'image/shiny/02_front/08691501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691701', '0869', 'マホイップ', 'ミルキティまっちゃ・ハート', 'image/normal/01_front/08691701.png', 'image/shiny/01_front/08691701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691601', '0869', 'マホイップ', 'ミルキティまっちゃ・ベリー', 'image/normal/02_front/08691601.png', 'image/shiny/02_front/08691601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691801', '0869', 'マホイップ', 'ミルキティまっちゃ・スター', 'image/normal/01_front/08691801.png', 'image/shiny/01_front/08691801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691701', '0869', 'マホイップ', 'ミルキティまっちゃ・ハート', 'image/normal/02_front/08691701.png', 'image/shiny/02_front/08691701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08691901', '0869', 'マホイップ', 'ミルキティまっちゃ・よつば', 'image/normal/01_front/08691901.png', 'image/shiny/01_front/08691901.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691801', '0869', 'マホイップ', 'ミルキティまっちゃ・スター', 'image/normal/02_front/08691801.png', 'image/shiny/02_front/08691801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692001', '0869', 'マホイップ', 'ミルキティまっちゃ・おはな', 'image/normal/01_front/08692001.png', 'image/shiny/01_front/08692001.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08691901', '0869', 'マホイップ', 'ミルキティまっちゃ・よつば', 'image/normal/02_front/08691901.png', 'image/shiny/02_front/08691901.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692101', '0869', 'マホイップ', 'ミルキティまっちゃ・リボン', 'image/normal/01_front/08692101.png', 'image/shiny/01_front/08692101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692001', '0869', 'マホイップ', 'ミルキティまっちゃ・おはな', 'image/normal/02_front/08692001.png', 'image/shiny/02_front/08692001.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692101', '0869', 'マホイップ', 'ミルキティまっちゃ・リボン', 'image/normal/02_front/08692101.png', 'image/shiny/02_front/08692101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692201', '0869', 'マホイップ', 'ミルキティミント・いちご', 'image/normal/01_front/08692201.png', 'image/shiny/01_front/08692201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692301', '0869', 'マホイップ', 'ミルキティミント・ベリー', 'image/normal/01_front/08692301.png', 'image/shiny/01_front/08692301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692201', '0869', 'マホイップ', 'ミルキティミント・いちご', 'image/normal/02_front/08692201.png', 'image/shiny/02_front/08692201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692401', '0869', 'マホイップ', 'ミルキティミント・ハート', 'image/normal/01_front/08692401.png', 'image/shiny/01_front/08692401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692301', '0869', 'マホイップ', 'ミルキティミント・ベリー', 'image/normal/02_front/08692301.png', 'image/shiny/02_front/08692301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692501', '0869', 'マホイップ', 'ミルキティミント・スター', 'image/normal/01_front/08692501.png', 'image/shiny/01_front/08692501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692401', '0869', 'マホイップ', 'ミルキティミント・ハート', 'image/normal/02_front/08692401.png', 'image/shiny/02_front/08692401.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692501', '0869', 'マホイップ', 'ミルキティミント・スター', 'image/normal/02_front/08692501.png', 'image/shiny/02_front/08692501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692601', '0869', 'マホイップ', 'ミルキティミント・よつば', 'image/normal/01_front/08692601.png', 'image/shiny/01_front/08692601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692701', '0869', 'マホイップ', 'ミルキティミント・おはな', 'image/normal/01_front/08692701.png', 'image/shiny/01_front/08692701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692601', '0869', 'マホイップ', 'ミルキティミント・よつば', 'image/normal/02_front/08692601.png', 'image/shiny/02_front/08692601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692801', '0869', 'マホイップ', 'ミルキティミント・リボン', 'image/normal/01_front/08692801.png', 'image/shiny/01_front/08692801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692701', '0869', 'マホイップ', 'ミルキティミント・おはな', 'image/normal/02_front/08692701.png', 'image/shiny/02_front/08692701.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692801', '0869', 'マホイップ', 'ミルキティミント・リボン', 'image/normal/02_front/08692801.png', 'image/shiny/02_front/08692801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08692901', '0869', 'マホイップ', 'ミルキティレモン・いちご', 'image/normal/01_front/08692901.png', 'image/shiny/01_front/08692901.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08692901', '0869', 'マホイップ', 'ミルキティレモン・いちご', 'image/normal/02_front/08692901.png', 'image/shiny/02_front/08692901.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693001', '0869', 'マホイップ', 'ミルキティレモン・ベリー', 'image/normal/01_front/08693001.png', 'image/shiny/01_front/08693001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693101', '0869', 'マホイップ', 'ミルキティレモン・ハート', 'image/normal/01_front/08693101.png', 'image/shiny/01_front/08693101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693001', '0869', 'マホイップ', 'ミルキティレモン・ベリー', 'image/normal/02_front/08693001.png', 'image/shiny/02_front/08693001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693201', '0869', 'マホイップ', 'ミルキティレモン・スター', 'image/normal/01_front/08693201.png', 'image/shiny/01_front/08693201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693101', '0869', 'マホイップ', 'ミルキティレモン・ハート', 'image/normal/02_front/08693101.png', 'image/shiny/02_front/08693101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693301', '0869', 'マホイップ', 'ミルキティレモン・よつば', 'image/normal/01_front/08693301.png', 'image/shiny/01_front/08693301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693201', '0869', 'マホイップ', 'ミルキティレモン・スター', 'image/normal/02_front/08693201.png', 'image/shiny/02_front/08693201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693401', '0869', 'マホイップ', 'ミルキティレモン・おはな', 'image/normal/01_front/08693401.png', 'image/shiny/01_front/08693401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693301', '0869', 'マホイップ', 'ミルキティレモン・よつば', 'image/normal/02_front/08693301.png', 'image/shiny/02_front/08693301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693501', '0869', 'マホイップ', 'ミルキティレモン・リボン', 'image/normal/01_front/08693501.png', 'image/shiny/01_front/08693501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693401', '0869', 'マホイップ', 'ミルキティレモン・おはな', 'image/normal/02_front/08693401.png', 'image/shiny/02_front/08693401.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693501', '0869', 'マホイップ', 'ミルキティレモン・リボン', 'image/normal/02_front/08693501.png', 'image/shiny/02_front/08693501.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693601', '0869', 'マホイップ', 'ミルキティソルト・いちご', 'image/normal/01_front/08693601.png', 'image/shiny/01_front/08693601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693701', '0869', 'マホイップ', 'ミルキティソルト・ベリー', 'image/normal/01_front/08693701.png', 'image/shiny/01_front/08693701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693601', '0869', 'マホイップ', 'ミルキティソルト・いちご', 'image/normal/02_front/08693601.png', 'image/shiny/02_front/08693601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693801', '0869', 'マホイップ', 'ミルキティソルト・ハート', 'image/normal/01_front/08693801.png', 'image/shiny/01_front/08693801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693701', '0869', 'マホイップ', 'ミルキティソルト・ベリー', 'image/normal/02_front/08693701.png', 'image/shiny/02_front/08693701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08693901', '0869', 'マホイップ', 'ミルキティソルト・スター', 'image/normal/01_front/08693901.png', 'image/shiny/01_front/08693901.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693801', '0869', 'マホイップ', 'ミルキティソルト・ハート', 'image/normal/02_front/08693801.png', 'image/shiny/02_front/08693801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694001', '0869', 'マホイップ', 'ミルキティソルト・よつば', 'image/normal/01_front/08694001.png', 'image/shiny/01_front/08694001.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08693901', '0869', 'マホイップ', 'ミルキティソルト・スター', 'image/normal/02_front/08693901.png', 'image/shiny/02_front/08693901.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694101', '0869', 'マホイップ', 'ミルキティソルト・おはな', 'image/normal/01_front/08694101.png', 'image/shiny/01_front/08694101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694001', '0869', 'マホイップ', 'ミルキティソルト・よつば', 'image/normal/02_front/08694001.png', 'image/shiny/02_front/08694001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694201', '0869', 'マホイップ', 'ミルキティソルト・リボン', 'image/normal/01_front/08694201.png', 'image/shiny/01_front/08694201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694101', '0869', 'マホイップ', 'ミルキティソルト・おはな', 'image/normal/02_front/08694101.png', 'image/shiny/02_front/08694101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694201', '0869', 'マホイップ', 'ミルキティソルト・リボン', 'image/normal/02_front/08694201.png', 'image/shiny/02_front/08694201.png');
 
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694301', '0869', 'マホイップ', 'ルビーミックス・いちご', 'image/normal/01_front/08694301.png', 'image/shiny/01_front/08694301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694401', '0869', 'マホイップ', 'ルビーミックス・ベリー', 'image/normal/01_front/08694401.png', 'image/shiny/01_front/08694401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694301', '0869', 'マホイップ', 'ルビーミックス・いちご', 'image/normal/02_front/08694301.png', 'image/shiny/02_front/08694301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694501', '0869', 'マホイップ', 'ルビーミックス・ハート', 'image/normal/01_front/08694501.png', 'image/shiny/01_front/08694501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694401', '0869', 'マホイップ', 'ルビーミックス・ベリー', 'image/normal/02_front/08694401.png', 'image/shiny/02_front/08694401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694601', '0869', 'マホイップ', 'ルビーミックス・スター', 'image/normal/01_front/08694601.png', 'image/shiny/01_front/08694601.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694501', '0869', 'マホイップ', 'ルビーミックス・ハート', 'image/normal/02_front/08694501.png', 'image/shiny/02_front/08694501.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694701', '0869', 'マホイップ', 'ルビーミックス・よつば', 'image/normal/01_front/08694701.png', 'image/shiny/01_front/08694701.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694601', '0869', 'マホイップ', 'ルビーミックス・スター', 'image/normal/02_front/08694601.png', 'image/shiny/02_front/08694601.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694801', '0869', 'マホイップ', 'ルビーミックス・おはな', 'image/normal/01_front/08694801.png', 'image/shiny/01_front/08694801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694701', '0869', 'マホイップ', 'ルビーミックス・よつば', 'image/normal/02_front/08694701.png', 'image/shiny/02_front/08694701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08694901', '0869', 'マホイップ', 'ルビーミックス・リボン', 'image/normal/01_front/08694901.png', 'image/shiny/01_front/08694901.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694801', '0869', 'マホイップ', 'ルビーミックス・おはな', 'image/normal/02_front/08694801.png', 'image/shiny/02_front/08694801.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08694901', '0869', 'マホイップ', 'ルビーミックス・リボン', 'image/normal/02_front/08694901.png', 'image/shiny/02_front/08694901.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695001', '0869', 'マホイップ', 'キャラメルミックス・いちご', 'image/normal/01_front/08695001.png', 'image/shiny/01_front/08695001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695101', '0869', 'マホイップ', 'キャラメルミックス・ベリー', 'image/normal/01_front/08695101.png', 'image/shiny/01_front/08695101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695001', '0869', 'マホイップ', 'キャラメルミックス・いちご', 'image/normal/02_front/08695001.png', 'image/shiny/02_front/08695001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695201', '0869', 'マホイップ', 'キャラメルミックス・ハート', 'image/normal/01_front/08695201.png', 'image/shiny/01_front/08695201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695101', '0869', 'マホイップ', 'キャラメルミックス・ベリー', 'image/normal/02_front/08695101.png', 'image/shiny/02_front/08695101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695301', '0869', 'マホイップ', 'キャラメルミックス・スター', 'image/normal/01_front/08695301.png', 'image/shiny/01_front/08695301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695201', '0869', 'マホイップ', 'キャラメルミックス・ハート', 'image/normal/02_front/08695201.png', 'image/shiny/02_front/08695201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695401', '0869', 'マホイップ', 'キャラメルミックス・よつば', 'image/normal/01_front/08695401.png', 'image/shiny/01_front/08695401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695301', '0869', 'マホイップ', 'キャラメルミックス・スター', 'image/normal/02_front/08695301.png', 'image/shiny/02_front/08695301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695501', '0869', 'マホイップ', 'キャラメルミックス・おはな', 'image/normal/01_front/08695501.png', 'image/shiny/01_front/08695501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695401', '0869', 'マホイップ', 'キャラメルミックス・よつば', 'image/normal/02_front/08695401.png', 'image/shiny/02_front/08695401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695601', '0869', 'マホイップ', 'キャラメルミックス・リボン', 'image/normal/01_front/08695601.png', 'image/shiny/01_front/08695601.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695501', '0869', 'マホイップ', 'キャラメルミックス・おはな', 'image/normal/02_front/08695501.png', 'image/shiny/02_front/08695501.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695601', '0869', 'マホイップ', 'キャラメルミックス・リボン', 'image/normal/02_front/08695601.png', 'image/shiny/02_front/08695601.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695701', '0869', 'マホイップ', 'トリプルミックス・いちご', 'image/normal/01_front/08695701.png', 'image/shiny/01_front/08695701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695801', '0869', 'マホイップ', 'トリプルミックス・ベリー', 'image/normal/01_front/08695801.png', 'image/shiny/01_front/08695801.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695701', '0869', 'マホイップ', 'トリプルミックス・いちご', 'image/normal/02_front/08695701.png', 'image/shiny/02_front/08695701.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08695901', '0869', 'マホイップ', 'トリプルミックス・ハート', 'image/normal/01_front/08695901.png', 'image/shiny/01_front/08695901.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695801', '0869', 'マホイップ', 'トリプルミックス・ベリー', 'image/normal/02_front/08695801.png', 'image/shiny/02_front/08695801.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08696001', '0869', 'マホイップ', 'トリプルミックス・スター', 'image/normal/01_front/08696001.png', 'image/shiny/01_front/08696001.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08695901', '0869', 'マホイップ', 'トリプルミックス・ハート', 'image/normal/02_front/08695901.png', 'image/shiny/02_front/08695901.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08696101', '0869', 'マホイップ', 'トリプルミックス・よつば', 'image/normal/01_front/08696101.png', 'image/shiny/01_front/08696101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08696001', '0869', 'マホイップ', 'トリプルミックス・スター', 'image/normal/02_front/08696001.png', 'image/shiny/02_front/08696001.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08696201', '0869', 'マホイップ', 'トリプルミックス・おはな', 'image/normal/01_front/08696201.png', 'image/shiny/01_front/08696201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08696101', '0869', 'マホイップ', 'トリプルミックス・よつば', 'image/normal/02_front/08696101.png', 'image/shiny/02_front/08696101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08696301', '0869', 'マホイップ', 'トリプルミックス・リボン', 'image/normal/01_front/08696301.png', 'image/shiny/01_front/08696301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08696201', '0869', 'マホイップ', 'トリプルミックス・おはな', 'image/normal/02_front/08696201.png', 'image/shiny/02_front/08696201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08696301', '0869', 'マホイップ', 'トリプルミックス・リボン', 'image/normal/02_front/08696301.png', 'image/shiny/02_front/08696301.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08696401', '0869', 'マホイップ', 'キョダイマックスのすがた', 'image/normal/01_front/08696401.png', 'image/shiny/01_front/08696401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08700101', '0870', 'タイレーツ', 'image/normal/01_front/08700101.png', 'image/shiny/01_front/08700101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08696401', '0869', 'マホイップ', 'キョダイマックスのすがた', 'image/normal/02_front/08696401.png', 'image/shiny/02_front/08696401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08700201', '0870', 'タイレーツ', 'メガタイレーツ', 'image/normal/01_front/08700201.png', 'image/shiny/01_front/08700201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08700101', '0870', 'タイレーツ', 'image/normal/02_front/08700101.png', 'image/shiny/02_front/08700101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08710101', '0871', 'バチンウニ', 'image/normal/01_front/08710101.png', 'image/shiny/01_front/08710101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08700201', '0870', 'タイレーツ', 'メガタイレーツ', 'image/normal/02_front/08700201.png', 'image/shiny/02_front/08700201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08720101', '0872', 'ユキハミ', 'image/normal/01_front/08720101.png', 'image/shiny/01_front/08720101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08710101', '0871', 'バチンウニ', 'image/normal/02_front/08710101.png', 'image/shiny/02_front/08710101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08720101', '0872', 'ユキハミ', 'image/normal/02_front/08720101.png', 'image/shiny/02_front/08720101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08730101', '0873', 'モスノウ', 'image/normal/01_front/08730101.png', 'image/shiny/01_front/08730101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08740101', '0874', 'イシヘンジン', 'image/normal/01_front/08740101.png', 'image/shiny/01_front/08740101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08730101', '0873', 'モスノウ', 'image/normal/02_front/08730101.png', 'image/shiny/02_front/08730101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08750101', '0875', 'コオリッポ', 'アイスフェイス', 'image/normal/01_front/08750101.png', 'image/shiny/01_front/08750101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08740101', '0874', 'イシヘンジン', 'image/normal/02_front/08740101.png', 'image/shiny/02_front/08740101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08750201', '0875', 'コオリッポ', 'ナイスフェイス', 'image/normal/01_front/08750201.png', 'image/shiny/01_front/08750201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08750101', '0875', 'コオリッポ', 'アイスフェイス', 'image/normal/02_front/08750101.png', 'image/shiny/02_front/08750101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08760101', '0876', 'イエッサン', 'オスのすがた', 'image/normal/01_front/08760101.png', 'image/shiny/01_front/08760101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08750201', '0875', 'コオリッポ', 'ナイスフェイス', 'image/normal/02_front/08750201.png', 'image/shiny/02_front/08750201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08760102', '0876', 'イエッサン', 'メスのすがた', 'image/normal/01_front/08760102.png', 'image/shiny/01_front/08760102.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08760101', '0876', 'イエッサン', 'オスのすがた', 'image/normal/02_front/08760101.png', 'image/shiny/02_front/08760101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08770101', '0877', 'モルペコ', 'まんぷくもよう', 'image/normal/01_front/08770101.png', 'image/shiny/01_front/08770101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08760102', '0876', 'イエッサン', 'メスのすがた', 'image/normal/02_front/08760102.png', 'image/shiny/02_front/08760102.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08770201', '0877', 'モルペコ', 'はらぺこもよう', 'image/normal/01_front/08770201.png', 'image/shiny/01_front/08770201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08770101', '0877', 'モルペコ', 'まんぷくもよう', 'image/normal/02_front/08770101.png', 'image/shiny/02_front/08770101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08780101', '0878', 'ゾウドウ', 'image/normal/01_front/08780101.png', 'image/shiny/01_front/08780101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08770201', '0877', 'モルペコ', 'はらぺこもよう', 'image/normal/02_front/08770201.png', 'image/shiny/02_front/08770201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08780101', '0878', 'ゾウドウ', 'image/normal/02_front/08780101.png', 'image/shiny/02_front/08780101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08790101', '0879', 'ダイオウドウ', 'image/normal/01_front/08790101.png', 'image/shiny/01_front/08790101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08790201', '0879', 'ダイオウドウ', 'キョダイマックスのすがた', 'image/normal/01_front/08790201.png', 'image/shiny/01_front/08790201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08790101', '0879', 'ダイオウドウ', 'image/normal/02_front/08790101.png', 'image/shiny/02_front/08790101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08800101', '0880', 'バッチラゴン', 'image/normal/01_front/08800101.png', 'image/shiny/01_front/08800101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08790201', '0879', 'ダイオウドウ', 'キョダイマックスのすがた', 'image/normal/02_front/08790201.png', 'image/shiny/02_front/08790201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08810101', '0881', 'バッチルドン', 'image/normal/01_front/08810101.png', 'image/shiny/01_front/08810101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08800101', '0880', 'バッチラゴン', 'image/normal/02_front/08800101.png', 'image/shiny/02_front/08800101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08820101', '0882', 'ウオノラゴン', 'image/normal/01_front/08820101.png', 'image/shiny/01_front/08820101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08810101', '0881', 'バッチルドン', 'image/normal/02_front/08810101.png', 'image/shiny/02_front/08810101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08830101', '0883', 'ウオチルドン', 'image/normal/01_front/08830101.png', 'image/shiny/01_front/08830101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08820101', '0882', 'ウオノラゴン', 'image/normal/02_front/08820101.png', 'image/shiny/02_front/08820101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08840101', '0884', 'ジュラルドン', 'image/normal/01_front/08840101.png', 'image/shiny/01_front/08840101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08830101', '0883', 'ウオチルドン', 'image/normal/02_front/08830101.png', 'image/shiny/02_front/08830101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08840201', '0884', 'ジュラルドン', 'キョダイマックスのすがた', 'image/normal/01_front/08840201.png', 'image/shiny/01_front/08840201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08840101', '0884', 'ジュラルドン', 'image/normal/02_front/08840101.png', 'image/shiny/02_front/08840101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08850101', '0885', 'ドラメシヤ', 'image/normal/01_front/08850101.png', 'image/shiny/01_front/08850101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08840201', '0884', 'ジュラルドン', 'キョダイマックスのすがた', 'image/normal/02_front/08840201.png', 'image/shiny/02_front/08840201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08850101', '0885', 'ドラメシヤ', 'image/normal/02_front/08850101.png', 'image/shiny/02_front/08850101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08860101', '0886', 'ドロンチ', 'image/normal/01_front/08860101.png', 'image/shiny/01_front/08860101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08870101', '0887', 'ドラパルト', 'image/normal/01_front/08870101.png', 'image/shiny/01_front/08870101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08860101', '0886', 'ドロンチ', 'image/normal/02_front/08860101.png', 'image/shiny/02_front/08860101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08880101', '0888', 'ザシアン', 'れきせんのゆうしゃ', 'image/normal/01_front/08880101.png', 'image/shiny/01_front/08880101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08870101', '0887', 'ドラパルト', 'image/normal/02_front/08870101.png', 'image/shiny/02_front/08870101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08880201', '0888', 'ザシアン', 'けんのおう', 'image/normal/01_front/08880201.png', 'image/shiny/01_front/08880201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08880101', '0888', 'ザシアン', 'れきせんのゆうしゃ', 'image/normal/02_front/08880101.png', 'image/shiny/02_front/08880101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08890101', '0889', 'ザマゼンタ', 'れきせんのゆうしゃ', 'image/normal/01_front/08890101.png', 'image/shiny/01_front/08890101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08880201', '0888', 'ザシアン', 'けんのおう', 'image/normal/02_front/08880201.png', 'image/shiny/02_front/08880201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08890201', '0889', 'ザマゼンタ', 'たてのおう', 'image/normal/01_front/08890201.png', 'image/shiny/01_front/08890201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08890101', '0889', 'ザマゼンタ', 'れきせんのゆうしゃ', 'image/normal/02_front/08890101.png', 'image/shiny/02_front/08890101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08900101', '0890', 'ムゲンダイナ', 'image/normal/01_front/08900101.png', 'image/shiny/01_front/08900101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08890201', '0889', 'ザマゼンタ', 'たてのおう', 'image/normal/02_front/08890201.png', 'image/shiny/02_front/08890201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08900201', '0890', 'ムゲンダイナ', 'ムゲンダイマックス', 'image/normal/01_front/08900201.png', 'image/shiny/01_front/08900201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08900101', '0890', 'ムゲンダイナ', 'image/normal/02_front/08900101.png', 'image/shiny/02_front/08900101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08910101', '0891', 'ダクマ', 'image/normal/01_front/08910101.png', 'image/shiny/01_front/08910101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08900201', '0890', 'ムゲンダイナ', 'ムゲンダイマックス', 'image/normal/02_front/08900201.png', 'image/shiny/02_front/08900201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08910101', '0891', 'ダクマ', 'image/normal/02_front/08910101.png', 'image/shiny/02_front/08910101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08920101', '0892', 'ウーラオス', 'いちげきのかた', 'image/normal/01_front/08920101.png', 'image/shiny/01_front/08920101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08920201', '0892', 'ウーラオス', 'れんげきのかた', 'image/normal/01_front/08920201.png', 'image/shiny/01_front/08920201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08920101', '0892', 'ウーラオス', 'いちげきのかた', 'image/normal/02_front/08920101.png', 'image/shiny/02_front/08920101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08920301', '0892', 'ウーラオス', 'いちげきのかた・キョダイマックスのすがた', 'image/normal/01_front/08920301.png', 'image/shiny/01_front/08920301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08920201', '0892', 'ウーラオス', 'れんげきのかた', 'image/normal/02_front/08920201.png', 'image/shiny/02_front/08920201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08920401', '0892', 'ウーラオス', 'れんげきのかた・キョダイマックスのすがた', 'image/normal/01_front/08920401.png', 'image/shiny/01_front/08920401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08920301', '0892', 'ウーラオス', 'いちげきのかた・キョダイマックスのすがた', 'image/normal/02_front/08920301.png', 'image/shiny/02_front/08920301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08930101', '0893', 'ザルード', 'image/normal/01_front/08930101.png', 'image/shiny/01_front/08930101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08920401', '0892', 'ウーラオス', 'れんげきのかた・キョダイマックスのすがた', 'image/normal/02_front/08920401.png', 'image/shiny/02_front/08920401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08930201', '0893', 'ザルード', 'とうちゃんザルード', 'image/normal/01_front/08930201.png', 'image/shiny/01_front/08930201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08930101', '0893', 'ザルード', 'image/normal/02_front/08930101.png', 'image/shiny/02_front/08930101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08940101', '0894', 'レジエレキ', 'image/normal/01_front/08940101.png', 'image/shiny/01_front/08940101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08930201', '0893', 'ザルード', 'とうちゃんザルード', 'image/normal/02_front/08930201.png', 'image/shiny/02_front/08930201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08950101', '0895', 'レジドラゴ', 'image/normal/01_front/08950101.png', 'image/shiny/01_front/08950101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08940101', '0894', 'レジエレキ', 'image/normal/02_front/08940101.png', 'image/shiny/02_front/08940101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08960101', '0896', 'ブリザポス', 'image/normal/01_front/08960101.png', 'image/shiny/01_front/08960101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08950101', '0895', 'レジドラゴ', 'image/normal/02_front/08950101.png', 'image/shiny/02_front/08950101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08960101', '0896', 'ブリザポス', 'image/normal/02_front/08960101.png', 'image/shiny/02_front/08960101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08970101', '0897', 'レイスポス', 'image/normal/01_front/08970101.png', 'image/shiny/01_front/08970101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08980101', '0898', 'バトレックス', 'image/normal/01_front/08980101.png', 'image/shiny/01_front/08980101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08970101', '0897', 'レイスポス', 'image/normal/02_front/08970101.png', 'image/shiny/02_front/08970101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08980201', '0898', 'バトレックス', 'はくばじょうのすがた', 'image/normal/01_front/08980201.png', 'image/shiny/01_front/08980201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08980101', '0898', 'バトレックス', 'image/normal/02_front/08980101.png', 'image/shiny/02_front/08980101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08980301', '0898', 'バトレックス', 'こくばじょうのすがた', 'image/normal/01_front/08980301.png', 'image/shiny/01_front/08980301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08980201', '0898', 'バトレックス', 'はくばじょうのすがた', 'image/normal/02_front/08980201.png', 'image/shiny/02_front/08980201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('08990101', '0899', 'アヤシシ', 'image/normal/01_front/08990101.png', 'image/shiny/01_front/08990101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08980301', '0898', 'バトレックス', 'こくばじょうのすがた', 'image/normal/02_front/08980301.png', 'image/shiny/02_front/08980301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09000101', '0900', 'バサギリ', 'image/normal/01_front/09000101.png', 'image/shiny/01_front/09000101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('08990101', '0899', 'アヤシシ', 'image/normal/02_front/08990101.png', 'image/shiny/02_front/08990101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09010101', '0901', 'ガチグマ', 'image/normal/01_front/09010101.png', 'image/shiny/01_front/09010101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09000101', '0900', 'バサギリ', 'image/normal/02_front/09000101.png', 'image/shiny/02_front/09000101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09010201', '0901', 'ガチグマ', 'アカツキ', 'image/normal/01_front/09010201.png', 'image/shiny/01_front/09010201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09010101', '0901', 'ガチグマ', 'image/normal/02_front/09010101.png', 'image/shiny/02_front/09010101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09020101', '0902', 'イダイトウ', 'オスのすがた', 'image/normal/01_front/09020101.png', 'image/shiny/01_front/09020101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09010201', '0901', 'ガチグマ', 'アカツキ', 'image/normal/02_front/09010201.png', 'image/shiny/02_front/09010201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09020101', '0902', 'イダイトウ', 'オスのすがた', 'image/normal/02_front/09020101.png', 'image/shiny/02_front/09020101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09020102', '0902', 'イダイトウ', 'メスのすがた', 'image/normal/01_front/09020102.png', 'image/shiny/01_front/09020102.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09030101', '0903', 'オオニューラ', 'image/normal/01_front/09030101.png', 'image/shiny/01_front/09030101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09020102', '0902', 'イダイトウ', 'メスのすがた', 'image/normal/02_front/09020102.png', 'image/shiny/02_front/09020102.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09040101', '0904', 'ハリーマン', 'image/normal/01_front/09040101.png', 'image/shiny/01_front/09040101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09030101', '0903', 'オオニューラ', 'image/normal/02_front/09030101.png', 'image/shiny/02_front/09030101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09050101', '0905', 'ラブトロス', 'けしんフォルム', 'image/normal/01_front/09050101.png', 'image/shiny/01_front/09050101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09040101', '0904', 'ハリーマン', 'image/normal/02_front/09040101.png', 'image/shiny/02_front/09040101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09050201', '0905', 'ラブトロス', 'れいじゅうフォルム', 'image/normal/01_front/09050201.png', 'image/shiny/01_front/09050201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09050101', '0905', 'ラブトロス', 'けしんフォルム', 'image/normal/02_front/09050101.png', 'image/shiny/02_front/09050101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09050201', '0905', 'ラブトロス', 'れいじゅうフォルム', 'image/normal/02_front/09050201.png', 'image/shiny/02_front/09050201.png');
 
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09060101', '0906', 'ニャオハ', 'image/normal/01_front/09060101.png', 'image/shiny/01_front/09060101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09070101', '0907', 'ニャローテ', 'image/normal/01_front/09070101.png', 'image/shiny/01_front/09070101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09060101', '0906', 'ニャオハ', 'image/normal/02_front/09060101.png', 'image/shiny/02_front/09060101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09080101', '0908', 'マスカーニャ', 'image/normal/01_front/09080101.png', 'image/shiny/01_front/09080101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09070101', '0907', 'ニャローテ', 'image/normal/02_front/09070101.png', 'image/shiny/02_front/09070101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09090101', '0909', 'ホゲータ', 'image/normal/01_front/09090101.png', 'image/shiny/01_front/09090101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09080101', '0908', 'マスカーニャ', 'image/normal/02_front/09080101.png', 'image/shiny/02_front/09080101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09100101', '0910', 'アチゲータ', 'image/normal/01_front/09100101.png', 'image/shiny/01_front/09100101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09090101', '0909', 'ホゲータ', 'image/normal/02_front/09090101.png', 'image/shiny/02_front/09090101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09110101', '0911', 'ラウドボーン', 'image/normal/01_front/09110101.png', 'image/shiny/01_front/09110101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09100101', '0910', 'アチゲータ', 'image/normal/02_front/09100101.png', 'image/shiny/02_front/09100101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09120101', '0912', 'クワッス', 'image/normal/01_front/09120101.png', 'image/shiny/01_front/09120101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09110101', '0911', 'ラウドボーン', 'image/normal/02_front/09110101.png', 'image/shiny/02_front/09110101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09130101', '0913', 'ウェルカモ', 'image/normal/01_front/09130101.png', 'image/shiny/01_front/09130101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09120101', '0912', 'クワッス', 'image/normal/02_front/09120101.png', 'image/shiny/02_front/09120101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09140101', '0914', 'ウェーニバル', 'image/normal/01_front/09140101.png', 'image/shiny/01_front/09140101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09130101', '0913', 'ウェルカモ', 'image/normal/02_front/09130101.png', 'image/shiny/02_front/09130101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09140101', '0914', 'ウェーニバル', 'image/normal/02_front/09140101.png', 'image/shiny/02_front/09140101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09150101', '0915', 'グルトン', 'image/normal/01_front/09150101.png', 'image/shiny/01_front/09150101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09160101', '0916', 'パフュートン', 'オスのすがた', 'image/normal/01_front/09160101.png', 'image/shiny/01_front/09160101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09150101', '0915', 'グルトン', 'image/normal/02_front/09150101.png', 'image/shiny/02_front/09150101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09160102', '0916', 'パフュートン', 'メスのすがた', 'image/normal/01_front/09160102.png', 'image/shiny/01_front/09160102.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09160101', '0916', 'パフュートン', 'オスのすがた', 'image/normal/02_front/09160101.png', 'image/shiny/02_front/09160101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09170101', '0917', 'タマンチュラ', 'image/normal/01_front/09170101.png', 'image/shiny/01_front/09170101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09160102', '0916', 'パフュートン', 'メスのすがた', 'image/normal/02_front/09160102.png', 'image/shiny/02_front/09160102.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09180101', '0918', 'ワナイダー', 'image/normal/01_front/09180101.png', 'image/shiny/01_front/09180101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09170101', '0917', 'タマンチュラ', 'image/normal/02_front/09170101.png', 'image/shiny/02_front/09170101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09190101', '0919', 'マメバッタ', 'image/normal/01_front/09190101.png', 'image/shiny/01_front/09190101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09180101', '0918', 'ワナイダー', 'image/normal/02_front/09180101.png', 'image/shiny/02_front/09180101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09200101', '0920', 'エクスレッグ', 'image/normal/01_front/09200101.png', 'image/shiny/01_front/09200101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09190101', '0919', 'マメバッタ', 'image/normal/02_front/09190101.png', 'image/shiny/02_front/09190101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09210101', '0921', 'パモ', 'image/normal/01_front/09210101.png', 'image/shiny/01_front/09210101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09200101', '0920', 'エクスレッグ', 'image/normal/02_front/09200101.png', 'image/shiny/02_front/09200101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09220101', '0922', 'パモット', 'image/normal/01_front/09220101.png', 'image/shiny/01_front/09220101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09210101', '0921', 'パモ', 'image/normal/02_front/09210101.png', 'image/shiny/02_front/09210101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09220101', '0922', 'パモット', 'image/normal/02_front/09220101.png', 'image/shiny/02_front/09220101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09230101', '0923', 'パーモット', 'image/normal/01_front/09230101.png', 'image/shiny/01_front/09230101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09240101', '0924', 'ワッカネズミ', 'image/normal/01_front/09240101.png', 'image/shiny/01_front/09240101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09230101', '0923', 'パーモット', 'image/normal/02_front/09230101.png', 'image/shiny/02_front/09230101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09250101', '0925', 'イッカネズミ', '3びきかぞく', 'image/normal/01_front/09250101.png', 'image/shiny/01_front/09250101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09240101', '0924', 'ワッカネズミ', 'image/normal/02_front/09240101.png', 'image/shiny/02_front/09240101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09250201', '0925', 'イッカネズミ', '4びきかぞく', 'image/normal/01_front/09250201.png', 'image/shiny/01_front/09250201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09250101', '0925', 'イッカネズミ', '3びきかぞく', 'image/normal/02_front/09250101.png', 'image/shiny/02_front/09250101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09260101', '0926', 'パピモッチ', 'image/normal/01_front/09260101.png', 'image/shiny/01_front/09260101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09250201', '0925', 'イッカネズミ', '4びきかぞく', 'image/normal/02_front/09250201.png', 'image/shiny/02_front/09250201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09270101', '0927', 'パウッツェル', 'image/normal/01_front/09270101.png', 'image/shiny/01_front/09270101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09260101', '0926', 'パピモッチ', 'image/normal/02_front/09260101.png', 'image/shiny/02_front/09260101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09280101', '0928', 'ミニーブ', 'image/normal/01_front/09280101.png', 'image/shiny/01_front/09280101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09270101', '0927', 'パウッツェル', 'image/normal/02_front/09270101.png', 'image/shiny/02_front/09270101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09290101', '0929', 'オリーニョ', 'image/normal/01_front/09290101.png', 'image/shiny/01_front/09290101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09280101', '0928', 'ミニーブ', 'image/normal/02_front/09280101.png', 'image/shiny/02_front/09280101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09300101', '0930', 'オリーヴァ', 'image/normal/01_front/09300101.png', 'image/shiny/01_front/09300101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09290101', '0929', 'オリーニョ', 'image/normal/02_front/09290101.png', 'image/shiny/02_front/09290101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09300101', '0930', 'オリーヴァ', 'image/normal/02_front/09300101.png', 'image/shiny/02_front/09300101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09310101', '0931', 'イキリンコ', 'グリーンフェザー', 'image/normal/01_front/09310101.png', 'image/shiny/01_front/09310101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09310201', '0931', 'イキリンコ', 'ブルーフェザー', 'image/normal/01_front/09310201.png', 'image/shiny/01_front/09310201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09310101', '0931', 'イキリンコ', 'グリーンフェザー', 'image/normal/02_front/09310101.png', 'image/shiny/02_front/09310101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09310301', '0931', 'イキリンコ', 'イエローフェザー', 'image/normal/01_front/09310301.png', 'image/shiny/01_front/09310301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09310201', '0931', 'イキリンコ', 'ブルーフェザー', 'image/normal/02_front/09310201.png', 'image/shiny/02_front/09310201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09310401', '0931', 'イキリンコ', 'ホワイトフェザー', 'image/normal/01_front/09310401.png', 'image/shiny/01_front/09310401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09310301', '0931', 'イキリンコ', 'イエローフェザー', 'image/normal/02_front/09310301.png', 'image/shiny/02_front/09310301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09320101', '0932', 'コジオ', 'image/normal/01_front/09320101.png', 'image/shiny/01_front/09320101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09310401', '0931', 'イキリンコ', 'ホワイトフェザー', 'image/normal/02_front/09310401.png', 'image/shiny/02_front/09310401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09330101', '0933', 'ジオヅム', 'image/normal/01_front/09330101.png', 'image/shiny/01_front/09330101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09320101', '0932', 'コジオ', 'image/normal/02_front/09320101.png', 'image/shiny/02_front/09320101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09340101', '0934', 'キョジオーン', 'image/normal/01_front/09340101.png', 'image/shiny/01_front/09340101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09330101', '0933', 'ジオヅム', 'image/normal/02_front/09330101.png', 'image/shiny/02_front/09330101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09350101', '0935', 'カルボウ', 'image/normal/01_front/09350101.png', 'image/shiny/01_front/09350101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09340101', '0934', 'キョジオーン', 'image/normal/02_front/09340101.png', 'image/shiny/02_front/09340101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09360101', '0936', 'グレンアルマ', 'image/normal/01_front/09360101.png', 'image/shiny/01_front/09360101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09350101', '0935', 'カルボウ', 'image/normal/02_front/09350101.png', 'image/shiny/02_front/09350101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09360101', '0936', 'グレンアルマ', 'image/normal/02_front/09360101.png', 'image/shiny/02_front/09360101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09370101', '0937', 'ソウブレイズ', 'image/normal/01_front/09370101.png', 'image/shiny/01_front/09370101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09380101', '0938', 'ズピカ', 'image/normal/01_front/09380101.png', 'image/shiny/01_front/09380101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09370101', '0937', 'ソウブレイズ', 'image/normal/02_front/09370101.png', 'image/shiny/02_front/09370101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09390101', '0939', 'ハラバリー', 'image/normal/01_front/09390101.png', 'image/shiny/01_front/09390101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09380101', '0938', 'ズピカ', 'image/normal/02_front/09380101.png', 'image/shiny/02_front/09380101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09400101', '0940', 'カイデン', 'image/normal/01_front/09400101.png', 'image/shiny/01_front/09400101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09390101', '0939', 'ハラバリー', 'image/normal/02_front/09390101.png', 'image/shiny/02_front/09390101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09410101', '0941', 'タイカイデン', 'image/normal/01_front/09410101.png', 'image/shiny/01_front/09410101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09400101', '0940', 'カイデン', 'image/normal/02_front/09400101.png', 'image/shiny/02_front/09400101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09420101', '0942', 'オラチフ', 'image/normal/01_front/09420101.png', 'image/shiny/01_front/09420101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09410101', '0941', 'タイカイデン', 'image/normal/02_front/09410101.png', 'image/shiny/02_front/09410101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09430101', '0943', 'マフィンティフ', 'image/normal/01_front/09430101.png', 'image/shiny/01_front/09430101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09420101', '0942', 'オラチフ', 'image/normal/02_front/09420101.png', 'image/shiny/02_front/09420101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09440101', '0944', 'シルシュルー', 'image/normal/01_front/09440101.png', 'image/shiny/01_front/09440101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09430101', '0943', 'マフィンティフ', 'image/normal/02_front/09430101.png', 'image/shiny/02_front/09430101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09450101', '0945', 'タギングル', 'image/normal/01_front/09450101.png', 'image/shiny/01_front/09450101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09440101', '0944', 'シルシュルー', 'image/normal/02_front/09440101.png', 'image/shiny/02_front/09440101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09450101', '0945', 'タギングル', 'image/normal/02_front/09450101.png', 'image/shiny/02_front/09450101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09460101', '0946', 'アノクサ', 'image/normal/01_front/09460101.png', 'image/shiny/01_front/09460101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09470101', '0947', 'アノホラグサ', 'image/normal/01_front/09470101.png', 'image/shiny/01_front/09470101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09460101', '0946', 'アノクサ', 'image/normal/02_front/09460101.png', 'image/shiny/02_front/09460101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09480101', '0948', 'ノノクラゲ', 'image/normal/01_front/09480101.png', 'image/shiny/01_front/09480101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09470101', '0947', 'アノホラグサ', 'image/normal/02_front/09470101.png', 'image/shiny/02_front/09470101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09490101', '0949', 'リククラゲ', 'image/normal/01_front/09490101.png', 'image/shiny/01_front/09490101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09480101', '0948', 'ノノクラゲ', 'image/normal/02_front/09480101.png', 'image/shiny/02_front/09480101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09500101', '0950', 'ガケガニ', 'image/normal/01_front/09500101.png', 'image/shiny/01_front/09500101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09490101', '0949', 'リククラゲ', 'image/normal/02_front/09490101.png', 'image/shiny/02_front/09490101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09510101', '0951', 'カプサイジ', 'image/normal/01_front/09510101.png', 'image/shiny/01_front/09510101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09500101', '0950', 'ガケガニ', 'image/normal/02_front/09500101.png', 'image/shiny/02_front/09500101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09520101', '0952', 'スコヴィラン', 'image/normal/01_front/09520101.png', 'image/shiny/01_front/09520101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09510101', '0951', 'カプサイジ', 'image/normal/02_front/09510101.png', 'image/shiny/02_front/09510101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09520201', '0952', 'スコヴィラン', 'メガスコヴィラン', 'image/normal/01_front/09520201.png', 'image/shiny/01_front/09520201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09520101', '0952', 'スコヴィラン', 'image/normal/02_front/09520101.png', 'image/shiny/02_front/09520101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09530101', '0953', 'シガロコ', 'image/normal/01_front/09530101.png', 'image/shiny/01_front/09530101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09520201', '0952', 'スコヴィラン', 'メガスコヴィラン', 'image/normal/02_front/09520201.png', 'image/shiny/02_front/09520201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09540101', '0954', 'ベラカス', 'image/normal/01_front/09540101.png', 'image/shiny/01_front/09540101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09530101', '0953', 'シガロコ', 'image/normal/02_front/09530101.png', 'image/shiny/02_front/09530101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09540101', '0954', 'ベラカス', 'image/normal/02_front/09540101.png', 'image/shiny/02_front/09540101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09550101', '0955', 'ヒラヒナ', 'image/normal/01_front/09550101.png', 'image/shiny/01_front/09550101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09560101', '0956', 'クエスパトラ', 'image/normal/01_front/09560101.png', 'image/shiny/01_front/09560101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09550101', '0955', 'ヒラヒナ', 'image/normal/02_front/09550101.png', 'image/shiny/02_front/09550101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09570101', '0957', 'カヌチャン', 'image/normal/01_front/09570101.png', 'image/shiny/01_front/09570101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09560101', '0956', 'クエスパトラ', 'image/normal/02_front/09560101.png', 'image/shiny/02_front/09560101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09580101', '0958', 'ナカヌチャン', 'image/normal/01_front/09580101.png', 'image/shiny/01_front/09580101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09570101', '0957', 'カヌチャン', 'image/normal/02_front/09570101.png', 'image/shiny/02_front/09570101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09590101', '0959', 'デカヌチャン', 'image/normal/01_front/09590101.png', 'image/shiny/01_front/09590101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09580101', '0958', 'ナカヌチャン', 'image/normal/02_front/09580101.png', 'image/shiny/02_front/09580101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09600101', '0960', 'ウミディグダ', 'image/normal/01_front/09600101.png', 'image/shiny/01_front/09600101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09590101', '0959', 'デカヌチャン', 'image/normal/02_front/09590101.png', 'image/shiny/02_front/09590101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09610101', '0961', 'ウミトリオ', 'image/normal/01_front/09610101.png', 'image/shiny/01_front/09610101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09600101', '0960', 'ウミディグダ', 'image/normal/02_front/09600101.png', 'image/shiny/02_front/09600101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09620101', '0962', 'オトシドリ', 'image/normal/01_front/09620101.png', 'image/shiny/01_front/09620101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09610101', '0961', 'ウミトリオ', 'image/normal/02_front/09610101.png', 'image/shiny/02_front/09610101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09630101', '0963', 'ナミイルカ', 'image/normal/01_front/09630101.png', 'image/shiny/01_front/09630101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09620101', '0962', 'オトシドリ', 'image/normal/02_front/09620101.png', 'image/shiny/02_front/09620101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09630101', '0963', 'ナミイルカ', 'image/normal/02_front/09630101.png', 'image/shiny/02_front/09630101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09640101', '0964', 'イルカマン', 'ナイーブフォルム', 'image/normal/01_front/09640101.png', 'image/shiny/01_front/09640101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09640201', '0964', 'イルカマン', 'マイティフォルム', 'image/normal/01_front/09640201.png', 'image/shiny/01_front/09640201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09640101', '0964', 'イルカマン', 'ナイーブフォルム', 'image/normal/02_front/09640101.png', 'image/shiny/02_front/09640101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09650101', '0965', 'ブロロン', 'image/normal/01_front/09650101.png', 'image/shiny/01_front/09650101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09640201', '0964', 'イルカマン', 'マイティフォルム', 'image/normal/02_front/09640201.png', 'image/shiny/02_front/09640201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09660101', '0966', 'ブロロローム', 'image/normal/01_front/09660101.png', 'image/shiny/01_front/09660101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09650101', '0965', 'ブロロン', 'image/normal/02_front/09650101.png', 'image/shiny/02_front/09650101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09670101', '0967', 'モトトカゲ', 'image/normal/01_front/09670101.png', 'image/shiny/01_front/09670101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09660101', '0966', 'ブロロローム', 'image/normal/02_front/09660101.png', 'image/shiny/02_front/09660101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09680101', '0968', 'ミミズズ', 'image/normal/01_front/09680101.png', 'image/shiny/01_front/09680101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09670101', '0967', 'モトトカゲ', 'image/normal/02_front/09670101.png', 'image/shiny/02_front/09670101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09690101', '0969', 'キラーメ', 'image/normal/01_front/09690101.png', 'image/shiny/01_front/09690101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09680101', '0968', 'ミミズズ', 'image/normal/02_front/09680101.png', 'image/shiny/02_front/09680101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09700101', '0970', 'キラフロル', 'image/normal/01_front/09700101.png', 'image/shiny/01_front/09700101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09690101', '0969', 'キラーメ', 'image/normal/02_front/09690101.png', 'image/shiny/02_front/09690101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09700201', '0970', 'キラフロル', 'メガキラフロル', 'image/normal/01_front/09700201.png', 'image/shiny/01_front/09700201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09700101', '0970', 'キラフロル', 'image/normal/02_front/09700101.png', 'image/shiny/02_front/09700101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09710101', '0971', 'ボチ', 'image/normal/01_front/09710101.png', 'image/shiny/01_front/09710101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09700201', '0970', 'キラフロル', 'メガキラフロル', 'image/normal/02_front/09700201.png', 'image/shiny/02_front/09700201.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09710101', '0971', 'ボチ', 'image/normal/02_front/09710101.png', 'image/shiny/02_front/09710101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09720101', '0972', 'ハカドッグ', 'image/normal/01_front/09720101.png', 'image/shiny/01_front/09720101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09730101', '0973', 'カラミンゴ', 'image/normal/01_front/09730101.png', 'image/shiny/01_front/09730101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09720101', '0972', 'ハカドッグ', 'image/normal/02_front/09720101.png', 'image/shiny/02_front/09720101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09740101', '0974', 'アルクジラ', 'image/normal/01_front/09740101.png', 'image/shiny/01_front/09740101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09730101', '0973', 'カラミンゴ', 'image/normal/02_front/09730101.png', 'image/shiny/02_front/09730101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09750101', '0975', 'ハルクジラ', 'image/normal/01_front/09750101.png', 'image/shiny/01_front/09750101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09740101', '0974', 'アルクジラ', 'image/normal/02_front/09740101.png', 'image/shiny/02_front/09740101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09760101', '0976', 'ミガルーサ', 'image/normal/01_front/09760101.png', 'image/shiny/01_front/09760101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09750101', '0975', 'ハルクジラ', 'image/normal/02_front/09750101.png', 'image/shiny/02_front/09750101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09770101', '0977', 'ヘイラッシャ', 'image/normal/01_front/09770101.png', 'image/shiny/01_front/09770101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09760101', '0976', 'ミガルーサ', 'image/normal/02_front/09760101.png', 'image/shiny/02_front/09760101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09780101', '0978', 'シャリタツ', 'そったすがた', 'image/normal/01_front/09780101.png', 'image/shiny/01_front/09780101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09770101', '0977', 'ヘイラッシャ', 'image/normal/02_front/09770101.png', 'image/shiny/02_front/09770101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09780201', '0978', 'シャリタツ', 'たれたすがた', 'image/normal/01_front/09780201.png', 'image/shiny/01_front/09780201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09780101', '0978', 'シャリタツ', 'そったすがた', 'image/normal/02_front/09780101.png', 'image/shiny/02_front/09780101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09780301', '0978', 'シャリタツ', 'のびたすがた', 'image/normal/01_front/09780301.png', 'image/shiny/01_front/09780301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09780201', '0978', 'シャリタツ', 'たれたすがた', 'image/normal/02_front/09780201.png', 'image/shiny/02_front/09780201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09780401', '0978', 'シャリタツ', 'メガシャリタツ・そったすがた', 'image/normal/01_front/09780401.png', 'image/shiny/01_front/09780401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09780301', '0978', 'シャリタツ', 'のびたすがた', 'image/normal/02_front/09780301.png', 'image/shiny/02_front/09780301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09780501', '0978', 'シャリタツ', 'メガシャリタツ・たれたすがた', 'image/normal/01_front/09780501.png', 'image/shiny/01_front/09780501.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09780401', '0978', 'シャリタツ', 'メガシャリタツ・そったすがた', 'image/normal/02_front/09780401.png', 'image/shiny/02_front/09780401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09780601', '0978', 'シャリタツ', 'メガシャリタツ・のびたすがた', 'image/normal/01_front/09780601.png', 'image/shiny/01_front/09780601.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09780501', '0978', 'シャリタツ', 'メガシャリタツ・たれたすがた', 'image/normal/02_front/09780501.png', 'image/shiny/02_front/09780501.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09780601', '0978', 'シャリタツ', 'メガシャリタツ・のびたすがた', 'image/normal/02_front/09780601.png', 'image/shiny/02_front/09780601.png');
 
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09790101', '0979', 'コノヨザル', 'image/normal/01_front/09790101.png', 'image/shiny/01_front/09790101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09800101', '0980', 'ドオー', 'image/normal/01_front/09800101.png', 'image/shiny/01_front/09800101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09790101', '0979', 'コノヨザル', 'image/normal/02_front/09790101.png', 'image/shiny/02_front/09790101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09810101', '0981', 'リキキリン', 'image/normal/01_front/09810101.png', 'image/shiny/01_front/09810101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09800101', '0980', 'ドオー', 'image/normal/02_front/09800101.png', 'image/shiny/02_front/09800101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09820101', '0982', 'ノココッチ', 'ふたふしフォルム', 'image/normal/01_front/09820101.png', 'image/shiny/01_front/09820101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09810101', '0981', 'リキキリン', 'image/normal/02_front/09810101.png', 'image/shiny/02_front/09810101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09820201', '0982', 'ノココッチ', 'みつふしフォルム', 'image/normal/01_front/09820201.png', 'image/shiny/01_front/09820201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09820101', '0982', 'ノココッチ', 'ふたふしフォルム', 'image/normal/02_front/09820101.png', 'image/shiny/02_front/09820101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09830101', '0983', 'ドドゲザン', 'image/normal/01_front/09830101.png', 'image/shiny/01_front/09830101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09820201', '0982', 'ノココッチ', 'みつふしフォルム', 'image/normal/02_front/09820201.png', 'image/shiny/02_front/09820201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09840101', '0984', 'イダイナキバ', 'image/normal/01_front/09840101.png', 'image/shiny/01_front/09840101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09830101', '0983', 'ドドゲザン', 'image/normal/02_front/09830101.png', 'image/shiny/02_front/09830101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09850101', '0985', 'サケブシッポ', 'image/normal/01_front/09850101.png', 'image/shiny/01_front/09850101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09840101', '0984', 'イダイナキバ', 'image/normal/02_front/09840101.png', 'image/shiny/02_front/09840101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09860101', '0986', 'アラブルタケ', 'image/normal/01_front/09860101.png', 'image/shiny/01_front/09860101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09850101', '0985', 'サケブシッポ', 'image/normal/02_front/09850101.png', 'image/shiny/02_front/09850101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09860101', '0986', 'アラブルタケ', 'image/normal/02_front/09860101.png', 'image/shiny/02_front/09860101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09870101', '0987', 'ハバタクカミ', 'image/normal/01_front/09870101.png', 'image/shiny/01_front/09870101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09880101', '0988', 'チヲハウハネ', 'image/normal/01_front/09880101.png', 'image/shiny/01_front/09880101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09870101', '0987', 'ハバタクカミ', 'image/normal/02_front/09870101.png', 'image/shiny/02_front/09870101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09890101', '0989', 'スナノケガワ', 'image/normal/01_front/09890101.png', 'image/shiny/01_front/09890101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09880101', '0988', 'チヲハウハネ', 'image/normal/02_front/09880101.png', 'image/shiny/02_front/09880101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09900101', '0990', 'テツノワダチ', 'image/normal/01_front/09900101.png', 'image/shiny/01_front/09900101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09890101', '0989', 'スナノケガワ', 'image/normal/02_front/09890101.png', 'image/shiny/02_front/09890101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09910101', '0991', 'テツノツツミ', 'image/normal/01_front/09910101.png', 'image/shiny/01_front/09910101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09900101', '0990', 'テツノワダチ', 'image/normal/02_front/09900101.png', 'image/shiny/02_front/09900101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09920101', '0992', 'テツノカイナ', 'image/normal/01_front/09920101.png', 'image/shiny/01_front/09920101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09910101', '0991', 'テツノツツミ', 'image/normal/02_front/09910101.png', 'image/shiny/02_front/09910101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09930101', '0993', 'テツノコウベ', 'image/normal/01_front/09930101.png', 'image/shiny/01_front/09930101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09920101', '0992', 'テツノカイナ', 'image/normal/02_front/09920101.png', 'image/shiny/02_front/09920101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09940101', '0994', 'テツノドクガ', 'image/normal/01_front/09940101.png', 'image/shiny/01_front/09940101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09930101', '0993', 'テツノコウベ', 'image/normal/02_front/09930101.png', 'image/shiny/02_front/09930101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09950101', '0995', 'テツノイバラ', 'image/normal/01_front/09950101.png', 'image/shiny/01_front/09950101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09940101', '0994', 'テツノドクガ', 'image/normal/02_front/09940101.png', 'image/shiny/02_front/09940101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09950101', '0995', 'テツノイバラ', 'image/normal/02_front/09950101.png', 'image/shiny/02_front/09950101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09960101', '0996', 'セビエ', 'image/normal/01_front/09960101.png', 'image/shiny/01_front/09960101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09970101', '0997', 'セゴール', 'image/normal/01_front/09970101.png', 'image/shiny/01_front/09970101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09960101', '0996', 'セビエ', 'image/normal/02_front/09960101.png', 'image/shiny/02_front/09960101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09980101', '0998', 'セグレイブ', 'image/normal/01_front/09980101.png', 'image/shiny/01_front/09980101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09970101', '0997', 'セゴール', 'image/normal/02_front/09970101.png', 'image/shiny/02_front/09970101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09980201', '0998', 'セグレイブ', 'メガセグレイブ', 'image/normal/01_front/09980201.png', 'image/shiny/01_front/09980201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09980101', '0998', 'セグレイブ', 'image/normal/02_front/09980101.png', 'image/shiny/02_front/09980101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09990101', '0999', 'コレクレー', 'はこフォルム', 'image/normal/01_front/09990101.png', 'image/shiny/01_front/09990101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09980201', '0998', 'セグレイブ', 'メガセグレイブ', 'image/normal/02_front/09980201.png', 'image/shiny/02_front/09980201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('09990201', '0999', 'コレクレー', 'とほフォルム', 'image/normal/01_front/09990201.png', 'image/shiny/01_front/09990201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09990101', '0999', 'コレクレー', 'はこフォルム', 'image/normal/02_front/09990101.png', 'image/shiny/02_front/09990101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10000101', '1000', 'サーフゴー', 'image/normal/01_front/10000101.png', 'image/shiny/01_front/10000101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('09990201', '0999', 'コレクレー', 'とほフォルム', 'image/normal/02_front/09990201.png', 'image/shiny/02_front/09990201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10010101', '1001', 'チオンジェン', 'image/normal/01_front/10010101.png', 'image/shiny/01_front/10010101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10000101', '1000', 'サーフゴー', 'image/normal/02_front/10000101.png', 'image/shiny/02_front/10000101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10020101', '1002', 'パオジアン', 'image/normal/01_front/10020101.png', 'image/shiny/01_front/10020101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10010101', '1001', 'チオンジェン', 'image/normal/02_front/10010101.png', 'image/shiny/02_front/10010101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10030101', '1003', 'ディンルー', 'image/normal/01_front/10030101.png', 'image/shiny/01_front/10030101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10020101', '1002', 'パオジアン', 'image/normal/02_front/10020101.png', 'image/shiny/02_front/10020101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10030101', '1003', 'ディンルー', 'image/normal/02_front/10030101.png', 'image/shiny/02_front/10030101.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10040101', '1004', 'イーユイ', 'image/normal/01_front/10040101.png', 'image/shiny/01_front/10040101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10050101', '1005', 'トドロクツキ', 'image/normal/01_front/10050101.png', 'image/shiny/01_front/10050101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10040101', '1004', 'イーユイ', 'image/normal/02_front/10040101.png', 'image/shiny/02_front/10040101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10060101', '1006', 'テツノブジン', 'image/normal/01_front/10060101.png', 'image/shiny/01_front/10060101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10050101', '1005', 'トドロクツキ', 'image/normal/02_front/10050101.png', 'image/shiny/02_front/10050101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10070101', '1007', 'コライドン', 'image/normal/01_front/10070101.png', 'image/shiny/01_front/10070101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10060101', '1006', 'テツノブジン', 'image/normal/02_front/10060101.png', 'image/shiny/02_front/10060101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10080101', '1008', 'ミライドン', 'image/normal/01_front/10080101.png', 'image/shiny/01_front/10080101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10070101', '1007', 'コライドン', 'image/normal/02_front/10070101.png', 'image/shiny/02_front/10070101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10090101', '1009', 'ウネルミナモ', 'image/normal/01_front/10090101.png', 'image/shiny/01_front/10090101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10080101', '1008', 'ミライドン', 'image/normal/02_front/10080101.png', 'image/shiny/02_front/10080101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10100101', '1010', 'テツノイサハ', 'image/normal/01_front/10100101.png', 'image/shiny/01_front/10100101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10090101', '1009', 'ウネルミナモ', 'image/normal/02_front/10090101.png', 'image/shiny/02_front/10090101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10110101', '1011', 'カミッチュ', 'image/normal/01_front/10110101.png', 'image/shiny/01_front/10110101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10100101', '1010', 'テツノイサハ', 'image/normal/02_front/10100101.png', 'image/shiny/02_front/10100101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10120101', '1012', 'チャデス', 'マガイモノのすがた', 'image/normal/01_front/10120101.png', 'image/shiny/01_front/10120101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10110101', '1011', 'カミッチュ', 'image/normal/02_front/10110101.png', 'image/shiny/02_front/10110101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10120201', '1012', 'チャデス', 'タカイモノのすがた', 'image/normal/01_front/10120201.png', 'image/shiny/01_front/10120201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10120101', '1012', 'チャデス', 'マガイモノのすがた', 'image/normal/02_front/10120101.png', 'image/shiny/02_front/10120101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10130101', '1013', 'ヤバソチャ', 'マガイモノのすがた', 'image/normal/01_front/10130101.png', 'image/shiny/01_front/10130101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10120201', '1012', 'チャデス', 'タカイモノのすがた', 'image/normal/02_front/10120201.png', 'image/shiny/02_front/10120201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10130201', '1013', 'ヤバソチャ', 'タカイモノのすがた', 'image/normal/01_front/10130201.png', 'image/shiny/01_front/10130201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10130101', '1013', 'ヤバソチャ', 'マガイモノのすがた', 'image/normal/02_front/10130101.png', 'image/shiny/02_front/10130101.png');
 
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10130201', '1013', 'ヤバソチャ', 'タカイモノのすがた', 'image/normal/02_front/10130201.png', 'image/shiny/02_front/10130201.png');
 
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10140101', '1014', 'イイネイヌ', 'image/normal/01_front/10140101.png', 'image/shiny/01_front/10140101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10150101', '1015', 'マシマシラ', 'image/normal/01_front/10150101.png', 'image/shiny/01_front/10150101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10140101', '1014', 'イイネイヌ', 'image/normal/02_front/10140101.png', 'image/shiny/02_front/10140101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10160101', '1016', 'キチキギス', 'image/normal/01_front/10160101.png', 'image/shiny/01_front/10160101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10150101', '1015', 'マシマシラ', 'image/normal/02_front/10150101.png', 'image/shiny/02_front/10150101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10170101', '1017', 'オーガポン', 'みどりのかめん', 'image/normal/01_front/10170101.png', 'image/shiny/01_front/10170101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10160101', '1016', 'キチキギス', 'image/normal/02_front/10160101.png', 'image/shiny/02_front/10160101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10170201', '1017', 'オーガポン', 'いどのかめん', 'image/normal/01_front/10170201.png', 'image/shiny/01_front/10170201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10170101', '1017', 'オーガポン', 'みどりのかめん', 'image/normal/02_front/10170101.png', 'image/shiny/02_front/10170101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10170301', '1017', 'オーガポン', 'かまどのかめん', 'image/normal/01_front/10170301.png', 'image/shiny/01_front/10170301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10170201', '1017', 'オーガポン', 'いどのかめん', 'image/normal/02_front/10170201.png', 'image/shiny/02_front/10170201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10170401', '1017', 'オーガポン', 'いしずえのかめん', 'image/normal/01_front/10170401.png', 'image/shiny/01_front/10170401.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10170301', '1017', 'オーガポン', 'かまどのかめん', 'image/normal/02_front/10170301.png', 'image/shiny/02_front/10170301.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10180101', '1018', 'ブリジュラス', 'image/normal/01_front/10180101.png', 'image/shiny/01_front/10180101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10170401', '1017', 'オーガポン', 'いしずえのかめん', 'image/normal/02_front/10170401.png', 'image/shiny/02_front/10170401.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10190101', '1019', 'カミツオロチ', 'image/normal/01_front/10190101.png', 'image/shiny/01_front/10190101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10180101', '1018', 'ブリジュラス', 'image/normal/02_front/10180101.png', 'image/shiny/02_front/10180101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10200101', '1020', 'ウガツホムラ', 'image/normal/01_front/10200101.png', 'image/shiny/01_front/10200101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10190101', '1019', 'カミツオロチ', 'image/normal/02_front/10190101.png', 'image/shiny/02_front/10190101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10210101', '1021', 'タケルライコ', 'image/normal/01_front/10210101.png', 'image/shiny/01_front/10210101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10200101', '1020', 'ウガツホムラ', 'image/normal/02_front/10200101.png', 'image/shiny/02_front/10200101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10220101', '1022', 'テツノイワオ', 'image/normal/01_front/10220101.png', 'image/shiny/01_front/10220101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10210101', '1021', 'タケルライコ', 'image/normal/02_front/10210101.png', 'image/shiny/02_front/10210101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10230101', '1023', 'テツノカシラ', 'image/normal/01_front/10230101.png', 'image/shiny/01_front/10230101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10220101', '1022', 'テツノイワオ', 'image/normal/02_front/10220101.png', 'image/shiny/02_front/10220101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10240101', '1024', 'テラパゴス', 'ノーマルフォルム', 'image/normal/01_front/10240101.png', 'image/shiny/01_front/10240101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10230101', '1023', 'テツノカシラ', 'image/normal/02_front/10230101.png', 'image/shiny/02_front/10230101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10240201', '1024', 'テラパゴス', 'テラスタルフォルム', 'image/normal/01_front/10240201.png', 'image/shiny/01_front/10240201.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10240101', '1024', 'テラパゴス', 'ノーマルフォルム', 'image/normal/02_front/10240101.png', 'image/shiny/02_front/10240101.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10240301', '1024', 'テラパゴス', 'ステラフォルム', 'image/normal/01_front/10240301.png', 'image/shiny/01_front/10240301.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10240201', '1024', 'テラパゴス', 'テラスタルフォルム', 'image/normal/02_front/10240201.png', 'image/shiny/02_front/10240201.png');
 
-INSERT INTO pokedex3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
-VALUES('10250101', '1025', 'モモワロウ', 'image/normal/01_front/10250101.png', 'image/shiny/01_front/10250101.png');
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, FORM, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10240301', '1024', 'テラパゴス', 'ステラフォルム', 'image/normal/02_front/10240301.png', 'image/shiny/02_front/10240301.png');
+
+INSERT INTO POKÉDEX3(POKEID, NO, NAME, PATH_NORMAL_FRONT, PATH_SHINY_FRONT)
+VALUES('10250101', '1025', 'モモワロウ', 'image/normal/02_front/10250101.png', 'image/shiny/02_front/10250101.png');
     `);
 
     console.log("pokedex3 へのデータ挿入が完了しました！");
