@@ -32,6 +32,30 @@ client.connect()
 // API 定義
 // =======================
 
+app.get('/api/poke/getimage', async (req, res) => {
+  try {
+    const query =
+    `
+    SELECT
+    *
+    FROM
+    public.pokedex3
+    `;
+    //const result = await pool.query(query);
+    const result = await client.query(query);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'POKÉMON is not found' });
+    }
+
+    res.json(result.rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+
 /*NoのMin値を取得*/
 /*http://127.0.0.1:3001/api/poke/minNO*/
 app.get('/api/poke/minNo', async (req, res) => {
