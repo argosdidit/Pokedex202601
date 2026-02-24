@@ -59,7 +59,8 @@ const PokeSearch = (() => {
     },
     initValueTable: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/min_max_value')
+        //fetch('http://127.0.0.1:3001/api/poke/min_max_value')
+        fetch('/api/poke/min_max_value')
           .then(res => res.json())
           .then(values => func.renderValueTable(values));
       }
@@ -445,7 +446,8 @@ const PokeSearch = (() => {
     },
     initRegionList: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/region')
+        //fetch('http://127.0.0.1:3001/api/poke/region')
+        fetch('/api/poke/region')
           .then(res => res.json())
           .then(regions => func.renderRegionList(regions));
       }
@@ -466,7 +468,8 @@ const PokeSearch = (() => {
     },
     initGenList: function(){
       if(flag){
-        fetch('http://127.0.0.1:3001/api/poke/generation')
+        //fetch('http://127.0.0.1:3001/api/poke/generation')
+        fetch('/api/poke/generation')
           .then(res => res.json())
           .then(gens => func.renderGenList(gens));
       }
@@ -621,7 +624,8 @@ const PokeSearch = (() => {
 
         let values = selectedValues;
 
-        fetch('http://127.0.0.1:3001/api/search/value', {
+        //fetch('http://127.0.0.1:3001/api/search/value', {
+        fetch('/api/search/value', {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({name, values, region, generation})
