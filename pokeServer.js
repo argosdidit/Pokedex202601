@@ -674,35 +674,35 @@ app.post('/api/search/egg_group', async (req, res) => {
 
     // タマゴグループ検索
     if (egg_groups && egg_groups.length > 0) {
-      //const placeholders = egg_groups.map((_, i) => `$${paramIndex + i}`).join(',');
+      const placeholders = egg_groups.map((_, i) => `$${paramIndex + i}`).join(',');
 
-      /*const egg_groupSql = `
+      const egg_groupSql = `
         SELECT egg_group
         FROM public.type
         WHERE egg_groupid IN (${placeholders})
-      `;*/
+      `;
 
 
       // egg_group1 用のプレースホルダ
-          const egg_groupSql1 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
-          paramIndex += egg_groups.length;
+          //const egg_groupSql1 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
+          //paramIndex += egg_groups.length;
           
           // egg_group2 用のプレースホルダ
-          const egg_groupSql2 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
-          paramIndex += egg_groups.length;
+          //const egg_groupSql2 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
+          //paramIndex += egg_groups.length;
           
           sql += `
             AND
             (
               (
                 egg_group1 IN (
-                  SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql1})
+                  SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql})
                 )
               )
               OR
               (
                 egg_group2 IN (
-                  SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql2})
+                  SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql})
                 )
               )
             )
