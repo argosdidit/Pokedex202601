@@ -672,15 +672,10 @@ app.post('/api/search/egg_group', async (req, res) => {
       paramIndex++;
     }
 
-    // タイプ検索
+    // タマゴグループ検索
     if (egg_groups && egg_groups.length > 0) {
       const placeholders = egg_groups.map((_, i) => `$${paramIndex + i}`).join(',');
 
-      const egg_groupSql = `
-        SELECT egg_group
-        FROM public.egg_group
-        WHERE egg_groupid IN (${placeholders})
-      `;
 
       // egg_group1 用のプレースホルダ
           const egg_groupSql1 = types.map((_, i) => `$${paramIndex + i}`).join(", ");
