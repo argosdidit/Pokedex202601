@@ -669,7 +669,7 @@ const PokeSearch = (() => {
           <td width="5%">${p.hp}</td>
           <td width="5%">${p.attack}</td>
           <td width="5%">${p.defense}</td>
-          <td width="5%"><a href="NewPokedex.html?AUTONUM=${p.autonum}">リンク</a></td>
+          <td width="5%"><a href="NewPokedex.html?autonum=${p.autonum}">リンク</a></td>
           `;
           const tr2 = document.createElement("tr");
           tr2.innerHTML =
@@ -717,4 +717,5 @@ const PokeSearch = (() => {
 
 window.addEventListener('load', function(){
   PokeSearch();
+
 });
