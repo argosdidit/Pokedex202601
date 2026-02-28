@@ -1032,39 +1032,6 @@ app.get('/api/move', async (req, res) => {
   }
 });
 
-/*MoveのTYPEIDからタイプ毎の全Type情報を返す*/
-// 基本情報取得(1件)
-// TYPEID を指定してポケモン1件を取得
-app.get('/api/move', async (req, res) => {
-  try {
-    const typeid = Number(req.query.typeid ?? 1);
-
-    const query =
-    `
-      SELECT *
-      FROM
-      public.pokedex0
-      WHERE
-      type = $1
-      ORDER BY
-      autonum
-    `;
-
-    //const result = await pool.query(query, [typeid]);
-    const result = await client.query(query, [typeid]);
-
-    if (result.rows.length === 0) {
-      return res.status(404).json({ message: 'Pokemon is not found' });
-    }
-
-    res.json(result.rows[0]);
-
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Server error' });
-  }
-});
-
 /* <<< MOVEDEX(RELATION)関係 >>> */
 
 /*^^^^^^^^^^^^^^^^^^PokeのAutonumから全Poke情報を返す*/
