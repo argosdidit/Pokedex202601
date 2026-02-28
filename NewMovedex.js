@@ -258,13 +258,13 @@ const MoveProject = (() => {
 
         
         for (const move of moveList) {
-          ImageTypePath = func.judgeTypeImage(move.TYPE);
+          ImageTypePath = func.judgeTypeImage(move.type);
           // ★ Promise を await する
-          ImagePokeList = await func.getImagePokeList(move.AUTONUM);
+          ImagePokeList = await func.getImagePokeList(move.autonum);
           
           htmlMoveList =
           `
-          <table border="1" class="tableMove" value="${move.AUTONUM}">
+          <table border="1" class="tableMove" value="${move.autonum}">
           <colgroup>
           <col span="1" style="width: 10%">
           <col span="1" style="width: 10%">
@@ -278,19 +278,19 @@ const MoveProject = (() => {
           <col span="1" style="width: 10%">
           </colgroup>
           <tr>
-          <td colspan="2">No: ${move.AUTONUM}</td>
-          <td colspan="2">タイプ: ${move.TAIPU}<br><img width=30px height=30px src="${ImageTypePath}"></td>
-          <td colspan="6">わざ名: ${move.WAZA}</td>
+          <td colspan="2">No: ${move.autonum}</td>
+          <td colspan="2">タイプ: ${move.taipu}<br><img width=30px height=30px src="${ImageTypePath}"></td>
+          <td colspan="6">わざ名: ${move.waza}</td>
           </tr>
           <tr>
-          <td colspan="2">PP: ${move.PP}</td>
-          <td colspan="2">威力: ${move.POWER}</td>
-          <td colspan="2">命中率: ${move.ACCURACY}</td>
-          <td colspan="2">分類: ${move.BUNRUI}</td>
-          <td colspan="2">世代: ${move.SEDAI}</td>
+          <td colspan="2">PP: ${move.pp}</td>
+          <td colspan="2">威力: ${move.power}</td>
+          <td colspan="2">命中率: ${move.accuracy}</td>
+          <td colspan="2">分類: ${move.bunrui}</td>
+          <td colspan="2">世代: ${move.sedai}</td>
           </tr>
           <tr>
-          <td colspan="10">説明: ${move.SETSUMEI}</td>
+          <td colspan="10">説明: ${move.setsumei}</td>
           </tr>
           <tr>
           <td colspan="10"> <覚えるポケモン> </td>
@@ -398,8 +398,8 @@ const MoveProject = (() => {
           const html =
           `
           <button class=imagePoke>
-          <a href="NewPokedex.html?AUTONUM=${pokeData.AUTONUM}">
-          <img width="70px" height="70px" src="${pokeData.PATH_NORMAL_FRONT}">
+          <a href="NewPokedex.html?AUTONUM=${pokeData.autonum}">
+          <img width="70px" height="70px" src="${pokeData.path_normal_front}">
           </a>
           </button>
           `;
