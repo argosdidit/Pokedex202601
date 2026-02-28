@@ -1010,7 +1010,7 @@ app.get('/api/move', async (req, res) => {
 
     const query = `
       SELECT *
-      FROM public.pokedex0
+      FROM public.movedex0
       WHERE
       type = $1
       ORDER BY
