@@ -43,7 +43,7 @@ app.get('/api/poke/minNo', async (req, res) => {
     SELECT
     MIN(autonum) AS min
     FROM
-    POKEDB202601.pokedex0
+    public.pokedex0
     `;
     //const result = await pool.query(query);
     const result = await client.query(query);
@@ -68,7 +68,7 @@ app.get('/api/poke/maxNo', async (req, res) => {
     SELECT
     MAX(autonum) AS max
     FROM
-    POKEDB202601.pokedex0
+    public.pokedex0
     `;
     //const result = await pool.query(query);
     const result = await client.query(query);
@@ -95,7 +95,7 @@ app.get('/api/poke/type', async (req, res) => {
         taipu,
         type,
         pathtype
-      FROM POKEDB202601.type
+      FROM public.type
       ORDER BY typeid
     `;
 
@@ -119,7 +119,7 @@ app.get('/api/poke/ability', async (req, res) => {
         abilityid,
         tokusei,
         ability
-      FROM POKEDB202601.ability
+      FROM public.ability
       ORDER BY abilityid
     `;
 
@@ -143,7 +143,7 @@ app.get('/api/poke/gender', async (req, res) => {
       SELECT
         genderid,
         gender
-      FROM POKEDB202601.gender
+      FROM public.gender
       ORDER BY genderid
     `;
 
@@ -168,7 +168,7 @@ app.get('/api/poke/egg_group', async (req, res) => {
         egg_groupid,
         tamago_group,
         egg_group
-      FROM POKEDB202601.egg_group
+      FROM public.egg_group
       ORDER BY egg_groupid
     `;
 
@@ -194,7 +194,7 @@ app.get('/api/poke/region', async (req, res) => {
         regionid,
         chiho,
         region
-      FROM POKEDB202601.region
+      FROM public.region
       ORDER BY regionid
     `;
 
@@ -219,7 +219,7 @@ app.get('/api/poke/generation', async (req, res) => {
         generationid,
         sedai,
         generation
-      FROM POKEDB202601.generation
+      FROM public.generation
       ORDER BY generationid
     `;
 
@@ -255,7 +255,7 @@ app.get('/api/poke/min_max_value', async (req, res) => {
         MAX(speed) AS maxspeed,
         MIN(sum) AS minsum,
         MAX(sum) AS maxsum
-      FROM POKEDB202601.pokedex0
+      FROM public.pokedex0
     `;
 
     //const result = await pool.query(query);
@@ -279,7 +279,7 @@ app.get('/api/poke', async (req, res) => {
 
     const query = `
       SELECT *
-      FROM POKEDB202601.pokedex0
+      FROM public.pokedex0
       WHERE autonum = $1
     `;
 
@@ -310,7 +310,7 @@ app.get('/api/pokelist', async (req, res) => {
         autonum,
         path_normal_front,
         path_shiny_front
-      FROM POKEDB202601.pokedex0
+      FROM public.pokedex0
       ORDER BY autonum
     `;
 
@@ -334,7 +334,7 @@ app.post('/api/search/type', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM POKEDB202601.pokedex0
+      FROM public.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -353,7 +353,7 @@ app.post('/api/search/type', async (req, res) => {
 
       const typeSql = `
         SELECT type
-        FROM POKEDB202601.type
+        FROM public.type
         WHERE typeid IN (${placeholders})
       `;
 
@@ -372,13 +372,13 @@ app.post('/api/search/type', async (req, res) => {
             (
               (
                 type1 IN (
-                  SELECT type FROM POKEDB202601.type WHERE typeid IN (${typeSql1})
+                  SELECT type FROM type WHERE typeid IN (${typeSql1})
                 )
               )
               OR
               (
                 type2 IN (
-                  SELECT type FROM POKEDB202601.type WHERE typeid IN (${typeSql2})
+                  SELECT type FROM type WHERE typeid IN (${typeSql2})
                 )
               )
             )
@@ -433,7 +433,7 @@ app.post('/api/search/type', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM POKEDB202601.region
+          FROM public.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -446,7 +446,7 @@ app.post('/api/search/type', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM POKEDB202601.generation
+          FROM public.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -474,7 +474,7 @@ app.post('/api/search/ability', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM POKEDB202601.pokedex0
+      FROM public.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -511,15 +511,15 @@ app.post('/api/search/ability', async (req, res) => {
   sql += `
     AND (
       ability1 IN (
-        SELECT ability FROM POKEDB202601.ability WHERE abilityid IN (${abilitySql1})
+        SELECT ability FROM ability WHERE abilityid IN (${abilitySql1})
       )
       OR
       ability2 IN (
-        SELECT ability FROM POKEDB202601.ability WHERE abilityid IN (${abilitySql2})
+        SELECT ability FROM ability WHERE abilityid IN (${abilitySql2})
       )
       OR
       hidden_ability IN (
-        SELECT ability FROM POKEDB202601.ability WHERE abilityid IN (${abilitySql3})
+        SELECT ability FROM ability WHERE abilityid IN (${abilitySql3})
       )
     )
   `;
@@ -535,7 +535,7 @@ app.post('/api/search/ability', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM POKEDB202601.region
+          FROM public.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -548,7 +548,7 @@ app.post('/api/search/ability', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM POKEDB202601.generation
+          FROM public.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -576,7 +576,7 @@ app.post('/api/search/gender', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM POKEDB202601.pokedex0
+      FROM public.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -598,7 +598,7 @@ app.post('/api/search/gender', async (req, res) => {
       sql += `
         AND gender IN (
           SELECT gender
-          FROM POKEDB202601.gender
+          FROM public.gender
           WHERE genderid IN (${placeholders})
         )
       `;
@@ -612,7 +612,7 @@ app.post('/api/search/gender', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM POKEDB202601.region
+          FROM public.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -625,7 +625,7 @@ app.post('/api/search/gender', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM POKEDB202601.generation
+          FROM public.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -653,7 +653,7 @@ app.post('/api/search/egg_group', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM POKEDB202601.pokedex0
+      FROM public.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -672,7 +672,7 @@ app.post('/api/search/egg_group', async (req, res) => {
 
       const egg_groupSql = `
         SELECT egg_group
-        FROM POKEDB202601.type
+        FROM public.type
         WHERE egg_groupid IN (${placeholders})
       `;
           sql += `
@@ -680,13 +680,13 @@ app.post('/api/search/egg_group', async (req, res) => {
             (
               (
                 egg_group1 IN (
-                  SELECT egg_group FROM POKEDB202601.egg_group WHERE egg_groupid IN (${egg_groupSql})
+                  SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql})
                 )
               )
               OR
               (
                 egg_group2 IN (
-                  SELECT egg_group FROM POKEDB202601.egg_group WHERE egg_groupid IN (${egg_groupSql})
+                  SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql})
                 )
               )
             )
@@ -701,7 +701,7 @@ app.post('/api/search/egg_group', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM POKEDB202601.region
+          FROM public.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -714,7 +714,7 @@ app.post('/api/search/egg_group', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM POKEDB202601.generation
+          FROM public.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -742,7 +742,7 @@ app.post('/api/search/value', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM POKEDB202601.pokedex0
+      FROM public.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -782,7 +782,7 @@ app.post('/api/search/value', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM POKEDB202601.region
+          FROM public.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -795,7 +795,7 @@ app.post('/api/search/value', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM POKEDB202601.generation
+          FROM public.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -823,7 +823,7 @@ app.post('/api/search/form', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM POKEDB202601.pokedex0
+      FROM public.pokedex0
       WHERE 1=1
       AND form IS NOT NULL
     `;
@@ -910,7 +910,7 @@ app.post('/api/search/form', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM POKEDB202601.region
+          FROM public.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -923,7 +923,7 @@ app.post('/api/search/form', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM POKEDB202601.generation
+          FROM public.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -960,7 +960,7 @@ app.get('/api/move/minNo', async (req, res) => {
     SELECT
     MIN(autonum) AS min
     FROM
-    POKEDB202601.movedex0
+    public.movedex0
     `;
     //const result = await pool.query(query);
     const result = await client.query(query);
@@ -985,7 +985,7 @@ app.get('/api/move/maxNo', async (req, res) => {
     SELECT
     MAX(autonum) AS max
     FROM
-    POKEDB202601.movedex0
+    public.movedex0
     `;
     //const result = await pool.query(query);
     const result = await client.query(query);
@@ -1010,9 +1010,11 @@ app.get('/api/move', async (req, res) => {
 
     const query = `
       SELECT *
-      FROM POKEDB202601.pokedex0
-      WHERE type = $1
-      ORDER BY autonum
+      FROM public.pokedex0
+      WHERE
+      type = $1
+      ORDER BY
+      autonum
     `;
 
     //const result = await pool.query(query, [typeid]);
@@ -1040,9 +1042,12 @@ app.get('/api/move', async (req, res) => {
     const query =
     `
       SELECT *
-      FROM POKEDB202601.pokedex0
-      WHERE type = $1
-      ORDER BY autonum
+      FROM
+      public.pokedex0
+      WHERE
+      type = $1
+      ORDER BY
+      autonum
     `;
 
     //const result = await pool.query(query, [typeid]);
@@ -1074,7 +1079,7 @@ app.get("/api/relation/move", (req, res) => {
     pokeid,
     poke_autonum
     FROM
-    POKEDB202601.relation
+    public.relation
     WHERE
     move_autonum = ?
     `,
@@ -1107,7 +1112,7 @@ app.get("/api/poke/each/image", (req, res) => {
       path_normal_front,
       path_shiny_front
     FROM
-      POKEDB202601.pokédex0
+      public.pokédex0
     WHERE
       autonum = ?
   `;
@@ -1125,6 +1130,7 @@ app.get("/api/poke/each/image", (req, res) => {
     res.json(results[0]);
   });
 });
+
 
 
 /***********************************************************************/
