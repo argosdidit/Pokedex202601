@@ -1012,7 +1012,12 @@ app.get('/api/move', async (req, res) => {
       SELECT *
       FROM public.movedex0
       WHERE
-      type = $1
+      type =
+      (
+        SELECT type
+        FROM type
+        WHERE typeid = $1
+      )
       ORDER BY
       autonum
     `;
