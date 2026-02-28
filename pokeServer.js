@@ -32,6 +32,8 @@ client.connect()
 // API 定義
 // =======================
 
+/* <<< POKEDEX関係 >>> */
+
 /*NoのMin値を取得*/
 /*http://127.0.0.1:3001/api/poke/minNO*/
 app.get('/api/poke/minNo', async (req, res) => {
@@ -41,7 +43,7 @@ app.get('/api/poke/minNo', async (req, res) => {
     SELECT
     MIN(autonum) AS min
     FROM
-    public.pokedex0
+    POKEDB202601.pokedex0
     `;
     //const result = await pool.query(query);
     const result = await client.query(query);
@@ -66,7 +68,7 @@ app.get('/api/poke/maxNo', async (req, res) => {
     SELECT
     MAX(autonum) AS max
     FROM
-    public.pokedex0
+    POKEDB202601.pokedex0
     `;
     //const result = await pool.query(query);
     const result = await client.query(query);
@@ -82,9 +84,6 @@ app.get('/api/poke/maxNo', async (req, res) => {
   }
 });
 
-
-
-
 /*タイプ全体の取得*/
 /*http://127.0.0.1:3001/api/poke/type*/
 // タイプ一覧を取得
@@ -96,7 +95,7 @@ app.get('/api/poke/type', async (req, res) => {
         taipu,
         type,
         pathtype
-      FROM public.type
+      FROM POKEDB202601.type
       ORDER BY typeid
     `;
 
@@ -120,7 +119,7 @@ app.get('/api/poke/ability', async (req, res) => {
         abilityid,
         tokusei,
         ability
-      FROM public.ability
+      FROM POKEDB202601.ability
       ORDER BY abilityid
     `;
 
@@ -144,7 +143,7 @@ app.get('/api/poke/gender', async (req, res) => {
       SELECT
         genderid,
         gender
-      FROM public.gender
+      FROM POKEDB202601.gender
       ORDER BY genderid
     `;
 
@@ -169,7 +168,7 @@ app.get('/api/poke/egg_group', async (req, res) => {
         egg_groupid,
         tamago_group,
         egg_group
-      FROM public.egg_group
+      FROM POKEDB202601.egg_group
       ORDER BY egg_groupid
     `;
 
@@ -195,7 +194,7 @@ app.get('/api/poke/region', async (req, res) => {
         regionid,
         chiho,
         region
-      FROM public.region
+      FROM POKEDB202601.region
       ORDER BY regionid
     `;
 
@@ -220,7 +219,7 @@ app.get('/api/poke/generation', async (req, res) => {
         generationid,
         sedai,
         generation
-      FROM public.generation
+      FROM POKEDB202601.generation
       ORDER BY generationid
     `;
 
@@ -256,7 +255,7 @@ app.get('/api/poke/min_max_value', async (req, res) => {
         MAX(speed) AS maxspeed,
         MIN(sum) AS minsum,
         MAX(sum) AS maxsum
-      FROM public.pokedex0
+      FROM POKEDB202601.pokedex0
     `;
 
     //const result = await pool.query(query);
@@ -280,7 +279,7 @@ app.get('/api/poke', async (req, res) => {
 
     const query = `
       SELECT *
-      FROM public.pokedex0
+      FROM POKEDB202601.pokedex0
       WHERE autonum = $1
     `;
 
@@ -311,7 +310,7 @@ app.get('/api/pokelist', async (req, res) => {
         autonum,
         path_normal_front,
         path_shiny_front
-      FROM public.pokedex0
+      FROM POKEDB202601.pokedex0
       ORDER BY autonum
     `;
 
@@ -335,7 +334,7 @@ app.post('/api/search/type', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM public.pokedex0
+      FROM POKEDB202601.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -354,7 +353,7 @@ app.post('/api/search/type', async (req, res) => {
 
       const typeSql = `
         SELECT type
-        FROM public.type
+        FROM POKEDB202601.type
         WHERE typeid IN (${placeholders})
       `;
 
@@ -373,13 +372,13 @@ app.post('/api/search/type', async (req, res) => {
             (
               (
                 type1 IN (
-                  SELECT type FROM type WHERE typeid IN (${typeSql1})
+                  SELECT type FROM POKEDB202601.type WHERE typeid IN (${typeSql1})
                 )
               )
               OR
               (
                 type2 IN (
-                  SELECT type FROM type WHERE typeid IN (${typeSql2})
+                  SELECT type FROM POKEDB202601.type WHERE typeid IN (${typeSql2})
                 )
               )
             )
@@ -434,7 +433,7 @@ app.post('/api/search/type', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM public.region
+          FROM POKEDB202601.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -447,7 +446,7 @@ app.post('/api/search/type', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM public.generation
+          FROM POKEDB202601.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -467,8 +466,6 @@ app.post('/api/search/type', async (req, res) => {
   }
 });
 
-
-
 /*特性検索*/
 // 特性検索
 app.post('/api/search/ability', async (req, res) => {
@@ -477,7 +474,7 @@ app.post('/api/search/ability', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM public.pokedex0
+      FROM POKEDB202601.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -514,15 +511,15 @@ app.post('/api/search/ability', async (req, res) => {
   sql += `
     AND (
       ability1 IN (
-        SELECT ability FROM ability WHERE abilityid IN (${abilitySql1})
+        SELECT ability FROM POKEDB202601.ability WHERE abilityid IN (${abilitySql1})
       )
       OR
       ability2 IN (
-        SELECT ability FROM ability WHERE abilityid IN (${abilitySql2})
+        SELECT ability FROM POKEDB202601.ability WHERE abilityid IN (${abilitySql2})
       )
       OR
       hidden_ability IN (
-        SELECT ability FROM ability WHERE abilityid IN (${abilitySql3})
+        SELECT ability FROM POKEDB202601.ability WHERE abilityid IN (${abilitySql3})
       )
     )
   `;
@@ -538,7 +535,7 @@ app.post('/api/search/ability', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM public.region
+          FROM POKEDB202601.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -551,7 +548,7 @@ app.post('/api/search/ability', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM public.generation
+          FROM POKEDB202601.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -571,8 +568,6 @@ app.post('/api/search/ability', async (req, res) => {
   }
 });
 
-
-
 /*性別検索*/
 // 性別検索
 app.post('/api/search/gender', async (req, res) => {
@@ -581,7 +576,7 @@ app.post('/api/search/gender', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM public.pokedex0
+      FROM POKEDB202601.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -603,7 +598,7 @@ app.post('/api/search/gender', async (req, res) => {
       sql += `
         AND gender IN (
           SELECT gender
-          FROM public.gender
+          FROM POKEDB202601.gender
           WHERE genderid IN (${placeholders})
         )
       `;
@@ -617,7 +612,7 @@ app.post('/api/search/gender', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM public.region
+          FROM POKEDB202601.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -630,7 +625,7 @@ app.post('/api/search/gender', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM public.generation
+          FROM POKEDB202601.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -650,7 +645,6 @@ app.post('/api/search/gender', async (req, res) => {
   }
 });
 
-
 /*タマゴグループ検索*/
 // タマゴグループ検索
 app.post('/api/search/egg_group', async (req, res) => {
@@ -659,7 +653,7 @@ app.post('/api/search/egg_group', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM public.pokedex0
+      FROM POKEDB202601.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -678,31 +672,21 @@ app.post('/api/search/egg_group', async (req, res) => {
 
       const egg_groupSql = `
         SELECT egg_group
-        FROM public.type
+        FROM POKEDB202601.type
         WHERE egg_groupid IN (${placeholders})
       `;
-
-
-      // egg_group1 用のプレースホルダ
-          //const egg_groupSql1 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
-          //paramIndex += egg_groups.length;
-          
-          // egg_group2 用のプレースホルダ
-          //const egg_groupSql2 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
-          //paramIndex += egg_groups.length;
-          
           sql += `
             AND
             (
               (
                 egg_group1 IN (
-                  SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql})
+                  SELECT egg_group FROM POKEDB202601.egg_group WHERE egg_groupid IN (${egg_groupSql})
                 )
               )
               OR
               (
                 egg_group2 IN (
-                  SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql})
+                  SELECT egg_group FROM POKEDB202601.egg_group WHERE egg_groupid IN (${egg_groupSql})
                 )
               )
             )
@@ -712,66 +696,12 @@ app.post('/api/search/egg_group', async (req, res) => {
 
       
     }
-    /*
-    // タマゴグループ検索（複数）
-    if (egg_groups && egg_groups.length > 0) {
-      const placeholders = egg_groups
-        .map((_, i) => `$${paramIndex + i}`)
-        .join(',');
-
-      const eggSql = `
-        SELECT egg_group
-        FROM public.egg_group
-        WHERE egg_groupid IN (${placeholders})
-      `;
-
-      sql += `
-        AND (
-          egg_group1 IN (${eggSql})
-          OR egg_group2 IN (${eggSql})
-        )
-      `;
-
-      // egg_group1 と egg_group2 の2回分
-      params.push(...egg_groups, ...egg_groups);
-      paramIndex += egg_groups.length * 2;
-    }
-    // egg_group1 用のプレースホルダ
-    const egg_groupSql1 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
-    paramIndex += egg_groups.length;
-    
-    // egg_group2 用のプレースホルダ
-    const egg_groupSql2 = egg_groups.map((_, i) => `$${paramIndex + i}`).join(", ");
-    paramIndex += egg_groups.length;
-    
-    sql += `
-    AND
-    (
-      (
-      egg_group1 IN
-        (
-        SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql1})
-        )
-      )
-      OR
-      (
-        egg_group2 IN
-          (
-          SELECT egg_group FROM egg_group WHERE egg_groupid IN (${egg_groupSql2})
-          )
-        )
-      )
-      `;
-      params.push(...egg_groups); // egg_group1 用
-      params.push(...egg_groups); // egg_group2 用
-
-    */
    // 地方
     if (region) {
       sql += `
         AND region = (
           SELECT region
-          FROM public.region
+          FROM POKEDB202601.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -784,7 +714,7 @@ app.post('/api/search/egg_group', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM public.generation
+          FROM POKEDB202601.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -804,7 +734,6 @@ app.post('/api/search/egg_group', async (req, res) => {
   }
 });
 
-
 /*種族値検索*/
 // 種族値レンジ検索
 app.post('/api/search/value', async (req, res) => {
@@ -813,7 +742,7 @@ app.post('/api/search/value', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM public.pokedex0
+      FROM POKEDB202601.pokedex0
       WHERE 1=1
     `;
     const params = [];
@@ -853,7 +782,7 @@ app.post('/api/search/value', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM public.region
+          FROM POKEDB202601.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -866,7 +795,7 @@ app.post('/api/search/value', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM public.generation
+          FROM POKEDB202601.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -886,7 +815,6 @@ app.post('/api/search/value', async (req, res) => {
   }
 });
 
-
 /*フォルム検索*/
 // フォルム検索
 app.post('/api/search/form', async (req, res) => {
@@ -895,7 +823,7 @@ app.post('/api/search/form', async (req, res) => {
 
     let sql = `
       SELECT *
-      FROM public.pokedex0
+      FROM POKEDB202601.pokedex0
       WHERE 1=1
       AND form IS NOT NULL
     `;
@@ -982,7 +910,7 @@ app.post('/api/search/form', async (req, res) => {
       sql += `
         AND region = (
           SELECT region
-          FROM public.region
+          FROM POKEDB202601.region
           WHERE regionid = $${paramIndex}
         )
       `;
@@ -995,7 +923,7 @@ app.post('/api/search/form', async (req, res) => {
       sql += `
         AND generation = (
           SELECT generation
-          FROM public.generation
+          FROM POKEDB202601.generation
           WHERE generationid = $${paramIndex}
         )
       `;
@@ -1020,5 +948,183 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+/* <<< MOVEDEX関係 >>> */
+
+/*NoのMin値を取得*/
+/*http://127.0.0.1:3001/api/move/minNO*/
+app.get('/api/move/minNo', async (req, res) => {
+  try {
+    const query =
+    `
+    SELECT
+    MIN(autonum) AS min
+    FROM
+    POKEDB202601.movedex0
+    `;
+    //const result = await pool.query(query);
+    const result = await client.query(query);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'MOVE is not found' });
+    }
+
+    res.json(result.rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+/*NoのMax値を取得*/
+/*http://127.0.0.1:3001/api/move/maxNO*/
+app.get('/api/move/maxNo', async (req, res) => {
+  try {
+    const query =
+    `
+    SELECT
+    MAX(autonum) AS max
+    FROM
+    POKEDB202601.movedex0
+    `;
+    //const result = await pool.query(query);
+    const result = await client.query(query);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'MOVE is not found' });
+    }
+
+    res.json(result.rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+/*MoveのTYPEIDからタイプ毎の全Type情報を返す*/
+// 基本情報取得(1件)
+// TYPEID を指定してポケモン1件を取得
+app.get('/api/move', async (req, res) => {
+  try {
+    const typeid = Number(req.query.typeid ?? 1);
+
+    const query = `
+      SELECT *
+      FROM POKEDB202601.pokedex0
+      WHERE type = $1
+      ORDER BY autonum
+    `;
+
+    //const result = await pool.query(query, [typeid]);
+    const result = await client.query(query, [typeid]);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'Pokemon is not found' });
+    }
+
+    res.json(result.rows[0]);
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+/*MoveのTYPEIDからタイプ毎の全Type情報を返す*/
+// 基本情報取得(1件)
+// TYPEID を指定してポケモン1件を取得
+app.get('/api/move', async (req, res) => {
+  try {
+    const typeid = Number(req.query.typeid ?? 1);
+
+    const query =
+    `
+      SELECT *
+      FROM POKEDB202601.pokedex0
+      WHERE type = $1
+      ORDER BY autonum
+    `;
+
+    //const result = await pool.query(query, [typeid]);
+    const result = await client.query(query, [typeid]);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'Pokemon is not found' });
+    }
+
+    res.json(result.rows[0]);
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+/* <<< MOVEDEX(RELATION)関係 >>> */
+
+/*^^^^^^^^^^^^^^^^^^PokeのAutonumから全Poke情報を返す*/
+// 基本情報取得(1件)
+//http://localhost:3001/api/relation/move?move_autonum=2
+app.get("/api/relation/move", (req, res) => {
+  const move_autonum = Number(req.query.move_autonum ?? 1);
+
+  connection.query(
+    `
+    SELECT
+    pokeid,
+    poke_autonum
+    FROM
+    POKEDB202601.relation
+    WHERE
+    move_autonum = ?
+    `,
+    [move_autonum],
+    (err, results) => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ message: "Server error" });
+        return;
+      }
+
+      if (results.length === 0) {
+        res.status(404).json({ message: "POKE is not found" });
+      } else {
+        res.json(results);
+      }
+    }
+  );
+});
+
+/*Pokeの画像リストを返す*/
+//http://localhost:3001/api/poke/each/image?poke_autonum=2
+/* Pokeの画像リストを返す（MySQL版） */
+app.get("/api/poke/each/image", (req, res) => {
+  const poke_autonum = Number(req.query.poke_autonum ?? 1);
+
+  const query = `
+    SELECT
+      autonum,
+      path_normal_front,
+      path_shiny_front
+    FROM
+      POKEDB202601.pokédex0
+    WHERE
+      autonum = ?
+  `;
+
+  connection.query(query, [poke_autonum], (err, results) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ message: "Server error" });
+    }
+
+    if (results.length === 0) {
+      return res.status(404).json({ message: "Pokemon is not found" });
+    }
+
+    res.json(results[0]);
+  });
+});
+
 
 /***********************************************************************/
