@@ -1042,34 +1042,34 @@ app.get('/api/move', async (req, res) => {
 /*^^^^^^^^^^^^^^^^^^PokeのAutonumから全Poke情報を返す*/
 // 基本情報取得(1件)
 //http://localhost:3001/api/relation/move?move_autonum=2
-app.get("/api/relation/move", (req, res) => {
-  const move_autonum = Number(req.query.move_autonum ?? 1);
+app.get('/api/relation/move', async (req, res) => {
+  try {
+    const move_autonum = Number(req.query.move_autonum ?? 1);
 
-  connection.query(
-    `
-    SELECT
-    pokeid,
-    poke_autonum
-    FROM
-    public.relation
-    WHERE
-    move_autonum = ?
-    `,
-    [move_autonum],
-    (err, results) => {
-      if (err) {
-        console.error(err);
-        res.status(500).json({ message: "Server error" });
-        return;
-      }
+    const query = `
+      SELECT
+      pokeid,
+      poke_autonum
+      FROM public.relation
+      WHERE
+      move_autonum = $1
+      ORDER BY
+      poke_autonum;
+    `;
 
-      if (results.length === 0) {
-        res.status(404).json({ message: "POKE is not found" });
-      } else {
-        res.json(results);
-      }
+    //const result = await pool.query(query, [move_autonum]);
+    const result = await client.query(query, [move_autonum]);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'Pokemon is not found' });
     }
-  );
+
+    res.json(result.rows);
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Server error' });
+  }
 });
 
 /*Pokeの画像リストを返す*/
