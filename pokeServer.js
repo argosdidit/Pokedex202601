@@ -1086,7 +1086,7 @@ app.get("/api/poke/each/image", (req, res) => {
     FROM
       public.pokédex0
     WHERE
-      autonum = ?
+      autonum = $1
   `;
 
   connection.query(query, [poke_autonum], (err, results) => {
