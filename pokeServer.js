@@ -17,6 +17,14 @@ app.use(express.json());
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, "NewPokedex")));
+app.use(express.static(path.join(__dirname, "NewMovedex")));
+app.use(express.static(path.join(__dirname, "SearchAbilityDex")));
+app.use(express.static(path.join(__dirname, "SearchEggGroupDex")));
+app.use(express.static(path.join(__dirname, "SearchFormDex")));
+app.use(express.static(path.join(__dirname, "SearchGenderDex")));
+app.use(express.static(path.join(__dirname, "SearchTypeDex")));
+app.use(express.static(path.join(__dirname, "SearchValueDex")));
 
 // DB 接続設定（Client を使用）
 const client = new Client({
