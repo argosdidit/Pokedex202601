@@ -16,7 +16,7 @@ app.use(express.json());
 // ★ 静的ファイル配信（listen より前）
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-app.use(express.static(__dirname));
+//app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, "NewPokedex")));
 app.use(express.static(path.join(__dirname, "NewMovedex")));
 app.use(express.static(path.join(__dirname, "SearchAbilityDex")));
