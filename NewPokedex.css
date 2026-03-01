@@ -242,3 +242,19 @@ iframe {
   text-align: center;
   font-size: 20px;
 }
+
+/*DARK追加分*/
+.body{
+  background-color: #000;
+}
+.selected-poke-image{
+  background-color: #000;
+}
+.table{
+  background-color: #000;
+  color:#fff;
+  border-color:#fff;
+}
+.h3{
+  color: #fff;
+}
