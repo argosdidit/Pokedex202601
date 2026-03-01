@@ -1075,32 +1075,33 @@ app.get('/api/relation/move', async (req, res) => {
 /*Pokeの画像リストを返す*/
 //http://localhost:3001/api/poke/each/image?poke_autonum=2
 /* Pokeの画像リストを返す（MySQL版） */
-app.get("/api/poke/each/image", (req, res) => {
-  const poke_autonum = Number(req.query.poke_autonum ?? 1);
+/* Pokeの画像リストを返す（PostgreSQL版） */
+app.get("/api/poke/each/image", async (req, res) => {
+  try {
+    const poke_autonum = Number(req.query.poke_autonum ?? 1);
 
-  const query = `
-    SELECT
-      autonum,
-      path_normal_front,
-      path_shiny_front
-    FROM
-      public.pokédex0
-    WHERE
-      autonum = $1
-  `;
+    const query = `
+      SELECT
+        autonum,
+        path_normal_front,
+        path_shiny_front
+      FROM
+        public.pokedex0
+      WHERE
+        autonum = $1
+    `;
 
-  connection.query(query, [poke_autonum], (err, results) => {
-    if (err) {
-      console.error(err);
-      return res.status(500).json({ message: "Server error" });
-    }
+    const result = await client.query(query, [poke_autonum]);
 
-    if (results.length === 0) {
+    if (result.rows.length === 0) {
       return res.status(404).json({ message: "Pokemon is not found" });
     }
 
-    res.json(results[0]);
-  });
+    res.json(result.rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Server error" });
+  }
 });
 
 
