@@ -392,7 +392,7 @@ const MoveProject = (() => {
         const htmlList = [];
         for (const rel of relationList) {
           //const pokeRes = await fetch(`http://localhost:3001/api/poke/each/image?poke_autonum=${rel.POKE_AUTONUM}`);
-          const pokeRes = await fetch(`/api/poke/each/image?poke_autonum=${rel.POKE_AUTONUM}`);
+          const pokeRes = await fetch(`/api/poke/each/image?poke_autonum=${rel.poke_autonum}`);
           if (!pokeRes.ok) continue;
           const pokeData = await pokeRes.json();
           const html =
