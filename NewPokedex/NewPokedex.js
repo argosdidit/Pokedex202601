@@ -303,15 +303,15 @@ const PokeProject = (() => {
           
           if(whichImage === imageNormal)
           {
-            pokeDisplayImage = data.path_normal_front;
+            pokeDisplayImage = "../" + data.path_normal_front;
           }
           else if(whichImage === imageShiny)
           {
-            pokeDisplayImage = data.path_shiny_front;
+            pokeDisplayImage = "../" + data.path_shiny_front;
           }
           else
           {
-            pokeDisplayImage = data.path_normal_front;
+            pokeDisplayImage = "../" + data.path_normal_front;
           }
           
           //タイプの調整
@@ -364,7 +364,7 @@ const PokeProject = (() => {
       if(flag){
         areaPokeImage = document.querySelector(`[${conf.fieldPokeImage}]`);
         htmlPokeImage =
-        `<img id="pokeImage" src="../${pokeDisplayImage}" tag="${pokeAUTONUM}">`;
+        `<img id="pokeImage" src="${pokeDisplayImage}" tag="${pokeAUTONUM}">`;
 
         areaPokeImage.insertAdjacentHTML('beforeend', htmlPokeImage);
       }
@@ -424,10 +424,10 @@ const PokeProject = (() => {
         <td colspan="5">フォルム: ${pokeSUGATA}</td>
         </tr>
         <tr>
-        <td colspan="2">タイプ1: ${pokeTAIPU1} <img src="../${ImagePathType1}" heigth="15%" width="15%"></td>
+        <td colspan="2">タイプ1: ${pokeTAIPU1} <img src="${ImagePathType1}" heigth="15%" width="15%"></td>
         ${
         ImagePathType2 ?
-        `<td colspan="2">タイプ2: ${pokeTAIPU2} <img src="../${ImagePathType2}" heigth="15%" width="15%"></td>`
+        `<td colspan="2">タイプ2: ${pokeTAIPU2} <img src="${ImagePathType2}" heigth="15%" width="15%"></td>`
         :
         `<td colspan="2">タイプ2: ${pokeTAIPU2}`
         }
@@ -466,58 +466,58 @@ const PokeProject = (() => {
 
         switch(targetTYPE){
           case 'NORMAL':
-            targetTypePath = 'type/01.png';
+            targetTypePath = '../type/01.png';
             break;
           case 'FIRE':
-            targetTypePath = 'type/02.png';
+            targetTypePath = '../type/02.png';
             break;
           case 'WATER':
-            targetTypePath = 'type/03.png';
+            targetTypePath = '../type/03.png';
             break;
           case 'GRASS':
-            targetTypePath = 'type/04.png';
+            targetTypePath = '../type/04.png';
             break;
           case 'ELECTRIC':
-            targetTypePath = 'type/05.png';
+            targetTypePath = '../type/05.png';
             break;
           case 'ICE':
-            targetTypePath = 'type/06.png';
+            targetTypePath = '../type/06.png';
             break;
           case 'FIGHT':
-            targetTypePath = 'type/07.png';
+            targetTypePath = '../type/07.png';
             break;
           case 'POISON':
-            targetTypePath = 'type/08.png';
+            targetTypePath = '../type/08.png';
             break;
           case 'GROUND':
-            targetTypePath = 'type/09.png';
+            targetTypePath = '../type/09.png';
             break;
           case 'FLYING':
-            targetTypePath = 'type/10.png';
+            targetTypePath = '../type/10.png';
             break;
           case 'PSYCHIC':
-            targetTypePath = 'type/11.png';
+            targetTypePath = '../type/11.png';
             break;
           case 'BUG':
-            targetTypePath = 'type/12.png';
+            targetTypePath = '../type/12.png';
             break;
           case 'ROCK':
-            targetTypePath = 'type/13.png';
+            targetTypePath = '../type/13.png';
             break;
           case 'GHOST':
-            targetTypePath = 'type/14.png';
+            targetTypePath = '../type/14.png';
             break;
           case 'DRAGON':
-            targetTypePath = 'type/15.png';
+            targetTypePath = '../type/15.png';
             break;
           case 'DARK':
-            targetTypePath = 'type/16.png';
+            targetTypePath = '../type/16.png';
             break;
           case 'STEEL':
-            targetTypePath = 'type/17.png';
+            targetTypePath = '../type/17.png';
             break;
           case 'FAIRY':
-            targetTypePath = 'type/18.png';
+            targetTypePath = '../type/18.png';
             break;
           case 'None':
             targetTypePath = null;
