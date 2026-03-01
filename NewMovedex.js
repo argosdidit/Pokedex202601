@@ -398,7 +398,7 @@ const MoveProject = (() => {
           const html =
           `
           <button class=imagePoke>
-          <a href="NewPokedex.html?AUTONUM=${pokeData.autonum}">
+          <a href="NewPokedex.html?poke_autonum=${pokeData.autonum}">
           <img width="70px" height="70px" src="${pokeData.path_normal_front}">
           </a>
           </button>
