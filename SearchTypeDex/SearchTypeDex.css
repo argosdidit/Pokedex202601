@@ -1,0 +1,348 @@
+/* =========================
+   Topのデザイン
+========================= */
+.top {
+  background: #222;
+  color: #000;
+  font-size: 30px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 8px solid #000;
+}
+
+/* 左・右 */
+.top-left,
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-left {
+  padding-left: 10px;
+  color: #000;
+}
+
+.top-right {
+  padding-right: 10px;
+}
+
+/* ============================
+   中央エリア（高さ固定）
+============================ */
+.top-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 120px);
+  height: 100%;              /* ← これが重要 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* 背景帯（高さは親に合わせる） */
+.title-bg {
+  width: 100%;
+  height: 100%;              /* ← これが重要 */
+  background-image: linear-gradient(
+    to right,
+    #ffa500, #ffd700, #ffff00, #adff2f, #00ff00,
+    #7cfc00, #00fa9a, #7fffd4, #87cefa, #00bfff,
+    #1e90ff, #ba55d3, #ee82ee, #ff1493, #dc143c
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* タイトル */
+.page-title {
+  pointer-events: auto;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  padding: 5px 20px;
+  border-radius: 6px;
+}
+
+/* ============================
+   メニューボタン(☰)
+============================ */
+.menu-btn {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ============================
+   サイドバー
+============================ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease, background 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+/* Close Button */
+.sidebar-close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menu List */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+
+.sidebar li:nth-child(1) { color: #FF3333; border-bottom-color: #FF3333; }
+.sidebar li:nth-child(2) { color: #FF9900; border-bottom-color: #FF9900; }
+.sidebar li:nth-child(3) { color: #FFFF33; border-bottom-color: #FFFF33; }
+.sidebar li:nth-child(4) { color: #66FF66; border-bottom-color: #66FF66; }
+.sidebar li:nth-child(5) { color: #3399FF; border-bottom-color: #3399FF; }
+.sidebar li:nth-child(6) { color: #CC33FF; border-bottom-color: #CC33FF; }
+
+.sidebar li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.sidebar {
+  background: #000;
+}
+
+.sidebar .sidebar-close-btn {
+  color: white;
+}
+
+/* ============================
+   Main Content
+============================ */
+.main-content {
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.main-content.shift {
+  transform: translateX(250px);
+}
+
+#dynamic-content {
+  margin-top: 20px;
+  padding: 15px;
+  background: #eee;
+  border-radius: 6px;
+}
+
+/* =========================
+   検索フィールド全体
+========================= */
+.search-wrapper {
+  position: relative;
+  border: 2px solid #FF3333;
+  border-radius: 8px;
+  padding: 30px 20px 20px;
+  margin: 40px auto;
+  width: fit-content;
+  background-color: #ffffff;
+}
+
+/* =========================
+   ラベル
+========================= */
+.search-label {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid #FF3333;
+  border-radius: 8px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   検索エリアセンター揃え
+========================= */
+.search-area {
+  text-align: center;
+}
+
+.type_option {
+  border: 1px #FF3333 solid;
+  width: fit-content;
+  text-align: center;
+  display: inline-flex;
+}
+
+
+/* =========================
+   名前検索
+========================= */
+.left-and-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+#TxtSearchName {
+  font-size: 20px;
+  padding: 4px 6px;
+}
+
+/* =========================
+   入力・ドロップダウン・ボタン共通
+========================= */
+#TxtSearchName,
+#DdlSearchRegion,
+#DdlSearchGen,
+#BtnSearch {
+  font-size: 18px;
+  padding: 4px 8px;
+  border: 2px solid #FF3333;
+}
+
+/* =========================
+   検索ボタン
+========================= */
+#BtnSearch {
+  margin-top: 15px;
+  padding: 6px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  background: linear-gradient(#ffffff, #eaeaea);
+  cursor: pointer;
+}
+
+#BtnSearch:hover {
+  background: linear-gradient(#fff, #FF3333, #fff);
+}
+
+/* =========================
+   検索結果エリア
+========================= */
+.middle {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/* ポケモン画像 */
+.middle-each-image {
+  width: 100px;
+  height: 100px;
+}
+
+/* =========================
+   結果テーブル
+========================= */
+.poke-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.poke-table th,
+.poke-table td {
+  padding: 8px;
+  border: 1px solid #FF3333;
+  font-size: 15px;
+}
+
+/* =========================
+   検索結果なし
+========================= */
+.no-result {
+  margin-top: 20px;
+  color: #c00;
+  font-weight: bold;
+}
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+
+
+/*タイプテーブル配置のデザイン*/
+.table-type {
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+  /*タイプテーブル装飾のデザイン*/
+  .table-type td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #000;
+  }
+
+/*横並びにするためにASPX外から追加*/
+.type-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* アイコン間の余白 */
+  margin-bottom: 10px;
+}
+
+  
+/*アイコンイメージのデザイン*/
+.type-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
+
+  /*アイコン: マウスオーバー時のデザイン*/
+  .type-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  }
+
+  /*アイコン: 選択時のデザイン*/
+  .type-icon.selected {
+    background-color: #fff;
+    filter: brightness(1.2);
+    border: 3px solid #FF3333;
+  }
