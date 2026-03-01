@@ -298,8 +298,8 @@ const PokeProject = (() => {
           pokeSPEED = data.speed;
           pokeSUM = data.sum;
           
-          pokeBrightTypePath = data.path_typechart_bright;
-          pokeDarkTypePath = data.path_typechart_dark;
+          pokeBrightTypePath = "../" + data.path_typechart_bright;
+          pokeDarkTypePath = "../" + data.path_typechart_dark;
           
           if(whichImage === imageNormal)
           {
@@ -665,4 +665,5 @@ const PokeProject = (() => {
 
 window.addEventListener('load', function(){
   PokeProject();
+
 });
