@@ -375,22 +375,22 @@ const PokeSearch = (() => {
           case "bright":
             htmlPageStyle =
             `
-            <link rel="stylesheet" href="SearchEggGroupBright.css">
-            <link rel="icon" href="SearchEggGroupBright.png">
+            <link rel="stylesheet" href="SearchEggGroupDexBright.css">
+            <link rel="icon" href="SearchEggGroupDexBright.png">
             `;
             break;
           case "dark":
             htmlPageStyle =
             `
-            <link rel="stylesheet" href="SearchEggGroupDark.css">
-            <link rel="icon" href="SearchEggGroupDark.png">
+            <link rel="stylesheet" href="SearchEggGroupDexDark.css">
+            <link rel="icon" href="SearchEggGroupDexDark.png">
             `;
             break;
           default:
             htmlPageStyle =
             `
-            <link rel="stylesheet" href="SearchEggGroupBright.css">
-            <link rel="icon" href="SearchEggGroupBright.png">
+            <link rel="stylesheet" href="SearchEggGroupDexBright.css">
+            <link rel="icon" href="SearchEggGroupDexBright.png">
             `;
             break;
         }
@@ -429,3 +429,4 @@ window.addEventListener('load', function(){
   PokeSearch();
 
 });
+
