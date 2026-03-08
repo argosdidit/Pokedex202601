@@ -181,7 +181,7 @@ const PokeProject = (() => {
         <div class="reload-button">
         <button id="BtnReload">
         <a id="decisionButton" href="NewPokedex.html">
-        <img src="image/roll.jpeg" height="30px" width="30px">
+        <img src="../image/roll.jpeg" height="30px" width="30px">
         </a>
         </button>
         </div>
@@ -340,21 +340,21 @@ const PokeProject = (() => {
             htmlPageStyle =
             `
             <link rel="stylesheet" href="NewPokedexBright.css">
-            <link rel="icon" href="icon/NewPokedex.png">
+            <link rel="icon" href="../icon/NewPokedex.png">
             `;
             break;
           case "dark":
             htmlPageStyle =
             `
             <link rel="stylesheet" href="NewPokedexDark.css">
-            <link rel="icon" href="icon/NewPokedex.png">
+            <link rel="icon" href="../icon/NewPokedex.png">
             `;
             break;
           default:
             htmlPageStyle =
             `
             <link rel="stylesheet" href="NewPokedexBright.css">
-            <link rel="icon" href="icon/NewPokedex.png">
+            <link rel="icon" href="../icon/NewPokedex.png">
             `;
             break;
         }
@@ -812,4 +812,5 @@ const PokeProject = (() => {
 
 window.addEventListener('load', function(){
   PokeProject();
+
 });
