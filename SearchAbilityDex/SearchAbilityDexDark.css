@@ -147,6 +147,122 @@
   color: white;
 }
 
+
+/* ============================
+   setting commands
+============================ */
+.setting-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* ボタン間の余白 */
+  margin-bottom: 20px;
+}
+
+.setting-command {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* ボタン間の余白 */
+  margin-bottom: 20px;
+}
+
+.reload-button{
+  display: flex;
+  justify-content: center;
+}
+
+#LblLanguage{
+  color: #fff;
+  width: 170px;
+  height: 42px;
+  background: #000;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 42px;
+  background-color: #000;
+  border: 3px solid #fff;
+}
+
+#LblWindow{
+  color: #fff;
+  width: 170px;
+  height: 42px;
+  background: #000;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 42px;
+  background-color: #000;
+  border: 3px solid #fff;
+}
+
+#LblImage{
+  color: #fff;
+  width: 170px;
+  height: 42px;
+  background: #000;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 42px;
+  background-color: #000;
+  border: 3px solid #fff;
+}
+
+.toggle-button {
+  position: relative;
+  width: 170px;
+  height: 42px;
+}
+
+.toggle-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle-label {
+  width: 170px;
+  height: 42px;
+  background: #000;
+  border: 3px solid #fff;
+  border-radius: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 42px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+/* スイッチの丸 */
+.toggle-label::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  left: 2px;
+  top: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+/* チェック時の動き */
+.toggle-input:checked + .toggle-label::after {
+  left: calc(100% - 34px);
+}
 /* ============================
    Main Content
 ============================ */

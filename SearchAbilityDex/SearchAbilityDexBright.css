@@ -140,13 +140,129 @@
 
 
 .sidebar {
-  background: #000;
+  background: #fff;
 }
 
 .sidebar .sidebar-close-btn {
-  color: white;
+  color: #000;
 }
 
+
+/* ============================
+   setting commands
+============================ */
+.setting-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* ボタン間の余白 */
+  margin-bottom: 20px;
+}
+
+.setting-command {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* ボタン間の余白 */
+  margin-bottom: 20px;
+}
+
+.reload-button{
+  display: flex;
+  justify-content: center;
+}
+
+#LblLanguage{
+  color: #000;
+  width: 170px;
+  height: 42px;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 42px;
+  background-color: #fff;
+  border: 3px solid #000;
+}
+
+#LblWindow{
+  color: #000;
+  width: 170px;
+  height: 42px;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 42px;
+  background-color: #fff;
+  border: 3px solid #000;
+}
+
+#LblImage{
+  color: #000;
+  width: 170px;
+  height: 42px;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 42px;
+  background-color: #fff;
+  border: 3px solid #000;
+}
+
+.toggle-button {
+  position: relative;
+  width: 170px;
+  height: 42px;
+}
+
+.toggle-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle-label {
+  width: 170px;
+  height: 42px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 42px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+/* スイッチの丸 */
+.toggle-label::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  left: 2px;
+  top: 2px;
+  background: #000;
+  transition: 0.3s;
+}
+
+/* チェック時の動き */
+.toggle-input:checked + .toggle-label::after {
+  left: calc(100% - 34px);
+}
 /* ============================
    Main Content
 ============================ */

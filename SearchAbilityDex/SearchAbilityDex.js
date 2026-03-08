@@ -4,16 +4,29 @@ const PokeSearch = (() => {
   func,
   flag,
   active,
+  areaPageStyle,
   areaPageTitle,
+  areaSettingCommands,
+  areaDecisionButton,
+  htmlPageStyle,
   htmlPageTitle,
+  htmlSettingCommands,
+  htmlDecisionButton,
   areaSidebar,
-  htmlSidebar;
+  htmlSidebar,
+  
+  jap_or_eng,
+  bright_or_dark,
+  normal_or_shiny;
 
   let selectedAbilities = new Set();
   let abilityMaster = [];
 
   const conf ={
+    fieldPageStyle: `field-page-style`,
     fieldPageTitle: `field-page-title`,
+    fieldSettingCommands: `field-setting-commands`,
+    fieldDecisionButton: `field-decision-button`,
     area_sidebar: `area-sidebar`,
     search_field: `search-field`,
   };
@@ -21,7 +34,107 @@ const PokeSearch = (() => {
     init: function(){
       flag = true;
       areaSidebar = document.querySelector(`[${conf.area_sidebar}]`);
+
+      jap_or_eng = localStorage.getItem("selectedLanguage") || 'jap';
+      bright_or_dark = localStorage.getItem("selectedWindow") || 'bright';
+      normal_or_shiny = localStorage.getItem("selectedImage") || 'normal';
+
       return this;
+    },
+    makeSettingCommands: function(){
+      if(flag){
+        areaSettingCommands = document.querySelector(`[${conf.fieldSettingCommands}]`);
+        htmlSettingCommands =
+        `
+        <div class="setting-buttons">
+        <div class="toggle-button">
+        <input type="checkbox" id="BtnLanguage" class="toggle-input">
+        <label for="BtnLanguage" class="toggle-label" id="LblLanguage">日本語</label>
+        </div>
+        <div class="toggle-button">
+        <input type="checkbox" id="BtnWindow" class="toggle-input">
+        <label for="BtnWindow" class="toggle-label" id="LblWindow">ブライト</label>
+        </div>
+        <div class="toggle-button">
+        <input type="checkbox" id="BtnImage" class="toggle-input">
+        <label for="BtnImage" class="toggle-label" id="LblImage">通常</label>
+        </div>
+        </div>
+        `;
+
+        areaSettingCommands.insertAdjacentHTML('beforeend', htmlSettingCommands);
+
+        const selectedBtnLanguage = document.getElementById('BtnLanguage');
+        const selectedBtnWindow = document.getElementById('BtnWindow');
+        const selectedBtnImage = document.getElementById('BtnImage');
+
+        // ★ localStorage から読んだ状態をチェックに反映
+        selectedBtnLanguage.checked = (jap_or_eng === 'eng');
+        selectedBtnWindow.checked   = (bright_or_dark === 'dark');
+        selectedBtnImage.checked    = (normal_or_shiny === 'shiny');
+        
+        // ★ ラベルも一度現在状態で更新
+        func.updateLabels();
+        selectedBtnLanguage.addEventListener('click', func.updateLabels);
+        selectedBtnWindow.addEventListener('click', func.updateLabels);
+        selectedBtnImage.addEventListener('click', func.updateLabels);
+      }
+      return this;
+    },
+    makeDecisionButton: function(){
+      if(flag){
+        areaDecisionButton = document.querySelector(`[${conf.fieldDecisionButton}]`);
+        htmlDecisionButton =
+        `
+        <div class="reload-button">
+        <button id="BtnReload">
+        <a id="decisionButton" href="NewPokedex.html">
+        <img src="image/roll.jpeg" height="30px" width="30px">
+        </a>
+        </button>
+        </div>
+        `;
+        areaDecisionButton.insertAdjacentHTML('beforeend', htmlDecisionButton);
+
+        const btnReload = document.getElementById('decisionButton');
+        btnReload.addEventListener('click', func.updateURL);
+      }
+      return this;
+    },
+    updateLabels: function() {
+      const btnLanguage = document.getElementById('BtnLanguage');
+      const btnWindow = document.getElementById('BtnWindow');
+      const btnImage = document.getElementById('BtnImage');
+      
+      const lblLanguage = btnLanguage.nextElementSibling;
+      const lblWindow = btnWindow.nextElementSibling;
+      const lblImage = btnImage.nextElementSibling;
+      
+      // まず状態を更新
+      jap_or_eng = btnLanguage.checked ? 'eng' : 'jap';
+      bright_or_dark = btnWindow.checked ? 'dark' : 'bright';
+      normal_or_shiny = btnImage.checked ? 'shiny' : 'normal';
+
+      // 言語
+      lblLanguage.textContent = (jap_or_eng === 'jap') ? '日本語' : 'English';
+      
+      // ウィンドウ(明るさ)
+      if (jap_or_eng === 'jap') {
+        lblWindow.textContent = (bright_or_dark === 'bright') ? 'ブライト' : 'ダーク';
+      } else {
+        lblWindow.textContent = (bright_or_dark === 'bright') ? 'Bright' : 'Dark';
+      }
+      
+      // 画像(通常/色違い)
+      if (jap_or_eng === 'jap') {
+        lblImage.textContent = (normal_or_shiny === 'normal') ? '通常' : '色違い';
+      } else {
+        lblImage.textContent = (normal_or_shiny === 'normal') ? 'Normal' : 'Shiny';
+      }
+
+      localStorage.setItem('selectedLanguage', jap_or_eng);
+      localStorage.setItem('selectedWindow', bright_or_dark);
+      localStorage.setItem('selectedImage', normal_or_shiny);
     },
     makeFieldPageTitle: function(){
       if(flag){
@@ -297,6 +410,38 @@ const PokeSearch = (() => {
         });
       }
       return this;
+    },
+    judgeStyles: function(){
+      if(flag){
+        areaPageStyle = document.querySelector(`[${conf.fieldPageStyle}]`);
+        
+        switch(bright_or_dark)
+        {
+          case "bright":
+            htmlPageStyle =
+            `
+            <link rel="stylesheet" href="SearchAbilityBright.css">
+            <link rel="icon" href="SearchAbilityBright.png">
+            `;
+            break;
+          case "dark":
+            htmlPageStyle =
+            `
+            <link rel="stylesheet" href="SearchAbilityDark.css">
+            <link rel="icon" href="SearchAbilityDark.png">
+            `;
+            break;
+          default:
+            htmlPageStyle =
+            `
+            <link rel="stylesheet" href="SearchAbilityBright.css">
+            <link rel="icon" href="SearchAbilityBright.png">
+            `;
+            break;
+        }
+        areaPageStyle.insertAdjacentHTML('beforeend', htmlPageStyle);
+      }
+      return this;
     }
   };
 
@@ -309,6 +454,8 @@ const PokeSearch = (() => {
     func
       .init()
       .makeFieldPageTitle()
+      .makeSettingCommands()
+      .makeDecisionButton()
       .makeSidebarArea()
       .bindMenuButton()
       .bindSidebarCloseButton()
@@ -316,7 +463,8 @@ const PokeSearch = (() => {
       .initAbilityTable()
       .initRegionList()
       .initGenList()
-      .searchAbilityPoke();
+      .searchAbilityPoke()
+      .judgeStyles();
     return;
   }
   return (active);
