@@ -108,6 +108,14 @@ const PokeSearch = (() => {
       }
       return this;
     },
+    updateURL: async function(){
+      if(flag){
+        let newURL = `../SearchFormDex/SearchFormDex.html`;
+        //window.location.href = newURL;
+        history.replaceState(null, "", newURL);
+      }
+      return this;
+    },
     updateLabels: function() {
       const btnLanguage = document.getElementById('BtnLanguage');
       const btnWindow = document.getElementById('BtnWindow');
@@ -429,6 +437,4 @@ const PokeSearch = (() => {
 
 window.addEventListener('load', function(){
   PokeSearch();
-
 });
-
