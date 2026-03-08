@@ -813,22 +813,22 @@ const PokeSearch = (() => {
           case "bright":
             htmlPageStyle =
             `
-            <link rel="stylesheet" href="SearchValueBright.css">
-            <link rel="icon" href="SearchValueBright.png">
+            <link rel="stylesheet" href="SearchValueDexBright.css">
+            <link rel="icon" href="SearchValueDexBright.png">
             `;
             break;
           case "dark":
             htmlPageStyle =
             `
-            <link rel="stylesheet" href="SearchValueDark.css">
-            <link rel="icon" href="SearchValueDark.png">
+            <link rel="stylesheet" href="SearchValueDexDark.css">
+            <link rel="icon" href="SearchValueDexDark.png">
             `;
             break;
           default:
             htmlPageStyle =
             `
-            <link rel="stylesheet" href="SearchValueBright.css">
-            <link rel="icon" href="SearchValueBright.png">
+            <link rel="stylesheet" href="SearchValueDexBright.css">
+            <link rel="icon" href="SearchValueDexBright.png">
             `;
             break;
         }
@@ -867,3 +867,4 @@ window.addEventListener('load', function(){
   PokeSearch();
 
 });
+
