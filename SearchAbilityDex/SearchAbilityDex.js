@@ -89,7 +89,7 @@ const PokeSearch = (() => {
         <div class="reload-button">
         <button id="BtnReload">
         <a id="decisionButton" href="NewPokedex.html">
-        <img src="image/roll.jpeg" height="30px" width="30px">
+        <img src="../image/roll.jpeg" height="30px" width="30px">
         </a>
         </button>
         </div>
@@ -472,4 +472,5 @@ const PokeSearch = (() => {
 
 window.addEventListener('load', function(){
   PokeSearch();
+
 });
