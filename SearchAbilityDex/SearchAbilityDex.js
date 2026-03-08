@@ -88,7 +88,7 @@ const PokeSearch = (() => {
         `
         <div class="reload-button">
         <button id="BtnReload">
-        <a id="decisionButton" href="NewPokedex.html">
+        <a id="decisionButton" href="../SearchAbilityDex/SearchAbilityDex.html">
         <img src="../image/roll.jpeg" height="30px" width="30px">
         </a>
         </button>
