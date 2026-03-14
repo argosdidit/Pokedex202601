@@ -431,7 +431,6 @@ const PokeProject = (() => {
           pokeSP_DEF = data.sp_def;
           pokeSPEED = data.speed;
           pokeSUM = data.sum;
-          
           pokeNormalPath = "../" + data.path_normal_front;
           pokeShinyPath = "../" + data.path_shiny_front;
           pokeBrightTypePath = "../" + data.path_typechart_bright;
@@ -513,7 +512,7 @@ const PokeProject = (() => {
       if(flag){
         areaPokeImage = document.querySelector(`[${conf.fieldPokeImage}]`);
         htmlPokeImage =
-        `<img id="pokeImage" src="${pokeDisplayImage}" dataAutonum="${pokeAUTONUM}" dataImage="${normal_or_shiny}">`;
+        `<img id="pokeImage" src="${pokeDisplayImage}" dataAutonum="${pokeAUTONUM}" data-image="${normal_or_shiny}">`;
 
         areaPokeImage.insertAdjacentHTML('beforeend', htmlPokeImage);
       }
@@ -816,22 +815,22 @@ const PokeProject = (() => {
       if(flag){
         
         let img = document.getElementById("pokeImage");
-        let nowImage = img.dataImage;
+        let nowImage = img.dataset.image;
 
-        if(nowImage === 'NORMAL')
+        if(nowImage === 'normal')
         {
           img.src = pokeShinyPath;
-          img.dataImage = 'SHINY';
+          img.dataset.image = 'shiny';
         }
-        else if(nowImage === 'SHINY')
+        else if(nowImage === 'shiny')
         {
           img.src = pokeNormalPath;
-          img.dataImage = 'NORMAL';
+          img.dataset.image = 'normal';
         }
         else
         {
           img.src = pokeShinyPath;
-          img.dataImage = 'SHINY';
+          img.dataset.image = 'shiny';
         }
       }
       return this;
@@ -892,7 +891,6 @@ const PokeProject = (() => {
       .bindSidebarEvents()
       .makeFieldControlButtons()
       .judgeStyles();
-      
       await func.getMinAUTONUM();
       await func.getMaxAUTONUM();
       console.log(pokeMinAUTONUM, pokeMaxAUTONUM);
