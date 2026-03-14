@@ -450,11 +450,11 @@ const PokeProject = (() => {
             pokeDisplayImage = pokeNormalPath;
           }
 
-          if(bright_or_dark === 'BRIGHT')
+          if(bright_or_dark === 'bright')
           {
             pokeDisplayTypePath = pokeBrightTypePath;
           }
-          else if(bright_or_dark === 'DARK')
+          else if(bright_or_dark === 'dark')
           {
             pokeDisplayTypePath = pokeDarkTypePath;
           }
@@ -468,10 +468,10 @@ const PokeProject = (() => {
             .makeFieldPokeImage();
             switch(jap_or_eng)
             {
-              case 'JAP':
+              case 'jap':
                 func.makeFieldJapPokeInfo();
                 break;
-              case 'ENG':
+              case 'eng':
                 func.makeFieldEngPokeInfo();
                 break;
               default:
