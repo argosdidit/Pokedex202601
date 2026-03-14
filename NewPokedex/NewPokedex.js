@@ -432,8 +432,8 @@ const PokeProject = (() => {
           pokeSPEED = data.speed;
           pokeSUM = data.sum;
           
-          pokeNormalPath = "../" + data.PATH_NORMAL_FRONT;
-          pokeShinyPath = "../" + data.PATH_SHINY_FRONT;
+          pokeNormalPath = "../" + data.path_normal_front;
+          pokeShinyPath = "../" + data.path_shiny_front;
           pokeBrightTypePath = "../" + data.path_typechart_bright;
           pokeDarkTypePath = "../" + data.path_typechart_dark;
           
