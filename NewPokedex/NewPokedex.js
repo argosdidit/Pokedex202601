@@ -109,6 +109,8 @@ const PokeProject = (() => {
       areaSidebar = document.querySelector(`[${conf.area_sidebar}]`);
       active = true;
       pokeTargetAUTONUM = 1;
+      if(localStorage.getItem("poke_autonum") !== null)
+        pokeTargetAUTONUM = Number(localStorage.getItem("poke_autonum"));
 
       //URLに番号があれば(検索画面から呼び出された場合)
       const params = new URLSearchParams(window.location.search);
@@ -781,11 +783,15 @@ const PokeProject = (() => {
         {
           //現No-1した個体を参照
           func.getPokeData(prevTargetAUTONUM);
+          func.makeFieldDisplayPokeList();
+          func.judgeStyles();
         }
         else
         {
           //最大Noの個体を参照
           func.getPokeData(pokeMaxAUTONUM);
+          func.makeFieldDisplayPokeList();
+          func.judgeStyles();
         }
       }
       return this;
@@ -801,11 +807,15 @@ const PokeProject = (() => {
         {
           //現No+1した個体を参照
           func.getPokeData(nextTargetAUTONUM);
+          func.makeFieldDisplayPokeList();
+          func.judgeStyles();
         }
         else
         {
           //最小Noの個体を参照
           func.getPokeData(pokeMinAUTONUM);
+          func.makeFieldDisplayPokeList();
+          func.judgeStyles();
         }
 
       }
