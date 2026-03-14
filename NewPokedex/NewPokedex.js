@@ -943,12 +943,12 @@ const PokeProject = (() => {
       .makeDecisionButton();
     switch(jap_or_eng)
     {
-      case 'JAP':
+      case 'jap':
         func
           .makeJapSidebarArea()
           .makeFieldJapControlButtons()
         break;
-      case 'ENG':
+      case 'eng':
         func
           .makeEngSidebarArea()
           .makeFieldEngControlButtons()
