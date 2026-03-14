@@ -231,7 +231,7 @@ const PokeProject = (() => {
       }
       return this;
     },
-    makeSidebarArea: function () {
+    makeJapSidebarArea: function () {
       htmlSidebar = `
         <nav class="sidebar" id="sidebar">
           <button class="sidebar-close-btn" id="sidebar-close">☰</button>
@@ -242,6 +242,23 @@ const PokeProject = (() => {
             <li data-menu="4"><a href="../SearchEggGroupDex/SearchEggGroupDex.html">タマゴグループ</a></li>
             <li data-menu="5"><a href="../SearchValueDex/SearchValueDex.html">種族値</a></li>
             <li data-menu="6"><a href="../SearchFormDex/SearchFormDex.html">姿違い</a></li>
+          </ul>
+        </nav>
+      `;
+      areaSidebar.insertAdjacentHTML('beforeend', htmlSidebar);
+      return this;
+    },
+    makeEngSidebarArea: function () {
+      htmlSidebar = `
+        <nav class="sidebar" id="sidebar">
+          <button class="sidebar-close-btn" id="sidebar-close">☰</button>
+          <ul>
+            <li data-menu="1"><a href="../SearchTypeDex/SearchTypeDex.html">Search Type</a></li>
+            <li data-menu="2"><a href="../SearchAbilityDex/SearchAbilityDex.html">Search Ability</a></li>
+            <li data-menu="3"><a href="../SearchGenderDex/SearchGenderDex.html">Search Gender</a></li>
+            <li data-menu="4"><a href="../SearchEggGroupDex/SearchEggGroupDex.html">Search Egg Group</a></li>
+            <li data-menu="5"><a href="../SearchValueDex/SearchValueDex.html">Search Value</a></li>
+            <li data-menu="6"><a href="../SearchFormDex/SearchFormDex.html">Search Form</a></li>
           </ul>
         </nav>
       `;
@@ -293,7 +310,7 @@ const PokeProject = (() => {
 
       return this;
     },
-    makeFieldControlButtons(){
+    makeFieldJapControlButtons(){
       if(flag){
         areaControlButtons = document.querySelector(`[${conf.fieldControlButtons}]`);
         htmlControlButtons =
@@ -301,6 +318,35 @@ const PokeProject = (() => {
         <br>
         <button id="BtnPrevPoke">⇐</button>
         <button id="BtnSwitchImage">通常/色違い</button>
+        <button id="BtnNextPoke">⇒</button>
+        `;
+        areaControlButtons.insertAdjacentHTML('beforeend', htmlControlButtons);
+
+        //current-1の個体にリンク
+        let BtnPrevPoke = document.getElementById('BtnPrevPoke');
+        if(BtnPrevPoke)
+          BtnPrevPoke.addEventListener('click', func.prevPoke);
+
+        //current+1の個体にリンク
+        let BtnNextPoke = document.getElementById('BtnNextPoke');
+        if(BtnNextPoke)
+          BtnNextPoke.addEventListener('click', func.nextPoke);
+
+        //画像を通常⇔色違いに反転
+        let BtnSwitchImage = document.getElementById('BtnSwitchImage');
+        if(BtnSwitchImage)
+          BtnSwitchImage.addEventListener('click', func.switchImage);
+      }
+      return this;
+    },
+    makeFieldEngControlButtons(){
+      if(flag){
+        areaControlButtons = document.querySelector(`[${conf.fieldControlButtons}]`);
+        htmlControlButtons =
+        `
+        <br>
+        <button id="BtnPrevPoke">⇐</button>
+        <button id="BtnSwitchImage">Normal / Shiny</button>
         <button id="BtnNextPoke">⇒</button>
         `;
         areaControlButtons.insertAdjacentHTML('beforeend', htmlControlButtons);
@@ -894,12 +940,29 @@ const PokeProject = (() => {
       .init()
       .makeFieldPageTitle()
       .makeSettingCommands()
-      .makeDecisionButton()
-      .makeSidebarArea()
+      .makeDecisionButton();
+    switch(jap_or_eng)
+    {
+      case 'JAP':
+        func
+          .makeJapSidebarArea()
+          .makeFieldJapControlButtons()
+        break;
+      case 'ENG':
+        func
+          .makeEngSidebarArea()
+          .makeFieldEngControlButtons()
+        break;
+      default:
+        func
+          .makeJapSidebarArea()
+          .makeFieldEngControlButtons()
+        break;
+    }
+    func
       .bindMenuButton()
       .bindSidebarCloseButton()
       .bindSidebarEvents()
-      .makeFieldControlButtons()
       .judgeStyles();
       await func.getMinAUTONUM();
       await func.getMaxAUTONUM();
