@@ -437,11 +437,11 @@ const PokeProject = (() => {
           pokeBrightTypePath = "../" + data.path_typechart_bright;
           pokeDarkTypePath = "../" + data.path_typechart_dark;
           
-          if(normal_or_shiny === 'NORMAL')
+          if(normal_or_shiny === 'normal')
           {
             pokeDisplayImage = pokeNormalPath;
           }
-          else if(normal_or_shiny === 'SHINY')
+          else if(normal_or_shiny === 'shiny')
           {
             pokeDisplayImage = pokeShinyPath;
           }
