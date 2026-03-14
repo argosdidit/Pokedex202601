@@ -18,7 +18,6 @@ const PokeProject = (() => {
   pokeBUNRUI,
   pokeTAIPU1,
   pokeTAIPU2,
-  pokeUnionTAIPU,
   pokeTOKUSEI1,
   pokeTOKUSEI2,
   pokeYUMETOKUSEI,
@@ -33,7 +32,6 @@ const PokeProject = (() => {
   pokeCLASSIFICATION,
   pokeTYPE1,
   pokeTYPE2,
-  pokeUnionTYPE,
   pokeABILITY1,
   pokeABILITY2,
   pokeHIDDENABILITY,
@@ -51,12 +49,18 @@ const PokeProject = (() => {
   pokeSP_DEF,
   pokeSPEED,
   pokeSUM,
+  pokeNormalPath,
+  pokeShinyPath,
   pokeBrightTypePath,
   pokeDarkTypePath,
+  pokeDisplayTypePath,
   pokeDisplayImage,
 
   //HTML関連(位置判定)
+  areaPageStyle,
   areaPageTitle,
+  areaSettingCommands,
+  areaDecisionButton,
   areaPokeImage,
   areaPokeTitle,
   areaPokeType,
@@ -65,10 +69,11 @@ const PokeProject = (() => {
   areaDisplayPokeList,
 
   //HTML関連(挿入)
+  htmlPageStyle,
   htmlPageTitle,
+  htmlSettingCommands,
+  htmlDecisionButton,
   htmlPokeImage,
-  htmlPokeTitle,
-  htmlPokeType,
   htmlPokeInfo,
   htmlControlButtons,
 
@@ -76,20 +81,19 @@ const PokeProject = (() => {
   func,
   flag,
 
-  //画像の切り替え
-  whichImage,
-  imageNormal,
-  imageShiny,
-
   active,
   areaSidebar,
-  htmlSidebar;
-
-  imageNormal = 'NORMAL'
-  imageShiny = 'SHINY'
+  htmlSidebar,
+  
+  jap_or_eng,
+  bright_or_dark,
+  normal_or_shiny;
 
   const conf ={
+    fieldPageStyle: `field-page-style`,
     fieldPageTitle: `field-page-title`,
+    fieldSettingCommands: `field-setting-commands`,
+    fieldDecisionButton: `field-decision-button`,
     area_sidebar: `area-sidebar`,
     fieldPokeImage: `field-selected-poke-image`,
     fieldPokeTitle: `field-selected-poke-title`,
@@ -105,7 +109,6 @@ const PokeProject = (() => {
       areaSidebar = document.querySelector(`[${conf.area_sidebar}]`);
       active = true;
       pokeTargetAUTONUM = 1;
-      whichImage = imageNormal;
 
       //URLに番号があれば(検索画面から呼び出された場合)
       const params = new URLSearchParams(window.location.search);
@@ -114,7 +117,106 @@ const PokeProject = (() => {
       if(getAUTONUM !== null)
         pokeTargetAUTONUM = Number(getAUTONUM);
 
+      jap_or_eng = localStorage.getItem("selectedLanguage") || 'jap';
+      bright_or_dark = localStorage.getItem("selectedWindow") || 'bright';
+      normal_or_shiny = localStorage.getItem("selectedImage") || 'normal';
+
       return this;
+    },
+    makeSettingCommands: function(){
+      if(flag){
+        areaSettingCommands = document.querySelector(`[${conf.fieldSettingCommands}]`);
+        htmlSettingCommands =
+        `
+        <div class="setting-buttons">
+        <div class="toggle-button">
+        <input type="checkbox" id="BtnLanguage" class="toggle-input">
+        <label for="BtnLanguage" class="toggle-label" id="LblLanguage">日本語</label>
+        </div>
+        <div class="toggle-button">
+        <input type="checkbox" id="BtnWindow" class="toggle-input">
+        <label for="BtnWindow" class="toggle-label" id="LblWindow">ブライト</label>
+        </div>
+        <div class="toggle-button">
+        <input type="checkbox" id="BtnImage" class="toggle-input">
+        <label for="BtnImage" class="toggle-label" id="LblImage">通常</label>
+        </div>
+        </div>
+        `;
+
+        areaSettingCommands.insertAdjacentHTML('beforeend', htmlSettingCommands);
+
+        const selectedBtnLanguage = document.getElementById('BtnLanguage');
+        const selectedBtnWindow = document.getElementById('BtnWindow');
+        const selectedBtnImage = document.getElementById('BtnImage');
+
+        // ★ localStorage から読んだ状態をチェックに反映
+        selectedBtnLanguage.checked = (jap_or_eng === 'eng');
+        selectedBtnWindow.checked   = (bright_or_dark === 'dark');
+        selectedBtnImage.checked    = (normal_or_shiny === 'shiny');
+        
+        // ★ ラベルも一度現在状態で更新
+        func.updateLabels();
+        selectedBtnLanguage.addEventListener('click', func.updateLabels);
+        selectedBtnWindow.addEventListener('click', func.updateLabels);
+        selectedBtnImage.addEventListener('click', func.updateLabels);
+      }
+      return this;
+    },
+    makeDecisionButton: function(){
+      if(flag){
+        areaDecisionButton = document.querySelector(`[${conf.fieldDecisionButton}]`);
+        htmlDecisionButton =
+        `
+        <div class="reload-button">
+        <button id="BtnReload">
+        <a id="decisionButton" href="NewPokedex.html">
+        <img src="../image/roll.jpeg" height="30px" width="30px">
+        </a>
+        </button>
+        </div>
+        `;
+        areaDecisionButton.insertAdjacentHTML('beforeend', htmlDecisionButton);
+
+        const btnReload = document.getElementById('decisionButton');
+        btnReload.addEventListener('click', func.updateURL);
+      }
+      return this;
+    },
+    updateLabels: function() {
+      const btnLanguage = document.getElementById('BtnLanguage');
+      const btnWindow = document.getElementById('BtnWindow');
+      const btnImage = document.getElementById('BtnImage');
+      
+      const lblLanguage = btnLanguage.nextElementSibling;
+      const lblWindow = btnWindow.nextElementSibling;
+      const lblImage = btnImage.nextElementSibling;
+      
+      // まず状態を更新
+      jap_or_eng = btnLanguage.checked ? 'eng' : 'jap';
+      bright_or_dark = btnWindow.checked ? 'dark' : 'bright';
+      normal_or_shiny = btnImage.checked ? 'shiny' : 'normal';
+
+      // 言語
+      lblLanguage.textContent = (jap_or_eng === 'jap') ? '日本語' : 'English';
+      
+      // ウィンドウ(明るさ)
+      if (jap_or_eng === 'jap') {
+        lblWindow.textContent = (bright_or_dark === 'bright') ? 'ブライト' : 'ダーク';
+      } else {
+        lblWindow.textContent = (bright_or_dark === 'bright') ? 'Bright' : 'Dark';
+      }
+      
+      // 画像(通常/色違い)
+      if (jap_or_eng === 'jap') {
+        lblImage.textContent = (normal_or_shiny === 'normal') ? '通常' : '色違い';
+      } else {
+        lblImage.textContent = (normal_or_shiny === 'normal') ? 'Normal' : 'Shiny';
+      }
+
+      localStorage.setItem('selectedLanguage', jap_or_eng);
+      localStorage.setItem('selectedWindow', bright_or_dark);
+      localStorage.setItem('selectedImage', normal_or_shiny);
     },
     makeFieldPageTitle: function(){
       if(flag){
@@ -132,12 +234,12 @@ const PokeProject = (() => {
         <nav class="sidebar" id="sidebar">
           <button class="sidebar-close-btn" id="sidebar-close">☰</button>
           <ul>
-            <li data-menu="1"><a href="SearchTypeDex.html">タイプ</a></li>
-            <li data-menu="2"><a href="SearchAbilityDex.html">特性</a></li>
-            <li data-menu="3"><a href="SearchGenderDex.html">性別</a></li>
-            <li data-menu="4"><a href="SearchEggGroupDex.html">タマゴグループ</a></li>
-            <li data-menu="5"><a href="SearchValueDex.html">種族値</a></li>
-            <li data-menu="6"><a href="SearchFormDex.html">姿違い</a></li>
+            <li data-menu="1"><a href="../SearchTypeDex/SearchTypeDex.html">タイプ</a></li>
+            <li data-menu="2"><a href="../SearchAbilityDex/SearchAbilityDex.html">特性</a></li>
+            <li data-menu="3"><a href="../SearchGenderDex/SearchGenderDex.html">性別</a></li>
+            <li data-menu="4"><a href="../SearchEggGroupDex/SearchEggGroupDex.html">タマゴグループ</a></li>
+            <li data-menu="5"><a href="../SearchValueDex/SearchValueDex.html">種族値</a></li>
+            <li data-menu="6"><a href="../SearchFormDex/SearchFormDex.html">姿違い</a></li>
           </ul>
         </nav>
       `;
@@ -215,6 +317,38 @@ const PokeProject = (() => {
         let BtnSwitchImage = document.getElementById('BtnSwitchImage');
         if(BtnSwitchImage)
           BtnSwitchImage.addEventListener('click', func.switchImage);
+      }
+      return this;
+    },
+    judgeStyles: function(){
+      if(flag){
+        areaPageStyle = document.querySelector(`[${conf.fieldPageStyle}]`);
+        
+        switch(bright_or_dark)
+        {
+          case "bright":
+            htmlPageStyle =
+            `
+            <link rel="stylesheet" href="NewPokedexBright.css">
+            <link rel="icon" href="icon/NewPokedex.png">
+            `;
+            break;
+          case "dark":
+            htmlPageStyle =
+            `
+            <link rel="stylesheet" href="NewPokedexDark.css">
+            <link rel="icon" href="icon/NewPokedex.png">
+            `;
+            break;
+          default:
+            htmlPageStyle =
+            `
+            <link rel="stylesheet" href="NewPokedexBright.css">
+            <link rel="icon" href="icon/NewPokedex.png">
+            `;
+            break;
+        }
+        areaPageStyle.insertAdjacentHTML('beforeend', htmlPageStyle);
       }
       return this;
     },
@@ -298,37 +432,52 @@ const PokeProject = (() => {
           pokeSPEED = data.speed;
           pokeSUM = data.sum;
           
-          pokeBrightTypePath = data.path_typechart_bright;
-          pokeDarkTypePath = data.path_typechart_dark;
+          pokeNormalPath = "../" + data.PATH_NORMAL_FRONT;
+          pokeShinyPath = "../" + data.PATH_SHINY_FRONT;
+          pokeBrightTypePath = "../" + data.path_typechart_bright;
+          pokeDarkTypePath = "../" + data.path_typechart_dark;
           
-          if(whichImage === imageNormal)
+          if(normal_or_shiny === 'NORMAL')
           {
-            pokeDisplayImage = data.path_normal_front;
+            pokeDisplayImage = data.PATH_NORMAL_FRONT;
           }
-          else if(whichImage === imageShiny)
+          else if(normal_or_shiny === 'SHINY')
           {
-            pokeDisplayImage = data.path_shiny_front;
+            pokeDisplayImage = data.PATH_SHINY_FRONT;
           }
           else
           {
-            pokeDisplayImage = data.path_normal_front;
+            pokeDisplayImage = data.PATH_NORMAL_FRONT;
           }
-          
-          //タイプの調整
-          if(pokeTAIPU2 === null)
+
+          if(bright_or_dark === 'BRIGHT')
           {
-            pokeUnionTAIPU = pokeTAIPU1;
+            pokeDisplayTypePath = pokeBrightTypePath;
+          }
+          else if(bright_or_dark === 'DARK')
+          {
+            pokeDisplayTypePath = pokeDarkTypePath;
           }
           else
           {
-            pokeUnionTAIPU = pokeTAIPU1 + "/" + pokeTAIPU2;
+            pokeDisplayTypePath = pokeBrightTypePath;
           }
-          
-          //画像の判断
+
           func
             .initFieldPokeData()
-            .makeFieldPokeImage()
-            .makeFieldPokeInfo()
+            .makeFieldPokeImage();
+            switch(jap_or_eng)
+            {
+              case 'JAP':
+                func.makeFieldJapPokeInfo();
+                break;
+              case 'ENG':
+                func.makeFieldEngPokeInfo();
+                break;
+              default:
+                func.makeFieldJapPokeInfo();
+                break;
+            }
           }
         catch (error){
           console.error('Error fetching data:', error);
@@ -339,7 +488,7 @@ const PokeProject = (() => {
     },
     updateURL: async function(){
       if(flag){
-        let newURL = `NewPokedex.html?poke_autonum=${pokeAUTONUM}`;
+        let newURL = `../NewPokedex/NewPokedex.html?poke_autonum=${pokeAUTONUM}`;
         //window.location.href = newURL;
         history.replaceState(null, "", newURL);
       }
@@ -364,13 +513,13 @@ const PokeProject = (() => {
       if(flag){
         areaPokeImage = document.querySelector(`[${conf.fieldPokeImage}]`);
         htmlPokeImage =
-        `<img id="pokeImage" src="${pokeDisplayImage}" tag="${pokeAUTONUM}">`;
+        `<img id="pokeImage" src="${pokeDisplayImage}" dataAutonum="${pokeAUTONUM}" dataImage="${normal_or_shiny}">`;
 
         areaPokeImage.insertAdjacentHTML('beforeend', htmlPokeImage);
       }
       return this;
     },
-    makeFieldPokeInfo(){
+    makeFieldJapPokeInfo(){
       if(flag){
         
         //SUGATA, TAIPU2, TOKUSEI2, YUMETOKUSEI, TAMAGOGROUP2判定
@@ -424,15 +573,15 @@ const PokeProject = (() => {
         <td colspan="5">フォルム: ${pokeSUGATA}</td>
         </tr>
         <tr>
-        <td colspan="2">タイプ1: ${pokeTAIPU1} <img src="${ImagePathType1}" heigth="15%" width="15%"></td>
+        <td colspan="2">タイプ1: ${pokeTAIPU1}<br><img src="${ImagePathType1}" heigth="15%" width="15%"></td>
         ${
         ImagePathType2 ?
-        `<td colspan="2">タイプ2: ${pokeTAIPU2} <img src="${ImagePathType2}" heigth="15%" width="15%"></td>`
+        `<td colspan="2">タイプ2: ${pokeTAIPU2}<br><img src="${ImagePathType2}" heigth="15%" width="15%"></td>`
         :
         `<td colspan="2">タイプ2: ${pokeTAIPU2}`
         }
-        <td colspan="2">特性1: ${pokeTOKUSEI1}</td>
-        <td colspan="2">特性2: ${pokeTOKUSEI2}</td>
+        <td colspan="2">特性1:<br>${pokeTOKUSEI1}</td>
+        <td colspan="2">特性2:<br>${pokeTOKUSEI2}</td>
         <td colspan="2">隠れ特性(夢):<br>${pokeYUMETOKUSEI}</td>
         </tr>
         <tr>
@@ -452,7 +601,96 @@ const PokeProject = (() => {
         <td colspan="4">合計<br>${pokeSUM}</td>
         </tr>
         </table>
-        <iframe src="${pokeBrightTypePath}"></iframe>
+        <iframe src="../${pokeDisplayTypePath}"></iframe>
+        `;
+
+        areaPokeInfo.insertAdjacentHTML('beforeend', htmlPokeInfo);
+      }
+      return this;
+    },
+    makeFieldEngPokeInfo(){
+      if(flag){
+        
+        //SUGATA, TAIPU2, TOKUSEI2, YUMETOKUSEI, TAMAGOGROUP2判定
+        if(pokeSUGATA === null)
+          pokeSUGATA = "なし";
+
+        if(pokeTAIPU2 === null)
+        {
+          pokeTAIPU2 = "なし";
+          pokeTYPE2 = "None";
+        }
+        
+        if(pokeTOKUSEI2 === null)
+          pokeTOKUSEI2 = "なし";
+
+        if(pokeYUMETOKUSEI === null)
+          pokeYUMETOKUSEI = "なし";
+
+        if(pokeTAMAGO_GROUP2 === null)
+          pokeTAMAGO_GROUP2 = "なし";
+
+        //タイプ画像判定
+        let ImagePathType1;
+        ImagePathType1 = func.judgeTypeImage(pokeTYPE1);
+
+        let ImagePathType2;
+        ImagePathType2 = func.judgeTypeImage(pokeTYPE2);
+
+
+        areaPokeInfo = document.querySelector(`[${conf.fieldPokeInfo}]`);
+        htmlPokeInfo =
+        `
+        <h3>< Status ></h3>
+        <table border="1">
+        <colgroup>
+        <col span="1" style="width: 10%">
+        <col span="1" style="width: 10%">
+        <col span="1" style="width: 10%">
+        <col span="1" style="width: 10%">
+        <col span="1" style="width: 10%">
+        <col span="1" style="width: 10%">
+        <col span="1" style="width: 10%">
+        <col span="1" style="width: 10%">
+        <col span="1" style="width: 10%">
+        <col span="1" style="width: 10%">
+        </colgroup>
+        <tr>
+        <td>No: ${pokeNO}</td>
+        <td colspan="2">Classification:<br>${pokeCLASSIFICATION}</td>
+        <td colspan="2">Name: ${pokeNAME}</td>
+        <td colspan="5">Form: ${pokeFORM}</td>
+        </tr>
+        <tr>
+        <td colspan="2">Type1: ${pokeTYPE1}<br><img src="${ImagePathType1}" heigth="15%" width="15%"></td>
+        ${
+        ImagePathType2 ?
+        `<td colspan="2">Type2: ${pokeTYPE2}<br><img src="${ImagePathType2}" heigth="15%" width="15%"></td>`
+        :
+        `<td colspan="2">Type2: ${pokeTYPE2}`
+        }
+        <td colspan="2">Ability1:<br>${pokeABILITY1}</td>
+        <td colspan="2">Ability2:<br>${pokeABILITY2}</td>
+        <td colspan="2">Hidden Ability:<br>${pokeHIDDENABILITY}</td>
+        </tr>
+        <tr>
+        <td colspan="2">Gender: ${pokeGENDER}</td>
+        <td colspan="2">Egg Group1:<br>${pokeEGG_GROUP1}</td>
+        <td colspan="2">Egg Group2:<br>${pokeEGG_GROUP2}</td>
+        <td colspan="2">Region: ${pokeREGION}</td>
+        <td colspan="2">Generation: ${pokeGENERATION}</td>
+        </tr>
+        <tr>
+        <td>HP<br>${pokeHP}</td>
+        <td>Attack<br>${pokeATTACK}</td>
+        <td>Defense<br>${pokeDEFENSE}</td>
+        <td>SP.Atk<br>${pokeSP_ATK}</td>
+        <td>SP.Def<br>${pokeSP_DEF}</td>
+        <td>Speed<br>${pokeSPEED}</td>
+        <td colspan="4">Sum<br>${pokeSUM}</td>
+        </tr>
+        </table>
+        <iframe src="${pokeDisplayTypePath}"></iframe>
         `;
 
         areaPokeInfo.insertAdjacentHTML('beforeend', htmlPokeInfo);
@@ -466,58 +704,58 @@ const PokeProject = (() => {
 
         switch(targetTYPE){
           case 'NORMAL':
-            targetTypePath = 'type/01.png';
+            targetTypePath = '../type/01.png';
             break;
           case 'FIRE':
-            targetTypePath = 'type/02.png';
+            targetTypePath = '../type/02.png';
             break;
           case 'WATER':
-            targetTypePath = 'type/03.png';
+            targetTypePath = '../type/03.png';
             break;
           case 'GRASS':
-            targetTypePath = 'type/04.png';
+            targetTypePath = '../type/04.png';
             break;
           case 'ELECTRIC':
-            targetTypePath = 'type/05.png';
+            targetTypePath = '../type/05.png';
             break;
           case 'ICE':
-            targetTypePath = 'type/06.png';
+            targetTypePath = '../type/06.png';
             break;
           case 'FIGHT':
-            targetTypePath = 'type/07.png';
+            targetTypePath = '../type/07.png';
             break;
           case 'POISON':
-            targetTypePath = 'type/08.png';
+            targetTypePath = '../type/08.png';
             break;
           case 'GROUND':
-            targetTypePath = 'type/09.png';
+            targetTypePath = '../type/09.png';
             break;
           case 'FLYING':
-            targetTypePath = 'type/10.png';
+            targetTypePath = '../type/10.png';
             break;
           case 'PSYCHIC':
-            targetTypePath = 'type/11.png';
+            targetTypePath = '../type/11.png';
             break;
           case 'BUG':
-            targetTypePath = 'type/12.png';
+            targetTypePath = '../type/12.png';
             break;
           case 'ROCK':
-            targetTypePath = 'type/13.png';
+            targetTypePath = '../type/13.png';
             break;
           case 'GHOST':
-            targetTypePath = 'type/14.png';
+            targetTypePath = '../type/14.png';
             break;
           case 'DRAGON':
-            targetTypePath = 'type/15.png';
+            targetTypePath = '../type/15.png';
             break;
           case 'DARK':
-            targetTypePath = 'type/16.png';
+            targetTypePath = '../type/16.png';
             break;
           case 'STEEL':
-            targetTypePath = 'type/17.png';
+            targetTypePath = '../type/17.png';
             break;
           case 'FAIRY':
-            targetTypePath = 'type/18.png';
+            targetTypePath = '../type/18.png';
             break;
           case 'None':
             targetTypePath = null;
@@ -536,7 +774,7 @@ const PokeProject = (() => {
 
         //現在のNoを取得
         let elementAUTONUM = document.getElementById('pokeImage');
-        let currentAUTONUM = Number(elementAUTONUM.getAttribute('tag'));
+        let currentAUTONUM = Number(elementAUTONUM.getAttribute('dataAutonum'));
         let prevTargetAUTONUM = currentAUTONUM - 1;
         localStorage.setItem('pokeMaxNo', pokeMaxAUTONUM);
 
@@ -556,7 +794,7 @@ const PokeProject = (() => {
     nextPoke(){
       if(flag){
         let elementAUTONUM = document.getElementById('pokeImage');
-        let currentAUTONUM = Number(elementAUTONUM.getAttribute('tag'));
+        let currentAUTONUM = Number(elementAUTONUM.getAttribute('dataAutonum'));
         let nextTargetAUTONUM = currentAUTONUM + 1;
         localStorage.setItem('pokeMinNo', pokeMinAUTONUM);
 
@@ -576,26 +814,25 @@ const PokeProject = (() => {
     },
     switchImage(){
       if(flag){
+        
+        let img = document.getElementById("pokeImage");
+        let nowImage = img.dataImage;
 
-        if(whichImage === imageNormal)
+        if(nowImage === 'NORMAL')
         {
-          whichImage = imageShiny;
+          img.src = pokeShinyPath;
+          img.dataImage = 'SHINY';
         }
-        else if(whichImage === imageShiny)
+        else if(nowImage === 'SHINY')
         {
-          whichImage = imageNormal;
+          img.src = pokeNormalPath;
+          img.dataImage = 'NORMAL';
         }
         else
         {
-          whichImage = imageNormal;
+          img.src = pokeShinyPath;
+          img.dataImage = 'SHINY';
         }
-        
-        let elementAUTONUM = document.getElementById('pokeImage');
-        let currentAUTONUM = Number(elementAUTONUM.getAttribute('tag'));
-        //currentNo = Number(document.getElementById('pokeNo').getAttribute('tag'));でも同様の結果取得可能
-        func.getPokeData(currentAUTONUM);
-        func.makeFieldDisplayPokeList();
-
       }
       return this;
     },
@@ -611,17 +848,17 @@ const PokeProject = (() => {
 
           data.forEach(pokemon => {
             const img = document.createElement('img');
-            if(whichImage === imageNormal)
+            if(normal_or_shiny === 'normal')
             {
-              img.src = pokemon.path_normal_front;
+              img.src = "../" + pokemon.path_normal_front;
             }
-            else if(whichImage === imageShiny)
+            else if(normal_or_shiny === 'shiny')
             {
-              img.src = pokemon.path_shiny_front;
+              img.src = "../" + pokemon.path_shiny_front;
             }
             else
             {
-              img.src = pokemon.path_normal_front;
+              img.src = "../" + pokemon.path_normal_front;
             }
             img.alt = `Pokemon ${pokemon.autonum}`;
             img.dataset.autonum = pokemon.autonum;
@@ -647,12 +884,15 @@ const PokeProject = (() => {
     func
       .init()
       .makeFieldPageTitle()
+      .makeSettingCommands()
+      .makeDecisionButton()
       .makeSidebarArea()
       .bindMenuButton()
       .bindSidebarCloseButton()
       .bindSidebarEvents()
-      .makeFieldControlButtons();
-
+      .makeFieldControlButtons()
+      .judgeStyles();
+      
       await func.getMinAUTONUM();
       await func.getMaxAUTONUM();
       console.log(pokeMinAUTONUM, pokeMaxAUTONUM);
