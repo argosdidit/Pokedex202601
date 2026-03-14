@@ -956,7 +956,7 @@ const PokeProject = (() => {
       default:
         func
           .makeJapSidebarArea()
-          .makeFieldEngControlButtons()
+          .makeFieldJapControlButtons()
         break;
     }
     func
