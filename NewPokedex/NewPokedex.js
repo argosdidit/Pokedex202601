@@ -439,15 +439,15 @@ const PokeProject = (() => {
           
           if(normal_or_shiny === 'NORMAL')
           {
-            pokeDisplayImage = data.PATH_NORMAL_FRONT;
+            pokeDisplayImage = pokeNormalPath;
           }
           else if(normal_or_shiny === 'SHINY')
           {
-            pokeDisplayImage = data.PATH_SHINY_FRONT;
+            pokeDisplayImage = pokeShinyPath;
           }
           else
           {
-            pokeDisplayImage = data.PATH_NORMAL_FRONT;
+            pokeDisplayImage = pokeNormalPath;
           }
 
           if(bright_or_dark === 'BRIGHT')
