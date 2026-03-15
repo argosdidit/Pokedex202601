@@ -286,17 +286,20 @@ const PokeSearch = (() => {
         switch(jap_or_eng)
         {
           case 'JAP':
-            fetch('http://127.0.0.1:3001/api/poke/region')
+            //fetch('http://127.0.0.1:3001/api/poke/region')
+            fetch('/api/poke/region')
             .then(res => res.json())
             .then(regions => func.renderJapRegionList(regions));
             break;
           case 'ENG':
-            fetch('http://127.0.0.1:3001/api/poke/region')
+            //fetch('http://127.0.0.1:3001/api/poke/region')
+            fetch('/api/poke/region')
             .then(res => res.json())
             .then(regions => func.renderEngRegionList(regions));
             break;
           default:
-            fetch('http://127.0.0.1:3001/api/poke/region')
+            //fetch('http://127.0.0.1:3001/api/poke/region')
+            fetch('/api/poke/region')
             .then(res => res.json())
             .then(regions => func.renderJapRegionList(regions));
             break;
@@ -335,17 +338,20 @@ const PokeSearch = (() => {
         switch(jap_or_eng)
         {
           case 'JAP':
-            fetch('http://127.0.0.1:3001/api/poke/generation')
+            //fetch('http://127.0.0.1:3001/api/poke/generation')
+            fetch('/api/poke/generation')
             .then(res => res.json())
             .then(gens => func.renderJapGenList(gens));
             break;
           case 'ENG':
-            fetch('http://127.0.0.1:3001/api/poke/generation')
+            //fetch('http://127.0.0.1:3001/api/poke/generation')
+            fetch('/api/poke/generation')
             .then(res => res.json())
             .then(gens => func.renderEngGenList(gens));
             break;
           default:
-            fetch('http://127.0.0.1:3001/api/poke/generation')
+            //fetch('http://127.0.0.1:3001/api/poke/generation')
+            fetch('/api/poke/generation')
             .then(res => res.json())
             .then(gens => func.renderJapGenList(gens));
             break;
