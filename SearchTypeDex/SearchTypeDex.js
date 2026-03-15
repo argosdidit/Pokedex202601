@@ -482,15 +482,15 @@ const PokeSearch = (() => {
           tr1.innerHTML =
           `
           <td width="5%" rowspan="2"><img src="${displayImage}" class="middle-each-image"></td>
-          <td width="5%" rowspan="2">${p.NO}</td>
-          <td width="15%">${p.NAMAE}</td>
-          <td width="30%" colspan="3">${p.SUGATA ? p.SUGATA : ""}</td>
-          <td width="15%">${p.TAMAGO_GROUP1}${p.TAMAGO_GROUP2 ? "・" + p.TAMAGO_GROUP2 : ""}</td>
-          <td width="10%">${p.CHIHO}</td>
-          <td width="5%">${p.HP}</td>
-          <td width="5%">${p.ATTACK}</td>
-          <td width="5%">${p.DEFENSE}</td>
-          <td width="5%"><a href="NewPokedex.html?poke_AUTONUM=${p.AUTONUM}"
+          <td width="5%" rowspan="2">${p.no}</td>
+          <td width="15%">${p.namae}</td>
+          <td width="30%" colspan="3">${p.sugata ? p.sugata : ""}</td>
+          <td width="15%">${p.tamago_group1}${p.tamago_group2 ? "・" + p.tamago_group2 : ""}</td>
+          <td width="10%">${p.chiho}</td>
+          <td width="5%">${p.hp}</td>
+          <td width="5%">${p.attack}</td>
+          <td width="5%">${p.defense}</td>
+          <td width="5%"><a href="../NewPokedex/NewPokedex.html?poke_AUTONUM=${p.AUTONUM}"
                             data-lang="${jap_or_eng}"
                             data-window="${bright_or_dark}"
                             >リンク</a></td>
@@ -498,16 +498,16 @@ const PokeSearch = (() => {
           const tr2 = document.createElement("tr");
           tr2.innerHTML =
           `
-          <td width="15%">${p.TAIPU1}${p.TAIPU2 ? "・" + p.TAIPU2 : ""}</td>
-          <td width="10%">${p.TOKUSEI1}</td>
-          <td width="10%">${p.TOKUSEI2 ? p.TOKUSEI2 : ""}</td>
-          <td width="10%">${p.YUME_TOKUSEI ? p.YUME_TOKUSEI : ""}</td>
-          <td>${p.GENDER}</td>
-          <td>${p.SEDAI}</td>
-          <td width="5%">${p.SP_ATK}</td>
-          <td width="5%">${p.SP_DEF}</td>
-          <td width="5%">${p.SPEED}</td>
-          <td width="5%">${p.SUM}</td>
+          <td width="15%">${p.taipu1}${p.taipu2 ? "・" + p.taipu2 : ""}</td>
+          <td width="10%">${p.tokusei1}</td>
+          <td width="10%">${p.tokusei2 ? p.tokusei2 : ""}</td>
+          <td width="10%">${p.yume_tokusei ? p.yume_tokusei : ""}</td>
+          <td>${p.gender}</td>
+          <td>${p.sedai}</td>
+          <td width="5%">${p.sp_atk}</td>
+          <td width="5%">${p.sp_def}</td>
+          <td width="5%">${p.speed}</td>
+          <td width="5%">${p.sum}</td>
           `;
           body.appendChild(tr1);
           body.appendChild(tr2);
@@ -556,32 +556,32 @@ const PokeSearch = (() => {
           tr1.innerHTML =
           `
           <td width="5%" rowspan="2"><img src="${displayImage}" class="middle-each-image"></td>
-          <td width="5%" rowspan="2">${p.NO}</td>
-          <td width="15%">${p.NAME}</td>
-          <td width="30%" colspan="3">${p.FORM ? p.FORM : ""}</td>
-          <td width="15%">${p.EGG_GROUP1}${p.EGG_GROUP2 ? "・" + p.EGG_GROUP2 : ""}</td>
-          <td width="10%">${p.REGION}</td>
-          <td width="5%">${p.HP}</td>
-          <td width="5%">${p.ATTACK}</td>
-          <td width="5%">${p.DEFENSE}</td>
-          <td width="5%"><a href="NewPokedex.html?poke_AUTONUM=${p.AUTONUM}"
+          <td width="5%" rowspan="2">${p.no}</td>
+          <td width="15%">${p.name}</td>
+          <td width="30%" colspan="3">${p.form ? p.form : ""}</td>
+          <td width="15%">${p.egg_group1}${p.egg_group2 ? "・" + p.egg_group2 : ""}</td>
+          <td width="10%">${p.region}</td>
+          <td width="5%">${p.hp}</td>
+          <td width="5%">${p.attack}</td>
+          <td width="5%">${p.defense}</td>
+          <td width="5%"><a href="../NewPokedex/NewPokedex.html?poke_AUTONUM=${p.autonum}"
                             data-lang="${jap_or_eng}"
                             data-window="${bright_or_dark}"
-                            >Link</a></td>
+                            >リンク</a></td>
           `;
           const tr2 = document.createElement("tr");
           tr2.innerHTML =
           `
-          <td width="15%">${p.TYPE1}${p.TYPE2 ? "・" + p.TYPE2 : ""}</td>
-          <td width="10%">${p.ABILITY1}</td>
-          <td width="10%">${p.ABILITY2 ? p.ABILITY2 : ""}</td>
-          <td width="10%">${p.HIDDEN_ABILITY ? p.HIDDEN_ABILITY : ""}</td>
-          <td>${p.GENDER}</td>
-          <td>${p.GENERATION}</td>
-          <td width="5%">${p.SP_ATK}</td>
-          <td width="5%">${p.SP_DEF}</td>
-          <td width="5%">${p.SPEED}</td>
-          <td width="5%">${p.SUM}</td>
+          <td width="15%">${p.type1}${p.type2 ? "・" + p.type2 : ""}</td>
+          <td width="10%">${p.ability1}</td>
+          <td width="10%">${p.ability2 ? p.ability2 : ""}</td>
+          <td width="10%">${p.hidden_ability ? p.hidden_ability : ""}</td>
+          <td>${p.gender}</td>
+          <td>${p.generation}</td>
+          <td width="5%">${p.sp_atk}</td>
+          <td width="5%">${p.sp_def}</td>
+          <td width="5%">${p.speed}</td>
+          <td width="5%">${p.sum}</td>
           `;
           body.appendChild(tr1);
           body.appendChild(tr2);
