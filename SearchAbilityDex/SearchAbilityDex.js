@@ -673,7 +673,7 @@ const PokeSearch = (() => {
           <td width="5%"><a href="../NewPokedex/NewPokedex.html?poke_AUTONUM=${p.autonum}"
                             data-lang="${jap_or_eng}"
                             data-window="${bright_or_dark}"
-                            >リンク</a></td>
+                            >Link</a></td>
           `;
           const tr2 = document.createElement("tr");
           tr2.innerHTML =
