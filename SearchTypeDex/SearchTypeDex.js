@@ -34,9 +34,9 @@ const PokeSearch = (() => {
       flag = true;
       areaSidebar = document.querySelector(`[${conf.area_sidebar}]`);
 
-      jap_or_eng = localStorage.getItem("selectedLanguage") || 'jap';
-      bright_or_dark = localStorage.getItem("selectedWindow") || 'bright';
-      normal_or_shiny = localStorage.getItem("selectedImage") || 'normal';
+      jap_or_eng = localStorage.getItem("selectedLanguage") || 'JAP';
+      bright_or_dark = localStorage.getItem("selectedWindow") || 'BRIGHT';
+      normal_or_shiny = localStorage.getItem("selectedImage") || 'NORMAL';
 
       return this;
     },
@@ -68,9 +68,9 @@ const PokeSearch = (() => {
         const selectedBtnImage = document.getElementById('BtnImage');
 
         // ★ localStorage から読んだ状態をチェックに反映
-        selectedBtnLanguage.checked = (jap_or_eng === 'eng');
-        selectedBtnWindow.checked   = (bright_or_dark === 'dark');
-        selectedBtnImage.checked    = (normal_or_shiny === 'shiny');
+        selectedBtnLanguage.checked = (jap_or_eng === 'ENG');
+        selectedBtnWindow.checked   = (bright_or_dark === 'DARK');
+        selectedBtnImage.checked    = (normal_or_shiny === 'SHINY');
         
         // ★ ラベルも一度現在状態で更新
         func.updateLabels();
@@ -103,7 +103,6 @@ const PokeSearch = (() => {
     updateURL: async function(){
       if(flag){
         let newURL = `../SearchTypeDex/SearchTypeDex.html`;
-        //window.location.href = newURL;
         history.replaceState(null, "", newURL);
       }
       return this;
@@ -118,25 +117,25 @@ const PokeSearch = (() => {
       const lblImage = btnImage.nextElementSibling;
       
       // まず状態を更新
-      jap_or_eng = btnLanguage.checked ? 'eng' : 'jap';
-      bright_or_dark = btnWindow.checked ? 'dark' : 'bright';
-      normal_or_shiny = btnImage.checked ? 'shiny' : 'normal';
+      jap_or_eng = btnLanguage.checked ? 'ENG' : 'JAP';
+      bright_or_dark = btnWindow.checked ? 'DARK' : 'BRIGHT';
+      normal_or_shiny = btnImage.checked ? 'SHINY' : 'NORMAL';
 
       // 言語
-      lblLanguage.textContent = (jap_or_eng === 'jap') ? '日本語' : 'English';
+      lblLanguage.textContent = (jap_or_eng === 'JAP') ? '日本語' : 'English';
       
       // ウィンドウ(明るさ)
-      if (jap_or_eng === 'jap') {
-        lblWindow.textContent = (bright_or_dark === 'bright') ? 'ブライト' : 'ダーク';
+      if (jap_or_eng === 'JAP') {
+        lblWindow.textContent = (bright_or_dark === 'BRIGHT') ? 'ブライト' : 'ダーク';
       } else {
-        lblWindow.textContent = (bright_or_dark === 'bright') ? 'Bright' : 'Dark';
+        lblWindow.textContent = (bright_or_dark === 'BRIGHT') ? 'Bright' : 'Dark';
       }
       
       // 画像(通常/色違い)
-      if (jap_or_eng === 'jap') {
-        lblImage.textContent = (normal_or_shiny === 'normal') ? '通常' : '色違い';
+      if (jap_or_eng === 'JAP') {
+        lblImage.textContent = (normal_or_shiny === 'NORMAL') ? '通常' : '色違い';
       } else {
-        lblImage.textContent = (normal_or_shiny === 'normal') ? 'Normal' : 'Shiny';
+        lblImage.textContent = (normal_or_shiny === 'NORMAL') ? 'Normal' : 'Shiny';
       }
 
       localStorage.setItem('selectedLanguage', jap_or_eng);
@@ -154,17 +153,34 @@ const PokeSearch = (() => {
       }
       return this;
     },
-    makeSidebarArea: function () {
+    makeJapSidebarArea: function () {
       htmlSidebar = `
         <nav class="sidebar" id="sidebar">
           <button class="sidebar-close-btn" id="sidebar-close">☰</button>
           <ul>
-            <li data-menu="1"><a href="../SearchTypeDex/SearchTypeDex.html">タイプ</a></li>
-            <li data-menu="2"><a href="../SearchAbilityDex/SearchAbilityDex.html">特性</a></li>
-            <li data-menu="3"><a href="../SearchGenderDex/SearchGenderDex.html">性別</a></li>
-            <li data-menu="4"><a href="../SearchEggGroupDex/SearchEggGroupDex.html">タマゴグループ</a></li>
-            <li data-menu="5"><a href="../SearchValueDex/SearchValueDex.html">種族値</a></li>
-            <li data-menu="6"><a href="../SearchFormDex/SearchFormDex.html">姿違い</a></li>
+            <li data-menu="1"><a href="SearchTypeDex.html">タイプ</a></li>
+            <li data-menu="2"><a href="SearchAbilityDex.html">特性</a></li>
+            <li data-menu="3"><a href="SearchGenderDex.html">性別</a></li>
+            <li data-menu="4"><a href="SearchEggGroupDex.html">タマゴグループ</a></li>
+            <li data-menu="5"><a href="SearchValueDex.html">種族値</a></li>
+            <li data-menu="6"><a href="SearchFormDex.html">姿違い</a></li>
+          </ul>
+        </nav>
+      `;
+      areaSidebar.insertAdjacentHTML('beforeend', htmlSidebar);
+      return this;
+    },
+    makeEngSidebarArea: function () {
+      htmlSidebar = `
+        <nav class="sidebar" id="sidebar">
+          <button class="sidebar-close-btn" id="sidebar-close">☰</button>
+          <ul>
+            <li data-menu="1"><a href="SearchTypeDex.html">Search Type</a></li>
+            <li data-menu="2"><a href="SearchAbilityDex.html">Search Ability</a></li>
+            <li data-menu="3"><a href="SearchGenderDex.html">Search Gender</a></li>
+            <li data-menu="4"><a href="SearchEggGroupDex.html">Search Egg Group</a></li>
+            <li data-menu="5"><a href="SearchValueDex.html">Search Value</a></li>
+            <li data-menu="6"><a href="SearchFormDex.html">Search Form</a></li>
           </ul>
         </nav>
       `;
@@ -214,18 +230,6 @@ const PokeSearch = (() => {
         });
       });
 
-      return this;
-    },
-    initAbilityTable: function(){
-      if(flag){
-        //fetch('http://127.0.0.1:3001/api/poke/ability')
-        fetch('/api/poke/ability')
-          .then(res => res.json())
-          .then(list => {
-            abilityMaster = list;
-            func.renderAbilityList();
-          });
-      }
       return this;
     },
     initTypeTable: function(){
@@ -279,21 +283,48 @@ const PokeSearch = (() => {
     },
     initRegionList: function(){
       if(flag){
-        //fetch('http://127.0.0.1:3001/api/poke/region')
-        fetch('/api/poke/region')
-          .then(res => res.json())
-          .then(regions => func.renderRegionList(regions));
+        switch(jap_or_eng)
+        {
+          case 'JAP':
+            fetch('http://127.0.0.1:3001/api/poke/region')
+            .then(res => res.json())
+            .then(regions => func.renderJapRegionList(regions));
+            break;
+          case 'ENG':
+            fetch('http://127.0.0.1:3001/api/poke/region')
+            .then(res => res.json())
+            .then(regions => func.renderEngRegionList(regions));
+            break;
+          default:
+            fetch('http://127.0.0.1:3001/api/poke/region')
+            .then(res => res.json())
+            .then(regions => func.renderJapRegionList(regions));
+            break;
+        }
       }
       return this;
     },
-    renderRegionList(regions){
+    renderJapRegionList(regions){
       if(flag){
         const ddlRegion = document.getElementById("DdlSearchRegion");
 
         regions.forEach(r => {
           const opt = document.createElement("option");
-          opt.value = r.regionid;
-          opt.textContent = `${r.regionid}: ${r.chiho}`;
+          opt.value = r.REGIONID;
+          opt.textContent = `${r.REGIONID}: ${r.CHIHO}`;
+          ddlRegion.appendChild(opt);
+        });
+      }
+      return this;
+    },
+    renderEngRegionList(regions){
+      if(flag){
+        const ddlRegion = document.getElementById("DdlSearchRegion");
+
+        regions.forEach(r => {
+          const opt = document.createElement("option");
+          opt.value = r.REGIONID;
+          opt.textContent = `${r.REGIONID}: ${r.REGION}`;
           ddlRegion.appendChild(opt);
         });
       }
@@ -301,21 +332,48 @@ const PokeSearch = (() => {
     },
     initGenList: function(){
       if(flag){
-        //fetch('http://127.0.0.1:3001/api/poke/generation')
-        fetch('/api/poke/generation')
-          .then(res => res.json())
-          .then(gens => func.renderGenList(gens));
+        switch(jap_or_eng)
+        {
+          case 'JAP':
+            fetch('http://127.0.0.1:3001/api/poke/generation')
+            .then(res => res.json())
+            .then(gens => func.renderJapGenList(gens));
+            break;
+          case 'ENG':
+            fetch('http://127.0.0.1:3001/api/poke/generation')
+            .then(res => res.json())
+            .then(gens => func.renderEngGenList(gens));
+            break;
+          default:
+            fetch('http://127.0.0.1:3001/api/poke/generation')
+            .then(res => res.json())
+            .then(gens => func.renderJapGenList(gens));
+            break;
+        }
       }
       return this;
     },
-    renderGenList: function(gens){
+    renderJapGenList: function(gens){
       if(flag){
         const ddlGen = document.getElementById("DdlSearchGen");
 
         gens.forEach(g => {
           const opt = document.createElement("option");
-          opt.value = g.generationid;
-          opt.textContent = `${g.generationid}: ${g.sedai}`;
+          opt.value = g.GENERATIONID;
+          opt.textContent = `${g.GENERATIONID}: ${g.SEDAI}`;
+          ddlGen.appendChild(opt);
+        });
+      }
+      return this;
+    },
+    renderEngGenList: function(gens){
+      if(flag){
+        const ddlGen = document.getElementById("DdlSearchGen");
+
+        gens.forEach(g => {
+          const opt = document.createElement("option");
+          opt.value = g.GENERATIONID;
+          opt.textContent = `${g.GENERATIONID}: ${g.GENERATION}`;
           ddlGen.appendChild(opt);
         });
       }
@@ -330,14 +388,39 @@ const PokeSearch = (() => {
         const generation = document.getElementById("DdlSearchGen").value;
         const selectedOption = document.querySelector('input[name="type_selection"]:checked')?.value;
 
-        //fetch('http://127.0.0.1:3001/api/search/type', {
-        fetch('/api/search/type', {
-          method: "POST",
-          headers: {"Content-Type": "application/json"},
-          body: JSON.stringify({name, types, selectedOption, region, generation})
-        })
-        .then(res => res.json())
-        .then(data => func.renderSearchResult(data));
+        switch(jap_or_eng)
+        {
+          case 'JAP':
+            //fetch('http://127.0.0.1:3001/api/search/type', {
+            fetch('/api/search/type', {
+              method: "POST",
+              headers: {"Content-Type": "application/json"},
+              body: JSON.stringify({name, types, selectedOption, region, generation})
+            })
+            .then(res => res.json())
+            .then(data => func.renderJapSearchResult(data));
+            break;
+          case 'ENG':
+            //fetch('http://127.0.0.1:3001/api/search/type', {
+            fetch('/api/search/type', {
+              method: "POST",
+              headers: {"Content-Type": "application/json"},
+              body: JSON.stringify({name, types, selectedOption, region, generation})
+            })
+            .then(res => res.json())
+            .then(data => func.renderEngSearchResult(data));
+            break;
+          default:
+            //fetch('http://127.0.0.1:3001/api/search/type', {
+            fetch('/api/search/type', {
+              method: "POST",
+              headers: {"Content-Type": "application/json"},
+              body: JSON.stringify({name, types, selectedOption, region, generation})
+            })
+            .then(res => res.json())
+            .then(data => func.renderJapSearchResult(data));
+            break;
+        }
       }
       return this;
     },
@@ -358,7 +441,7 @@ const PokeSearch = (() => {
       }
       return this;
     },
-    renderSearchResult: function(list){
+    renderJapSearchResult: function(list){
       if(flag){
         const body = document.getElementById("SearchResultBody");
         body.innerHTML = "";
@@ -380,33 +463,125 @@ const PokeSearch = (() => {
         document.getElementById("LblNoResult").style.display = "none";
         
         list.forEach(p => {
+
+          let displayImage;
+
+          switch(normal_or_shiny)
+          {
+            case 'NORMAL':
+              displayImage = p.PATH_NORMAL_FRONT;
+              break;
+            case 'SHINY':
+              displayImage = p.PATH_SHINY_FRONT;
+              break;
+            default:
+              displayImage = p.PATH_NORMAL_FRONT;
+              break;
+          }
           const tr1 = document.createElement("tr");
           tr1.innerHTML =
           `
-          <td width="5%" rowspan="2"><img src="../${p.path_normal_front}" class="middle-each-image"></td>
-          <td width="5%" rowspan="2">${p.no}</td>
-          <td width="15%">${p.namae}</td>
-          <td width="30%" colspan="3">${p.sugata ? p.sugata : ""}</td>
-          <td width="15%">${p.tamago_group1}${p.tamago_group2 ? "・" + p.tamago_group2 : ""}</td>
-          <td width="10%">${p.chiho}</td>
-          <td width="5%">${p.hp}</td>
-          <td width="5%">${p.attack}</td>
-          <td width="5%">${p.defense}</td>
-          <td width="5%"><a href="../NewPokedex/NewPokedex.html?poke_autonum=${p.autonum}">リンク</a></td>
+          <td width="5%" rowspan="2"><img src="${displayImage}" class="middle-each-image"></td>
+          <td width="5%" rowspan="2">${p.NO}</td>
+          <td width="15%">${p.NAMAE}</td>
+          <td width="30%" colspan="3">${p.SUGATA ? p.SUGATA : ""}</td>
+          <td width="15%">${p.TAMAGO_GROUP1}${p.TAMAGO_GROUP2 ? "・" + p.TAMAGO_GROUP2 : ""}</td>
+          <td width="10%">${p.CHIHO}</td>
+          <td width="5%">${p.HP}</td>
+          <td width="5%">${p.ATTACK}</td>
+          <td width="5%">${p.DEFENSE}</td>
+          <td width="5%"><a href="NewPokedex.html?poke_AUTONUM=${p.AUTONUM}"
+                            data-lang="${jap_or_eng}"
+                            data-window="${bright_or_dark}"
+                            >リンク</a></td>
           `;
           const tr2 = document.createElement("tr");
           tr2.innerHTML =
           `
-          <td width="15%">${p.taipu1}${p.taipu2 ? "・" + p.taipu2 : ""}</td>
-          <td width="10%">${p.tokusei1}</td>
-          <td width="10%">${p.tokusei2 ? p.tokusei2 : ""}</td>
-          <td width="10%">${p.yume_tokusei ? p.yume_tokusei : ""}</td>
-          <td>${p.gender}</td>
-          <td>${p.sedai}</td>
-          <td width="5%">${p.sp_atk}</td>
-          <td width="5%">${p.sp_def}</td>
-          <td width="5%">${p.speed}</td>
-          <td width="5%">${p.sum}</td>
+          <td width="15%">${p.TAIPU1}${p.TAIPU2 ? "・" + p.TAIPU2 : ""}</td>
+          <td width="10%">${p.TOKUSEI1}</td>
+          <td width="10%">${p.TOKUSEI2 ? p.TOKUSEI2 : ""}</td>
+          <td width="10%">${p.YUME_TOKUSEI ? p.YUME_TOKUSEI : ""}</td>
+          <td>${p.GENDER}</td>
+          <td>${p.SEDAI}</td>
+          <td width="5%">${p.SP_ATK}</td>
+          <td width="5%">${p.SP_DEF}</td>
+          <td width="5%">${p.SPEED}</td>
+          <td width="5%">${p.SUM}</td>
+          `;
+          body.appendChild(tr1);
+          body.appendChild(tr2);
+        });
+      }
+      return this;
+    },
+    renderEngSearchResult: function(list){
+      if(flag){
+        const body = document.getElementById("SearchResultBody");
+        body.innerHTML = "";
+        
+        // ★ ここ重要
+        if (!Array.isArray(list))
+        {
+          console.error("検索結果が配列ではありません:", list);
+          document.getElementById("LblNoResult").style.display = "block";
+          return this;
+        }
+        
+        if(list.length === 0)
+        {
+          document.getElementById("LblNoResult").style.display = "block";
+          return this;
+        }
+        
+        document.getElementById("LblNoResult").style.display = "none";
+        
+        list.forEach(p => {
+
+          let displayImage;
+
+          switch(normal_or_shiny)
+          {
+            case 'NORMAL':
+              displayImage = p.PATH_NORMAL_FRONT;
+              break;
+            case 'SHINY':
+              displayImage = p.PATH_SHINY_FRONT;
+              break;
+            default:
+              displayImage = p.PATH_NORMAL_FRONT;
+              break;
+          }
+          const tr1 = document.createElement("tr");
+          tr1.innerHTML =
+          `
+          <td width="5%" rowspan="2"><img src="${displayImage}" class="middle-each-image"></td>
+          <td width="5%" rowspan="2">${p.NO}</td>
+          <td width="15%">${p.NAME}</td>
+          <td width="30%" colspan="3">${p.FORM ? p.FORM : ""}</td>
+          <td width="15%">${p.EGG_GROUP1}${p.EGG_GROUP2 ? "・" + p.EGG_GROUP2 : ""}</td>
+          <td width="10%">${p.REGION}</td>
+          <td width="5%">${p.HP}</td>
+          <td width="5%">${p.ATTACK}</td>
+          <td width="5%">${p.DEFENSE}</td>
+          <td width="5%"><a href="NewPokedex.html?poke_AUTONUM=${p.AUTONUM}"
+                            data-lang="${jap_or_eng}"
+                            data-window="${bright_or_dark}"
+                            >Link</a></td>
+          `;
+          const tr2 = document.createElement("tr");
+          tr2.innerHTML =
+          `
+          <td width="15%">${p.TYPE1}${p.TYPE2 ? "・" + p.TYPE2 : ""}</td>
+          <td width="10%">${p.ABILITY1}</td>
+          <td width="10%">${p.ABILITY2 ? p.ABILITY2 : ""}</td>
+          <td width="10%">${p.HIDDEN_ABILITY ? p.HIDDEN_ABILITY : ""}</td>
+          <td>${p.GENDER}</td>
+          <td>${p.GENERATION}</td>
+          <td width="5%">${p.SP_ATK}</td>
+          <td width="5%">${p.SP_DEF}</td>
+          <td width="5%">${p.SPEED}</td>
+          <td width="5%">${p.SUM}</td>
           `;
           body.appendChild(tr1);
           body.appendChild(tr2);
@@ -420,14 +595,14 @@ const PokeSearch = (() => {
         
         switch(bright_or_dark)
         {
-          case "bright":
+          case 'BRIGHT':
             htmlPageStyle =
             `
             <link rel="stylesheet" href="SearchTypeDexBright.css">
             <link rel="icon" href="SearchTypeDexBright.png">
             `;
             break;
-          case "dark":
+          case 'DARK':
             htmlPageStyle =
             `
             <link rel="stylesheet" href="SearchTypeDexDark.css">
@@ -458,8 +633,20 @@ const PokeSearch = (() => {
       .init()
       .makeFieldPageTitle()
       .makeSettingCommands()
-      .makeDecisionButton()
-      .makeSidebarArea()
+      .makeDecisionButton();
+    switch(jap_or_eng)
+    {
+      case 'JAP':
+        func.makeJapSidebarArea();
+        break;
+      case 'ENG':
+        func.makeEngSidebarArea();
+        break;
+      default:
+        func.makeJapSidebarArea();
+        break;
+    }
+    func
       .bindMenuButton()
       .bindSidebarCloseButton()
       .bindSidebarEvents()
