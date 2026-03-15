@@ -158,12 +158,12 @@ const PokeSearch = (() => {
         <nav class="sidebar" id="sidebar">
           <button class="sidebar-close-btn" id="sidebar-close">☰</button>
           <ul>
-            <li data-menu="1"><a href="SearchTypeDex.html">タイプ</a></li>
-            <li data-menu="2"><a href="SearchAbilityDex.html">特性</a></li>
-            <li data-menu="3"><a href="SearchGenderDex.html">性別</a></li>
-            <li data-menu="4"><a href="SearchEggGroupDex.html">タマゴグループ</a></li>
-            <li data-menu="5"><a href="SearchValueDex.html">種族値</a></li>
-            <li data-menu="6"><a href="SearchFormDex.html">姿違い</a></li>
+            <li data-menu="1"><a href="../SearchTypeDex/SearchTypeDex.html">タイプ</a></li>
+            <li data-menu="2"><a href="../SearchAbilityDex/SearchAbilityDex.html">特性</a></li>
+            <li data-menu="3"><a href="../SearchGenderDex/SearchGenderDex.html">性別</a></li>
+            <li data-menu="4"><a href="../SearchEggGroupDex/SearchEggGroupDex.html">タマゴグループ</a></li>
+            <li data-menu="5"><a href="../SearchValueDex/SearchValueDex.html">種族値</a></li>
+            <li data-menu="6"><a href="../SearchFormDex/SearchFormDex.html">姿違い</a></li>
           </ul>
         </nav>
       `;
@@ -175,12 +175,12 @@ const PokeSearch = (() => {
         <nav class="sidebar" id="sidebar">
           <button class="sidebar-close-btn" id="sidebar-close">☰</button>
           <ul>
-            <li data-menu="1"><a href="SearchTypeDex.html">Search Type</a></li>
-            <li data-menu="2"><a href="SearchAbilityDex.html">Search Ability</a></li>
-            <li data-menu="3"><a href="SearchGenderDex.html">Search Gender</a></li>
-            <li data-menu="4"><a href="SearchEggGroupDex.html">Search Egg Group</a></li>
-            <li data-menu="5"><a href="SearchValueDex.html">Search Value</a></li>
-            <li data-menu="6"><a href="SearchFormDex.html">Search Form</a></li>
+            <li data-menu="1"><a href="../SearchTypeDex/SearchTypeDex.html">Search Type</a></li>
+            <li data-menu="2"><a href="../SearchAbilityDex/SearchAbilityDex.html">Search Ability</a></li>
+            <li data-menu="3"><a href="../SearchGenderDex/SearchGenderDex.html">Search Gender</a></li>
+            <li data-menu="4"><a href="../SearchEggGroupDex/SearchEggGroupDex.html">Search Egg Group</a></li>
+            <li data-menu="5"><a href="../SearchValueDex/SearchValueDex.html">Search Value</a></li>
+            <li data-menu="6"><a href="../SearchFormDex/SearchFormDex.html">Search Form</a></li>
           </ul>
         </nav>
       `;
