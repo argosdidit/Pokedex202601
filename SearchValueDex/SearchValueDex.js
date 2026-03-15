@@ -976,19 +976,19 @@ const PokeSearch = (() => {
           switch(normal_or_shiny)
           {
             case 'NORMAL':
-              displayImage = p.PATH_NORMAL_FRONT;
+              displayImage = "../" + p.path_normal_front;
               break;
             case 'SHINY':
-              displayImage = p.PATH_SHINY_FRONT;
+              displayImage = "../" + p.path_shiny_front;
               break;
             default:
-              displayImage = p.PATH_NORMAL_FRONT;
+              displayImage = "../" + p.path_normal_front;
               break;
           }
           const tr1 = document.createElement("tr");
           tr1.innerHTML =
           `
-          <td width="5%" rowspan="2"><img src="../${displayImage}" class="middle-each-image"></td>
+          <td width="5%" rowspan="2"><img src="${displayImage}" class="middle-each-image"></td>
           <td width="5%" rowspan="2">${p.no}</td>
           <td width="15%">${p.namae}</td>
           <td width="30%" colspan="3">${p.sugata ? p.sugata : ""}</td>
@@ -1050,19 +1050,19 @@ const PokeSearch = (() => {
           switch(normal_or_shiny)
           {
             case 'NORMAL':
-              displayImage = p.PATH_NORMAL_FRONT;
+              displayImage = "../" + p.path_normal_front;
               break;
             case 'SHINY':
-              displayImage = p.PATH_SHINY_FRONT;
+              displayImage = "../" + p.path_shiny_front;
               break;
             default:
-              displayImage = p.PATH_NORMAL_FRONT;
+              displayImage = "../" + p.path_normal_front;
               break;
           }
           const tr1 = document.createElement("tr");
           tr1.innerHTML =
           `
-          <td width="5%" rowspan="2"><img src="../${displayImage}" class="middle-each-image"></td>
+          <td width="5%" rowspan="2"><img src="${displayImage}" class="middle-each-image"></td>
           <td width="5%" rowspan="2">${p.no}</td>
           <td width="15%">${p.namae}</td>
           <td width="30%" colspan="3">${p.sugata ? p.sugata : ""}</td>
