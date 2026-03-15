@@ -535,14 +535,14 @@ const PokeSearch = (() => {
           `
           <td width="5%" rowspan="2"><img src="${displayImage}" class="middle-each-image"></td>
           <td width="5%" rowspan="2">${p.no}</td>
-          <td width="15%">${p.namae}</td>
-          <td width="30%" colspan="3">${p.sugata ? p.sugata : ""}</td>
-          <td width="15%">${p.tamago_group1}${p.tamago_group2 ? "・" + p.tamago_group2 : ""}</td>
-          <td width="10%">${p.chiho}</td>
+          <td width="15%">${p.name}</td>
+          <td width="30%" colspan="3">${p.form ? p.form : ""}</td>
+          <td width="15%">${p.egg_group1}${p.egg_group2 ? "・" + p.egg_group2 : ""}</td>
+          <td width="10%">${p.region}</td>
           <td width="5%">${p.hp}</td>
           <td width="5%">${p.attack}</td>
           <td width="5%">${p.defense}</td>
-          <td width="5%"><a href="../NewPokedex/NewPokedex.html?poke_AUTONUM=${p.AUTONUM}"
+          <td width="5%"><a href="../NewPokedex/NewPokedex.html?poke_AUTONUM=${p.autonum}"
                             data-lang="${jap_or_eng}"
                             data-window="${bright_or_dark}"
                             >リンク</a></td>
@@ -550,12 +550,12 @@ const PokeSearch = (() => {
           const tr2 = document.createElement("tr");
           tr2.innerHTML =
           `
-          <td width="15%">${p.taipu1}${p.taipu2 ? "・" + p.taipu2 : ""}</td>
-          <td width="10%">${p.tokusei1}</td>
-          <td width="10%">${p.tokusei2 ? p.tokusei2 : ""}</td>
-          <td width="10%">${p.yume_tokusei ? p.yume_tokusei : ""}</td>
+          <td width="15%">${p.type1}${p.type2 ? "・" + p.type2 : ""}</td>
+          <td width="10%">${p.ability1}</td>
+          <td width="10%">${p.ability2 ? p.ability2 : ""}</td>
+          <td width="10%">${p.hidden_ability ? p.hidden_ability : ""}</td>
           <td>${p.gender}</td>
-          <td>${p.sedai}</td>
+          <td>${p.generation}</td>
           <td width="5%">${p.sp_atk}</td>
           <td width="5%">${p.sp_def}</td>
           <td width="5%">${p.speed}</td>
