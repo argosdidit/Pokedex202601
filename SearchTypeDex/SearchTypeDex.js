@@ -469,13 +469,13 @@ const PokeSearch = (() => {
           switch(normal_or_shiny)
           {
             case 'NORMAL':
-              displayImage = p.PATH_NORMAL_FRONT;
+              displayImage = "../" + p.path_normal_front;
               break;
             case 'SHINY':
-              displayImage = p.PATH_SHINY_FRONT;
+              displayImage = "../" + p.path_shiny_front;
               break;
             default:
-              displayImage = p.PATH_NORMAL_FRONT;
+              displayImage = "../" + p.path_normal_front;
               break;
           }
           const tr1 = document.createElement("tr");
@@ -543,13 +543,13 @@ const PokeSearch = (() => {
           switch(normal_or_shiny)
           {
             case 'NORMAL':
-              displayImage = p.PATH_NORMAL_FRONT;
+              displayImage = "../" + p.path_normal_front;
               break;
             case 'SHINY':
-              displayImage = p.PATH_SHINY_FRONT;
+              displayImage = "../" + p.path_shiny_front;
               break;
             default:
-              displayImage = p.PATH_NORMAL_FRONT;
+              displayImage = "../" + p.path_normal_front;
               break;
           }
           const tr1 = document.createElement("tr");
