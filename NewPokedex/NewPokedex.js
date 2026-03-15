@@ -119,9 +119,9 @@ const PokeProject = (() => {
       if(getAUTONUM !== null)
         pokeTargetAUTONUM = Number(getAUTONUM);
 
-      jap_or_eng = localStorage.getItem("selectedLanguage") || 'jap';
-      bright_or_dark = localStorage.getItem("selectedWindow") || 'bright';
-      normal_or_shiny = localStorage.getItem("selectedImage") || 'normal';
+      jap_or_eng = localStorage.getItem("selectedLanguage") || 'JAP';
+      bright_or_dark = localStorage.getItem("selectedWindow") || 'BRIGHT';
+      normal_or_shiny = localStorage.getItem("selectedImage") || 'NORMAL';
 
       return this;
     },
@@ -153,9 +153,9 @@ const PokeProject = (() => {
         const selectedBtnImage = document.getElementById('BtnImage');
 
         // ★ localStorage から読んだ状態をチェックに反映
-        selectedBtnLanguage.checked = (jap_or_eng === 'eng');
-        selectedBtnWindow.checked   = (bright_or_dark === 'dark');
-        selectedBtnImage.checked    = (normal_or_shiny === 'shiny');
+        selectedBtnLanguage.checked = (jap_or_eng === 'ENG');
+        selectedBtnWindow.checked   = (bright_or_dark === 'DARK');
+        selectedBtnImage.checked    = (normal_or_shiny === 'SHINY');
         
         // ★ ラベルも一度現在状態で更新
         func.updateLabels();
@@ -195,25 +195,25 @@ const PokeProject = (() => {
       const lblImage = btnImage.nextElementSibling;
       
       // まず状態を更新
-      jap_or_eng = btnLanguage.checked ? 'eng' : 'jap';
-      bright_or_dark = btnWindow.checked ? 'dark' : 'bright';
-      normal_or_shiny = btnImage.checked ? 'shiny' : 'normal';
+      jap_or_eng = btnLanguage.checked ? 'ENG' : 'JAP';
+      bright_or_dark = btnWindow.checked ? 'DARK' : 'BRIGHT';
+      normal_or_shiny = btnImage.checked ? 'SHINY' : 'NORMAL';
 
       // 言語
-      lblLanguage.textContent = (jap_or_eng === 'jap') ? '日本語' : 'English';
+      lblLanguage.textContent = (jap_or_eng === 'JAP') ? '日本語' : 'English';
       
       // ウィンドウ(明るさ)
-      if (jap_or_eng === 'jap') {
-        lblWindow.textContent = (bright_or_dark === 'bright') ? 'ブライト' : 'ダーク';
+      if (jap_or_eng === 'JAP') {
+        lblWindow.textContent = (bright_or_dark === 'BRIGHT') ? 'ブライト' : 'ダーク';
       } else {
-        lblWindow.textContent = (bright_or_dark === 'bright') ? 'Bright' : 'Dark';
+        lblWindow.textContent = (bright_or_dark === 'BRIGHT') ? 'Bright' : 'Dark';
       }
       
       // 画像(通常/色違い)
-      if (jap_or_eng === 'jap') {
-        lblImage.textContent = (normal_or_shiny === 'normal') ? '通常' : '色違い';
+      if (jap_or_eng === 'JAP') {
+        lblImage.textContent = (normal_or_shiny === 'NORMAL') ? '通常' : '色違い';
       } else {
-        lblImage.textContent = (normal_or_shiny === 'normal') ? 'Normal' : 'Shiny';
+        lblImage.textContent = (normal_or_shiny === 'NORMAL') ? 'Normal' : 'Shiny';
       }
 
       localStorage.setItem('selectedLanguage', jap_or_eng);
@@ -374,14 +374,14 @@ const PokeProject = (() => {
         
         switch(bright_or_dark)
         {
-          case "bright":
+          case "BRIGHT":
             htmlPageStyle =
             `
             <link rel="stylesheet" href="NewPokedexBright.css">
             <link rel="icon" href="icon/NewPokedex.png">
             `;
             break;
-          case "dark":
+          case "DARK":
             htmlPageStyle =
             `
             <link rel="stylesheet" href="NewPokedexDark.css">
@@ -484,11 +484,11 @@ const PokeProject = (() => {
           pokeBrightTypePath = "../" + data.path_typechart_bright;
           pokeDarkTypePath = "../" + data.path_typechart_dark;
           
-          if(normal_or_shiny === 'normal')
+          if(normal_or_shiny === 'NORMAL')
           {
             pokeDisplayImage = pokeNormalPath;
           }
-          else if(normal_or_shiny === 'shiny')
+          else if(normal_or_shiny === 'SHINY')
           {
             pokeDisplayImage = pokeShinyPath;
           }
@@ -497,11 +497,11 @@ const PokeProject = (() => {
             pokeDisplayImage = pokeNormalPath;
           }
 
-          if(bright_or_dark === 'bright')
+          if(bright_or_dark === 'BRIGHT')
           {
             pokeDisplayTypePath = pokeBrightTypePath;
           }
-          else if(bright_or_dark === 'dark')
+          else if(bright_or_dark === 'DARK')
           {
             pokeDisplayTypePath = pokeDarkTypePath;
           }
@@ -515,10 +515,10 @@ const PokeProject = (() => {
             .makeFieldPokeImage();
             switch(jap_or_eng)
             {
-              case 'jap':
+              case 'JAP':
                 func.makeFieldJapPokeInfo();
                 break;
-              case 'eng':
+              case 'ENG':
                 func.makeFieldEngPokeInfo();
                 break;
               default:
@@ -536,7 +536,7 @@ const PokeProject = (() => {
     updateURL: async function(){
       if(flag){
         let newURL = `../NewPokedex/NewPokedex.html?poke_autonum=${pokeAUTONUM}`;
-        //window.location.href = newURL;
+        localStorage.setItem('poke_autonum', pokeTargetAUTONUM);
         history.replaceState(null, "", newURL);
       }
       return this;
@@ -873,20 +873,20 @@ const PokeProject = (() => {
         let img = document.getElementById("pokeImage");
         let nowImage = img.dataset.image;
 
-        if(nowImage === 'normal')
+        if(nowImage === 'NORMAL')
         {
           img.src = pokeShinyPath;
-          img.dataset.image = 'shiny';
+          img.dataset.image = 'SHINY';
         }
-        else if(nowImage === 'shiny')
+        else if(nowImage === 'SHINY')
         {
           img.src = pokeNormalPath;
-          img.dataset.image = 'normal';
+          img.dataset.image = 'NORMAL';
         }
         else
         {
           img.src = pokeShinyPath;
-          img.dataset.image = 'shiny';
+          img.dataset.image = 'SHINY';
         }
       }
       return this;
@@ -903,11 +903,11 @@ const PokeProject = (() => {
 
           data.forEach(pokemon => {
             const img = document.createElement('img');
-            if(normal_or_shiny === 'normal')
+            if(normal_or_shiny === 'NORMAL')
             {
               img.src = "../" + pokemon.path_normal_front;
             }
-            else if(normal_or_shiny === 'shiny')
+            else if(normal_or_shiny === 'SHINY')
             {
               img.src = "../" + pokemon.path_shiny_front;
             }
@@ -943,12 +943,12 @@ const PokeProject = (() => {
       .makeDecisionButton();
     switch(jap_or_eng)
     {
-      case 'jap':
+      case 'JAP':
         func
           .makeJapSidebarArea()
           .makeFieldJapControlButtons()
         break;
-      case 'eng':
+      case 'ENG':
         func
           .makeEngSidebarArea()
           .makeFieldEngControlButtons()
