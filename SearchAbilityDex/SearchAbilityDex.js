@@ -701,14 +701,14 @@ const PokeSearch = (() => {
         
         switch(bright_or_dark)
         {
-          case "BRIGHT":
+          case 'BRIGHT':
             htmlPageStyle =
             `
             <link rel="stylesheet" href="SearchAbilityDexBright.css">
             <link rel="icon" href="SearchAbilityDexBright.png">
             `;
             break;
-          case "DARK":
+          case 'DARK':
             htmlPageStyle =
             `
             <link rel="stylesheet" href="SearchAbilityDexDark.css">
