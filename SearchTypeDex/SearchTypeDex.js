@@ -313,8 +313,8 @@ const PokeSearch = (() => {
 
         regions.forEach(r => {
           const opt = document.createElement("option");
-          opt.value = r.REGIONID;
-          opt.textContent = `${r.REGIONID}: ${r.CHIHO}`;
+          opt.value = r.regionid;
+          opt.textContent = `${r.regionid}: ${r.chiho}`;
           ddlRegion.appendChild(opt);
         });
       }
@@ -326,8 +326,8 @@ const PokeSearch = (() => {
 
         regions.forEach(r => {
           const opt = document.createElement("option");
-          opt.value = r.REGIONID;
-          opt.textContent = `${r.REGIONID}: ${r.REGION}`;
+          opt.value = r.regionid;
+          opt.textContent = `${r.regionid}: ${r.region}`;
           ddlRegion.appendChild(opt);
         });
       }
@@ -365,8 +365,8 @@ const PokeSearch = (() => {
 
         gens.forEach(g => {
           const opt = document.createElement("option");
-          opt.value = g.GENERATIONID;
-          opt.textContent = `${g.GENERATIONID}: ${g.SEDAI}`;
+          opt.value = g.generationid;
+          opt.textContent = `${g.generationid}: ${g.sedai}`;
           ddlGen.appendChild(opt);
         });
       }
@@ -378,8 +378,8 @@ const PokeSearch = (() => {
 
         gens.forEach(g => {
           const opt = document.createElement("option");
-          opt.value = g.GENERATIONID;
-          opt.textContent = `${g.GENERATIONID}: ${g.GENERATION}`;
+          opt.value = g.generationid;
+          opt.textContent = `${g.generationid}: ${g.generation}`;
           ddlGen.appendChild(opt);
         });
       }
