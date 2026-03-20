@@ -8,12 +8,24 @@ const PokeSearch = (() => {
   areaPageTitle,
   areaSettingCommands,
   areaDecisionButton,
+  areaSidebar,
+  areaSearchLabel,
+  areaLeftName,
+  areaComboboxRegion,
+  areaComboboxGeneration,
+  areaSearchButton,
+  areaResultTemplate,
   htmlPageStyle,
   htmlPageTitle,
   htmlSettingCommands,
   htmlDecisionButton,
-  areaSidebar,
   htmlSidebar,
+  htmlSearchLabel,
+  htmlLeftName,
+  htmlComboboxRegion,
+  htmlComboboxGeneration,
+  htmlSearchButton,
+  htmlResultTemplate,
   
   jap_or_eng,
   bright_or_dark,
@@ -27,7 +39,12 @@ const PokeSearch = (() => {
     fieldSettingCommands: `field-setting-commands`,
     fieldDecisionButton: `field-decision-button`,
     area_sidebar: `area-sidebar`,
-    search_field: `search-field`,
+    fieldSearchLabel: `field-search-label`,
+    fieldLeftName: `field-left-name`,
+    fieldComboboxRegion: `field-combobox-region`,
+    fieldComboboxGeneration: `field-combobox-generation`,
+    fieldSearchButton: `field-search-button`,
+    fieldResultTemplate: `field-result-template`,
   };
   func = {
     init: function(){
@@ -38,6 +55,60 @@ const PokeSearch = (() => {
       bright_or_dark = localStorage.getItem("selectedWindow") || 'BRIGHT';
       normal_or_shiny = localStorage.getItem("selectedImage") || 'NORMAL';
 
+      return this;
+    },
+    makeInitField: function(){
+      if(flag){
+        areaSearchLabel = document.querySelector(`[${conf.fieldSearchLabel}]`);
+        areaLeftName = document.querySelector(`[${conf.fieldLeftName}]`);
+        areaComboboxRegion = document.querySelector(`[${conf.fieldComboboxRegion}]`);
+        areaComboboxGeneration = document.querySelector(`[${conf.fieldComboboxGeneration}]`);
+        areaSearchButton = document.querySelector(`[${conf.fieldSearchButton}]`);
+      }
+      return this;
+    },
+    makeJapInitField: function(){
+      if(flag){
+
+        htmlSearchLabel = `<h3 class="search-label">検索フィールド</h3>`;
+        htmlLeftName = `<div class="left">名前:</div>`;
+        htmlComboboxRegion = `<option value="">地方を選択してください</option>`;
+        htmlComboboxGeneration = `<option value="">世代を選択してください</option>`;
+        htmlSearchButton = `<button id="BtnSearch" type="button">検索</button>`;
+
+        areaSearchLabel.insertAdjacentHTML('beforeend', htmlSearchLabel);
+        areaLeftName.insertAdjacentHTML('beforeend', htmlLeftName);
+        areaComboboxRegion.insertAdjacentHTML('beforeend', htmlComboboxRegion);
+        areaComboboxGeneration.insertAdjacentHTML('beforeend', htmlComboboxGeneration);
+        areaSearchButton.insertAdjacentHTML('beforeend', htmlSearchButton);
+
+        //検索ロジック※そう間違えたら通らない
+        document.getElementById("BtnSearch").addEventListener("click", () => {
+          func.searchEggGroupPoke();
+        });
+      }
+      return this;
+    },
+    makeEngInitField: function(){
+      if(flag){
+
+        htmlSearchLabel = `<h3 class="search-label">Search Field</h3>`;
+        htmlLeftName = `<div class="left">Name:</div>`;
+        htmlComboboxRegion = `<option value="">Select Region</option>`;
+        htmlComboboxGeneration = `<option value="">Select Generation</option>`;
+        htmlSearchButton = `<button id="BtnSearch" type="button">Search</button>`;
+
+        areaSearchLabel.insertAdjacentHTML('beforeend', htmlSearchLabel);
+        areaLeftName.insertAdjacentHTML('beforeend', htmlLeftName);
+        areaComboboxRegion.insertAdjacentHTML('beforeend', htmlComboboxRegion);
+        areaComboboxGeneration.insertAdjacentHTML('beforeend', htmlComboboxGeneration);
+        areaSearchButton.insertAdjacentHTML('beforeend', htmlSearchButton);
+
+        //検索ロジック※そう間違えたら通らない
+        document.getElementById("BtnSearch").addEventListener("click", () => {
+          func.searchEggGroupPoke();
+        });
+      }
       return this;
     },
     makeSettingCommands: function(){
@@ -466,6 +537,52 @@ const PokeSearch = (() => {
       }
       return this;
     },
+    renderJapResultTemplate: function(){
+      if(flag){
+        areaResultTemplate = document.querySelector(`[${conf.fieldResultTemplate}]`);
+        htmlResultTemplate =
+        `
+        <div class="middle">
+        <table class="poke-table">
+        <thead>
+        <tr>
+        <th width="5%" rowspan="2">画像</th>
+        <th width="5%" rowspan="2">番号</th>
+        <th width="15%">名前</th>
+        <th width="30%" colspan="3">フォルム</th>
+        <th width="15%">タマゴグループ</th>
+        <th width="10%">地方</th>
+        <th width="5%">HP</th>
+        <th width="5%">攻撃</th>
+        <th width="5%">防御</th>
+        <th width="5%">リンク</th>
+        </tr>
+        <tr>
+        <th width="15%">タイプ</th>
+        <th width="10%">特性1</th>
+        <th width="10%">特性2</th>
+        <th width="10%">隠れ特性</th>
+        <th>性別</th>
+        <th>世代</th>
+        <th width="5%">特攻</th>
+        <th width="5%">特防</th>
+        <th width="5%">素早さ</th>
+        <th width="5%">種族値</th>
+        </tr>
+        </thead>
+        <tbody id="SearchResultBody">
+        </tbody>
+        </table>
+        <p id="LblNoResult" class="no-result" style="display:none;">
+        見つかりませんでした。他の条件で検索してください。
+        </p>
+        </div>
+        `;
+
+        areaResultTemplate.insertAdjacentHTML('beforeend', htmlResultTemplate);
+      }
+      return this;
+    },
     renderJapSearchResult: function(list){
       if(flag){
         const body = document.getElementById("SearchResultBody");
@@ -537,6 +654,52 @@ const PokeSearch = (() => {
           body.appendChild(tr1);
           body.appendChild(tr2);
         });
+      }
+      return this;
+    },
+    renderEngResultTemplate: function(){
+      if(flag){
+        areaResultTemplate = document.querySelector(`[${conf.fieldResultTemplate}]`);
+        htmlResultTemplate =
+        `
+        <div class="middle">
+        <table class="poke-table">
+        <thead>
+        <tr>
+        <th width="5%" rowspan="2">Image</th>
+        <th width="5%" rowspan="2">No</th>
+        <th width="15%">Name</th>
+        <th width="30%" colspan="3">Form</th>
+        <th width="15%">Egg Group</th>
+        <th width="10%">Region</th>
+        <th width="5%">HP</th>
+        <th width="5%">Attack</th>
+        <th width="5%">Defense</th>
+        <th width="5%">Link</th>
+        </tr>
+        <tr>
+        <th width="15%">Type</th>
+        <th width="10%">Ability1</th>
+        <th width="10%">Ability2</th>
+        <th width="10%">Hidden Ability</th>
+        <th>Gender</th>
+        <th>Generation</th>
+        <th width="5%">Sp.Atk</th>
+        <th width="5%">Sp.Def</th>
+        <th width="5%">Speed</th>
+        <th width="5%">Total Value</th>
+        </tr>
+        </thead>
+        <tbody id="SearchResultBody">
+        </tbody>
+        </table>
+        <p id="LblNoResult" class="no-result" style="display:none;">
+        Sorry, Not Found...
+        </p>
+        </div>
+        `;
+
+        areaResultTemplate.insertAdjacentHTML('beforeend', htmlResultTemplate);
       }
       return this;
     },
@@ -617,29 +780,21 @@ const PokeSearch = (() => {
     judgeStyles: function(){
       if(flag){
         areaPageStyle = document.querySelector(`[${conf.fieldPageStyle}]`);
-        
+        const favicon = document.querySelector('#dynamic-favicon');
+
         switch(bright_or_dark)
         {
           case 'BRIGHT':
-            htmlPageStyle =
-            `
-            <link rel="stylesheet" href="SearchEggGroupDexBright.css">
-            <link rel="icon" href="SearchEggGroupDexBright.png">
-            `;
+            htmlPageStyle = `<link rel="stylesheet" href="SearchEggGroupDexBright.css">`;
+            favicon.href = "SearchEggGroupDexBright.png";
             break;
           case 'DARK':
-            htmlPageStyle =
-            `
-            <link rel="stylesheet" href="SearchEggGroupDexDark.css">
-            <link rel="icon" href="SearchEggGroupDexDark.png">
-            `;
+            htmlPageStyle = `<link rel="stylesheet" href="SearchEggGroupDexDark.css">`;
+            favicon.href = "SearchEgggroupDexDark.png";
             break;
           default:
-            htmlPageStyle =
-            `
-            <link rel="stylesheet" href="SearchEggGroupDexBright.css">
-            <link rel="icon" href="SearchEggGroupDexBright.png">
-            `;
+            htmlPageStyle = `<link rel="stylesheet" href="SearchEggGroupDexBright.css">`;
+            favicon.href = "SearchEggGroupDexBright.png";
             break;
         }
         areaPageStyle.insertAdjacentHTML('beforeend', htmlPageStyle);
@@ -648,26 +803,38 @@ const PokeSearch = (() => {
     }
   };
 
-  //検索ロジック※そう間違えたら通らない
-  document.getElementById("BtnSearch").addEventListener("click", () => {
-    func.searchEggGroupPoke();
-  });
-
   active = () => {
     func
       .init()
+      .makeInitField();
+    switch(jap_or_eng)
+    {
+      case 'JAP':
+        func.makeJapInitField();
+        break;
+      case 'ENG':
+        func.makeEngInitField();
+        break;
+      default:
+        func.makeJapInitField();
+        break;
+    }
+    func
       .makeFieldPageTitle()
       .makeSettingCommands()
       .makeDecisionButton();
     switch(jap_or_eng)
     {
       case 'JAP':
+        func.renderJapResultTemplate();
         func.makeJapSidebarArea();
         break;
       case 'ENG':
+        func.renderEngResultTemplate();
         func.makeEngSidebarArea();
         break;
       default:
+        func.renderJapResultTemplate();
         func.makeJapSidebarArea();
         break;
     }
