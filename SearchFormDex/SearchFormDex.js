@@ -607,15 +607,15 @@ const PokeSearch = (() => {
         switch(ascending_or_descending)
         {
           case 'ASCENDING':
-            list.sort((a, b) => a.AUTONUM - b.AUTONUM);
+            list.sort((a, b) => a.autonum - b.autonum);
             break;
 
           case 'DESCENDING':
-            list.sort((a, b) => b.AUTONUM - a.AUTONUM);
+            list.sort((a, b) => b.autonum - a.autonum);
             break;
 
           default:
-            list.sort((a, b) => a.AUTONUM - b.AUTONUM);
+            list.sort((a, b) => a.autonum - b.autonum);
             break;
         }
         
@@ -742,15 +742,15 @@ const PokeSearch = (() => {
         switch(ascending_or_descending)
         {
           case 'ASCENDING':
-            list.sort((a, b) => a.AUTONUM - b.AUTONUM);
+            list.sort((a, b) => a.autonum - b.autonum);
             break;
 
           case 'DESCENDING':
-            list.sort((a, b) => b.AUTONUM - a.AUTONUM);
+            list.sort((a, b) => b.autonum - a.autonum);
             break;
 
           default:
-            list.sort((a, b) => a.AUTONUM - b.AUTONUM);
+            list.sort((a, b) => a.autonum - b.autonum);
             break;
         }
         
