@@ -397,15 +397,15 @@ const PokeProject = (() => {
         {
           case 'BRIGHT':
             htmlPageStyle = `<link rel="stylesheet" href="NewPokedexBright.css">`;
-            favicon.href = "NewPokeDexBright.png";
+            favicon.href = "NewPokedexBright.png";
             break;
           case 'DARK':
             htmlPageStyle = `<link rel="stylesheet" href="NewPokedexDark.css">`;
-            favicon.href = "NewPokeDexDark.png";
+            favicon.href = "NewPokedexDark.png";
             break;
           default:
             htmlPageStyle = `<link rel="stylesheet" href="NewPokedexBright.css">`;
-            favicon.href = "NewPokeDexBright.png";
+            favicon.href = "NewPokedexBright.png";
             break;
         }
         areaPageStyle.insertAdjacentHTML('beforeend', htmlPageStyle);
