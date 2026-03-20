@@ -87,7 +87,8 @@ const PokeProject = (() => {
   
   jap_or_eng,
   bright_or_dark,
-  normal_or_shiny;
+  normal_or_shiny,
+  ascending_or_descending;
 
   const conf ={
     fieldPageStyle: `field-page-style`,
@@ -122,6 +123,7 @@ const PokeProject = (() => {
       jap_or_eng = localStorage.getItem("selectedLanguage") || 'JAP';
       bright_or_dark = localStorage.getItem("selectedWindow") || 'BRIGHT';
       normal_or_shiny = localStorage.getItem("selectedImage") || 'NORMAL';
+      ascending_or_descending = localStorage.getItem("selectedOrder") || 'ASCENDING';
 
       return this;
     },
@@ -143,6 +145,10 @@ const PokeProject = (() => {
         <input type="checkbox" id="BtnImage" class="toggle-input">
         <label for="BtnImage" class="toggle-label" id="LblImage">通常</label>
         </div>
+        <div class="toggle-button">
+        <input type="checkbox" id="BtnOrder" class="toggle-input">
+        <label for="BtnOrder" class="toggle-label" id="LblOrder">1 => 9</label>
+        </div>
         </div>
         `;
 
@@ -151,17 +157,20 @@ const PokeProject = (() => {
         const selectedBtnLanguage = document.getElementById('BtnLanguage');
         const selectedBtnWindow = document.getElementById('BtnWindow');
         const selectedBtnImage = document.getElementById('BtnImage');
+        const selectedBtnOrder = document.getElementById('BtnOrder');
 
         // ★ localStorage から読んだ状態をチェックに反映
         selectedBtnLanguage.checked = (jap_or_eng === 'ENG');
         selectedBtnWindow.checked   = (bright_or_dark === 'DARK');
         selectedBtnImage.checked    = (normal_or_shiny === 'SHINY');
+        selectedBtnOrder.checked    = (ascending_or_descending === 'DESCENDING');
         
         // ★ ラベルも一度現在状態で更新
         func.updateLabels();
         selectedBtnLanguage.addEventListener('click', func.updateLabels);
         selectedBtnWindow.addEventListener('click', func.updateLabels);
         selectedBtnImage.addEventListener('click', func.updateLabels);
+        selectedBtnOrder.addEventListener('click', func.updateLabels);
       }
       return this;
     },
@@ -189,15 +198,18 @@ const PokeProject = (() => {
       const btnLanguage = document.getElementById('BtnLanguage');
       const btnWindow = document.getElementById('BtnWindow');
       const btnImage = document.getElementById('BtnImage');
+      const btnOrder = document.getElementById('BtnOrder');
       
       const lblLanguage = btnLanguage.nextElementSibling;
       const lblWindow = btnWindow.nextElementSibling;
       const lblImage = btnImage.nextElementSibling;
+      const lblOrder = btnOrder.nextElementSibling;
       
       // まず状態を更新
       jap_or_eng = btnLanguage.checked ? 'ENG' : 'JAP';
       bright_or_dark = btnWindow.checked ? 'DARK' : 'BRIGHT';
       normal_or_shiny = btnImage.checked ? 'SHINY' : 'NORMAL';
+      ascending_or_descending = btnOrder.checked ? 'DESCENDING' : 'ASCENDING';
 
       // 言語
       lblLanguage.textContent = (jap_or_eng === 'JAP') ? '日本語' : 'English';
@@ -216,9 +228,17 @@ const PokeProject = (() => {
         lblImage.textContent = (normal_or_shiny === 'NORMAL') ? 'Normal' : 'Shiny';
       }
 
+      // 順番(昇順/順序)
+      if (jap_or_eng === 'JAP') {
+        lblOrder.textContent = (ascending_or_descending === 'ASCENDING') ? '1 => 9' : '9 => 1';
+      } else {
+        lblOrder.textContent = (ascending_or_descending === 'ASCENDING') ? '1 => 9' : '9 => 1';
+      }
+
       localStorage.setItem('selectedLanguage', jap_or_eng);
       localStorage.setItem('selectedWindow', bright_or_dark);
       localStorage.setItem('selectedImage', normal_or_shiny);
+      localStorage.setItem('selectedOrder', ascending_or_descending);
     },
     makeFieldPageTitle: function(){
       if(flag){
@@ -897,6 +917,21 @@ const PokeProject = (() => {
           //const response = await fetch('http://127.0.0.1:3001/api/pokelist');
           const response = await fetch('/api/pokelist');
           const data = await response.json();
+
+          switch(ascending_or_descending)
+          {
+            case 'ASCENDING':
+              data.sort((a, b) => a.AUTONUM - b.AUTONUM);
+              break;
+
+            case 'DESCENDING':
+              data.sort((a, b) => b.AUTONUM - a.AUTONUM);
+              break;
+
+            default:
+              data.sort((a, b) => a.AUTONUM - b.AUTONUM);
+              break;
+          }
 
           areaDisplayPokeList = document.querySelector(`[${conf.fieldDisplayPokeList}]`);
           areaDisplayPokeList.innerHTML = '';
