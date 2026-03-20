@@ -391,29 +391,21 @@ const PokeProject = (() => {
     judgeStyles: function(){
       if(flag){
         areaPageStyle = document.querySelector(`[${conf.fieldPageStyle}]`);
-        
+        const favicon = document.querySelector('#dynamic-favicon');
+
         switch(bright_or_dark)
         {
-          case "BRIGHT":
-            htmlPageStyle =
-            `
-            <link rel="stylesheet" href="NewPokedexBright.css">
-            <link rel="icon" href="icon/NewPokedex.png">
-            `;
+          case 'BRIGHT':
+            htmlPageStyle = `<link rel="stylesheet" href="NewPokedexBright.css">`;
+            favicon.href = "NewPokeDexBright.png";
             break;
-          case "DARK":
-            htmlPageStyle =
-            `
-            <link rel="stylesheet" href="NewPokedexDark.css">
-            <link rel="icon" href="icon/NewPokedex.png">
-            `;
+          case 'DARK':
+            htmlPageStyle = `<link rel="stylesheet" href="NewPokedexDark.css">`;
+            favicon.href = "NewPokeDexDark.png";
             break;
           default:
-            htmlPageStyle =
-            `
-            <link rel="stylesheet" href="NewPokedexBright.css">
-            <link rel="icon" href="icon/NewPokedex.png">
-            `;
+            htmlPageStyle = `<link rel="stylesheet" href="NewPokedexBright.css">`;
+            favicon.href = "NewPokeDexBright.png";
             break;
         }
         areaPageStyle.insertAdjacentHTML('beforeend', htmlPageStyle);
