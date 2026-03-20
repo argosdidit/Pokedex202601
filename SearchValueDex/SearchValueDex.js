@@ -1159,7 +1159,7 @@ const PokeSearch = (() => {
           <td width="5%">${p.hp}</td>
           <td width="5%">${p.attack}</td>
           <td width="5%">${p.defense}</td>
-          <td width="5%"><a href="../NewPokedex/NewPokedex.html?poke_AUTONUM=${p.AUTONUM}"
+          <td width="5%"><a href="../NewPokedex/NewPokedex.html?poke_AUTONUM=${p.autonum}"
                             data-lang="${jap_or_eng}"
                             data-window="${bright_or_dark}"
                             >リンク</a></td>
