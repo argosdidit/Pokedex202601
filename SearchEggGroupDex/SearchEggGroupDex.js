@@ -790,7 +790,7 @@ const PokeSearch = (() => {
             break;
           case 'DARK':
             htmlPageStyle = `<link rel="stylesheet" href="SearchEggGroupDexDark.css">`;
-            favicon.href = "SearchEgggroupDexDark.png";
+            favicon.href = "SearchEggGroupDexDark.png";
             break;
           default:
             htmlPageStyle = `<link rel="stylesheet" href="SearchEggGroupDexBright.css">`;
