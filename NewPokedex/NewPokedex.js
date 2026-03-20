@@ -921,15 +921,15 @@ const PokeProject = (() => {
           switch(ascending_or_descending)
           {
             case 'ASCENDING':
-              data.sort((a, b) => a.AUTONUM - b.AUTONUM);
+              data.sort((a, b) => a.autonum - b.autonum);
               break;
 
             case 'DESCENDING':
-              data.sort((a, b) => b.AUTONUM - a.AUTONUM);
+              data.sort((a, b) => b.autonum - a.autonum);
               break;
 
             default:
-              data.sort((a, b) => a.AUTONUM - b.AUTONUM);
+              data.sort((a, b) => a.autonum - b.autonum);
               break;
           }
 
